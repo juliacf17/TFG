@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt,oneside]{book}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{float}
+
+
+\decimalpoint
+\usepackage{dcolumn}
+\newcolumntype{.}{D{.}{\esperiod}{-1}}
+\makeatletter
+\addto\shorthandsspanish{\let\esperiod\es@period@code}
+\makeatother
+
+\RequirePackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{afterpage}
+
+\usepackage{longtable}
+
+\usepackage[pdfborder={0 0 0}]{hyperref} % referencia
+
+
+% ********************************************************************
+% Re-usable information
+% ********************************************************************
+\newcommand{\myTitle}{Aplicación para la gestión de una tienda minorista\xspace}
+\newcommand{\myDegree}{Grado en Ingeniería Informática\xspace}
+\newcommand{\myName}{Julia María Cano Flores \xspace}
+\newcommand{\myProf}{María Luisa Rodríguez Almendros \xspace}
+\newcommand{\myFaculty}{Escuela Técnica Superior de Ingenierías Informática y de Telecomunicación\xspace}
+\newcommand{\myFacultyShort}{E.T.S. de Ingenierías Informática y de Telecomunicación\xspace}
+\newcommand{\myDepartment}{Departamento de Lenguajes y Sistemas Informáticos\xspace}
+\newcommand{\myUni}{\protect{Universidad de Granada}\xspace}
+\newcommand{\myLocation}{Granada\xspace}
+\newcommand{\myTime}{\today\xspace}
+\newcommand{\myVersion}{Version 0.1\xspace}
+
+\hypersetup{
+	pdfauthor = {\myName (email (en) ugr (punto) es)},
+	pdftitle = {\myTitle},
+	pdfsubject = {},
+	pdfkeywords = {palabra_clave1, palabra_clave2, palabra_clave3, ...},
+	pdfcreator = {LaTeX con el paquete ....},
+	pdfproducer = {pdflatex}
+}
+
+\usepackage{url}
+\usepackage{colortbl,longtable}
+\usepackage[stable]{footmisc}
+\usepackage{index}
+
+\makeindex
+%\usepackage[style=long, cols=2,border=plain,toc=true,number=none]{glossary}
+%\makeglossary
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\leftmark}
+\fancyhead[RE]{\rightmark}
+\fancyhead[RO,LE]{\textbf{\thepage}}
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Limpia el encabezado y pie de página de configuraciones previas
+\fancyfoot[C]{\thepage} % Centra el número de página en el pie de página
+\renewcommand{\headrulewidth}{0pt} % Elimina la línea del encabezado
+\renewcommand{\footrulewidth}{0pt} % Elimina la línea del pie de página si existe
+
+% Corrige cualquier espacio adicional alrededor del área del pie de página que podría desplazar el número de la página
+\fancyfootoffset{0pt}
+
+\usepackage{booktabs} % Para obtener líneas horizontales mejoradas
+\usepackage[table]{xcolor}
+
+
+\setlength{\headheight}{1.5\headheight}
+
+% Configuraciones de colores y listados
+
+\begin{document}
+	% Portada
+	\input{portada/portada}
+	% Suprime la numeración de esta página
+	\thispagestyle{empty}
+	% Asegura que la numeración comience en la siguiente página
+	\clearpage
+	\setcounter{page}{2}
+	
+	% Prefacios y otros elementos preliminares
+	\input{prefacios/prefacio}
+	
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+%	\mainmatter
+	\setlength{\parskip}{5pt}
+	
+	% Contenido principal
+	\input{capitulos/01_Introduccion}
+	
+\end{document}
+
+
+
+%
+%\input{capitulos/02_EspecificacionRequisitos}
+%
+%\input{capitulos/03_Planificacion}
+%
+%\input{capitulos/04_Analisis}
+%
+%\input{capitulos/05_Diseno}
+%
+%\input{capitulos/06_Implementacion}
+%
+%\input{capitulos/07_Pruebas}
+%
+%\input{capitulos/08_Conclusiones}
+%
+%%\chapter{Conclusiones y Trabajos Futuros}
+%
+%
+%%\nocite{*}
+%\bibliography{bibliografia/bibliografia}\addcontentsline{toc}{chapter}{Bibliografía}
+%\bibliographystyle{miunsrturl}
+%
+%\appendix
+%\input{apendices/manual_usuario/manual_usuario}
+%%\input{apendices/paper/paper}
+%\input{glosario/entradas_glosario}
+% \addcontentsline{toc}{chapter}{Glosario}
+% \printglossary
+%\chapter*{}
+%\thispagestyle{empty}
+
+
