@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.5)  5 FEB 2024 20:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.5)  6 FEB 2024 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -85,37 +85,51 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box53
 )
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip49
+\enit@outerparindent=\dimen144
+\enit@toks=\toks23
+\enit@inbox=\box54
+\enit@count@id=\count272
+\enitdp@description=\count273
+)
+(/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count274
+\cp@tempcnt=\count275
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen144
-\ar@mcellbox=\box54
-\extrarowheight=\dimen145
-\NC@list=\toks23
-\extratabsurround=\skip49
-\backup@length=\skip50
-\ar@cellbox=\box55
+\col@sep=\dimen145
+\ar@mcellbox=\box55
+\extrarowheight=\dimen146
+\NC@list=\toks24
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box56
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks24
-\verbatim@line=\toks25
+\every@verbatim=\toks25
+\verbatim@line=\toks26
 \verbatim@in@stream=\read3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
-\f@nch@headwidth=\skip51
-\f@nch@O@elh=\skip52
-\f@nch@O@erh=\skip53
-\f@nch@O@olh=\skip54
-\f@nch@O@orh=\skip55
-\f@nch@O@elf=\skip56
-\f@nch@O@erf=\skip57
-\f@nch@O@olf=\skip58
-\f@nch@O@orf=\skip59
+\f@nch@headwidth=\skip52
+\f@nch@O@elh=\skip53
+\f@nch@O@erh=\skip54
+\f@nch@O@olh=\skip55
+\f@nch@O@orh=\skip56
+\f@nch@O@elf=\skip57
+\f@nch@O@erf=\skip58
+\f@nch@O@olf=\skip59
+\f@nch@O@orf=\skip60
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -134,33 +148,33 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen146
-\Gin@req@width=\dimen147
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks26
-\AP@partial=\box56
-\AP@footins=\box57
+\AP@output=\toks27
+\AP@partial=\box57
+\AP@footins=\box58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip60
-\LTright=\skip61
-\LTpre=\skip62
-\LTpost=\skip63
-\LTchunksize=\count272
-\LTcapwidth=\dimen148
-\LT@head=\box58
-\LT@firsthead=\box59
-\LT@foot=\box60
-\LT@lastfoot=\box61
-\LT@gbox=\box62
-\LT@cols=\count273
-\LT@rows=\count274
-\c@LT@tables=\count275
-\c@LT@chunks=\count276
-\LT@p@ftn=\toks27
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count276
+\LTcapwidth=\dimen149
+\LT@head=\box59
+\LT@firsthead=\box60
+\LT@foot=\box61
+\LT@lastfoot=\box62
+\LT@gbox=\box63
+\LT@cols=\count277
+\LT@rows=\count278
+\c@LT@tables=\count279
+\c@LT@chunks=\count280
+\LT@p@ftn=\toks28
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -203,9 +217,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen149
-\Hy@linkcounter=\count277
-\Hy@pagecounter=\count278
+\@linkdim=\dimen150
+\Hy@linkcounter=\count281
+\Hy@pagecounter=\count282
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -222,7 +236,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count279
+\Hy@SavedSpaceFactor=\count283
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -236,14 +250,14 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count280
+\c@Hy@tempcnt=\count284
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen150
+\XeTeXLinkMargin=\dimen151
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -252,9 +266,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count281
-\Field@Width=\dimen151
-\Fld@charsize=\dimen152
+\Fld@menulength=\count285
+\Field@Width=\dimen152
+\Fld@charsize=\dimen153
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -269,9 +283,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count282
-\c@Item=\count283
-\c@Hfootnote=\count284
+\Hy@abspage=\count286
+\c@Item=\count287
+\c@Hfootnote=\count288
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -283,8 +297,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count285
-\c@bookmark@seq@number=\count286
+\Fld@listcount=\count289
+\c@bookmark@seq@number=\count290
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -295,19 +309,19 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip64
+\Hy@SectionHShift=\skip65
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 47.
+(hyperref)                removing `subscript' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 47.
+(hyperref)                removing `subscript' on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 47.
+(hyperref)                removing `subscript' on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
@@ -320,14 +334,14 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-\everycr=\toks28
-\minrowclearance=\skip65
+\everycr=\toks29
+\minrowclearance=\skip66
 )
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks29
-\footnotemargin=\dimen153
-\c@pp@next@reset=\count287
+\FN@temptoken=\toks30
+\footnotemargin=\dimen154
+\c@pp@next@reset=\count291
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -340,7 +354,7 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 (/usr/share/texlive/texmf-dist/tex/latex/index/index.sty
 Package: index 2004/01/20 v4.2beta Improved index support (dmj)
 \@indexbox=\insert252
-\indexproofstyle=\toks30
+\indexproofstyle=\toks31
 
 
 LaTeX Warning: Command \markboth  has changed.
@@ -351,39 +365,39 @@ LaTeX Warning: Command \markright  has changed.
                Check if current package is valid.
 
 )
-\idxtitle@default=\toks31
+\idxtitle@default=\toks32
 \tf@default=\write3
 \openout3 = `proyecto.idx'.
 
-Package index Info: Writing index file proyecto.idx on input line 54.
+Package index Info: Writing index file proyecto.idx on input line 60.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 61.
+less on input line 67.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 62.
+less on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen154
-\lightrulewidth=\dimen155
-\cmidrulewidth=\dimen156
-\belowrulesep=\dimen157
-\belowbottomsep=\dimen158
-\aboverulesep=\dimen159
-\abovetopsep=\dimen160
-\cmidrulesep=\dimen161
-\cmidrulekern=\dimen162
-\defaultaddspace=\dimen163
-\@cmidla=\count288
-\@cmidlb=\count289
-\@aboverulesep=\dimen164
-\@belowrulesep=\dimen165
-\@thisruleclass=\count290
-\@lastruleclass=\count291
-\@thisrulewidth=\dimen166
+\heavyrulewidth=\dimen155
+\lightrulewidth=\dimen156
+\cmidrulewidth=\dimen157
+\belowrulesep=\dimen158
+\belowbottomsep=\dimen159
+\aboverulesep=\dimen160
+\abovetopsep=\dimen161
+\cmidrulesep=\dimen162
+\cmidrulekern=\dimen163
+\defaultaddspace=\dimen164
+\@cmidla=\count292
+\@cmidlb=\count293
+\@aboverulesep=\dimen165
+\@belowrulesep=\dimen166
+\@thisruleclass=\count294
+\@lastruleclass=\count295
+\@thisrulewidth=\dimen167
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
@@ -393,7 +407,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 LaTeX Info: Redefining \color on input line 711.
-\rownum=\count292
+\rownum=\count296
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
@@ -406,8 +420,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count293
-\l__pdf_internal_box=\box63
+\l__color_backend_stack_int=\count297
+\l__pdf_internal_box=\box64
 )
 (./proyecto.aux
 LaTeX Info: Redefining \. on input line 25.
@@ -415,41 +429,41 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `proyecto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-\c@lstlisting=\count294
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+\c@lstlisting=\count298
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count295
-\scratchdimen=\dimen167
-\scratchbox=\box64
-\nofMPsegments=\count296
-\nofMParguments=\count297
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count298
-\MPscratchDim=\dimen168
-\MPnumerator=\count299
-\makeMPintoPDFobject=\count300
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count299
+\scratchdimen=\dimen168
+\scratchbox=\box65
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen169
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -467,7 +481,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 85.
+Package hyperref Info: Link coloring OFF on input line 92.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -478,19 +492,19 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count301
+\c@section@level=\count305
 )
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
 
 (./proyecto.out) (./proyecto.out)
 \@outlinefile=\write4
 \openout4 = `proyecto.out'.
 
  (./portada/portada.tex
-\centeroffset=\skip66
-<imagenes/logo_ugr.jpg, id=20, 777.90625pt x 231.86626pt>
+\centeroffset=\skip67
+<imagenes/logo_ugr.jpg, id=60, 777.90625pt x 231.86626pt>
 File: imagenes/logo_ugr.jpg Graphic file (type jpg)
 <use imagenes/logo_ugr.jpg>
 Package pdftex.def Info: imagenes/logo_ugr.jpg  used on input line 12.
@@ -501,7 +515,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 23.
-<imagenes/etsiit_logo.png, id=21, 110.814pt x 40.4712pt>
+<imagenes/etsiit_logo.png, id=61, 110.814pt x 40.4712pt>
 File: imagenes/etsiit_logo.png Graphic file (type png)
 <use imagenes/etsiit_logo.png>
 Package pdftex.def Info: imagenes/etsiit_logo.png  used on input line 32.
@@ -512,12 +526,12 @@ Package pdftex.def Info: imagenes/etsiit_logo.png  used on input line 32.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imagenes/logo_ugr.jpg> <
 ./imagenes/etsiit_logo.png>]) (./prefacios/prefacio.tex (./portada/portada_2.te
 x
-<imagenes/logo.png, id=33, 123.46124pt x 45.92157pt>
+<imagenes/logo.png, id=73, 123.46124pt x 45.92157pt>
 File: imagenes/logo.png Graphic file (type png)
 <use imagenes/logo.png>
 Package pdftex.def Info: imagenes/logo.png  used on input line 21.
 (pdftex.def)             Requested size: 123.46092pt x 45.92145pt.
-<imagenes/tstc.png, id=34, 170.6375pt x 129.48375pt>
+<imagenes/tstc.png, id=74, 170.6375pt x 129.48375pt>
 File: imagenes/tstc.png Graphic file (type png)
 <use imagenes/tstc.png>
 Package pdftex.def Info: imagenes/tstc.png  used on input line 39.
@@ -638,31 +652,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
 [9
 
-] [10] [11]) [12] (./proyecto.aux
+] [10] [11]) (./capitulos/02_Planificacion.tex [12]
+Cap\'{\i }tulo 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+[13
+
+] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Overfull \hbox (4.36919pt too wide) in paragraph at lines 96--97
+[]\OT1/cmr/m/n/10.95 En la ac-tua-li-dad, un pro-gra-ma-dor se-nior re-ci-be un
+a me-dia de 22.000\TS1/cmr/m/n/10.95 ¿
+ []
+
+[16]
+Underfull \hbox (badness 6157) in paragraph at lines 115--115
+[]|\OT1/cmr/bx/n/10.95 Recursos ma-te-ria-
+ []
+
+
+Overfull \hbox (37.60547pt too wide) in paragraph at lines 109--124
+ [][] 
+ []
+
+) [17] (./proyecto.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `proyecto.out' has not changed.
-(rerunfilecheck)             Checksum: 6FE93B62CBDFF37832E7C59E9AB95E68;563.
+(rerunfilecheck)             Checksum: B7DB8CC2580160C272FC3DD76D766A98;1889.
  ) 
 Here is how much of TeX's memory you used:
- 12343 strings out of 480185
- 193707 string characters out of 5894214
- 510543 words of memory out of 5000000
- 30079 multiletter control sequences out of 15000+600000
+ 12772 strings out of 480185
+ 201364 string characters out of 5894214
+ 518883 words of memory out of 5000000
+ 30474 multiletter control sequences out of 15000+600000
  476376 words of font info for 51 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 60i,12n,63p,833b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,63p,833b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/julia/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600
 pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on proyecto.pdf (14 pages, 208938 bytes).
+Output written on proyecto.pdf (19 pages, 220812 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

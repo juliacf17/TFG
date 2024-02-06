@@ -3,6 +3,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{float}
+\usepackage{enumitem} % Para listas con mejor control
+
+\usepackage{changepage}
+
+% Configura la profundidad de numeración hasta subsubsecciones
+\setcounter{secnumdepth}{3}
 
 
 \decimalpoint
@@ -74,6 +80,7 @@
 % Corrige cualquier espacio adicional alrededor del área del pie de página que podría desplazar el número de la página
 \fancyfootoffset{0pt}
 
+
 \usepackage{booktabs} % Para obtener líneas horizontales mejoradas
 \usepackage[table]{xcolor}
 
@@ -104,14 +111,16 @@
 	% Contenido principal
 	\input{capitulos/01_Introduccion}
 	
+	\input{capitulos/02_Planificacion}
+	
 \end{document}
 
 
 
+
 %
-%\input{capitulos/02_EspecificacionRequisitos}
 %
-%\input{capitulos/03_Planificacion}
+%\input{capitulos/03_Requisitos}
 %
 %\input{capitulos/04_Analisis}
 %
