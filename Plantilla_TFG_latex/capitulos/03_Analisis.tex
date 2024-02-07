@@ -1,0 +1,695 @@
+\chapter{Análisis}
+\label{chap:analysis}
+
+\section{Especificación de requisitos}
+
+Dentro del desarrollo de un proyecto, la fase de especificación de requisitos cumple un rol fundamental, ya que será aquí donde se establezcan las características esenciales y las expectativas que debe cumplir el sistema. 
+
+Esta sección está dedicada a la identificación y descripción detallada de los requisitos. Para conseguir este fin, es necesario preguntar al cliente y stakeholders sobre las necesidades o limitaciones que esperan del software.\\
+ 
+Cada requisito se identificará de forma única mediante un código que indica el tipo de requisito y su número correspondiente. Mediante esta codificación podremos hacer referencia a los requisitos de forma sencilla a lo largo de este documento. 
+
+
+\subsection{Requisitos funcionales}
+
+Los requisitos funcionales son aquellos que definen las tareas específicas que el sistema debe ser capaz de realizar. Podemos ordenar estos requisitos en 6 grupos según la función que habilitan: 
+
+\begin{itemize}
+	\item \textbf{Grupo 1:} Apertura y cierre de sesión. 
+	\item \textbf{Grupo 2:} Gestión de artículos.
+	\item \textbf{Grupo 3:} Gestión de inventario. 
+	\item \textbf{Grupo 4:} Gestión de clientes. 
+	\item \textbf{Grupo 5:} Gestión de movimientos.
+	\item \textbf{Grupo 6:} Gestión de resúmenes y gráficas. 
+\end{itemize}
+
+A continuación se especificarán los requisitos funcionales del proyecto clasificándolos en las secciones anteriormente mencionadas. 
+
+
+\subsubsection{Apertura y cierra de sesión}
+
+% Tabla para el inicio de sesión
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF1} & \textbf{Inicio de sesión} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir al usuario iniciar sesión de forma segura.  \\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item La pantalla de inicio de sesión debe pedir el nombre de usuario y la contraseña.
+				\item Verificar que los campos no estén vacíos.
+				\item Verificar que la información introducida es correcta y autentica al usuario.
+				\item Si la información es incorrecta, mostrar un mensaje de error.
+				\item Tras el inicio de sesión, redirigir al usuario a la pantalla principal.
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF1}
+\end{table}
+
+\newpage
+
+% Tabla para el cierre de sesión
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF2} & \textbf{Cierre de sesión} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir al usuario cerrar sesión de forma segura.  \\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para cerrar la sesión.
+				\item Tras el cierre de sesión, se debe volver a la pantalla de inicio de sesión.
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF2}
+\end{table}
+
+\subsubsection{Gestión de artículos}
+
+% Tabla para añadir un nuevo artículo.
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF3} & \textbf{Introducción de un nuevo artículo} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir registrar un nuevo artículo al negocio.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para añadir un nuevo artículo.
+				\item Verificar que los campos obligatorios no están vacíos.
+				\item Verificar que la información introducida tenga un formato correcto.
+				\item Tras guardar un nuevo artículo, se debe actualizar la lista de artículos existente. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF3}
+\end{table}
+
+% Tabla para editar un nuevo artículo existente.
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF4} & \textbf{Edición de un artículo existente} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir editar los datos de un artículo existente.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para editar un artículo existente.
+				\item Verificar que la nueva información introducida tenga un formato correcto.
+				\item Tras guardar los cambios, se deben actualizar los campos en la base de datos. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF4}
+\end{table}
+
+% Tabla para eliminar un nuevo artículo existente.
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF5} & \textbf{Eliminación de un artículo} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir eliminar un artículo existente.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para eliminar un artículo existente.
+				\item Mandar un mensaje de confirmación antes de la eliminación. 
+				\item Verificar que el artículo no esté vinculado a movimientos existentes en la base de datos.
+				\item Tras eliminar el artículo correspondiente, actualizar la lista de artículos existentes. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF5}
+\end{table}
+
+% Tabla para buscar un artículo.
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF6} & \textbf{Búsqueda de un artículo por nombre} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir buscar un artículo por nombre.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para buscar un artículo existente.
+				\item El usuario debe introducir el nombre correcto que identifica el artículo. 
+				\item El sistema debe mostrar al usuario el/los artículos que están relacionados con la búsqueda. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF6}
+\end{table}
+
+% Tabla para categorizar un artículo.
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF7} & \textbf{Categorización de un artículo} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de ordenar los artículos en categorías.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item El usuario debe establecer la categoría del artículo de forma correcta.
+				\item El sistema debe ordenar los artículos en base a las categorías especificadas. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF7}
+\end{table}
+
+% Tabla para mostrar la lista de artículos existentes.
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF8} & \textbf{Visualización de la lista de artículos existentes} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de mostrar una lista con los artículos del negocio.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item El sistema debe ser capaz de mostrar los artículos existentes en la base de datos en una lista. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF8}
+\end{table}
+
+\clearpage
+
+\subsubsection{Gestión de inventario}
+
+% Tabla para actualizar el inventario de forma automática.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF9} & \textbf{Actualización del inventario de forma automática} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de actualizar el inventario de los artículos del negocio en tiempo real.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item El sistema debe ser capaz de actualizar las cantidades de los artículos existentes en base a los movimientos (ventas, devoluciones o préstamos) del negocio. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF9}
+\end{table}
+
+% Tabla para visualización de la lista de renovación de artículos.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF10} & \textbf{Visualización de lista de renovación de artículos} \\
+		\hline
+		\textbf{Prioridad} & Media \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de realizar una lista con los artículos que lleguen a una cantidad crítica para indicar al comerciante que debe comprar más stock.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para visualizar la lista.
+				\item El sistema debe introducir el artículo en la lista cada vez que la cantidad actual sea igual o inferior a la cantidad mínima establecida por el comerciante. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF10}
+\end{table}
+
+\subsubsection{Gestión de clientes}
+
+% Tabla para registrar un nuevo cliente.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF11} & \textbf{Registro de un nuevo cliente habitual} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir añadir un nuevo cliente al sistema.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para añadir un nuevo cliente. 
+				\item Verificar que los campos obligatorios no estén vacíos. 
+				\item Verificar que la información proporcionada tenga un formato correcto. 
+				\item Añadir el nuevo cliente a la base de datos y actualizar la lista de clientes existentes. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF11}
+\end{table}
+
+% Tabla para editar los datos de un cliente.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF12} & \textbf{Edición de los datos de un cliente existente} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir editar los datos de un cliente existente.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para editar los datos de un cliente. 
+				\item Verificar que la nueva información proporcionada tenga un formato correcto. 
+				\item Tras confirmar los cambios, editar los campos modificados en la base de datos.
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF12}
+\end{table}
+
+% Tabla para eliminar un cliente existente.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF13} & \textbf{Eliminación de un cliente existente} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir eliminar un cliente existente.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para eliminar un cliente. 
+				\item Mandar un mensaje de confirmación antes de la eliminación. 
+				\item Verificar que el cliente no esté vinculado a ningún movimiento activo.
+				\item Tras eliminar al cliente, actualizar la lista de clientes existentes. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF13}
+\end{table}
+
+% Tabla para visualizar la lista de clientes actuales.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF14} & \textbf{Visualización de la lista de clientes existentes} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de mostrar una lista con los clientes habituales del negocio.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item El sistema debe ser capaz de mostrar los clientes registrados en la base de datos en forma de lista. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF14}
+\end{table}
+
+% Tabla para buscar un cliente por nombre.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF15} & \textbf{Búsqueda de un cliente por nombre} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de buscar un cliente habitual por su nombre.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para buscar un cliente.
+				\item El usuario debe introducir el nombre que identifica al cliente. 
+				\item El sistema debe mostrar a el/los clientes que estén relacionados con la búsqueda.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF15}
+\end{table}
+
+% Tabla para filtrar clientes con préstamos.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF16} & \textbf{Filtrado de clientes con préstamos} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de filtrar la lista completa de clientes registrados, dejando solo aquellos clientes que tengan préstamos.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para filtrar clientes por préstamos.
+				\item El sistema debe ser capaz de mostrar una lista de clientes que tienen artículos prestados del negocio.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF16}
+\end{table}
+
+
+\subsubsection{Gestión de movimientos}
+
+% Tabla para añadir un nuevo movimiento.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF17} & \textbf{Introducción de un nuevo movimiento} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz añadir un nuevo movimiento (venta o préstamo).\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para añadir un nuevo movimiento.
+				\item Verificar que los campos obligatorios no estén vacíos.
+				\item Verificar que la información introducida esté en un formato correcto. 
+				\item Actualizar el inventario tras la venta / préstamo. 
+				\item Añadir el nuevo movimiento a la base de datos y actualizar la lista de movimientos existente.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF17}
+\end{table}
+
+% Tabla para añadir una devolución.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF18} & \textbf{Introducción de una devolución} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de registrar una devolución de una venta o préstamo anterior.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Tras encontrar la venta o préstamo que queremos devolver, debe existir una opción visible para realizar la devolución.
+				\item Indicar los productos que se van a devolver (puede ser la venta / préstamo integro o una parte de este).
+				\item Actualizar el inventario tras la devolución. 
+				\item Añadir la devolución a la base de datos y actualizar la lista de movimientos.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF18}
+\end{table}
+
+
+% Tabla para eliminar un movimiento existente.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF19} & \textbf{Eliminación de un  movimiento} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz eliminar un movimiento (venta, préstamo o devolución).\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para eliminar el movimiento deseado.
+				\item Mandar un mensaje de confirmación antes de eliminar el movimiento. 
+				\item Tras eliminar el movimiento, actualizar la base de datos y la lista de movimientos existentes.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF19}
+\end{table}
+
+
+% Tabla para visualizar una lista de movimientos.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF20} & \textbf{Visualización de la lista de movimientos existentes} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de mostrar una lista con los movimientos efectuados en el negocio.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item El sistema debe ser capaz de mostrar los movimientos registrados en la base de datos en forma de lista.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF20}
+\end{table}
+
+% Tabla para filtrar la lista de movimientos.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF21} & \textbf{Filtrado de los movimientos según su tipo} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de filtrar los movimientos efectuados en el negocio según si son ventas, préstamos o devoluciones.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para filtrar los movimientos por tipo.
+				\item El sistema debe ser capaz de filtrar la lista de movimientos existentes, dejando solo aquellos movimientos que nos interesen, ya sean ventas, préstamos o devoluciones.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF21}
+\end{table}
+
+% Tabla para filtrar la lista de movimientos.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF22} & \textbf{Búsqueda de movimientos por fecha o cliente} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de buscar un movimiento específico por fecha o por cliente asociado.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para buscar el movimiento deseado.
+				\item El usuario debe introducir la fecha o el nombre del cliente a buscar de forma correcta.
+				\item El sistema debe de mostrar los movimientos relacionados con la búsqueda.   
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF22}
+\end{table}
+
+
+
+\subsubsection{Gestión de resúmenes y gráficas}
+
+ % Tabla para filtrar la lista de movimientos.
+ \begin{table}[H]
+ 	\centering % Centra la tabla en la página
+ 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+ 		\hline
+ 		\rowcolor{grayshade} \textbf{RF23} & \textbf{Visualización de la caja diaria} \\
+ 		\hline
+ 		\textbf{Prioridad} & Alta \\
+ 		\hline
+ 		\textbf{Descripción} & El sistema debe ser capaz de mostrar en tiempo real la cantidad de dinero que se gana o se pierde en base a los movimientos del negocio que se efectúan durante el día.\\
+ 		\hline
+ 		\vspace{0.5mm}
+ 		\textbf{Criterios de aceptación} & 
+ 		\begin{minipage}[t]{0.9\linewidth}
+ 			\begin{enumerate}
+ 				\item El sistema debe de mostrar la cantidad total ganada o perdida hasta el momento realizando la sumatoria de las cantidades de los movimientos efectuados en ese mismo día.   
+ 			\end{enumerate}
+ 			\vspace{2mm}
+ 		\end{minipage} \\
+ 		\hline
+ 	\end{tabular}
+ 	\caption{RF23}
+ \end{table}
+
+ % Tabla para filtrar la lista de movimientos.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF24} & \textbf{Visualización de gráficas} \\
+		\hline
+		\textbf{Prioridad} & Media \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de mostrar gráficas temporales que reflejen el progreso económico del negocio durante un mes o año.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para ver las gráficas.
+				\item El usuario debe elegir si ver la gráfica mensual o anual. 
+				\item El sistema debe ser capaz de mostrar una gráfica que refleje el progreso económico del negocio en base a los movimientos efectuados durante el mes o año.   
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF24}
+\end{table}
+
+
+\subsection{Requisitos no funcionales}
+
+Los requisitos no funcionales son los que aportan calidad al sistema. Los requisitos no funcionales que deberemos de tener en cuenta a la hora de desarrollar la aplicación son los siguientes. 
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{Código} & \textbf{Requisito} \\
+		\hline
+		\textbf{RNF1} & \textbf{Rendimiento:} El sistema debe ser capaz de dar respuesta en un tiempo adecuado para ser efectivo.  \\
+		\hline
+		\textbf{RNF2} & \textbf{Seguridad:} El sistema trata con datos privados de un negocio y deben estar protegidos.  \\
+		\hline
+		\textbf{RNF3} & \textbf{Compatibilidad:} El software debe estar disponible en varios sistemas operativos (Android e IOS). \\
+		\hline
+		\textbf{RNF4} & \textbf{Fiabilidad:} El sistema debe otorgar información válida y así poder confiar en sus respuestas.  \\
+		\hline
+	\end{tabular}
+	\caption{RNF}
+\end{table}
+
+\section{Modelos de caso de uso}
+
+\subsection{Diagrama de casos de uso}
+
+\section{Modelos de comportamiento}
