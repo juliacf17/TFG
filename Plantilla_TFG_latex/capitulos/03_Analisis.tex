@@ -165,12 +165,37 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\caption{RF5}
 \end{table}
 
+% Tabla para visualizar artículo existente.
+\begin{table}[htb!]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF6} & \textbf{Visualización de los datos de un artículo} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir visualizar los datos de un artículo.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para visualizar un artículo existente.
+				\item El sistema debe mostrar toda la información almacenada sobre un artículo. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF6}
+\end{table}
+
 % Tabla para buscar un artículo.
 \begin{table}[htb!]
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF6} & \textbf{Búsqueda de un artículo por nombre} \\
+		\rowcolor{grayshade} \textbf{RF7} & \textbf{Búsqueda de un artículo por nombre} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -188,7 +213,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF6}
+	\caption{RF7}
 \end{table}
 
 % Tabla para categorizar un artículo.
@@ -196,24 +221,24 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF7} & \textbf{Categorización de un artículo} \\
+		\rowcolor{grayshade} \textbf{RF8} & \textbf{Categorización de un artículo} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
-		\textbf{Descripción} & El sistema debe ser capaz de ordenar los artículos en categorías.\\
+		\textbf{Descripción} & El sistema debe ser capaz de filtrar los artículos según su categoría.\\
 		\hline
 		\vspace{0.5mm}
 		\textbf{Criterios de aceptación} & 
 		\begin{minipage}[t]{0.9\linewidth}
 			\begin{enumerate}
 				\item El usuario debe establecer la categoría del artículo de forma correcta.
-				\item El sistema debe ordenar los artículos en base a las categorías especificadas. 
+				\item El sistema debe ser capaz de mostrar solo los artículos de la categoría especificada. 
 			\end{enumerate}
 			\vspace{2mm}
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF7}
+	\caption{RF8}
 \end{table}
 
 % Tabla para mostrar la lista de artículos existentes.
@@ -221,7 +246,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF8} & \textbf{Visualización de la lista de artículos existentes} \\
+		\rowcolor{grayshade} \textbf{RF9} & \textbf{Visualización de la lista de artículos existentes} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -231,13 +256,13 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\textbf{Criterios de aceptación} & 
 		\begin{minipage}[t]{0.9\linewidth}
 			\begin{enumerate}
-				\item El sistema debe ser capaz de mostrar los artículos existentes en la base de datos en una lista. 
+				\item El sistema debe ser capaz de mostrar los artículos existentes en la base de datos en forma de lista. 
 			\end{enumerate}
 			\vspace{2mm}
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF8}
+	\caption{RF9}
 \end{table}
 
 \clearpage
@@ -249,7 +274,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF9} & \textbf{Actualización del inventario de forma automática} \\
+		\rowcolor{grayshade} \textbf{RF10} & \textbf{Actualización del inventario de forma automática} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -265,7 +290,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF9}
+	\caption{RF10}
 \end{table}
 
 % Tabla para visualización de la lista de renovación de artículos.
@@ -273,7 +298,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF10} & \textbf{Visualización de lista de renovación de artículos} \\
+		\rowcolor{grayshade} \textbf{RF11} & \textbf{Visualización de lista de renovación de artículos} \\
 		\hline
 		\textbf{Prioridad} & Media \\
 		\hline
@@ -290,7 +315,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF10}
+	\caption{RF11}
 \end{table}
 
 \subsubsection{Gestión de clientes}
@@ -300,7 +325,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF11} & \textbf{Registro de un nuevo cliente habitual} \\
+		\rowcolor{grayshade} \textbf{RF12} & \textbf{Registro de un nuevo cliente habitual} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -319,7 +344,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF11}
+	\caption{RF12}
 \end{table}
 
 % Tabla para editar los datos de un cliente.
@@ -327,7 +352,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF12} & \textbf{Edición de los datos de un cliente existente} \\
+		\rowcolor{grayshade} \textbf{RF13} & \textbf{Edición de los datos de un cliente existente} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -345,7 +370,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF12}
+	\caption{RF13}
 \end{table}
 
 % Tabla para eliminar un cliente existente.
@@ -353,7 +378,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF13} & \textbf{Eliminación de un cliente existente} \\
+		\rowcolor{grayshade} \textbf{RF14} & \textbf{Eliminación de un cliente existente} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -372,7 +397,32 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF13}
+	\caption{RF14}
+\end{table}
+
+% Tabla para visualización de los datos de un cliente existente.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF15} & \textbf{Visualización de los datos de un cliente} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe permitir visualizar los datos de un cliente existente.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para visualizar los datos de un cliente. 
+				\item El sistema debe mostrar toda la información almacenada sobre un cliente. 
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF15}
 \end{table}
 
 % Tabla para visualizar la lista de clientes actuales.
@@ -380,7 +430,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF14} & \textbf{Visualización de la lista de clientes existentes} \\
+		\rowcolor{grayshade} \textbf{RF16} & \textbf{Visualización de la lista de clientes existentes} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -396,7 +446,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF14}
+	\caption{RF16}
 \end{table}
 
 % Tabla para buscar un cliente por nombre.
@@ -404,7 +454,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF15} & \textbf{Búsqueda de un cliente por nombre} \\
+		\rowcolor{grayshade} \textbf{RF17} & \textbf{Búsqueda de un cliente por nombre} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -422,7 +472,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF15}
+	\caption{RF17}
 \end{table}
 
 % Tabla para filtrar clientes con préstamos.
@@ -430,7 +480,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF16} & \textbf{Filtrado de clientes con préstamos} \\
+		\rowcolor{grayshade} \textbf{RF18} & \textbf{Filtrado de clientes con préstamos} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -447,7 +497,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF16}
+	\caption{RF18}
 \end{table}
 
 
@@ -458,27 +508,58 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF17} & \textbf{Introducción de un nuevo movimiento} \\
+		\rowcolor{grayshade} \textbf{RF19} & \textbf{Introducción de una nueva venta} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
-		\textbf{Descripción} & El sistema debe ser capaz añadir un nuevo movimiento (venta o préstamo).\\
+		\textbf{Descripción} & El sistema debe ser capaz añadir una nueva venta al sistema.\\
 		\hline
 		\vspace{0.5mm}
 		\textbf{Criterios de aceptación} & 
 		\begin{minipage}[t]{0.9\linewidth}
 			\begin{enumerate}
-				\item Debe existir una opción visible para añadir un nuevo movimiento.
-				\item Verificar que los campos obligatorios no estén vacíos.
-				\item Verificar que la información introducida esté en un formato correcto. 
-				\item Actualizar el inventario tras la venta / préstamo. 
+				\item Debe existir una opción visible para añadir una nueva venta.
+				\item El comerciante deberá añadir los artículos y especificar la cantidad de estos.  
+				\item El sistema deberá calcular los precios parciales y el precio total de la venta. 
+				\item Se debe especificar el método de pago antes de la confirmación de la venta. 
+				\item Se puede asignar un cliente a la venta de forma opcional. 
+				\item Actualizar el inventario tras la confirmación de la venta. 
 				\item Añadir el nuevo movimiento a la base de datos y actualizar la lista de movimientos existente.  
 			\end{enumerate}
 			\vspace{2mm}
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF17}
+	\caption{RF19}
+\end{table}
+
+% Tabla para añadir un nuevo movimiento.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF20} & \textbf{Introducción de un nuevo préstamo} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz añadir un nuevo préstamo.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para añadir un nuevo préstamo.
+				\item El comerciante deberá añadir los artículos y especificar la cantidad de estos.  
+				\item El sistema deberá calcular los precios parciales y el precio total del préstamo. 
+				\item Se debe asignar un cliente de forma obligatoria para vincularlo con el préstamo. 
+				\item Actualizar el inventario tras la confirmación del préstamo. 
+				\item Añadir el nuevo movimiento a la base de datos y actualizar la lista de movimientos existente.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF20}
 \end{table}
 
 % Tabla para añadir una devolución.
@@ -486,18 +567,19 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF18} & \textbf{Introducción de una devolución} \\
+		\rowcolor{grayshade} \textbf{RF21} & \textbf{Introducción de una devolución} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
-		\textbf{Descripción} & El sistema debe ser capaz de registrar una devolución de una venta o préstamo anterior.\\
+		\textbf{Descripción} & El sistema debe ser capaz de registrar una devolución de una venta.\\
 		\hline
 		\vspace{0.5mm}
 		\textbf{Criterios de aceptación} & 
 		\begin{minipage}[t]{0.9\linewidth}
 			\begin{enumerate}
-				\item Tras encontrar la venta o préstamo que queremos devolver, debe existir una opción visible para realizar la devolución.
-				\item Indicar los productos que se van a devolver (puede ser la venta / préstamo integro o una parte de este).
+				\item Tras encontrar la venta que queremos devolver en la lista de movimientos existentes, debe existir una opción visible para realizar la devolución.
+				\item Indicar los productos que se van a devolver (puede ser la venta integra o una parte de esta).
+				\item Indicar el método de devolución de dinero que se va a utilizar (devolución en metálico o dinero a favor en próximas compras).
 				\item Actualizar el inventario tras la devolución. 
 				\item Añadir la devolución a la base de datos y actualizar la lista de movimientos.  
 			\end{enumerate}
@@ -505,7 +587,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF18}
+	\caption{RF21}
 \end{table}
 
 
@@ -514,7 +596,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF19} & \textbf{Eliminación de un  movimiento} \\
+		\rowcolor{grayshade} \textbf{RF22} & \textbf{Eliminación de un  movimiento} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -532,7 +614,32 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF19}
+	\caption{RF22}
+\end{table}
+
+% Tabla para visualizar los datos de un movimiento existente.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF23} & \textbf{Visualización de los datos de un movimiento} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz mostrar los datos de un movimiento.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para visualizar los datos del movimiento deseado.
+				\item El sistema debe ser capaz de mostrar toda la información almacenada de un movimiento.  
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF23}
 \end{table}
 
 
@@ -541,7 +648,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF20} & \textbf{Visualización de la lista de movimientos existentes} \\
+		\rowcolor{grayshade} \textbf{RF24} & \textbf{Visualización de la lista de movimientos existentes} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -557,7 +664,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF20}
+	\caption{RF24}
 \end{table}
 
 % Tabla para filtrar la lista de movimientos.
@@ -565,7 +672,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF21} & \textbf{Filtrado de los movimientos según su tipo} \\
+		\rowcolor{grayshade} \textbf{RF25} & \textbf{Filtrado de los movimientos según su tipo} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -582,15 +689,15 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF21}
+	\caption{RF25}
 \end{table}
 
-% Tabla para filtrar la lista de movimientos.
+% Tabla para buscar en la lista de movimientos.
 \begin{table}[H]
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF22} & \textbf{Búsqueda de movimientos por fecha o cliente} \\
+		\rowcolor{grayshade} \textbf{RF26} & \textbf{Búsqueda de movimientos por fecha o cliente} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -608,7 +715,33 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF22}
+	\caption{RF26}
+\end{table}
+
+% Tabla para buscar en la lista de movimientos.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RF27} & \textbf{Generación de una compra a partir de un préstamo} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser capaz de generar un movimiento de venta a partir de un préstamo.\\
+		\hline
+		\vspace{0.5mm}
+		\textbf{Criterios de aceptación} & 
+		\begin{minipage}[t]{0.9\linewidth}
+			\begin{enumerate}
+				\item Debe existir una opción visible para comprar los artículos deseados de un préstamo.
+				\item El usuario debe marcar aquellos artículos que el cliente desea comprar.
+				\item El sistema debe eliminar el movimiento de tipo préstamo y generar a partir de los artículos indicados un movimiento de tipo venta.   
+			\end{enumerate}
+			\vspace{2mm}
+		\end{minipage} \\
+		\hline
+	\end{tabular}
+	\caption{RF27}
 \end{table}
 
 
@@ -620,7 +753,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
  	\centering % Centra la tabla en la página
  	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
  		\hline
- 		\rowcolor{grayshade} \textbf{RF23} & \textbf{Visualización de la caja diaria} \\
+ 		\rowcolor{grayshade} \textbf{RF28} & \textbf{Visualización de la caja diaria} \\
  		\hline
  		\textbf{Prioridad} & Alta \\
  		\hline
@@ -636,7 +769,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
  		\end{minipage} \\
  		\hline
  	\end{tabular}
- 	\caption{RF23}
+ 	\caption{RF28}
  \end{table}
 
  % Tabla para filtrar la lista de movimientos.
@@ -644,7 +777,7 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RF24} & \textbf{Visualización de gráficas} \\
+		\rowcolor{grayshade} \textbf{RF29} & \textbf{Visualización de gráficas} \\
 		\hline
 		\textbf{Prioridad} & Media \\
 		\hline
@@ -662,9 +795,11 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 		\end{minipage} \\
 		\hline
 	\end{tabular}
-	\caption{RF24}
+	\caption{RF29}
 \end{table}
 
+
+\newpage
 
 \subsection{Requisitos no funcionales}
 
