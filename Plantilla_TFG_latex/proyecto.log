@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.5)  12 FEB 2024 11:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.5)  13 FEB 2024 11:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,7 +504,7 @@ LaTeX Info: Redefining \nameref on input line 92.
 
  (./portada/portada.tex
 \centeroffset=\skip67
-<imagenes/logo_ugr.jpg, id=116, 777.90625pt x 231.86626pt>
+<imagenes/logo_ugr.jpg, id=120, 777.90625pt x 231.86626pt>
 File: imagenes/logo_ugr.jpg Graphic file (type jpg)
 <use imagenes/logo_ugr.jpg>
 Package pdftex.def Info: imagenes/logo_ugr.jpg  used on input line 12.
@@ -515,7 +515,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 23.
-<imagenes/etsiit_logo.png, id=117, 110.814pt x 40.4712pt>
+<imagenes/etsiit_logo.png, id=121, 110.814pt x 40.4712pt>
 File: imagenes/etsiit_logo.png Graphic file (type png)
 <use imagenes/etsiit_logo.png>
 Package pdftex.def Info: imagenes/etsiit_logo.png  used on input line 32.
@@ -526,12 +526,12 @@ Package pdftex.def Info: imagenes/etsiit_logo.png  used on input line 32.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imagenes/logo_ugr.jpg> <
 ./imagenes/etsiit_logo.png>]) (./prefacios/prefacio.tex (./portada/portada_2.te
 x
-<imagenes/logo.png, id=129, 123.46124pt x 45.92157pt>
+<imagenes/logo.png, id=133, 123.46124pt x 45.92157pt>
 File: imagenes/logo.png Graphic file (type png)
 <use imagenes/logo.png>
 Package pdftex.def Info: imagenes/logo.png  used on input line 21.
 (pdftex.def)             Requested size: 123.46092pt x 45.92145pt.
-<imagenes/tstc.png, id=130, 170.6375pt x 129.48375pt>
+<imagenes/tstc.png, id=134, 170.6375pt x 129.48375pt>
 File: imagenes/tstc.png Graphic file (type png)
 <use imagenes/tstc.png>
 Package pdftex.def Info: imagenes/tstc.png  used on input line 39.
@@ -870,91 +870,103 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 810--823
 
 ) (./capitulos/04_Diseno.tex [37]
 Cap\'{\i }tulo 4.
-<imagenes/pantalla_principal.JPG, id=508, 1003.75pt x 1470.49374pt>
-File: imagenes/pantalla_principal.JPG Graphic file (type jpg)
-<use imagenes/pantalla_principal.JPG>
-Package pdftex.def Info: imagenes/pantalla_principal.JPG  used on input line 10
-.
-(pdftex.def)             Requested size: 288.0011pt x 421.92226pt.
+<imagenes/inicio_sesion.JPG, id=515, 1003.75pt x 1453.43pt>
+File: imagenes/inicio_sesion.JPG Graphic file (type jpg)
+<use imagenes/inicio_sesion.JPG>
+Package pdftex.def Info: imagenes/inicio_sesion.JPG  used on input line 12.
+(pdftex.def)             Requested size: 251.9989pt x 364.88686pt.
 
-Overfull \hbox (61.92226pt too wide) in paragraph at lines 10--11
- [][] 
- []
-
-<imagenes/pantalla_clientes.JPG, id=509, 1002.74625pt x 1290.8225pt>
-File: imagenes/pantalla_clientes.JPG Graphic file (type jpg)
-<use imagenes/pantalla_clientes.JPG>
-Package pdftex.def Info: imagenes/pantalla_clientes.JPG  used on input line 21.
-
-(pdftex.def)             Requested size: 288.0011pt x 370.7442pt.
-
-Overfull \hbox (10.7442pt too wide) in paragraph at lines 21--22
+Overfull \hbox (4.88686pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
 [38
 
- <./imagenes/pantalla_principal.JPG>] [39 <./imagenes/pantalla_clientes.JPG>]
-<imagenes/pantalla_articulos.JPG, id=518, 1003.75pt x 1293.83376pt>
+ <./imagenes/inicio_sesion.JPG>]
+<imagenes/pantalla_principal.JPG, id=520, 1003.75pt x 1470.49374pt>
+File: imagenes/pantalla_principal.JPG Graphic file (type jpg)
+<use imagenes/pantalla_principal.JPG>
+Package pdftex.def Info: imagenes/pantalla_principal.JPG  used on input line 24
+.
+(pdftex.def)             Requested size: 288.0011pt x 421.92226pt.
+
+Overfull \hbox (61.92226pt too wide) in paragraph at lines 24--25
+ [][] 
+ []
+
+[39 <./imagenes/pantalla_principal.JPG>]
+<imagenes/pantalla_clientes.JPG, id=525, 1002.74625pt x 1290.8225pt>
+File: imagenes/pantalla_clientes.JPG Graphic file (type jpg)
+<use imagenes/pantalla_clientes.JPG>
+Package pdftex.def Info: imagenes/pantalla_clientes.JPG  used on input line 38.
+
+(pdftex.def)             Requested size: 288.0011pt x 370.7442pt.
+
+Overfull \hbox (10.7442pt too wide) in paragraph at lines 38--39
+ [][] 
+ []
+
+[40 <./imagenes/pantalla_clientes.JPG>]
+<imagenes/pantalla_articulos.JPG, id=530, 1003.75pt x 1293.83376pt>
 File: imagenes/pantalla_articulos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_articulos.JPG>
-Package pdftex.def Info: imagenes/pantalla_articulos.JPG  used on input line 32
+Package pdftex.def Info: imagenes/pantalla_articulos.JPG  used on input line 52
 .
 (pdftex.def)             Requested size: 288.0011pt x 371.23398pt.
 
-Overfull \hbox (11.23398pt too wide) in paragraph at lines 32--33
+Overfull \hbox (11.23398pt too wide) in paragraph at lines 52--53
  [][] 
  []
 
-[40 <./imagenes/pantalla_articulos.JPG>]
-<imagenes/pantalla_movimientos.JPG, id=523, 1002.74625pt x 1309.89375pt>
+[41 <./imagenes/pantalla_articulos.JPG>]
+<imagenes/pantalla_movimientos.JPG, id=536, 1002.74625pt x 1309.89375pt>
 File: imagenes/pantalla_movimientos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_movimientos.JPG>
 Package pdftex.def Info: imagenes/pantalla_movimientos.JPG  used on input line 
-44.
+67.
 (pdftex.def)             Requested size: 288.0011pt x 376.22177pt.
 
-Overfull \hbox (16.22177pt too wide) in paragraph at lines 44--45
+Overfull \hbox (16.22177pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-[41 <./imagenes/pantalla_movimientos.JPG>]
-<imagenes/pantalla_graficos.JPG, id=529, 1003.75pt x 1426.32875pt>
+[42 <./imagenes/pantalla_movimientos.JPG>]
+<imagenes/pantalla_graficos.JPG, id=541, 1003.75pt x 1426.32875pt>
 File: imagenes/pantalla_graficos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_graficos.JPG>
-Package pdftex.def Info: imagenes/pantalla_graficos.JPG  used on input line 55.
+Package pdftex.def Info: imagenes/pantalla_graficos.JPG  used on input line 83.
 
 (pdftex.def)             Requested size: 288.0011pt x 409.25018pt.
 
-Overfull \hbox (49.25018pt too wide) in paragraph at lines 55--56
+Overfull \hbox (49.25018pt too wide) in paragraph at lines 83--84
  [][] 
  []
 
-) [42 <./imagenes/pantalla_graficos.JPG>] (./proyecto.aux
+) [43 <./imagenes/pantalla_graficos.JPG>] (./proyecto.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `proyecto.out' has not changed.
-(rerunfilecheck)             Checksum: 2E5131FE04DB0281D407F7576139AD66;4253.
+(rerunfilecheck)             Checksum: EE513956F4DB17F99351305B7E5887D8;4580.
  ) 
 Here is how much of TeX's memory you used:
- 13008 strings out of 480185
- 204700 string characters out of 5894214
- 528261 words of memory out of 5000000
- 30534 multiletter control sequences out of 15000+600000
+ 13028 strings out of 480185
+ 205074 string characters out of 5894214
+ 528331 words of memory out of 5000000
+ 30550 multiletter control sequences out of 15000+600000
  476376 words of font info for 51 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 60i,14n,63p,842b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,14n,63p,1030b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/julia/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600
 pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on proyecto.pdf (44 pages, 883941 bytes).
+Output written on proyecto.pdf (45 pages, 980681 bytes).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 535 compressed objects within 6 object streams
- 215 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 549 compressed objects within 6 object streams
+ 218 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

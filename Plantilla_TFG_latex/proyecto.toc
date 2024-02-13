@@ -35,8 +35,9 @@
 \contentsline {section}{\numberline {3.3}Modelos de comportamiento}{37}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Diseño}{38}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Diseño de la interfaz gráfica}{38}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Pantalla principal}{38}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Pantalla de clientes}{39}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Pantalla de artículos}{40}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Pantalla de movimientos}{41}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Pantalla de gráficos}{42}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.1}Pantalla de inicio de sesión}{38}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Pantalla principal}{39}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Pantalla de clientes}{40}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Pantalla de artículos}{41}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Pantalla de movimientos}{42}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Pantalla de gráficos y cierre de sesión}{43}{subsection.4.1.6}%
