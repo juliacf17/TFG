@@ -24,29 +24,32 @@
 \contentsline {chapter}{\numberline {4}Estudio de aplicaciones similares}{21}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Análisis de usabilidad y accesibilidad}{23}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Legislación actual de protección de datos}{24}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Análisis de tecnologías a utilizar}{25}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Tecnología de documentación}{25}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Dispositivo destino para la aplicación}{25}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Análisis}{26}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Especificación de requisitos}{26}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Requisitos funcionales}{26}{subsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.1.1}Apertura y cierra de sesión}{27}{subsubsection.8.1.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.1.2}Gestión de artículos}{28}{subsubsection.8.1.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.1.3}Gestión de inventario}{32}{subsubsection.8.1.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.1.4}Gestión de clientes}{33}{subsubsection.8.1.1.4}%
-\contentsline {subsubsection}{\numberline {8.1.1.5}Gestión de movimientos}{37}{subsubsection.8.1.1.5}%
-\contentsline {subsubsection}{\numberline {8.1.1.6}Gestión de resúmenes y gráficas}{43}{subsubsection.8.1.1.6}%
-\contentsline {subsection}{\numberline {8.1.2}Requisitos no funcionales}{44}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Modelos de caso de uso}{44}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Diagrama de casos de uso}{44}{subsection.8.2.1}%
-\contentsline {section}{\numberline {8.3}Modelos de comportamiento}{44}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Diseño}{45}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Diseño de la interfaz gráfica}{45}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Pantalla de inicio de sesión}{45}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Pantalla principal}{46}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Pantalla de clientes}{47}{subsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.1.4}Pantalla de artículos}{48}{subsection.9.1.4}%
-\contentsline {subsection}{\numberline {9.1.5}Pantalla de movimientos}{49}{subsection.9.1.5}%
-\contentsline {subsection}{\numberline {9.1.6}Pantalla de gráficos y cierre de sesión}{50}{subsection.9.1.6}%
-\contentsline {chapter}{\numberline {10}Validación de la aplicación por el usuario}{51}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Bibliografía}{52}{chapter.11}%
+\contentsline {chapter}{\numberline {7}Análisis de tecnologías a utilizar}{26}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Tecnología de documentación}{26}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Dispositivo destino para la aplicación}{26}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Tecnología para la realización de los diagramas de casos de uso}{26}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Tecnología para el diseño de los bocetos}{27}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Metodología de desarrollo de la aplicación}{27}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Análisis}{28}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Especificación de requisitos}{28}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Requisitos funcionales}{28}{subsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.1.1}Apertura y cierra de sesión}{29}{subsubsection.8.1.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.1.2}Gestión de artículos}{30}{subsubsection.8.1.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.1.3}Gestión de inventario}{34}{subsubsection.8.1.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.1.4}Gestión de clientes}{35}{subsubsection.8.1.1.4}%
+\contentsline {subsubsection}{\numberline {8.1.1.5}Gestión de movimientos}{39}{subsubsection.8.1.1.5}%
+\contentsline {subsubsection}{\numberline {8.1.1.6}Gestión de resúmenes y gráficas}{45}{subsubsection.8.1.1.6}%
+\contentsline {subsection}{\numberline {8.1.2}Requisitos no funcionales}{46}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Modelos de caso de uso}{46}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Diagrama de casos de uso}{46}{subsection.8.2.1}%
+\contentsline {section}{\numberline {8.3}Modelos de comportamiento}{46}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Diseño}{47}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Diseño de la interfaz gráfica}{47}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Pantalla de inicio de sesión}{47}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Pantalla principal}{48}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Pantalla de clientes}{49}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Pantalla de artículos}{50}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.1.5}Pantalla de movimientos}{51}{subsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.1.6}Pantalla de gráficos y cierre de sesión}{52}{subsection.9.1.6}%
+\contentsline {chapter}{\numberline {10}Validación de la aplicación por el usuario}{53}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Bibliografía}{54}{chapter.11}%
