@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.5)  13 FEB 2024 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.5)  16 FEB 2024 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -364,40 +364,57 @@ LaTeX Warning: Command \markboth  has changed.
 LaTeX Warning: Command \markright  has changed.
                Check if current package is valid.
 
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen155
+\TX@old@table=\dimen156
+\TX@old@col=\dimen157
+\TX@target=\dimen158
+\TX@delta=\dimen159
+\TX@cols=\count292
+\TX@ftn=\toks32
 )
-\idxtitle@default=\toks32
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+\idxtitle@default=\toks33
 \tf@default=\write3
 \openout3 = `proyecto.idx'.
 
-Package index Info: Writing index file proyecto.idx on input line 60.
+Package index Info: Writing index file proyecto.idx on input line 64.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 67.
+less on input line 70.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 68.
+less on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen155
-\lightrulewidth=\dimen156
-\cmidrulewidth=\dimen157
-\belowrulesep=\dimen158
-\belowbottomsep=\dimen159
-\aboverulesep=\dimen160
-\abovetopsep=\dimen161
-\cmidrulesep=\dimen162
-\cmidrulekern=\dimen163
-\defaultaddspace=\dimen164
-\@cmidla=\count292
-\@cmidlb=\count293
-\@aboverulesep=\dimen165
-\@belowrulesep=\dimen166
-\@thisruleclass=\count294
-\@lastruleclass=\count295
-\@thisrulewidth=\dimen167
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count293
+\@cmidlb=\count294
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count295
+\@lastruleclass=\count296
+\@thisrulewidth=\dimen172
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
@@ -407,7 +424,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 LaTeX Info: Redefining \color on input line 711.
-\rownum=\count296
+\rownum=\count297
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
@@ -420,7 +437,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count297
+\l__color_backend_stack_int=\count298
 \l__pdf_internal_box=\box64
 )
 (./proyecto.aux
@@ -429,41 +446,41 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `proyecto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-\c@lstlisting=\count298
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+\c@lstlisting=\count299
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen168
+\scratchcounter=\count300
+\scratchdimen=\dimen173
 \scratchbox=\box65
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen169
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks34
+\nofMPsegments=\count301
+\nofMParguments=\count302
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen174
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -481,7 +498,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 92.
+Package hyperref Info: Link coloring OFF on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -492,11 +509,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count305
+\c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 95.
+LaTeX Info: Redefining \pageref on input line 95.
+LaTeX Info: Redefining \nameref on input line 95.
 
 (./proyecto.out) (./proyecto.out)
 \@outlinefile=\write4
@@ -504,7 +521,7 @@ LaTeX Info: Redefining \nameref on input line 92.
 
  (./portada/portada.tex
 \centeroffset=\skip67
-<imagenes/logo_ugr.jpg, id=120, 777.90625pt x 231.86626pt>
+<imagenes/logo_ugr.jpg, id=156, 777.90625pt x 231.86626pt>
 File: imagenes/logo_ugr.jpg Graphic file (type jpg)
 <use imagenes/logo_ugr.jpg>
 Package pdftex.def Info: imagenes/logo_ugr.jpg  used on input line 12.
@@ -515,7 +532,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 23.
-<imagenes/etsiit_logo.png, id=121, 110.814pt x 40.4712pt>
+<imagenes/etsiit_logo.png, id=157, 110.814pt x 40.4712pt>
 File: imagenes/etsiit_logo.png Graphic file (type png)
 <use imagenes/etsiit_logo.png>
 Package pdftex.def Info: imagenes/etsiit_logo.png  used on input line 32.
@@ -526,12 +543,12 @@ Package pdftex.def Info: imagenes/etsiit_logo.png  used on input line 32.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imagenes/logo_ugr.jpg> <
 ./imagenes/etsiit_logo.png>]) (./prefacios/prefacio.tex (./portada/portada_2.te
 x
-<imagenes/logo.png, id=133, 123.46124pt x 45.92157pt>
+<imagenes/logo.png, id=169, 123.46124pt x 45.92157pt>
 File: imagenes/logo.png Graphic file (type png)
 <use imagenes/logo.png>
 Package pdftex.def Info: imagenes/logo.png  used on input line 21.
 (pdftex.def)             Requested size: 123.46092pt x 45.92145pt.
-<imagenes/tstc.png, id=134, 170.6375pt x 129.48375pt>
+<imagenes/tstc.png, id=170, 170.6375pt x 129.48375pt>
 File: imagenes/tstc.png Graphic file (type png)
 <use imagenes/tstc.png>
 Package pdftex.def Info: imagenes/tstc.png  used on input line 39.
@@ -613,46 +630,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 ] (./proyecto.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [6
+
+])
 \tf@toc=\write5
 \openout5 = `proyecto.toc'.
 
- [6
-
-] (./proyecto.lof
+ [7] (./proyecto.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write6
 \openout6 = `proyecto.lof'.
 
- [7
+ [8
 
 ] (./proyecto.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [8
+ [9
 
 ])
 \tf@lot=\write7
 \openout7 = `proyecto.lot'.
 
 
-(./capitulos/01_Introduccion.tex [9]
+(./capitulos/01_Introduccion.tex [10]
 Cap\'{\i }tulo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
 
-[10
+[11
 
-] [11] [12]) (./capitulos/02_Planificacion.tex [13]
+] [12] [13] [14]) (./capitulos/02_Planificacion.tex
 Cap\'{\i }tulo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
@@ -664,9 +681,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[14
+[15
 
-] [15] [16]
+] [16] [17]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
@@ -682,7 +699,7 @@ Overfull \hbox (4.36919pt too wide) in paragraph at lines 96--97
 a me-dia de 22.000\TS1/cmr/m/n/10.95 ¿
  []
 
-[17]
+[18]
 Underfull \hbox (badness 6157) in paragraph at lines 115--115
 []|\OT1/cmr/bx/n/10.95 Recursos ma-te-ria-
  []
@@ -692,14 +709,84 @@ Overfull \hbox (37.60547pt too wide) in paragraph at lines 109--124
  [][] 
  []
 
-) (./capitulos/03_Analisis.tex [18]
+) (./capitulos/03_Analisis_comercios.tex [19]
 Cap\'{\i }tulo 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[19
+) (./capitulos/04_Estudio_apps.tex [20
+
+]
+Cap\'{\i }tulo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+[21
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 68--68
+[]\OT1/cmr/m/n/10.95 No es ne-ce-sa-rio un
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 68--68
+\OT1/cmr/m/n/10.95 pun-to de ven-ta on-li-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+
+ []
+
+
+LaTeX Warning: Float too large for page by 26.22543pt on input line 70.
+
+[22]) (./capitulos/05_Accesibilidad.tex
+Cap\'{\i }tulo 5.
+) (./capitulos/06_Proteccion_datos.tex [23
+
+
+
+]
+Cap\'{\i }tulo 6.
+) (./capitulos/07_Tecnologias.tex [24
+
+]
+Cap\'{\i }tulo 7.
+) (./capitulos/08_Analisis.tex [25
+
+]
+Cap\'{\i }tulo 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[26
 
 ]
 Underfull \hbox (badness 1688) in paragraph at lines 49--50
@@ -711,7 +798,7 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 34--56
  [][] 
  []
 
-[20]
+[27]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 64--83
  [][] 
  []
@@ -751,7 +838,7 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 247--265
  [][] 
  []
 
-[21] [22] [23] [24]
+[28] [29] [30] [31]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 275--293
  [][] 
  []
@@ -771,7 +858,7 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 326--347
  [][] 
  []
 
-[25
+[32
 
 ]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 353--373
@@ -783,7 +870,7 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 379--400
  [][] 
  []
 
-[26]
+[33]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 406--425
  [][] 
  []
@@ -793,7 +880,7 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 431--449
  [][] 
  []
 
-[27]
+[34]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 455--475
  [][] 
  []
@@ -803,27 +890,27 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 481--500
  [][] 
  []
 
-[28]
+[35]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 509--533
  [][] 
  []
 
-[29]
+[36]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 539--562
  [][] 
  []
 
-[30]
+[37]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 568--590
  [][] 
  []
 
-[31]
+[38]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 597--617
  [][] 
  []
 
-[32]
+[39]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 623--642
  [][] 
  []
@@ -833,7 +920,7 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 649--667
  [][] 
  []
 
-[33]
+[40]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 673--692
  [][] 
  []
@@ -848,7 +935,7 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 698--718
  [][] 
  []
 
-[34]
+[41]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 724--744
  [][] 
  []
@@ -858,19 +945,19 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 754--772
  [][] 
  []
 
-[35]
+[42]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 778--798
  [][] 
  []
 
-[36]
+[43]
 Overfull \hbox (7.20438pt too wide) in paragraph at lines 810--823
  [][] 
  []
 
-) (./capitulos/04_Diseno.tex [37]
-Cap\'{\i }tulo 4.
-<imagenes/inicio_sesion.JPG, id=515, 1003.75pt x 1453.43pt>
+) (./capitulos/09_Diseno.tex [44]
+Cap\'{\i }tulo 9.
+<imagenes/inicio_sesion.JPG, id=593, 1003.75pt x 1453.43pt>
 File: imagenes/inicio_sesion.JPG Graphic file (type jpg)
 <use imagenes/inicio_sesion.JPG>
 Package pdftex.def Info: imagenes/inicio_sesion.JPG  used on input line 12.
@@ -880,10 +967,10 @@ Overfull \hbox (4.88686pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
-[38
+[45
 
  <./imagenes/inicio_sesion.JPG>]
-<imagenes/pantalla_principal.JPG, id=520, 1003.75pt x 1470.49374pt>
+<imagenes/pantalla_principal.JPG, id=598, 1003.75pt x 1470.49374pt>
 File: imagenes/pantalla_principal.JPG Graphic file (type jpg)
 <use imagenes/pantalla_principal.JPG>
 Package pdftex.def Info: imagenes/pantalla_principal.JPG  used on input line 24
@@ -894,8 +981,8 @@ Overfull \hbox (61.92226pt too wide) in paragraph at lines 24--25
  [][] 
  []
 
-[39 <./imagenes/pantalla_principal.JPG>]
-<imagenes/pantalla_clientes.JPG, id=525, 1002.74625pt x 1290.8225pt>
+[46 <./imagenes/pantalla_principal.JPG>]
+<imagenes/pantalla_clientes.JPG, id=603, 1002.74625pt x 1290.8225pt>
 File: imagenes/pantalla_clientes.JPG Graphic file (type jpg)
 <use imagenes/pantalla_clientes.JPG>
 Package pdftex.def Info: imagenes/pantalla_clientes.JPG  used on input line 38.
@@ -906,8 +993,8 @@ Overfull \hbox (10.7442pt too wide) in paragraph at lines 38--39
  [][] 
  []
 
-[40 <./imagenes/pantalla_clientes.JPG>]
-<imagenes/pantalla_articulos.JPG, id=530, 1003.75pt x 1293.83376pt>
+[47 <./imagenes/pantalla_clientes.JPG>]
+<imagenes/pantalla_articulos.JPG, id=609, 1003.75pt x 1293.83376pt>
 File: imagenes/pantalla_articulos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_articulos.JPG>
 Package pdftex.def Info: imagenes/pantalla_articulos.JPG  used on input line 52
@@ -918,8 +1005,8 @@ Overfull \hbox (11.23398pt too wide) in paragraph at lines 52--53
  [][] 
  []
 
-[41 <./imagenes/pantalla_articulos.JPG>]
-<imagenes/pantalla_movimientos.JPG, id=536, 1002.74625pt x 1309.89375pt>
+[48 <./imagenes/pantalla_articulos.JPG>]
+<imagenes/pantalla_movimientos.JPG, id=614, 1002.74625pt x 1309.89375pt>
 File: imagenes/pantalla_movimientos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_movimientos.JPG>
 Package pdftex.def Info: imagenes/pantalla_movimientos.JPG  used on input line 
@@ -930,8 +1017,8 @@ Overfull \hbox (16.22177pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-[42 <./imagenes/pantalla_movimientos.JPG>]
-<imagenes/pantalla_graficos.JPG, id=541, 1003.75pt x 1426.32875pt>
+[49 <./imagenes/pantalla_movimientos.JPG>]
+<imagenes/pantalla_graficos.JPG, id=619, 1003.75pt x 1426.32875pt>
 File: imagenes/pantalla_graficos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_graficos.JPG>
 Package pdftex.def Info: imagenes/pantalla_graficos.JPG  used on input line 83.
@@ -942,31 +1029,39 @@ Overfull \hbox (49.25018pt too wide) in paragraph at lines 83--84
  [][] 
  []
 
-) [43 <./imagenes/pantalla_graficos.JPG>] (./proyecto.aux
+) (./capitulos/10_Validacion.tex [50 <./imagenes/pantalla_graficos.JPG>]
+Cap\'{\i }tulo 10.
+) (./capitulos/11_Bibliografia.tex [51
+
+]
+Cap\'{\i }tulo 11.
+) [52
+
+] (./proyecto.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `proyecto.out' has not changed.
-(rerunfilecheck)             Checksum: EE513956F4DB17F99351305B7E5887D8;4580.
+(rerunfilecheck)             Checksum: B12D234F9C4AD2EDE0AE235A3A4878D1;6632.
  ) 
 Here is how much of TeX's memory you used:
- 13028 strings out of 480185
- 205074 string characters out of 5894214
- 528331 words of memory out of 5000000
- 30550 multiletter control sequences out of 15000+600000
+ 13226 strings out of 480185
+ 209340 string characters out of 5894214
+ 530315 words of memory out of 5000000
+ 30697 multiletter control sequences out of 15000+600000
  476376 words of font info for 51 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 60i,14n,63p,1030b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,63p,1049b,677s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/julia/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600
 pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on proyecto.pdf (45 pages, 980681 bytes).
+Output written on proyecto.pdf (54 pages, 991339 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 549 compressed objects within 6 object streams
- 218 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 629 compressed objects within 7 object streams
+ 238 named destinations out of 1000 (max. 500000)
+ 355 words of extra memory for PDF output out of 10000 (max. 10000000)
 
