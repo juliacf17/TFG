@@ -7,12 +7,42 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Diagrama de casos de uso}}{49}{figure.8.1}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Diagrama de secuencia de inicio de sesión}}{50}{figure.8.2}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Diagrama de secuencia de cierre de sesión}}{50}{figure.8.3}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Diagrama de secuencia de un nuevo artículo}}{51}{figure.8.4}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Diagrama de secuencia de edición de un artículo}}{51}{figure.8.5}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Diagrama de secuencia de eliminación de un artículo}}{52}{figure.8.6}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Diagrama de secuencia de visualización de datos de un artículo}}{52}{figure.8.7}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Diagrama de secuencia de búsqueda de un artículo}}{53}{figure.8.8}%
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Diagrama de secuencia de categorización de un artículo}}{53}{figure.8.9}%
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Diagrama de secuencia de visualización de la lista de artículos}}{54}{figure.8.10}%
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Diagrama de secuencia de actualización de inventario}}{54}{figure.8.11}%
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Diagrama de secuencia de visualización de la lista de renovación de artículos}}{55}{figure.8.12}%
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Diagrama de secuencia de registro de un cliente}}{55}{figure.8.13}%
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Diagrama de secuencia de edición de los datos de un cliente}}{56}{figure.8.14}%
+\contentsline {figure}{\numberline {8.15}{\ignorespaces Diagrama de secuencia de eliminación de un cliente}}{56}{figure.8.15}%
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Diagrama de secuencia de visualización de los datos de un cliente}}{57}{figure.8.16}%
+\contentsline {figure}{\numberline {8.17}{\ignorespaces Diagrama de secuencia de visualización de la lista de clientes}}{57}{figure.8.17}%
+\contentsline {figure}{\numberline {8.18}{\ignorespaces Diagrama de secuencia de búsqueda de un cliente}}{58}{figure.8.18}%
+\contentsline {figure}{\numberline {8.19}{\ignorespaces Diagrama de secuencia de filtrado de clientes}}{58}{figure.8.19}%
+\contentsline {figure}{\numberline {8.20}{\ignorespaces Diagrama de secuencia de nueva venta}}{59}{figure.8.20}%
+\contentsline {figure}{\numberline {8.21}{\ignorespaces Diagrama de secuencia de nuevo préstamo}}{59}{figure.8.21}%
+\contentsline {figure}{\numberline {8.22}{\ignorespaces Diagrama de secuencia de nueva devolución}}{60}{figure.8.22}%
+\contentsline {figure}{\numberline {8.23}{\ignorespaces Diagrama de secuencia de eliminación de un movimiento}}{60}{figure.8.23}%
+\contentsline {figure}{\numberline {8.24}{\ignorespaces Diagrama de secuencia de visualización de datos de un movimiento}}{61}{figure.8.24}%
+\contentsline {figure}{\numberline {8.25}{\ignorespaces Diagrama de secuencia de visualización la lista de movimientos}}{61}{figure.8.25}%
+\contentsline {figure}{\numberline {8.26}{\ignorespaces Diagrama de secuencia del filtrado de movimientos}}{62}{figure.8.26}%
+\contentsline {figure}{\numberline {8.27}{\ignorespaces Diagrama de secuencia de búsqueda de movimientos}}{62}{figure.8.27}%
+\contentsline {figure}{\numberline {8.28}{\ignorespaces Diagrama de secuencia de generación de una compra desde un préstamo}}{63}{figure.8.28}%
+\contentsline {figure}{\numberline {8.29}{\ignorespaces Diagrama de secuencia de visualización de la caja diaria}}{63}{figure.8.29}%
+\contentsline {figure}{\numberline {8.30}{\ignorespaces Diagrama de secuencia de visualización de gráficos}}{64}{figure.8.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Diseño de la pantalla de inicio de sesión.}}{47}{figure.9.1}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Diseño de la pantalla principal.}}{48}{figure.9.2}%
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Diseño de la pantalla clientes.}}{49}{figure.9.3}%
-\contentsline {figure}{\numberline {9.4}{\ignorespaces Diseño de la pantalla artículos.}}{50}{figure.9.4}%
-\contentsline {figure}{\numberline {9.5}{\ignorespaces Diseño de la pantalla movimientos.}}{51}{figure.9.5}%
-\contentsline {figure}{\numberline {9.6}{\ignorespaces Diseño de la pantalla gráficos.}}{52}{figure.9.6}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Diseño de la pantalla de inicio de sesión.}}{65}{figure.9.1}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Diseño de la pantalla principal.}}{66}{figure.9.2}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Diseño de la pantalla clientes.}}{67}{figure.9.3}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Diseño de la pantalla artículos.}}{68}{figure.9.4}%
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Diseño de la pantalla movimientos.}}{69}{figure.9.5}%
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Diseño de la pantalla gráficos.}}{70}{figure.9.6}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,55 +1,92 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {1}Introducción}{11}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivación}{11}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objetivos del proyecto}{12}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Estructura del documento}{13}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Planificación}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Fases}{15}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Fase inicial}{15}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Fase de análisis}{15}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Fase de desarrollo}{16}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Fase de prueba y corrección}{16}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Redacción de la memoria}{16}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}Presupuesto}{17}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Recursos}{17}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Hardware}{17}{subsubsection.2.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Software}{17}{subsubsection.2.2.1.2}%
-\contentsline {subsection}{\numberline {2.2.2}Costes}{17}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Licencias}{17}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Recursos materiales}{18}{subsubsection.2.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}Recursos humanos}{18}{subsubsection.2.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.2.4}Otros}{18}{subsubsection.2.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.2.5}Total}{19}{subsubsection.2.2.2.5}%
-\contentsline {chapter}{\numberline {3}Análisis de los negocios minoristas}{20}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Estudio de aplicaciones similares}{21}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Análisis de usabilidad y accesibilidad}{23}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Legislación actual de protección de datos}{24}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Análisis de tecnologías a utilizar}{26}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Tecnología de documentación}{26}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Dispositivo destino para la aplicación}{26}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Tecnología para la realización de los diagramas de casos de uso}{26}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Tecnología para el diseño de los bocetos}{27}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Metodología de desarrollo de la aplicación}{27}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Análisis}{28}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Especificación de requisitos}{28}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Requisitos funcionales}{28}{subsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.1.1}Apertura y cierra de sesión}{29}{subsubsection.8.1.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.1.2}Gestión de artículos}{30}{subsubsection.8.1.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.1.3}Gestión de inventario}{34}{subsubsection.8.1.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.1.4}Gestión de clientes}{35}{subsubsection.8.1.1.4}%
-\contentsline {subsubsection}{\numberline {8.1.1.5}Gestión de movimientos}{39}{subsubsection.8.1.1.5}%
-\contentsline {subsubsection}{\numberline {8.1.1.6}Gestión de resúmenes y gráficas}{45}{subsubsection.8.1.1.6}%
-\contentsline {subsection}{\numberline {8.1.2}Requisitos no funcionales}{46}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Modelos de caso de uso}{46}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Diagrama de casos de uso}{46}{subsection.8.2.1}%
-\contentsline {section}{\numberline {8.3}Modelos de comportamiento}{46}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Diseño}{47}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Diseño de la interfaz gráfica}{47}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Pantalla de inicio de sesión}{47}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Pantalla principal}{48}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Pantalla de clientes}{49}{subsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.1.4}Pantalla de artículos}{50}{subsection.9.1.4}%
-\contentsline {subsection}{\numberline {9.1.5}Pantalla de movimientos}{51}{subsection.9.1.5}%
-\contentsline {subsection}{\numberline {9.1.6}Pantalla de gráficos y cierre de sesión}{52}{subsection.9.1.6}%
-\contentsline {chapter}{\numberline {10}Validación de la aplicación por el usuario}{53}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Bibliografía}{54}{chapter.11}%
+\contentsline {chapter}{\numberline {1}Introducción}{12}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivación}{12}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos del proyecto}{13}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Estructura del documento}{14}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Planificación}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Fases}{16}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Fase inicial}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Fase de análisis}{16}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Fase de desarrollo}{17}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Fase de prueba y corrección}{17}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Redacción de la memoria}{17}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Presupuesto}{18}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Recursos}{18}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Hardware}{18}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Software}{18}{subsubsection.2.2.1.2}%
+\contentsline {subsection}{\numberline {2.2.2}Costes}{18}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Licencias}{18}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Recursos materiales}{19}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Recursos humanos}{19}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}Otros}{19}{subsubsection.2.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.2.5}Total}{20}{subsubsection.2.2.2.5}%
+\contentsline {chapter}{\numberline {3}Análisis de los negocios minoristas}{21}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Estudio de aplicaciones similares}{22}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Análisis de usabilidad y accesibilidad}{24}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Legislación actual de protección de datos}{25}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Análisis de tecnologías a utilizar}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Tecnología de documentación}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Dispositivo destino para la aplicación}{27}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Tecnología para la realización de los diagramas de casos de uso}{27}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Tecnología para el diseño de los bocetos}{28}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Metodología de desarrollo de la aplicación}{28}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Análisis}{29}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Especificación de requisitos}{29}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Requisitos funcionales}{29}{subsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.1.1}Apertura y cierra de sesión}{30}{subsubsection.8.1.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.1.2}Gestión de artículos}{31}{subsubsection.8.1.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.1.3}Gestión de inventario}{35}{subsubsection.8.1.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.1.4}Gestión de clientes}{36}{subsubsection.8.1.1.4}%
+\contentsline {subsubsection}{\numberline {8.1.1.5}Gestión de movimientos}{40}{subsubsection.8.1.1.5}%
+\contentsline {subsubsection}{\numberline {8.1.1.6}Gestión de resúmenes y gráficas}{46}{subsubsection.8.1.1.6}%
+\contentsline {subsection}{\numberline {8.1.2}Requisitos no funcionales}{47}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Modelos de caso de uso}{48}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Diagrama de casos de uso}{48}{subsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.1.1}Actores}{48}{subsubsection.8.2.1.1}%
+\contentsline {subsubsection}{\numberline {8.2.1.2}Diagrama}{48}{subsubsection.8.2.1.2}%
+\contentsline {section}{\numberline {8.3}Modelos de comportamiento}{50}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Apertura y cierra de sesión}{50}{subsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.1.1}Inicio de sesión}{50}{subsubsection.8.3.1.1}%
+\contentsline {subsubsection}{\numberline {8.3.1.2}Cierre de sesión}{50}{subsubsection.8.3.1.2}%
+\contentsline {subsection}{\numberline {8.3.2}Gestión de artículos}{51}{subsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.2.1}Introducción de un nuevo artículo}{51}{subsubsection.8.3.2.1}%
+\contentsline {subsubsection}{\numberline {8.3.2.2}Edición de un artículo existente}{51}{subsubsection.8.3.2.2}%
+\contentsline {subsubsection}{\numberline {8.3.2.3}Eliminación de un artículo}{52}{subsubsection.8.3.2.3}%
+\contentsline {subsubsection}{\numberline {8.3.2.4}Visualización de los datos de un artículo}{52}{subsubsection.8.3.2.4}%
+\contentsline {subsubsection}{\numberline {8.3.2.5}Búsqueda de un artículo por nombre}{53}{subsubsection.8.3.2.5}%
+\contentsline {subsubsection}{\numberline {8.3.2.6}Categorización de un artículo}{53}{subsubsection.8.3.2.6}%
+\contentsline {subsubsection}{\numberline {8.3.2.7}Visualización de la lista de artículos}{54}{subsubsection.8.3.2.7}%
+\contentsline {subsection}{\numberline {8.3.3}Gestión de inventario}{54}{subsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.3.1}Actualización del inventario de forma automática}{54}{subsubsection.8.3.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.3.2}Visualización de la lista de renovación de artículos}{55}{subsubsection.8.3.3.2}%
+\contentsline {subsection}{\numberline {8.3.4}Gestión de clientes}{55}{subsection.8.3.4}%
+\contentsline {subsubsection}{\numberline {8.3.4.1}Registro de un nuevo cliente habitual}{55}{subsubsection.8.3.4.1}%
+\contentsline {subsubsection}{\numberline {8.3.4.2}Edición de los datos de un cliente existente}{56}{subsubsection.8.3.4.2}%
+\contentsline {subsubsection}{\numberline {8.3.4.3}Eliminación de un cliente existente}{56}{subsubsection.8.3.4.3}%
+\contentsline {subsubsection}{\numberline {8.3.4.4}Visualización de los datos de un cliente}{57}{subsubsection.8.3.4.4}%
+\contentsline {subsubsection}{\numberline {8.3.4.5}Visualización la lista de clientes existentes}{57}{subsubsection.8.3.4.5}%
+\contentsline {subsubsection}{\numberline {8.3.4.6}Búsqueda de un cliente por nombre}{58}{subsubsection.8.3.4.6}%
+\contentsline {subsubsection}{\numberline {8.3.4.7}Filtrado de clientes con préstamos}{58}{subsubsection.8.3.4.7}%
+\contentsline {subsection}{\numberline {8.3.5}Gestión de movimientos}{59}{subsection.8.3.5}%
+\contentsline {subsubsection}{\numberline {8.3.5.1}Introducción de una nueva venta}{59}{subsubsection.8.3.5.1}%
+\contentsline {subsubsection}{\numberline {8.3.5.2}Introducción de un nuevo préstamo}{59}{subsubsection.8.3.5.2}%
+\contentsline {subsubsection}{\numberline {8.3.5.3}Introducción de una nueva devolución}{60}{subsubsection.8.3.5.3}%
+\contentsline {subsubsection}{\numberline {8.3.5.4}Eliminación de un movimiento}{60}{subsubsection.8.3.5.4}%
+\contentsline {subsubsection}{\numberline {8.3.5.5}Visualización de los datos de un movimiento}{61}{subsubsection.8.3.5.5}%
+\contentsline {subsubsection}{\numberline {8.3.5.6}Visualización de la lista de movimientos existentes}{61}{subsubsection.8.3.5.6}%
+\contentsline {subsubsection}{\numberline {8.3.5.7}Filtrado de los movimientos según su tipo}{62}{subsubsection.8.3.5.7}%
+\contentsline {subsubsection}{\numberline {8.3.5.8}Búsqueda de movimientos por fecha o cliente}{62}{subsubsection.8.3.5.8}%
+\contentsline {subsubsection}{\numberline {8.3.5.9}Generación de una compra a partir de un préstamo}{63}{subsubsection.8.3.5.9}%
+\contentsline {subsection}{\numberline {8.3.6}Gestión de resúmenes y gráficas}{63}{subsection.8.3.6}%
+\contentsline {subsubsection}{\numberline {8.3.6.1}Visualización de la caja diaria}{63}{subsubsection.8.3.6.1}%
+\contentsline {subsubsection}{\numberline {8.3.6.2}Visualización de gráficos}{64}{subsubsection.8.3.6.2}%
+\contentsline {chapter}{\numberline {9}Diseño}{65}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Diseño de la interfaz gráfica}{65}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Pantalla de inicio de sesión}{65}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Pantalla principal}{66}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Pantalla de clientes}{67}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Pantalla de artículos}{68}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.1.5}Pantalla de movimientos}{69}{subsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.1.6}Pantalla de gráficos y cierre de sesión}{70}{subsection.9.1.6}%
+\contentsline {chapter}{\numberline {10}Validación de la aplicación por el usuario}{71}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Bibliografía}{72}{chapter.11}%
