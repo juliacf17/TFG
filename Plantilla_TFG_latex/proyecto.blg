@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: proyecto.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bibliografia.bib
+Warning--entry type for "wikiMinorista" isn't style-file defined
+--line 10 of file bibliografia.bib
+Warning--entry type for "bbva2024brechadigital" isn't style-file defined
+--line 59 of file bibliografia.bib
+Warning--entry type for "iberdrolaBrechaDigital" isn't style-file defined
+--line 67 of file bibliografia.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 8 entries,
+            6951 wiz_defined-function locations,
+            1313 strings with 12038 characters,
+and the built_in function-call counts, 13586 in all, are:
+= -- 1789
+> -- 80
+< -- 607
++ -- 555
+- -- 24
+* -- 768
+:= -- 2444
+add.period$ -- 33
+call.type$ -- 8
+change.case$ -- 140
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 274
+empty$ -- 569
+format.name$ -- 112
+if$ -- 2686
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 0
+newline$ -- 185
+num.names$ -- 64
+pop$ -- 292
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 1006
+stack$ -- 0
+substring$ -- 595
+swap$ -- 153
+text.length$ -- 24
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 856
+warning$ -- 0
+while$ -- 44
+width$ -- 0
+write$ -- 200
+(There were 3 warnings)
