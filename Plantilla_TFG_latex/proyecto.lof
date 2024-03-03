@@ -4,41 +4,47 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de casos de uso}}{47}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de secuencia de inicio de sesión}}{48}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de secuencia de cierre de sesión}}{48}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagrama de secuencia de un nuevo artículo}}{49}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagrama de secuencia de edición de un artículo}}{49}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagrama de secuencia de eliminación de un artículo}}{50}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagrama de secuencia de visualización de datos de un artículo}}{50}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagrama de secuencia de búsqueda de un artículo}}{51}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de secuencia de categorización de un artículo}}{51}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagrama de secuencia de visualización de la lista de artículos}}{52}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Diagrama de secuencia de actualización de inventario}}{52}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Diagrama de secuencia de visualización de la lista de renovación de artículos}}{53}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Diagrama de secuencia de registro de un cliente}}{53}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Diagrama de secuencia de edición de los datos de un cliente}}{54}{figure.5.14}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Diagrama de secuencia de eliminación de un cliente}}{54}{figure.5.15}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Diagrama de secuencia de visualización de los datos de un cliente}}{55}{figure.5.16}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Diagrama de secuencia de visualización de la lista de clientes}}{55}{figure.5.17}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Diagrama de secuencia de búsqueda de un cliente}}{56}{figure.5.18}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Diagrama de secuencia de filtrado de clientes}}{56}{figure.5.19}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Diagrama de secuencia de nueva venta}}{57}{figure.5.20}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Diagrama de secuencia de nuevo préstamo}}{57}{figure.5.21}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Diagrama de secuencia de nueva devolución}}{58}{figure.5.22}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Diagrama de secuencia de eliminación de un movimiento}}{58}{figure.5.23}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Diagrama de secuencia de visualización de datos de un movimiento}}{59}{figure.5.24}%
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Diagrama de secuencia de visualización la lista de movimientos}}{59}{figure.5.25}%
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Diagrama de secuencia del filtrado de movimientos}}{60}{figure.5.26}%
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Diagrama de secuencia de búsqueda de movimientos}}{60}{figure.5.27}%
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Diagrama de secuencia de generación de una compra desde un préstamo}}{61}{figure.5.28}%
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Diagrama de secuencia de visualización de la caja diaria}}{61}{figure.5.29}%
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Diagrama de secuencia de visualización de gráficos}}{62}{figure.5.30}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de paquetes de casos de uso}}{47}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Casos de uso del inicio y cierre de sesión}}{48}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Casos de uso de la gestión de artículos}}{48}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Casos de uso de la gestión de clientes}}{49}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Casos de uso de la gestión de movimientos}}{49}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Casos de uso de la gestión de gráficos y resúmenes}}{50}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Modelo conceptual}}{55}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagrama de secuencia de inicio de sesión}}{56}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de secuencia de cierre de sesión}}{56}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagrama de secuencia de un nuevo artículo}}{57}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Diagrama de secuencia de edición de un artículo}}{57}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Diagrama de secuencia de eliminación de un artículo}}{58}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Diagrama de secuencia de visualización de datos de un artículo}}{59}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Diagrama de secuencia de búsqueda de un artículo}}{60}{figure.5.14}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Diagrama de secuencia de categorización de un artículo}}{60}{figure.5.15}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Diagrama de secuencia de visualización de la lista de artículos}}{61}{figure.5.16}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Diagrama de secuencia de actualización de inventario}}{61}{figure.5.17}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Diagrama de secuencia de visualización de la lista de renovación de artículos}}{62}{figure.5.18}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Diagrama de secuencia de registro de un cliente}}{62}{figure.5.19}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Diagrama de secuencia de edición de los datos de un cliente}}{63}{figure.5.20}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Diagrama de secuencia de eliminación de un cliente}}{63}{figure.5.21}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Diagrama de secuencia de visualización de los datos de un cliente}}{64}{figure.5.22}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Diagrama de secuencia de visualización de la lista de clientes}}{64}{figure.5.23}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Diagrama de secuencia de búsqueda de un cliente}}{65}{figure.5.24}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Diagrama de secuencia de filtrado de clientes}}{65}{figure.5.25}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Diagrama de secuencia de nueva venta}}{66}{figure.5.26}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Diagrama de secuencia de nuevo préstamo}}{67}{figure.5.27}%
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Diagrama de secuencia de nueva devolución}}{67}{figure.5.28}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Diagrama de secuencia de eliminación de un movimiento}}{68}{figure.5.29}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Diagrama de secuencia de visualización de datos de un movimiento}}{69}{figure.5.30}%
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Diagrama de secuencia de visualización la lista de movimientos}}{69}{figure.5.31}%
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Diagrama de secuencia del filtrado de movimientos}}{70}{figure.5.32}%
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Diagrama de secuencia de búsqueda de movimientos}}{70}{figure.5.33}%
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Diagrama de secuencia de generación de una compra desde un préstamo}}{71}{figure.5.34}%
+\contentsline {figure}{\numberline {5.35}{\ignorespaces Diagrama de secuencia de visualización de la caja diaria}}{71}{figure.5.35}%
+\contentsline {figure}{\numberline {5.36}{\ignorespaces Diagrama de secuencia de visualización de gráficos}}{72}{figure.5.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Diseño de la pantalla de inicio de sesión.}}{63}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Diseño de la pantalla principal.}}{64}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Diseño de la pantalla clientes.}}{65}{figure.6.3}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Diseño de la pantalla artículos.}}{66}{figure.6.4}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Diseño de la pantalla movimientos.}}{67}{figure.6.5}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Diseño de la pantalla gráficos.}}{68}{figure.6.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diseño de la pantalla de inicio de sesión.}}{73}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diseño de la pantalla principal.}}{74}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diseño de la pantalla clientes.}}{75}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diseño de la pantalla artículos.}}{76}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diseño de la pantalla movimientos.}}{77}{figure.6.5}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Diseño de la pantalla gráficos.}}{78}{figure.6.6}%
 \addvspace {10\p@ }

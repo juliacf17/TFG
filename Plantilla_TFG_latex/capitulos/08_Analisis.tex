@@ -803,24 +803,51 @@ A continuación se especificarán los requisitos funcionales del proyecto clasif
 
 \subsection{Requisitos no funcionales}
 
-Los requisitos no funcionales son los que aportan calidad al sistema. Los requisitos no funcionales que deberemos de tener en cuenta a la hora de desarrollar la aplicación son los siguientes. 
+Los requisitos no funcionales son los que aportan calidad al sistema. Los requisitos no funcionales que deberemos de tener en cuenta a la hora de desarrollar la aplicación son los siguientes.
 
-\begin{table}[h]
-	\centering
+ % Tabla para requisito no funcional.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{Código} & \textbf{Requisito} \\
+		\rowcolor{grayshade} \textbf{RNF1} & \textbf{Rendimiento} \\
 		\hline
-		\textbf{RNF1} & \textbf{Rendimiento:} El sistema debe ser capaz de dar respuesta en un tiempo adecuado para ser efectivo.  \\
+		\textbf{Prioridad} & Media \\
 		\hline
-		\textbf{RNF2} & \textbf{Seguridad:} El sistema trata con datos privados de un negocio y deben estar protegidos.  \\
-		\hline
-		\textbf{RNF3} & \textbf{Compatibilidad:} El software debe estar disponible en varios sistemas operativos (Android e IOS). \\
-		\hline
-		\textbf{RNF4} & \textbf{Fiabilidad:} El sistema debe otorgar información válida y así poder confiar en sus respuestas.  \\
+		\textbf{Descripción} & El sistema debe ser capaz de dar respuesta en menos de 5 segundos para ser efectivo.\\
 		\hline
 	\end{tabular}
-	\caption{RNF}
+	\caption{RNF1}
+\end{table}
+
+ % Tabla para requisito no funcional.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RNF2} & \textbf{Seguridad} \\
+		\hline
+		\textbf{Prioridad} & Alta \\
+		\hline
+		\textbf{Descripción} & El sistema debe proteger los datos que el encargado introduzca, especialmente los datos de los clientes.\\
+		\hline
+	\end{tabular}
+	\caption{RNF1}
+\end{table}
+
+ % Tabla para requisito no funcional.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RNF3} & \textbf{Compatibilidad} \\
+		\hline
+		\textbf{Prioridad} & Baja \\
+		\hline
+		\textbf{Descripción} & El software debe estar disponible en varios sistemas operativos (Android e IOS).\\
+		\hline
+	\end{tabular}
+	\caption{RNF3}
 \end{table}
 
 \newpage
@@ -831,24 +858,350 @@ Los requisitos no funcionales son los que aportan calidad al sistema. Los requis
 
 \subsubsection{Actores}
 
-La aplicación va dirigida a un único usuario final, por tanto, solo habrá un actor. El usuario final es el comerciante propietario de la tienda minorista y será la única persona que deberá acceder al sistema de gestión. \\
+La aplicación va dirigida a facilitar y automatizar el trabajo de un encargado de un pequeño negocio. Por tanto, el principal actor será dicho encargado. Podemos diferenciar dos actores que interaccionarán con el sistema: 
 
-\subsubsection{Diagrama}
+\begin{itemize}
+	\item \textbf{Encargado:} El comerciante propietario de la tienda minorista. 
+	\item \textbf{Cliente:} La persona que compra en el negocio y se registra en el sistema. 
+\end{itemize}
 
-En la siguiente imagen podemos ver el diagrama de casos de uso que muestra la interacción del usuario con el sistema. 
+
+\subsubsection{Diagramas de casos de uso}
+
+En esta sección se mostrarán los distintos casos de uso divididos en paquetes para conseguir una visión más clara y ordenada de estos. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.88\textwidth]{imagenes/imagenesDiagramas/useCases.jpg}
-	\caption{Diagrama de casos de uso}
+	\includegraphics[width=0.88\textwidth]{imagenes/imagenesDiagramas/useCases/useCases.jpg}
+	\caption{Diagrama de paquetes de casos de uso}
 	\label{fig:usecase}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.88\textwidth]{imagenes/imagenesDiagramas/useCases/useCaseSesion.jpg}
+	\caption{Casos de uso del inicio y cierre de sesión}
+	\label{fig:usecaseSesion}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.88\textwidth]{imagenes/imagenesDiagramas/useCases/useCaseArticulos.jpg}
+	\caption{Casos de uso de la gestión de artículos}
+	\label{fig:usecaseArticulos}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.88\textwidth]{imagenes/imagenesDiagramas/useCases/useCaseCliente.jpg}
+	\caption{Casos de uso de la gestión de clientes}
+	\label{fig:usecaseClientes}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.88\textwidth]{imagenes/imagenesDiagramas/useCases/useCaseMovimiento.jpg}
+	\caption{Casos de uso de la gestión de movimientos}
+	\label{fig:usecaseMovimientos}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.88\textwidth]{imagenes/imagenesDiagramas/useCases/useCaseGraficos.jpg}
+	\caption{Casos de uso de la gestión de gráficos y resúmenes}
+	\label{fig:usecaseGraficos}
 \end{figure}
 
 \newpage
 
+\subsection{Descripción de casos de uso}
+
+
+%Inicio sesión
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Iniciar sesión} &  CU1\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF1} \\ 
+		\hline
+		Precondición & \multicolumn{3}{l|}{El encargado debe estar registrado en el sistema.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{El encargado entra en el sistema.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de acceder al sistema.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce sus credenciales y entra en el sistema.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce su nombre de usuario y su contraseña.} \\ 
+		\hline
+		2. & \multicolumn{3}{m{0.67\textwidth}|}{El sistema verifica que las credenciales son correctas.} \\ 
+		\hline
+		3. & \multicolumn{3}{m{0.67\textwidth}|}{El sistema redirige al encargado a la pantalla principal.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		1a & \multicolumn{3}{l|}{El encargado deja algún campo vacío.} \\ 
+		\hline
+		2a & \multicolumn{3}{l|}{Las credenciales no son correctas.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Inicio de sesión}
+\end{table}
+
+\newpage
+
+%Cerrar sesión
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Cerrar sesión} &  CU2\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF2} \\ 
+		\hline
+		Precondición & \multicolumn{3}{l|}{El encargado debe estar dentro del sistema.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{El encargado sale del sistema.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de cerrar sesión.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado pulsa la opción de cierre de sesión y sale del sistema.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & \multicolumn{3}{m{0.67\textwidth}|}{El encargado pulsa el botón de cierre de sesión.} \\ 
+		\hline
+		2. & \multicolumn{3}{m{0.67\textwidth}|}{El sistema cierra la sesión.} \\ 
+		\hline
+		3. & \multicolumn{3}{m{0.67\textwidth}|}{El sistema redirige al encargado a la pantalla de inicio de sesión.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		 & \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Cierre de sesión}
+\end{table}
+
+\newpage
+
+%Introducción de un nuevo artículo 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|l|}{Introducción de un nuevo artículo} &  CU3\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF3} \\ 
+		\hline
+		Precondición & \multicolumn{3}{l|}{} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{El artículo es creado.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de introducir nuevos artículos en la tienda.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los datos del artículo y lo registra en el sistema.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & \multicolumn{3}{m{0.67\textwidth}|}{El encargado pulsa el botón de nuevo artículo.} \\ 
+		\hline
+		2. & \multicolumn{3}{m{0.67\textwidth}|}{El sistema solicita la información del artículo al encargado.} \\ 
+		\hline
+		3. & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los datos necesarios para registrar el artículo y lo marca como completado.} \\ 
+		\hline
+		4. & \multicolumn{3}{m{0.67\textwidth}|}{El sistema registra el artículo y actualiza la lista de artículos existentes. } \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce la información en un formato erróneo o deja campos obligatorios vacíos.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Introducción de un nuevo artículo}
+\end{table}
+
+\newpage
+
+%Edición de un artículo existente 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Edición de un artículo existente} &  CU4\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF4} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{El artículo a editar debe estar registrado en el sistema.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{La información del artículo es modificada.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de editar información de los artículos de la tienda.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los nuevos datos del artículo y lo edita.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & \multicolumn{3}{m{0.67\textwidth}|}{El encargado pulsa el botón de edición de un artículo.} \\ 
+		\hline
+		2. & \multicolumn{3}{m{0.67\textwidth}|}{El sistema solicita que edite la información deseada del artículo.} \\ 
+		\hline
+		3. & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los nuevos datos  y lo marca como completado.} \\ 
+		\hline
+		4. & \multicolumn{3}{m{0.67\textwidth}|}{El sistema guarda la nueva información del artículo. } \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce la información en un formato erróneo o deja campos obligatorios vacíos.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Edición de un artículo existente}
+\end{table}
+
+
+
+\newpage
+
+\section{Modelo conceptual}
+
+En esta sección se muestra el modelo conceptual del sistema, donde podemos ver cómo se relacionan las clases y que información almacenan. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{imagenes/imagenesDiagramas/modelo_conceptual.jpg}
+	\caption{Modelo conceptual}
+	\label{fig:modelo_conceptual}
+\end{figure}
+
+\newpage
+
+
 \section{Modelos de comportamiento}
 
-En esta sección vamos a especificar cómo opera el sistema ante las acciones del usuario mediante diagramas de secuencia. 
+En esta sección vamos a especificar cómo opera el sistema ante las acciones del actor mediante diagramas de secuencia. 
 
 \subsection{Apertura y cierra de sesión}
 
