@@ -41,5 +41,30 @@
 \contentsline {table}{\numberline {5.34}{\ignorespaces Caso de uso - Cierre de sesión}}{52}{table.5.34}%
 \contentsline {table}{\numberline {5.35}{\ignorespaces Caso de uso - Introducción de un nuevo artículo}}{53}{table.5.35}%
 \contentsline {table}{\numberline {5.36}{\ignorespaces Caso de uso - Edición de un artículo existente}}{54}{table.5.36}%
+\contentsline {table}{\numberline {5.37}{\ignorespaces Caso de uso - Eliminación de un artículo}}{55}{table.5.37}%
+\contentsline {table}{\numberline {5.38}{\ignorespaces Caso de uso - Visualización de los datos de un artículo}}{56}{table.5.38}%
+\contentsline {table}{\numberline {5.39}{\ignorespaces Caso de uso - Búsqueda de un artículo por nombre }}{57}{table.5.39}%
+\contentsline {table}{\numberline {5.40}{\ignorespaces Caso de uso - Categorización de un artículo}}{58}{table.5.40}%
+\contentsline {table}{\numberline {5.41}{\ignorespaces Caso de uso - Visualización de la lista de los artículos existentes}}{59}{table.5.41}%
+\contentsline {table}{\numberline {5.42}{\ignorespaces Caso de uso - Visualización de lista de renovación de artículos}}{60}{table.5.42}%
+\contentsline {table}{\numberline {5.43}{\ignorespaces Caso de uso - Registro de un nuevo cliente habitual}}{61}{table.5.43}%
+\contentsline {table}{\numberline {5.44}{\ignorespaces Caso de uso - Edición de los datos de un cliente existente}}{62}{table.5.44}%
+\contentsline {table}{\numberline {5.45}{\ignorespaces Caso de uso - Eliminación de un cliente}}{63}{table.5.45}%
+\contentsline {table}{\numberline {5.46}{\ignorespaces Caso de uso - Visualización de los datos de un cliente}}{64}{table.5.46}%
+\contentsline {table}{\numberline {5.47}{\ignorespaces Caso de uso - Visualización de la lista de clientes existentes}}{65}{table.5.47}%
+\contentsline {table}{\numberline {5.48}{\ignorespaces Caso de uso - Búsqueda de un cliente por nombre}}{66}{table.5.48}%
+\contentsline {table}{\numberline {5.49}{\ignorespaces Caso de uso - Filtrado de clientes con préstamos}}{67}{table.5.49}%
+\contentsline {table}{\numberline {5.50}{\ignorespaces Caso de uso - Introducción de una nueva venta}}{68}{table.5.50}%
+\contentsline {table}{\numberline {5.51}{\ignorespaces Caso de uso - Introducción de un nuevo préstamo}}{69}{table.5.51}%
+\contentsline {table}{\numberline {5.52}{\ignorespaces Caso de uso - Introducción de una devolución}}{70}{table.5.52}%
+\contentsline {table}{\numberline {5.53}{\ignorespaces Caso de uso - Eliminación de un movimiento}}{71}{table.5.53}%
+\contentsline {table}{\numberline {5.54}{\ignorespaces Caso de uso - Visualización de los datos de un movimiento}}{72}{table.5.54}%
+\contentsline {table}{\numberline {5.55}{\ignorespaces Caso de uso - Visualización de la lista de movimientos existentes}}{73}{table.5.55}%
+\contentsline {table}{\numberline {5.56}{\ignorespaces Caso de uso - Filtrado de movimientos según su tipo}}{74}{table.5.56}%
+\contentsline {table}{\numberline {5.57}{\ignorespaces Caso de uso - Búsqueda de un movimiento por fecha o cliente}}{75}{table.5.57}%
+\contentsline {table}{\numberline {5.58}{\ignorespaces Caso de uso - Generación de una compra a partir de un préstamo}}{76}{table.5.58}%
+\contentsline {table}{\numberline {5.59}{\ignorespaces Caso de uso - Visualización de la caja diaria}}{77}{table.5.59}%
+\contentsline {table}{\numberline {5.60}{\ignorespaces Caso de uso - Visualización de gráficas}}{78}{table.5.60}%
+\contentsline {table}{\numberline {5.61}{\ignorespaces Caso de uso - Eliminación de un movimiento}}{80}{table.5.61}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

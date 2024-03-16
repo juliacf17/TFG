@@ -48,50 +48,50 @@
 \contentsline {subsubsection}{\numberline {5.2.1.1}Actores}{47}{subsubsection.5.2.1.1}%
 \contentsline {subsubsection}{\numberline {5.2.1.2}Diagramas de casos de uso}{47}{subsubsection.5.2.1.2}%
 \contentsline {subsection}{\numberline {5.2.2}Descripción de casos de uso}{51}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Modelo conceptual}{55}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Modelos de comportamiento}{56}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Apertura y cierra de sesión}{56}{subsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.1}Inicio de sesión}{56}{subsubsection.5.4.1.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.2}Cierre de sesión}{56}{subsubsection.5.4.1.2}%
-\contentsline {subsection}{\numberline {5.4.2}Gestión de artículos}{57}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.1}Introducción de un nuevo artículo}{57}{subsubsection.5.4.2.1}%
-\contentsline {subsubsection}{\numberline {5.4.2.2}Edición de un artículo existente}{57}{subsubsection.5.4.2.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.3}Eliminación de un artículo}{58}{subsubsection.5.4.2.3}%
-\contentsline {subsubsection}{\numberline {5.4.2.4}Visualización de los datos de un artículo}{59}{subsubsection.5.4.2.4}%
-\contentsline {subsubsection}{\numberline {5.4.2.5}Búsqueda de un artículo por nombre}{60}{subsubsection.5.4.2.5}%
-\contentsline {subsubsection}{\numberline {5.4.2.6}Categorización de un artículo}{60}{subsubsection.5.4.2.6}%
-\contentsline {subsubsection}{\numberline {5.4.2.7}Visualización de la lista de artículos}{61}{subsubsection.5.4.2.7}%
-\contentsline {subsection}{\numberline {5.4.3}Gestión de inventario}{61}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.3.1}Actualización del inventario de forma automática}{61}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {5.4.3.2}Visualización de la lista de renovación de artículos}{62}{subsubsection.5.4.3.2}%
-\contentsline {subsection}{\numberline {5.4.4}Gestión de clientes}{62}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.4.1}Registro de un nuevo cliente habitual}{62}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.4.2}Edición de los datos de un cliente existente}{63}{subsubsection.5.4.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.4.3}Eliminación de un cliente existente}{63}{subsubsection.5.4.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.4.4}Visualización de los datos de un cliente}{64}{subsubsection.5.4.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.4.5}Visualización la lista de clientes existentes}{64}{subsubsection.5.4.4.5}%
-\contentsline {subsubsection}{\numberline {5.4.4.6}Búsqueda de un cliente por nombre}{65}{subsubsection.5.4.4.6}%
-\contentsline {subsubsection}{\numberline {5.4.4.7}Filtrado de clientes con préstamos}{65}{subsubsection.5.4.4.7}%
-\contentsline {subsection}{\numberline {5.4.5}Gestión de movimientos}{66}{subsection.5.4.5}%
-\contentsline {subsubsection}{\numberline {5.4.5.1}Introducción de una nueva venta}{66}{subsubsection.5.4.5.1}%
-\contentsline {subsubsection}{\numberline {5.4.5.2}Introducción de un nuevo préstamo}{67}{subsubsection.5.4.5.2}%
-\contentsline {subsubsection}{\numberline {5.4.5.3}Introducción de una nueva devolución}{67}{subsubsection.5.4.5.3}%
-\contentsline {subsubsection}{\numberline {5.4.5.4}Eliminación de un movimiento}{68}{subsubsection.5.4.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.5.5}Visualización de los datos de un movimiento}{69}{subsubsection.5.4.5.5}%
-\contentsline {subsubsection}{\numberline {5.4.5.6}Visualización de la lista de movimientos existentes}{69}{subsubsection.5.4.5.6}%
-\contentsline {subsubsection}{\numberline {5.4.5.7}Filtrado de los movimientos según su tipo}{70}{subsubsection.5.4.5.7}%
-\contentsline {subsubsection}{\numberline {5.4.5.8}Búsqueda de movimientos por fecha o cliente}{70}{subsubsection.5.4.5.8}%
-\contentsline {subsubsection}{\numberline {5.4.5.9}Generación de una compra a partir de un préstamo}{71}{subsubsection.5.4.5.9}%
-\contentsline {subsection}{\numberline {5.4.6}Gestión de resúmenes y gráficas}{71}{subsection.5.4.6}%
-\contentsline {subsubsection}{\numberline {5.4.6.1}Visualización de la caja diaria}{71}{subsubsection.5.4.6.1}%
-\contentsline {subsubsection}{\numberline {5.4.6.2}Visualización de gráficos}{72}{subsubsection.5.4.6.2}%
-\contentsline {chapter}{\numberline {6}Diseño}{73}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Diseño de la interfaz gráfica}{73}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Pantalla de inicio de sesión}{73}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Pantalla principal}{74}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Pantalla de clientes}{75}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Pantalla de artículos}{76}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Pantalla de movimientos}{77}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Pantalla de gráficos y cierre de sesión}{78}{subsection.6.1.6}%
-\contentsline {chapter}{\numberline {7}Validación de la aplicación por el usuario}{79}{chapter.7}%
-\contentsline {section}{Referencias}{80}{section*.7}%
+\contentsline {section}{\numberline {5.3}Modelo conceptual}{79}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Modelos de comportamiento}{81}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Apertura y cierra de sesión}{81}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}Inicio de sesión}{81}{subsubsection.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.2}Cierre de sesión}{81}{subsubsection.5.4.1.2}%
+\contentsline {subsection}{\numberline {5.4.2}Gestión de artículos}{82}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Introducción de un nuevo artículo}{82}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}Edición de un artículo existente}{82}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.3}Eliminación de un artículo}{83}{subsubsection.5.4.2.3}%
+\contentsline {subsubsection}{\numberline {5.4.2.4}Visualización de los datos de un artículo}{84}{subsubsection.5.4.2.4}%
+\contentsline {subsubsection}{\numberline {5.4.2.5}Búsqueda de un artículo por nombre}{85}{subsubsection.5.4.2.5}%
+\contentsline {subsubsection}{\numberline {5.4.2.6}Categorización de un artículo}{85}{subsubsection.5.4.2.6}%
+\contentsline {subsubsection}{\numberline {5.4.2.7}Visualización de la lista de artículos}{86}{subsubsection.5.4.2.7}%
+\contentsline {subsection}{\numberline {5.4.3}Gestión de inventario}{86}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.1}Actualización del inventario de forma automática}{86}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5.4.3.2}Visualización de la lista de renovación de artículos}{87}{subsubsection.5.4.3.2}%
+\contentsline {subsection}{\numberline {5.4.4}Gestión de clientes}{87}{subsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.4.1}Registro de un nuevo cliente habitual}{87}{subsubsection.5.4.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.4.2}Edición de los datos de un cliente existente}{88}{subsubsection.5.4.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.4.3}Eliminación de un cliente existente}{88}{subsubsection.5.4.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4.4}Visualización de los datos de un cliente}{89}{subsubsection.5.4.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.4.5}Visualización la lista de clientes existentes}{89}{subsubsection.5.4.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.4.6}Búsqueda de un cliente por nombre}{90}{subsubsection.5.4.4.6}%
+\contentsline {subsubsection}{\numberline {5.4.4.7}Filtrado de clientes con préstamos}{90}{subsubsection.5.4.4.7}%
+\contentsline {subsection}{\numberline {5.4.5}Gestión de movimientos}{91}{subsection.5.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.5.1}Introducción de una nueva venta}{91}{subsubsection.5.4.5.1}%
+\contentsline {subsubsection}{\numberline {5.4.5.2}Introducción de un nuevo préstamo}{92}{subsubsection.5.4.5.2}%
+\contentsline {subsubsection}{\numberline {5.4.5.3}Introducción de una nueva devolución}{92}{subsubsection.5.4.5.3}%
+\contentsline {subsubsection}{\numberline {5.4.5.4}Eliminación de un movimiento}{93}{subsubsection.5.4.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.5.5}Visualización de los datos de un movimiento}{94}{subsubsection.5.4.5.5}%
+\contentsline {subsubsection}{\numberline {5.4.5.6}Visualización de la lista de movimientos existentes}{94}{subsubsection.5.4.5.6}%
+\contentsline {subsubsection}{\numberline {5.4.5.7}Filtrado de los movimientos según su tipo}{95}{subsubsection.5.4.5.7}%
+\contentsline {subsubsection}{\numberline {5.4.5.8}Búsqueda de movimientos por fecha o cliente}{95}{subsubsection.5.4.5.8}%
+\contentsline {subsubsection}{\numberline {5.4.5.9}Generación de una compra a partir de un préstamo}{96}{subsubsection.5.4.5.9}%
+\contentsline {subsection}{\numberline {5.4.6}Gestión de resúmenes y gráficas}{96}{subsection.5.4.6}%
+\contentsline {subsubsection}{\numberline {5.4.6.1}Visualización de la caja diaria}{96}{subsubsection.5.4.6.1}%
+\contentsline {subsubsection}{\numberline {5.4.6.2}Visualización de gráficos}{97}{subsubsection.5.4.6.2}%
+\contentsline {chapter}{\numberline {6}Diseño}{98}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Diseño de la interfaz gráfica}{98}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Pantalla de inicio de sesión}{98}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Pantalla principal}{99}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Pantalla de clientes}{100}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Pantalla de artículos}{101}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Pantalla de movimientos}{102}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Pantalla de gráficos y cierre de sesión}{103}{subsection.6.1.6}%
+\contentsline {chapter}{\numberline {7}Validación de la aplicación por el usuario}{104}{chapter.7}%
+\contentsline {section}{Referencias}{105}{section*.7}%
