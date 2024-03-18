@@ -80,6 +80,100 @@ Due{\~n}as~Nogueras, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Fernández~Casado%
+}{%
+Fernández~Casado%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+fernandez2018usabilidad}
+\APACinsertmetastar {%
+fernandez2018usabilidad}%
+\begin{APACrefauthors}%
+Fernández~Casado, P\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2018}.
+\newblock
+\APACrefbtitle {Usabilidad web: teoría y uso} {Usabilidad web: teoría y uso}.
+\newblock
+\APACaddressPublisher{}{RA-MA Editorial}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fernández~Casado%
+}{%
+Fernández~Casado%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+fernandez2021accesibilidad}
+\APACinsertmetastar {%
+fernandez2021accesibilidad}%
+\begin{APACrefauthors}%
+Fernández~Casado, P\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2021}.
+\newblock
+\APACrefbtitle {Accesibilidad Web: diseño de aplicaciones} {Accesibilidad web:
+  diseño de aplicaciones}.
+\newblock
+\APACaddressPublisher{}{Ra-Ma}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+for Standardization%
+}{%
+for Standardization%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+accesibilidad}
+\APACinsertmetastar {%
+accesibilidad}%
+\begin{APACrefauthors}%
+for Standardization, I\BPBI O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+\APACrefbtitle {ISO 9241-171: "Guidance on software accessibility".} {Iso
+  9241-171: "guidance on software accessibility".}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.iso.org/es/contents/data/standard/03/90/39080.html?browse=ics}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+for Standardization%
+}{%
+for Standardization%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+iso}
+\APACinsertmetastar {%
+iso}%
+\begin{APACrefauthors}%
+for Standardization, I\BPBI O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {ISO 9241-11: "Usability: Definitions and concepts".} {Iso
+  9241-11: "usability: Definitions and concepts".}
+\newblock
+\begin{APACrefURL} \url{https://www.iso.org/standard/63500.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Gago~Mu{\~n}iz%
 }{%
 Gago~Mu{\~n}iz%
@@ -149,8 +243,6 @@ Iberdrola.%
 \begin{APACrefURL}
   \url{https://www.iberdrola.com/compromiso-social/que-es-brecha-digital}
   \end{APACrefURL}
-\newblock
-\APACrefnote{Último acceso: [Fecha de Acceso Aquí]}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -174,6 +266,30 @@ Vargas~Belmonte, A.%
   económica básica del pequeño comercio}\ (\PrintOrdinal{1}\ \BEd).
 \newblock
 \APACaddressPublisher{}{Bookwire GmbH}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+W3C%
+}{%
+W3C%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+principios_accesibilidad}
+\APACinsertmetastar {%
+principios_accesibilidad}%
+\begin{APACrefauthors}%
+W3C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+\APACrefbtitle {Accessibility Principles.} {Accessibility principles.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.w3.org/WAI/fundamentals/accessibility-principles/}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

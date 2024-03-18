@@ -18,46 +18,52 @@ Warning--entry type for "bbva2024brechadigital" isn't style-file defined
 --line 59 of file bibliografia.bib
 Warning--entry type for "iberdrolaBrechaDigital" isn't style-file defined
 --line 67 of file bibliografia.bib
+Warning--entry type for "iso" isn't style-file defined
+--line 76 of file bibliografia.bib
+Warning--entry type for "accesibilidad" isn't style-file defined
+--line 90 of file bibliografia.bib
+Warning--entry type for "principios_accesibilidad" isn't style-file defined
+--line 97 of file bibliografia.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 8 entries,
+You've used 13 entries,
             6951 wiz_defined-function locations,
-            1313 strings with 12038 characters,
-and the built_in function-call counts, 13586 in all, are:
-= -- 1789
-> -- 80
-< -- 607
-+ -- 555
-- -- 24
-* -- 768
-:= -- 2444
-add.period$ -- 33
-call.type$ -- 8
-change.case$ -- 140
+            1334 strings with 12565 characters,
+and the built_in function-call counts, 21586 in all, are:
+= -- 2933
+> -- 130
+< -- 901
++ -- 828
+- -- 36
+* -- 1147
+:= -- 3659
+add.period$ -- 53
+call.type$ -- 13
+change.case$ -- 225
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 274
-empty$ -- 569
-format.name$ -- 112
-if$ -- 2686
+cite$ -- 26
+duplicate$ -- 455
+empty$ -- 911
+format.name$ -- 182
+if$ -- 4391
 int.to.chr$ -- 0
-int.to.str$ -- 24
+int.to.str$ -- 39
 missing$ -- 0
-newline$ -- 185
-num.names$ -- 64
-pop$ -- 292
+newline$ -- 293
+num.names$ -- 104
+pop$ -- 446
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 56
 quote$ -- 0
-skip$ -- 1006
+skip$ -- 1732
 stack$ -- 0
-substring$ -- 595
-swap$ -- 153
-text.length$ -- 24
+substring$ -- 900
+swap$ -- 230
+text.length$ -- 35
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 856
+type$ -- 1472
 warning$ -- 0
-while$ -- 44
+while$ -- 69
 width$ -- 0
-write$ -- 200
-(There were 3 warnings)
+write$ -- 318
+(There were 6 warnings)
