@@ -109,8 +109,115 @@ Esta definición abarca varios aspectos clave \cite{principios_accesibilidad}:
 
 La accesibilidad se fundamenta en el principio de proporcionar un acceso igualitario a la información y a las funcionalidades de un sistema o servicio. Este compromiso no solo facilita la interacción de las personas con discapacidades, sino que también realza la experiencia general de todos los usuarios. En otras palabras, adoptar medidas de accesibilidad no se limita a cumplir con un estándar ético de inclusión; es una práctica que mejora la interfaz y la usabilidad de manera integral, lo que resulta en un diseño más efectivo y universal. \cite{fernandez2021accesibilidad}
 
+\subsection{Conclusión}
+
+Debemos buscar la usabilidad y accesibilidad en una aplicación de estas características ya que el usuario final puede no tener grandes destrezas tecnológicas. Por tanto, hay que conseguir un diseño sencillo, fácil de usar e intuitivo. \\
+
+Para ello, habrá que tener en cuenta los siguientes criterios:
+
+\begin{itemize}
+	\item \textbf{Botones grandes:} Los botones de la aplicación deben de tener un tamaño adecuado para facilitar la realización de acciones. 
+	\item \textbf{Tamaño y contraste del texto:} Nos debemos de asegurar que el tamaño de la letra es lo suficientemente grande y que el contraste con el fondo es significativo para facilitar con ello la lectura. El fondo de la aplicación será blanco para conseguir un buen contraste y evitar las distracciones. 
+	\item \textbf{Claridad en la navegación:} Proporcionar una estructura lógica de navegación y unas flechas visibles que permitan cambiar de pantallas de manera intuitiva. 
+	\item \textbf{Simplicidad:} El diseño debe ser sencillo. Evitar la sobrecarga de información y priorizar un diseño ordenado. 
+	\item \textbf{Feedback:} La aplicación debe proporcionar una respuesta a las acciones del usuario para confirmar que se realizan de manera correcta. 
+\end{itemize} 
+
 \newpage
 
 \section{Legislación actual de protección de datos}
 
+La ley de protección de datos existe para proteger y controlar los datos personales de los usuarios, un derecho fundamental que tienen todas las personas. Esta ley evita que nuestros datos personales sean usados para vulnerar nuestra intimidad u otros derechos fundamentales o libertades. En España esta ley lleva vigente desde el año 2000. \cite{proteccionDatos}\\
+
+Dentro de los datos personales hay distintos niveles de seguridad: bajo, medio y alto. Cada uno de estos niveles tiene distintas medidas de seguridad. Las principales medidas de la ley de protección de datos en España son: 
+\begin{itemize}
+	\item Solo se deben recoger aquellos datos necesarios para el funcionamiento de la aplicación.  
+	\item Se debe avisar a la persona cuáles son los datos que van a ser recogidos y con qué fin van a usarse. 
+	\item La persona tiene derecho a dar y deshacer el consentimiento de esos datos si existe una causa justificada. 
+	\item Los datos de medio y alto nivel no deben ser recogidos a menos que sea estrictamente necesario. Información como la religión o ideología son datos que no deberían de pedirse. 
+	\item La persona que interactúe con datos personales protegidos bajo esta ley deberá de cumplir el secreto profesional. 
+	\item Se deben tomar medidas técnicas y organizativas para garantizar la seguridad de los datos en todo momento. 
+\end{itemize} 
+
+En nuestro caso concreto, los datos que vamos a pedir a los clientes son únicamente tres campos: el nombre, los apellidos y un número de teléfono, este último de carácter opcional. Son los datos estrictamente necesarios para identificar un cliente. No se pedirán datos innecesarios, como bien postula la ley de protección de datos. 
+
+Puesto que los clientes pueden tomar prestados artículos de la tienda, será necesario un número de teléfono para llamar en caso de que se olviden de devolver o comprar dichos artículos. Si el cliente no quiere dar el número de teléfono o no dispone de uno de ellos, bastará con el nombre y los apellidos. 
+
+Estos datos se almacenarán en una base de datos protegida de manera que se pueda garantizar la seguridad de dichos datos. 
+
+
+\newpage
+
+
 \section{Aplicaciones similares y comparativas}
+
+
+Una de las principales razones para desarrollar esta aplicación es la inexistencia de aplicaciones dedicadas a solucionar los problemas de los pequeños negocios minoristas. Sin embargo, analizaremos a continuación las características de dos de las aplicaciones de gestión de negocios minoristas que hay actualmente en el mercado, para así observar la necesidad de desarrollar una nueva aplicación con unos requisitos distintos. \\
+
+La aplicación más similar que he podido encontrar es myGESTIÓN, el resto de aplicaciones incorporan un punto de venta online que permite a los clientes comprar desde sus casas. Este punto de venta no sería útil en localizaciones donde el conocimiento tecnológico medio de la población es bajo. Por tanto, se trata de una funcionalidad que complica la aplicación y hace que sea más difícil de usar. Buscamos conseguir una aplicación sencilla que cumpla las necesidades básicas de gestión, siendo así más usable y accesible. Por lo que, aquellas funciones extra que implementan las aplicaciones del mercado actual para negocios más grandes, serán un inconveniente a la hora de establecer un entorno de uso sencillo. Además, un punto importante que no incorporan las aplicaciones de gestión actuales es el sistema de préstamos. Este es un sistema comúnmente utilizado en pequeñas localidades que sí se tendrá en cuenta en el desarrollo de nuestra aplicación. 
+
+
+\begin{landscape}
+	\begin{table}[htb!]
+		\centering % Centra la tabla en la página
+		\begin{tabularx}{\linewidth}{|X|X|X|X|}
+			\hline
+			\rowcolor{grayshade} 
+			\textbf{Nombre de la app} & 
+			\textbf{Características principales} & 
+			\textbf{Problemas} & 
+			\textbf{Plataformas disponibles} \\
+			\hline
+			myGESTIÓN & 
+			\begin{minipage}[t]{\linewidth}
+				\begin{itemize}
+					\item Gestión de clientes.
+					\item Gestión de artículos.
+					\item Gestión de pedidos de clientes.
+					\item Gestión de ventas, albaranes, facturas.
+					\item Gestión de empleados y fichaje.
+					\item Cuadro de mando. \\
+				\end{itemize}
+			\end{minipage} & 
+			\begin{minipage}[t]{\linewidth}
+				\begin{itemize}
+					\item No tiene en cuenta el sistema de préstamos. 
+					\item Excedente de funcionalidades, no son necesarios pedidos de clientes ni empleados.  
+					\item De pago.
+				\end{itemize}
+			\end{minipage}  & 
+			\begin{minipage}[t]{\linewidth}
+				\begin{itemize}
+					\item Android
+				\end{itemize}
+			\end{minipage} \\
+			\hline
+			Clover & 
+			\begin{minipage}[t]{\linewidth}
+				\begin{itemize}
+					\item Supervisión de inventario.
+					\item Gestión de empleados.
+					\item Punto de venta online. 
+					\item Gestión de clientes. \\
+				\end{itemize}
+			\end{minipage}  & 
+			\begin{minipage}[t]{\linewidth}
+				\begin{itemize}
+					\item No tiene en cuenta el sistema de préstamos. 
+					\item No necesita gestionar empleados. 
+					\item No es necesario un punto de venta online, los clientes no lo usarían. 
+					\item De pago.\\
+				\end{itemize}
+			\end{minipage}  & 
+			\begin{minipage}[t]{\linewidth}
+				\begin{itemize}
+					\item Android
+					\item iOS
+				\end{itemize}
+			\end{minipage} \\
+			\hline
+		\end{tabularx}
+		\caption{Descripción de la tabla}
+	\end{table}
+\end{landscape}
+

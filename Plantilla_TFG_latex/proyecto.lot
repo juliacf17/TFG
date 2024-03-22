@@ -3,67 +3,68 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Presupuesto total}}{20}{table.2.1}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Descripción de la tabla}}{32}{table.3.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces RF1}}{33}{table.5.1}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces RF2}}{34}{table.5.2}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces RF3}}{34}{table.5.3}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces RF4}}{35}{table.5.4}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces RF5}}{35}{table.5.5}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces RF6}}{36}{table.5.6}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces RF7}}{36}{table.5.7}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces RF8}}{37}{table.5.8}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces RF9}}{37}{table.5.9}%
-\contentsline {table}{\numberline {5.10}{\ignorespaces RF10}}{38}{table.5.10}%
-\contentsline {table}{\numberline {5.11}{\ignorespaces RF11}}{38}{table.5.11}%
-\contentsline {table}{\numberline {5.12}{\ignorespaces RF12}}{39}{table.5.12}%
-\contentsline {table}{\numberline {5.13}{\ignorespaces RF13}}{39}{table.5.13}%
-\contentsline {table}{\numberline {5.14}{\ignorespaces RF14}}{40}{table.5.14}%
-\contentsline {table}{\numberline {5.15}{\ignorespaces RF15}}{40}{table.5.15}%
-\contentsline {table}{\numberline {5.16}{\ignorespaces RF16}}{41}{table.5.16}%
-\contentsline {table}{\numberline {5.17}{\ignorespaces RF17}}{41}{table.5.17}%
-\contentsline {table}{\numberline {5.18}{\ignorespaces RF18}}{42}{table.5.18}%
-\contentsline {table}{\numberline {5.19}{\ignorespaces RF19}}{43}{table.5.19}%
-\contentsline {table}{\numberline {5.20}{\ignorespaces RF20}}{44}{table.5.20}%
-\contentsline {table}{\numberline {5.21}{\ignorespaces RF21}}{45}{table.5.21}%
-\contentsline {table}{\numberline {5.22}{\ignorespaces RF22}}{46}{table.5.22}%
-\contentsline {table}{\numberline {5.23}{\ignorespaces RF23}}{46}{table.5.23}%
-\contentsline {table}{\numberline {5.24}{\ignorespaces RF24}}{47}{table.5.24}%
-\contentsline {table}{\numberline {5.25}{\ignorespaces RF25}}{47}{table.5.25}%
-\contentsline {table}{\numberline {5.26}{\ignorespaces RF26}}{48}{table.5.26}%
-\contentsline {table}{\numberline {5.27}{\ignorespaces RF27}}{48}{table.5.27}%
-\contentsline {table}{\numberline {5.28}{\ignorespaces RF28}}{49}{table.5.28}%
-\contentsline {table}{\numberline {5.29}{\ignorespaces RF29}}{49}{table.5.29}%
-\contentsline {table}{\numberline {5.30}{\ignorespaces RNF1}}{50}{table.5.30}%
-\contentsline {table}{\numberline {5.31}{\ignorespaces RNF1}}{50}{table.5.31}%
-\contentsline {table}{\numberline {5.32}{\ignorespaces RNF3}}{50}{table.5.32}%
-\contentsline {table}{\numberline {5.33}{\ignorespaces Caso de uso - Inicio de sesión}}{55}{table.5.33}%
-\contentsline {table}{\numberline {5.34}{\ignorespaces Caso de uso - Cierre de sesión}}{56}{table.5.34}%
-\contentsline {table}{\numberline {5.35}{\ignorespaces Caso de uso - Introducción de un nuevo artículo}}{57}{table.5.35}%
-\contentsline {table}{\numberline {5.36}{\ignorespaces Caso de uso - Edición de un artículo existente}}{58}{table.5.36}%
-\contentsline {table}{\numberline {5.37}{\ignorespaces Caso de uso - Eliminación de un artículo}}{59}{table.5.37}%
-\contentsline {table}{\numberline {5.38}{\ignorespaces Caso de uso - Visualización de los datos de un artículo}}{60}{table.5.38}%
-\contentsline {table}{\numberline {5.39}{\ignorespaces Caso de uso - Búsqueda de un artículo por nombre }}{61}{table.5.39}%
-\contentsline {table}{\numberline {5.40}{\ignorespaces Caso de uso - Categorización de un artículo}}{62}{table.5.40}%
-\contentsline {table}{\numberline {5.41}{\ignorespaces Caso de uso - Visualización de la lista de los artículos existentes}}{63}{table.5.41}%
-\contentsline {table}{\numberline {5.42}{\ignorespaces Caso de uso - Visualización de lista de renovación de artículos}}{64}{table.5.42}%
-\contentsline {table}{\numberline {5.43}{\ignorespaces Caso de uso - Registro de un nuevo cliente habitual}}{65}{table.5.43}%
-\contentsline {table}{\numberline {5.44}{\ignorespaces Caso de uso - Edición de los datos de un cliente existente}}{66}{table.5.44}%
-\contentsline {table}{\numberline {5.45}{\ignorespaces Caso de uso - Eliminación de un cliente}}{67}{table.5.45}%
-\contentsline {table}{\numberline {5.46}{\ignorespaces Caso de uso - Visualización de los datos de un cliente}}{68}{table.5.46}%
-\contentsline {table}{\numberline {5.47}{\ignorespaces Caso de uso - Visualización de la lista de clientes existentes}}{69}{table.5.47}%
-\contentsline {table}{\numberline {5.48}{\ignorespaces Caso de uso - Búsqueda de un cliente por nombre}}{70}{table.5.48}%
-\contentsline {table}{\numberline {5.49}{\ignorespaces Caso de uso - Filtrado de clientes con préstamos}}{71}{table.5.49}%
-\contentsline {table}{\numberline {5.50}{\ignorespaces Caso de uso - Introducción de una nueva venta}}{72}{table.5.50}%
-\contentsline {table}{\numberline {5.51}{\ignorespaces Caso de uso - Introducción de un nuevo préstamo}}{73}{table.5.51}%
-\contentsline {table}{\numberline {5.52}{\ignorespaces Caso de uso - Introducción de una devolución}}{74}{table.5.52}%
-\contentsline {table}{\numberline {5.53}{\ignorespaces Caso de uso - Eliminación de un movimiento}}{75}{table.5.53}%
-\contentsline {table}{\numberline {5.54}{\ignorespaces Caso de uso - Visualización de los datos de un movimiento}}{76}{table.5.54}%
-\contentsline {table}{\numberline {5.55}{\ignorespaces Caso de uso - Visualización de la lista de movimientos existentes}}{77}{table.5.55}%
-\contentsline {table}{\numberline {5.56}{\ignorespaces Caso de uso - Filtrado de movimientos según su tipo}}{78}{table.5.56}%
-\contentsline {table}{\numberline {5.57}{\ignorespaces Caso de uso - Búsqueda de un movimiento por fecha o cliente}}{79}{table.5.57}%
-\contentsline {table}{\numberline {5.58}{\ignorespaces Caso de uso - Generación de una compra a partir de un préstamo}}{80}{table.5.58}%
-\contentsline {table}{\numberline {5.59}{\ignorespaces Caso de uso - Visualización de la caja diaria}}{81}{table.5.59}%
-\contentsline {table}{\numberline {5.60}{\ignorespaces Caso de uso - Visualización de gráficas}}{82}{table.5.60}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces RF1}}{36}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces RF2}}{37}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces RF3}}{37}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces RF4}}{38}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces RF5}}{38}{table.5.5}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces RF6}}{39}{table.5.6}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces RF7}}{39}{table.5.7}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces RF8}}{40}{table.5.8}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces RF9}}{40}{table.5.9}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces RF10}}{41}{table.5.10}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces RF11}}{41}{table.5.11}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces RF12}}{42}{table.5.12}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces RF13}}{42}{table.5.13}%
+\contentsline {table}{\numberline {5.14}{\ignorespaces RF14}}{43}{table.5.14}%
+\contentsline {table}{\numberline {5.15}{\ignorespaces RF15}}{43}{table.5.15}%
+\contentsline {table}{\numberline {5.16}{\ignorespaces RF16}}{44}{table.5.16}%
+\contentsline {table}{\numberline {5.17}{\ignorespaces RF17}}{44}{table.5.17}%
+\contentsline {table}{\numberline {5.18}{\ignorespaces RF18}}{45}{table.5.18}%
+\contentsline {table}{\numberline {5.19}{\ignorespaces RF19}}{46}{table.5.19}%
+\contentsline {table}{\numberline {5.20}{\ignorespaces RF20}}{47}{table.5.20}%
+\contentsline {table}{\numberline {5.21}{\ignorespaces RF21}}{48}{table.5.21}%
+\contentsline {table}{\numberline {5.22}{\ignorespaces RF22}}{49}{table.5.22}%
+\contentsline {table}{\numberline {5.23}{\ignorespaces RF23}}{49}{table.5.23}%
+\contentsline {table}{\numberline {5.24}{\ignorespaces RF24}}{50}{table.5.24}%
+\contentsline {table}{\numberline {5.25}{\ignorespaces RF25}}{50}{table.5.25}%
+\contentsline {table}{\numberline {5.26}{\ignorespaces RF26}}{51}{table.5.26}%
+\contentsline {table}{\numberline {5.27}{\ignorespaces RF27}}{51}{table.5.27}%
+\contentsline {table}{\numberline {5.28}{\ignorespaces RF28}}{52}{table.5.28}%
+\contentsline {table}{\numberline {5.29}{\ignorespaces RF29}}{52}{table.5.29}%
+\contentsline {table}{\numberline {5.30}{\ignorespaces RNF1}}{53}{table.5.30}%
+\contentsline {table}{\numberline {5.31}{\ignorespaces RNF1}}{53}{table.5.31}%
+\contentsline {table}{\numberline {5.32}{\ignorespaces RNF3}}{53}{table.5.32}%
+\contentsline {table}{\numberline {5.33}{\ignorespaces Caso de uso - Inicio de sesión}}{58}{table.5.33}%
+\contentsline {table}{\numberline {5.34}{\ignorespaces Caso de uso - Cierre de sesión}}{59}{table.5.34}%
+\contentsline {table}{\numberline {5.35}{\ignorespaces Caso de uso - Introducción de un nuevo artículo}}{60}{table.5.35}%
+\contentsline {table}{\numberline {5.36}{\ignorespaces Caso de uso - Edición de un artículo existente}}{61}{table.5.36}%
+\contentsline {table}{\numberline {5.37}{\ignorespaces Caso de uso - Eliminación de un artículo}}{62}{table.5.37}%
+\contentsline {table}{\numberline {5.38}{\ignorespaces Caso de uso - Visualización de los datos de un artículo}}{63}{table.5.38}%
+\contentsline {table}{\numberline {5.39}{\ignorespaces Caso de uso - Búsqueda de un artículo por nombre }}{64}{table.5.39}%
+\contentsline {table}{\numberline {5.40}{\ignorespaces Caso de uso - Categorización de un artículo}}{65}{table.5.40}%
+\contentsline {table}{\numberline {5.41}{\ignorespaces Caso de uso - Visualización de la lista de los artículos existentes}}{66}{table.5.41}%
+\contentsline {table}{\numberline {5.42}{\ignorespaces Caso de uso - Visualización de lista de renovación de artículos}}{67}{table.5.42}%
+\contentsline {table}{\numberline {5.43}{\ignorespaces Caso de uso - Registro de un nuevo cliente habitual}}{68}{table.5.43}%
+\contentsline {table}{\numberline {5.44}{\ignorespaces Caso de uso - Edición de los datos de un cliente existente}}{69}{table.5.44}%
+\contentsline {table}{\numberline {5.45}{\ignorespaces Caso de uso - Eliminación de un cliente}}{70}{table.5.45}%
+\contentsline {table}{\numberline {5.46}{\ignorespaces Caso de uso - Visualización de los datos de un cliente}}{71}{table.5.46}%
+\contentsline {table}{\numberline {5.47}{\ignorespaces Caso de uso - Visualización de la lista de clientes existentes}}{72}{table.5.47}%
+\contentsline {table}{\numberline {5.48}{\ignorespaces Caso de uso - Búsqueda de un cliente por nombre}}{73}{table.5.48}%
+\contentsline {table}{\numberline {5.49}{\ignorespaces Caso de uso - Filtrado de clientes con préstamos}}{74}{table.5.49}%
+\contentsline {table}{\numberline {5.50}{\ignorespaces Caso de uso - Introducción de una nueva venta}}{75}{table.5.50}%
+\contentsline {table}{\numberline {5.51}{\ignorespaces Caso de uso - Introducción de un nuevo préstamo}}{76}{table.5.51}%
+\contentsline {table}{\numberline {5.52}{\ignorespaces Caso de uso - Introducción de una devolución}}{77}{table.5.52}%
+\contentsline {table}{\numberline {5.53}{\ignorespaces Caso de uso - Eliminación de un movimiento}}{78}{table.5.53}%
+\contentsline {table}{\numberline {5.54}{\ignorespaces Caso de uso - Visualización de los datos de un movimiento}}{79}{table.5.54}%
+\contentsline {table}{\numberline {5.55}{\ignorespaces Caso de uso - Visualización de la lista de movimientos existentes}}{80}{table.5.55}%
+\contentsline {table}{\numberline {5.56}{\ignorespaces Caso de uso - Filtrado de movimientos según su tipo}}{81}{table.5.56}%
+\contentsline {table}{\numberline {5.57}{\ignorespaces Caso de uso - Búsqueda de un movimiento por fecha o cliente}}{82}{table.5.57}%
+\contentsline {table}{\numberline {5.58}{\ignorespaces Caso de uso - Generación de una compra a partir de un préstamo}}{83}{table.5.58}%
+\contentsline {table}{\numberline {5.59}{\ignorespaces Caso de uso - Visualización de la caja diaria}}{84}{table.5.59}%
+\contentsline {table}{\numberline {5.60}{\ignorespaces Caso de uso - Visualización de gráficas}}{85}{table.5.60}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -56,6 +56,29 @@ BBVA.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+del Estado%
+}{%
+del Estado%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+proteccionDatos}
+\APACinsertmetastar {%
+proteccionDatos}%
+\begin{APACrefauthors}%
+del Estado, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {BOE-A-2018-16673.} {Boe-a-2018-16673.}
+\newblock
+\begin{APACrefURL} \url{https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Due{\~n}as~Nogueras%
 }{%
 Due{\~n}as~Nogueras%
