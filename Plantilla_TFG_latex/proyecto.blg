@@ -26,46 +26,50 @@ Warning--entry type for "principios_accesibilidad" isn't style-file defined
 --line 97 of file bibliografia.bib
 Warning--entry type for "proteccionDatos" isn't style-file defined
 --line 114 of file bibliografia.bib
+Warning--entry type for "clover" isn't style-file defined
+--line 124 of file bibliografia.bib
+Warning--entry type for "myGestion" isn't style-file defined
+--line 131 of file bibliografia.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 14 entries,
+You've used 16 entries,
             6951 wiz_defined-function locations,
-            1339 strings with 12683 characters,
-and the built_in function-call counts, 23061 in all, are:
-= -- 3160
-> -- 140
-< -- 937
-+ -- 856
-- -- 38
-* -- 1203
-:= -- 3835
-add.period$ -- 57
-call.type$ -- 14
-change.case$ -- 242
+            1346 strings with 12794 characters,
+and the built_in function-call counts, 25827 in all, are:
+= -- 3588
+> -- 160
+< -- 995
++ -- 886
+- -- 46
+* -- 1299
+:= -- 4139
+add.period$ -- 65
+call.type$ -- 16
+change.case$ -- 276
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 489
-empty$ -- 979
-format.name$ -- 196
-if$ -- 4730
+cite$ -- 32
+duplicate$ -- 553
+empty$ -- 1115
+format.name$ -- 224
+if$ -- 5386
 int.to.chr$ -- 0
-int.to.str$ -- 42
+int.to.str$ -- 48
 missing$ -- 0
-newline$ -- 315
-num.names$ -- 112
-pop$ -- 465
+newline$ -- 359
+num.names$ -- 128
+pop$ -- 507
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 68
 quote$ -- 0
-skip$ -- 1906
+skip$ -- 2246
 stack$ -- 0
-substring$ -- 933
-swap$ -- 245
-text.length$ -- 37
+substring$ -- 971
+swap$ -- 273
+text.length$ -- 43
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1624
+type$ -- 1928
 warning$ -- 0
-while$ -- 74
+while$ -- 84
 width$ -- 0
-write$ -- 342
-(There were 7 warnings)
+write$ -- 390
+(There were 9 warnings)

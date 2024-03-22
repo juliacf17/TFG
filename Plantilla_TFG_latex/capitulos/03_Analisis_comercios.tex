@@ -154,70 +154,69 @@ Estos datos se almacenarán en una base de datos protegida de manera que se pued
 
 Una de las principales razones para desarrollar esta aplicación es la inexistencia de aplicaciones dedicadas a solucionar los problemas de los pequeños negocios minoristas. Sin embargo, analizaremos a continuación las características de dos de las aplicaciones de gestión de negocios minoristas que hay actualmente en el mercado, para así observar la necesidad de desarrollar una nueva aplicación con unos requisitos distintos. \\
 
-La aplicación más similar que he podido encontrar es myGESTIÓN, el resto de aplicaciones incorporan un punto de venta online que permite a los clientes comprar desde sus casas. Este punto de venta no sería útil en localizaciones donde el conocimiento tecnológico medio de la población es bajo. Por tanto, se trata de una funcionalidad que complica la aplicación y hace que sea más difícil de usar. Buscamos conseguir una aplicación sencilla que cumpla las necesidades básicas de gestión, siendo así más usable y accesible. Por lo que, aquellas funciones extra que implementan las aplicaciones del mercado actual para negocios más grandes, serán un inconveniente a la hora de establecer un entorno de uso sencillo. Además, un punto importante que no incorporan las aplicaciones de gestión actuales es el sistema de préstamos. Este es un sistema comúnmente utilizado en pequeñas localidades que sí se tendrá en cuenta en el desarrollo de nuestra aplicación. 
+La aplicación más similar que he podido encontrar es myGESTIÓN \cite{myGestion}, el resto de aplicaciones incorporan un punto de venta online que permite a los clientes comprar desde sus casas \cite{clover}. Este punto de venta no sería útil en localizaciones donde el conocimiento tecnológico medio de la población es bajo. Por tanto, se trata de una funcionalidad que complica la aplicación y hace que sea más difícil de usar. Buscamos conseguir una aplicación sencilla que cumpla las necesidades básicas de gestión, siendo así más usable y accesible. Por lo que, aquellas funciones extra que implementan las aplicaciones del mercado actual para negocios más grandes, serán un inconveniente a la hora de establecer un entorno de uso sencillo. Además, un punto importante que no incorporan las aplicaciones de gestión actuales es el sistema de préstamos. Este es un sistema comúnmente utilizado en pequeñas localidades que sí se tendrá en cuenta en el desarrollo de nuestra aplicación. 
 
 
-\begin{landscape}
-	\begin{table}[htb!]
-		\centering % Centra la tabla en la página
-		\begin{tabularx}{\linewidth}{|X|X|X|X|}
-			\hline
-			\rowcolor{grayshade} 
-			\textbf{Nombre de la app} & 
-			\textbf{Características principales} & 
-			\textbf{Problemas} & 
-			\textbf{Plataformas disponibles} \\
-			\hline
-			myGESTIÓN & 
-			\begin{minipage}[t]{\linewidth}
-				\begin{itemize}
-					\item Gestión de clientes.
-					\item Gestión de artículos.
-					\item Gestión de pedidos de clientes.
-					\item Gestión de ventas, albaranes, facturas.
-					\item Gestión de empleados y fichaje.
-					\item Cuadro de mando. \\
-				\end{itemize}
-			\end{minipage} & 
-			\begin{minipage}[t]{\linewidth}
-				\begin{itemize}
-					\item No tiene en cuenta el sistema de préstamos. 
-					\item Excedente de funcionalidades, no son necesarios pedidos de clientes ni empleados.  
-					\item De pago.
-				\end{itemize}
-			\end{minipage}  & 
-			\begin{minipage}[t]{\linewidth}
-				\begin{itemize}
-					\item Android
-				\end{itemize}
-			\end{minipage} \\
-			\hline
-			Clover & 
-			\begin{minipage}[t]{\linewidth}
-				\begin{itemize}
-					\item Supervisión de inventario.
-					\item Gestión de empleados.
-					\item Punto de venta online. 
-					\item Gestión de clientes. \\
-				\end{itemize}
-			\end{minipage}  & 
-			\begin{minipage}[t]{\linewidth}
-				\begin{itemize}
-					\item No tiene en cuenta el sistema de préstamos. 
-					\item No necesita gestionar empleados. 
-					\item No es necesario un punto de venta online, los clientes no lo usarían. 
-					\item De pago.\\
-				\end{itemize}
-			\end{minipage}  & 
-			\begin{minipage}[t]{\linewidth}
-				\begin{itemize}
-					\item Android
-					\item iOS
-				\end{itemize}
-			\end{minipage} \\
-			\hline
-		\end{tabularx}
-		\caption{Descripción de la tabla}
-	\end{table}
-\end{landscape}
+\begin{sidewaystable}
+	\centering % Centra la tabla en la página
+	\begin{tabularx}{\linewidth}{|X|X|X|X|}
+		\hline
+		\rowcolor{grayshade} 
+		\textbf{Nombre de la app} & 
+		\textbf{Características principales} & 
+		\textbf{Problemas} & 
+		\textbf{Plataformas disponibles} \\
+		\hline
+		myGESTIÓN & 
+		\begin{minipage}[t]{\linewidth}
+			\begin{itemize}
+				\item Gestión de clientes.
+				\item Gestión de artículos.
+				\item Gestión de pedidos de clientes.
+				\item Gestión de ventas, albaranes, facturas.
+				\item Gestión de empleados y fichaje.
+				\item Cuadro de mando. \\
+			\end{itemize}
+		\end{minipage} & 
+		\begin{minipage}[t]{\linewidth}
+			\begin{itemize}
+				\item No tiene en cuenta el sistema de préstamos. 
+				\item Excedente de funcionalidades, no son necesarios pedidos de clientes ni empleados.  
+				\item De pago.
+			\end{itemize}
+		\end{minipage}  & 
+		\begin{minipage}[t]{\linewidth}
+			\begin{itemize}
+				\item Android
+			\end{itemize}
+		\end{minipage} \\
+		\hline
+		Clover & 
+		\begin{minipage}[t]{\linewidth}
+			\begin{itemize}
+				\item Supervisión de inventario.
+				\item Gestión de empleados.
+				\item Punto de venta online. 
+				\item Gestión de clientes. \\
+			\end{itemize}
+		\end{minipage}  & 
+		\begin{minipage}[t]{\linewidth}
+			\begin{itemize}
+				\item No tiene en cuenta el sistema de préstamos. 
+				\item No necesita gestionar empleados. 
+				\item No es necesario un punto de venta online, los clientes no lo usarían. 
+				\item De pago.\\
+			\end{itemize}
+		\end{minipage}  & 
+		\begin{minipage}[t]{\linewidth}
+			\begin{itemize}
+				\item Android
+				\item iOS
+			\end{itemize}
+		\end{minipage} \\
+		\hline
+	\end{tabularx}
+	\caption{Descripción de la tabla}
+\end{sidewaystable}
+
 

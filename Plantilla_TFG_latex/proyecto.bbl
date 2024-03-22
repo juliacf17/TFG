@@ -56,6 +56,28 @@ BBVA.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Clover%
+}{%
+Clover%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+clover}
+\APACinsertmetastar {%
+clover}%
+\begin{APACrefauthors}%
+Clover.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Clover.} {Clover.}
+\newblock
+\begin{APACrefURL} \url{https://www.la.clover.com/} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 del Estado%
 }{%
 del Estado%
@@ -265,6 +287,29 @@ Iberdrola.%
 \newblock
 \begin{APACrefURL}
   \url{https://www.iberdrola.com/compromiso-social/que-es-brecha-digital}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+myGestión%
+}{%
+myGestión%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+myGestion}
+\APACinsertmetastar {%
+myGestion}%
+\begin{APACrefauthors}%
+myGestión.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {myGestión.} {mygestión.}
+\newblock
+\begin{APACrefURL} \url{https://www.mygestion.com/caracteristicas-erp}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
