@@ -170,55 +170,6 @@ Fernández~Casado, P\BPBI E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-for Standardization%
-}{%
-for Standardization%
-}{%
-{\protect \APACyear {2008}}%
-}]{%
-accesibilidad}
-\APACinsertmetastar {%
-accesibilidad}%
-\begin{APACrefauthors}%
-for Standardization, I\BPBI O.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2008}{}{}.
-\newblock
-\APACrefbtitle {ISO 9241-171: "Guidance on software accessibility".} {Iso
-  9241-171: "guidance on software accessibility".}
-\newblock
-\begin{APACrefURL}
-  \url{https://www.iso.org/es/contents/data/standard/03/90/39080.html?browse=ics}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-for Standardization%
-}{%
-for Standardization%
-}{%
-{\protect \APACyear {2019}}%
-}]{%
-iso}
-\APACinsertmetastar {%
-iso}%
-\begin{APACrefauthors}%
-for Standardization, I\BPBI O.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-\APACrefbtitle {ISO 9241-11: "Usability: Definitions and concepts".} {Iso
-  9241-11: "usability: Definitions and concepts".}
-\newblock
-\begin{APACrefURL} \url{https://www.iso.org/standard/63500.html}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Gago~Mu{\~n}iz%
 }{%
 Gago~Mu{\~n}iz%
@@ -267,6 +218,52 @@ Garc{\'\i}a, J\BPBI C\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+GoodNotes%
+}{%
+GoodNotes%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+goodnotes}
+\APACinsertmetastar {%
+goodnotes}%
+\begin{APACrefauthors}%
+GoodNotes.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {GoodNotes.} {Goodnotes.}
+\newblock
+\begin{APACrefURL} \url{https://www.goodnotes.com/features} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Highsmith%
+}{%
+Highsmith%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+agile}
+\APACinsertmetastar {%
+agile}%
+\begin{APACrefauthors}%
+Highsmith, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2004}.
+\newblock
+\APACrefbtitle {Agile Project Management: Creating Innovative Products} {Agile
+  project management: Creating innovative products}\ (\PrintOrdinal{1st}\
+  \BEd).
+\newblock
+\APACaddressPublisher{}{Addison-Wesley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Iberdrola%
 }{%
 Iberdrola%
@@ -291,6 +288,77 @@ Iberdrola.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+ISO%
+}{%
+ISO%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+accesibilidad}
+\APACinsertmetastar {%
+accesibilidad}%
+\begin{APACrefauthors}%
+ISO.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+\APACrefbtitle {ISO 9241-171: "Guidance on software accessibility".} {Iso
+  9241-171: "guidance on software accessibility".}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.iso.org/es/contents/data/standard/03/90/39080.html?browse=ics}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+ISO%
+}{%
+ISO%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+iso}
+\APACinsertmetastar {%
+iso}%
+\begin{APACrefauthors}%
+ISO.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {ISO 9241-11: "Usability: Definitions and concepts".} {Iso
+  9241-11: "usability: Definitions and concepts".}
+\newblock
+\begin{APACrefURL} \url{https://www.iso.org/standard/63500.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+LaTeX%
+}{%
+LaTeX%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+latex}
+\APACinsertmetastar {%
+latex}%
+\begin{APACrefauthors}%
+LaTeX.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {LaTeX.} {Latex.}
+\newblock
+\begin{APACrefURL} \url{https://es.wikipedia.org/wiki/LaTeX} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 myGestión%
 }{%
 myGestión%
@@ -310,6 +378,30 @@ myGestión.%
 \APACrefbtitle {myGestión.} {mygestión.}
 \newblock
 \begin{APACrefURL} \url{https://www.mygestion.com/caracteristicas-erp}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Paradigm%
+}{%
+Paradigm%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+visual}
+\APACinsertmetastar {%
+visual}%
+\begin{APACrefauthors}%
+Paradigm, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Visual Paradigm.} {Visual paradigm.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.visual-paradigm.com/support/documents/vpuserguide.jsp}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 

@@ -923,7 +923,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Iniciar sesión} &  CU1\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{inicioSesión} &  CU1\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -961,7 +961,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		1. & Encargado: Introduce su nombre de usuario y su contraseña. & 2. &  Verifica que las credenciales sean correctas \\ 
 		\hline
-		& & 3. & Redirigir al encargado a la pantalla principal. \\ 
+		3. & Encargado: Entra en el sistema & &  \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -971,8 +971,6 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
 		\hline
 		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
-		\hline
-		1a & \multicolumn{3}{l|}{El encargado deja algún campo vacío.} \\ 
 		\hline
 		2a & \multicolumn{3}{l|}{Las credenciales no son correctas.} \\ 
 		\hline
@@ -988,7 +986,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Cerrar sesión} &  CU2\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{cierreSesión} &  CU2\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1026,7 +1024,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		1. & Encargado: Solicita cierre de sesión. & 2. & Cerrar sesión. \\ 
 		\hline
-		& & 3. & Redirigir al encargado a la pantalla de inicio de sesión. \\ 
+		3. & Encargado: Sale del sistema. &  &  \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -1051,7 +1049,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|l|}{Introducción de un nuevo artículo} &  CU3\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|l|}{nuevoArtículo} &  CU3\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1102,7 +1100,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
 		\hline
-		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce la información en un formato erróneo o deja campos obligatorios vacíos.} \\ 
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce la información en un formato erróneo.} \\ 
 		\hline
 	\end{tabular}
 	\caption{Caso de uso - Introducción de un nuevo artículo}
@@ -1116,7 +1114,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Edición de un artículo existente} &  CU4\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{editarArtículo} &  CU4\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1166,7 +1164,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
 		\hline
-		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce la información en un formato erróneo o deja campos obligatorios vacíos.} \\ 
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce la información en un formato erróneo.} \\ 
 		\hline
 	\end{tabular}
 	\caption{Caso de uso - Edición de un artículo existente}
@@ -1180,7 +1178,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Eliminación de un artículo} &  CU5\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{eliminarArtículo} &  CU5\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1248,7 +1246,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de los datos de un artículo} &  CU6\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarDatosArtículos} &  CU6\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1310,7 +1308,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Búsqueda de un artículo por nombre} &  CU7\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{buscarArtículo} &  CU7\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1374,7 +1372,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Categorización de un artículo} &  CU8\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{categorizarArtículo} &  CU8\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1438,7 +1436,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de la lista de artículos existentes} &  CU9\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarListaArtículos} &  CU8\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1501,7 +1499,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de lista de renovación de artículos} &  CU10\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarListaRenovación} &  CU10\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1563,7 +1561,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Registro de un nuevo cliente habitual} &  CU11\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{nuevoCliente} &  CU11\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1621,7 +1619,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
 		\hline
-		4a & \multicolumn{3}{m{0.67\textwidth}|}{El cliente se niega a dar ciertos datos o los proporciona de forma errónea.} \\ 
+		4a & \multicolumn{3}{m{0.67\textwidth}|}{El cliente se niega a dar ciertos dato.} \\ 
 		\hline
 		6a & \multicolumn{3}{m{0.67\textwidth}|}{El formato de los datos es erróneo.} \\ 
 		\hline
@@ -1637,7 +1635,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Edición de los datos de un cliente existente} &  CU12\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{editarCliente} &  CU12\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1709,7 +1707,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Eliminación de un cliente} &  CU13\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{eliminarCliente} &  CU13\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1734,7 +1732,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de eliminar a un cliente.}  \\ 
 		\hline
-		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado elimina al cliente de la base de datos.} \\ 
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado elimina al cliente.} \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -1777,7 +1775,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de los datos de un cliente} &  CU14\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarDatosCliente} &  CU14\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1839,7 +1837,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de la lista de clientes existentes} &  CU15\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarListaClientes} &  CU15\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1901,7 +1899,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Búsqueda de un cliente por nombre} &  CU16\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{buscarCliente} &  CU16\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -1938,7 +1936,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
 		\hline
-		1. & Encargado: Introduce un nombre de un cliente. & 2. &  Realiza una búsqueda entre los clientes disponibles en la base de datos.  \\ 
+		1. & Encargado: Introduce un nombre de un cliente. & 2. &  Realiza una búsqueda entre los clientes disponibles.  \\ 
 		\hline
 		 &  & 3. &  Muestra los clientes coincidentes con la búsqueda.  \\ 
 		\hline
@@ -1965,7 +1963,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Filtrado de clientes con préstamos} &  CU17\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{filtrarClientes} &  CU17\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2029,7 +2027,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Introducción de una nueva venta} &  CU18\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{nuevaVenta} &  CU18\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2066,7 +2064,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
 		\hline
-		1. & Encargado: Quiere intorducir una nueva venta. & 2. &  Solicita los artículos vendidos.  \\ 
+		1. & Encargado: Quiere introducir una nueva venta. & 2. &  Solicita los artículos vendidos.  \\ 
 		\hline
 		3. & Encargado: Introduce los artículos y las cantidades. & 4. &  Solicita el cliente asignado.  \\ 
 		\hline
@@ -2074,7 +2072,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		7. & Encargado: Introduce el método de pago. & 8. & Registrar la venta en la base de datos.  \\ 
 		\hline
-		&  & 9. &  Actualizar el inventario de la tienda.  \\ 
+		&  & 9. &  include <<actualizaciónInventario>>  \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -2099,7 +2097,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Introducción de un nuevo préstamo} &  CU19\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{nuevoPréstamo} &  CU19\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2142,7 +2140,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		5. & Encargado: Introduce el cliente. & 6. & Registrar el préstamo en la base de datos.  \\ 
 		\hline
-		&  & 7. &  Actualizar el inventario de la tienda.  \\ 
+		&  & 7. &  include <<actualizaciónInventario>>  \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -2167,7 +2165,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Introducción de una devolución} &  CU20\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{realizarDevolución} &  CU20\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2212,7 +2210,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		6. & Encargado: Introduce método de devolución de dinero. & 7. & Registrar la devolución en la base de datos.  \\ 
 		\hline
-		&  & 8. &  Actualizar el inventario de la tienda.  \\ 
+		&  & 8. &  include <<actualizaciónInventario>>  \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -2238,7 +2236,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Eliminación de un movimiento} &  CU21\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{eliminarMovimiento} &  CU21\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2263,7 +2261,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de eliminar un movimiento.}  \\ 
 		\hline
-		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado elimina al movimiento de la base de datos.} \\ 
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado elimina al movimiento.} \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -2280,6 +2278,8 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		3. & Encargado: Acepta el mensaje de confirmación. &   &    \\ 
 		\hline
 		&  & 4. & Elimina al movimiento y actualiza la lista de movimientos existentes.  \\ 
+		\hline
+		&  & 5. & include <<actualizaciónInventario>>.  \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -2305,7 +2305,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de los datos de un movimiento} &  CU22\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarDatosMovimiento} &  CU22\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2367,7 +2367,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de la lista de movimientos existentes} &  CU23\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarListaMovimientos} &  CU23\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2429,7 +2429,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Filtrado de movimientos según su tipo} &  CU24\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{filtrarMocimientos} &  CU24\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2493,7 +2493,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Búsqueda movimientos por fecha o cliente} &  CU25\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{buscarMovimientos} &  CU25\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2530,7 +2530,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
 		\hline
-		1. & Encargado: Introduce una fecha o un nombre de un cliente. & 2. &  Realiza una búsqueda entre los movimientos disponibles en la base de datos.  \\ 
+		1. & Encargado: Introduce una fecha o un nombre de un cliente. & 2. &  Realiza una búsqueda entre los movimientos disponibles.  \\ 
 		\hline
 		&  & 3. &  Muestra los movimientos coincidentes con la búsqueda.  \\ 
 		\hline
@@ -2557,7 +2557,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Generación de una compra a partir de un préstamo} &  CU26\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{compraDesdePréstamo} &  CU26\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2604,7 +2604,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		&  & 8. &  Elimina el movimiento préstamo anterior.  \\ 
 		\hline
-		&  & 9. &  Actualiza el inventario.  \\ 
+		&  & 9. &  include <<actualizaciónInventario>>  \\ 
 		\hline
 	\end{tabular}
 \end{table}
@@ -2629,7 +2629,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de la caja diaria} &  CU27\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarCajaDiaria} &  CU27\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline
@@ -2691,7 +2691,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\centering
 	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
 		\hline
-		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{Visualización de gráficas} &  CU28\\ 
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarGráficos} &  CU28\\ 
 		\hline
 		Actores & \multicolumn{3}{l|}{Encargado} \\ 
 		\hline

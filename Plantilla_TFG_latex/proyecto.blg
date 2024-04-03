@@ -30,46 +30,52 @@ Warning--entry type for "clover" isn't style-file defined
 --line 124 of file bibliografia.bib
 Warning--entry type for "myGestion" isn't style-file defined
 --line 131 of file bibliografia.bib
+Warning--entry type for "latex" isn't style-file defined
+--line 140 of file bibliografia.bib
+Warning--entry type for "visual" isn't style-file defined
+--line 147 of file bibliografia.bib
+Warning--entry type for "goodnotes" isn't style-file defined
+--line 154 of file bibliografia.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 16 entries,
+You've used 20 entries,
             6951 wiz_defined-function locations,
-            1346 strings with 12794 characters,
-and the built_in function-call counts, 25827 in all, are:
-= -- 3588
-> -- 160
-< -- 995
-+ -- 886
-- -- 46
-* -- 1299
-:= -- 4139
-add.period$ -- 65
-call.type$ -- 16
-change.case$ -- 276
+            1361 strings with 13030 characters,
+and the built_in function-call counts, 31513 in all, are:
+= -- 4412
+> -- 200
+< -- 1159
++ -- 988
+- -- 62
+* -- 1539
+:= -- 4889
+add.period$ -- 81
+call.type$ -- 20
+change.case$ -- 344
 chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 553
-empty$ -- 1115
-format.name$ -- 224
-if$ -- 5386
+cite$ -- 40
+duplicate$ -- 685
+empty$ -- 1393
+format.name$ -- 280
+if$ -- 6671
 int.to.chr$ -- 0
-int.to.str$ -- 48
+int.to.str$ -- 60
 missing$ -- 0
-newline$ -- 359
-num.names$ -- 128
-pop$ -- 507
+newline$ -- 447
+num.names$ -- 160
+pop$ -- 609
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 84
 quote$ -- 0
-skip$ -- 2246
+skip$ -- 2852
 stack$ -- 0
-substring$ -- 971
-swap$ -- 273
-text.length$ -- 43
+substring$ -- 1087
+swap$ -- 340
+text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1928
+type$ -- 2464
 warning$ -- 0
-while$ -- 84
+while$ -- 104
 width$ -- 0
-write$ -- 390
-(There were 9 warnings)
+write$ -- 486
+(There were 12 warnings)
