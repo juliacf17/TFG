@@ -110,7 +110,8 @@ class _RegisterClientState extends State<RegisterClient> {
                     phoneController.clear();
                     commentsController.clear();
 
-                    Navigator.pop(context); // Volver a la pantalla anterior)
+                    Navigator.pop(
+                        context, success); // Volver a la pantalla anterior)
                   }
                 },
                 child: Text('Añadir cliente'),

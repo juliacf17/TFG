@@ -21,57 +21,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  /*int _selectedIndex = 0;
-
-  void _onItemTapped(int index) async {
-    if (index == 5) {
-      // Asegúrate de que el índice sea correcto para logout
-      bool? confirmLogout = await showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return AlertDialog(
-            title: Center(child: Text("Cerrar sesión")),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Center(child: Text("¿Seguro que quieres cerrar sesión?")),
-              ],
-            ),
-            actions: <Widget>[
-              Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    TextButton(
-                      child: Text("Cancelar"),
-                      onPressed: () {
-                        Navigator.of(context).pop(false);
-                      },
-                    ),
-                    TextButton(
-                      child: Text("Confirmar"),
-                      onPressed: () {
-                        Navigator.of(context).pop(true);
-                      },
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          );
-        },
-      );
-
-      if (confirmLogout == true) {
-        await client.auth.signOut();
-      }
-    } else {
-      setState(() {
-        _selectedIndex = index;
-      });
-    }
-  }*/
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -163,38 +112,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      /*bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.swap_horiz),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.bar_chart),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.logout),
-            label: '',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
-        onTap: _onItemTapped,
-      ),*/
     );
   }
 }
