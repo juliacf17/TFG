@@ -21,13 +21,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedIndex = 0;
-
-  /*void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }*/
+  /*int _selectedIndex = 0;
 
   void _onItemTapped(int index) async {
     if (index == 5) {
@@ -76,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
         _selectedIndex = index;
       });
     }
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -169,7 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
+      /*bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -200,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.grey,
         onTap: _onItemTapped,
-      ),
+      ),*/
     );
   }
 }
