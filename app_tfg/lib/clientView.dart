@@ -4,6 +4,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'utils/common.dart';
 import 'clientRegister.dart';
 import 'clientEdit.dart';
+import 'clientDetail.dart';
 
 class ClientView extends StatelessWidget {
   @override
@@ -27,13 +28,6 @@ class ClienteScreen extends StatefulWidget {
 class _ClienteScreenState extends State<ClienteScreen> {
   final TextEditingController _searchController = TextEditingController();
   Stream<List<Map<String, dynamic>>>? clientStream;
-
-  /*@override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    // Actualiza el stream cuando se muestra la pantalla
-    clientStream = client.from('clientes').stream(primaryKey: ['id']);
-  }*/
 
   @override
   void initState() {
@@ -73,7 +67,6 @@ class _ClienteScreenState extends State<ClienteScreen> {
               ],
             ),
             Expanded(
-              // Es necesario envolver el ListView.builder con Expanded para que no de error
               child: StreamBuilder<List<Map<String, dynamic>>>(
                   stream: clientStream,
                   builder: (context, snapshot) {
@@ -82,15 +75,35 @@ class _ClienteScreenState extends State<ClienteScreen> {
                     }
 
                     final clients = snapshot.data!;
+                    final searchQuery = _searchController.text.toLowerCase();
+
+                    // Filtrar clientes si el campo de búsqueda no está vacío
+                    final filteredClients = searchQuery.isNotEmpty
+                        ? clients.where((client) {
+                            final clientName = client['nombre'].toLowerCase();
+                            return clientName.contains(searchQuery);
+                          }).toList()
+                        : clients;
 
                     return ListView.builder(
-                        itemCount: clients.length,
+                        itemCount: filteredClients.length,
                         itemBuilder: (context, index) {
-                          final client = clients[index];
+                          final client = filteredClients[index];
                           final clientId = client['id'].toString();
 
                           return ListTile(
-                            title: Text(client['nombre']),
+                            title: GestureDetector(
+                              onTap: () async {
+                                await Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        ClientDetail(clientId: clientId),
+                                  ),
+                                );
+                              },
+                              child: Text(client['nombre']),
+                            ),
                             trailing: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [

@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'utils/common.dart';
 
-class EditClient extends StatefulWidget {
-  @override
+class ClientDetail extends StatefulWidget {
   final String clientId;
 
-  EditClient({required this.clientId});
+  ClientDetail({required this.clientId});
 
-  _EditarDatosScreenState createState() => _EditarDatosScreenState();
+  @override
+  _ViewClientState createState() => _ViewClientState();
 }
 
-class _EditarDatosScreenState extends State<EditClient> {
-  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+class _ViewClientState extends State<ClientDetail> {
   final TextEditingController nameController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
   final TextEditingController commentsController = TextEditingController();
@@ -39,34 +38,28 @@ class _EditarDatosScreenState extends State<EditClient> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Editar datos'),
+        title: Text('Visualizar datos'),
       ),
       body: Center(
         child: Form(
-          key: _formKey,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                'Editar cliente',
+                'Visualizar cliente',
                 style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 48.0),
               Container(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'El campo de nombre no puede estar vacío';
-                    }
-                    return null;
-                  },
                   controller: nameController,
                   decoration: const InputDecoration(
                     labelText: 'Nombre',
                     border: OutlineInputBorder(),
                   ),
+                  readOnly: true,
                 ),
               ),
               SizedBox(height: 16.0),
@@ -78,6 +71,7 @@ class _EditarDatosScreenState extends State<EditClient> {
                     labelText: 'Número de teléfono',
                     border: OutlineInputBorder(),
                   ),
+                  readOnly: true,
                 ),
               ),
               SizedBox(height: 16.0),
@@ -89,7 +83,7 @@ class _EditarDatosScreenState extends State<EditClient> {
                     labelText: 'Comentario',
                     border: OutlineInputBorder(),
                   ),
-                  maxLines: 3,
+                  readOnly: true,
                 ),
               ),
               SizedBox(height: 16.0),
@@ -101,61 +95,13 @@ class _EditarDatosScreenState extends State<EditClient> {
                     labelText: 'Monedero',
                     border: OutlineInputBorder(),
                   ),
+                  readOnly: true,
                 ),
-              ),
-              SizedBox(height: 32.0),
-              ElevatedButton(
-                onPressed: () async {
-                  if (_formKey.currentState!.validate()) {
-                    // Validación pasada, proceder con la lógica de añadir cliente
-
-                    bool success = await _editClient(
-                      widget.clientId,
-                      nameController.text,
-                      phoneController.text,
-                      commentsController.text,
-                      moneyController.text,
-                    );
-
-                    if (success) {
-                      Navigator.pop(context, true);
-                    } else {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('Error al actualizar el cliente'),
-                          backgroundColor: Colors.red,
-                        ),
-                      );
-                    }
-
-                    // Limpiar los campos después de añadir el cliente
-                    nameController.clear();
-                    phoneController.clear();
-                    commentsController.clear();
-                    moneyController.clear();
-                  }
-                },
-                child: Text('Editar cliente'),
               ),
             ],
           ),
         ),
       ),
     );
-  }
-}
-
-Future<bool> _editClient(String clientId, String name, String phone,
-    String comments, String money) async {
-  try {
-    await client.from('clientes').update({
-      'nombre': name,
-      'telefono': phone,
-      'comentario': comments,
-      'cartera': money
-    }).eq('id', clientId);
-    return true;
-  } catch (e) {
-    return false;
   }
 }
