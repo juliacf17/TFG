@@ -36,6 +36,11 @@ class _EditarDatosScreenState extends State<EditClient> {
     });
   }
 
+  // Regex para validar el formato del número de teléfono
+  static final RegExp phoneRegex = RegExp(
+    r'^(\+[0-9]{2})?(\s?[0-9]{3}\s?){3}$',
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,6 +80,15 @@ class _EditarDatosScreenState extends State<EditClient> {
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: phoneController,
+                  validator: (value) {
+                    if (value!.isNotEmpty) {
+                      if (!phoneRegex.hasMatch(value)) {
+                        return 'Formato de teléfono inválido';
+                      }
+                    }
+
+                    return null;
+                  },
                   decoration: const InputDecoration(
                     labelText: 'Número de teléfono',
                     border: OutlineInputBorder(),
