@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../mainpage.dart';
 import '../login.dart';
 import '../clientView.dart';
+import '../articles/categoryView.dart';
 import 'common.dart';
 
 class BottomNav extends StatefulWidget {
@@ -15,6 +16,8 @@ class _BottomNavState extends State<BottomNav> {
   static List<Widget> _widgetOptions = <Widget>[
     MainPage(),
     ClientView(),
+    CategoryView(),
+
     //Login(),
     // Add other screens here
   ];

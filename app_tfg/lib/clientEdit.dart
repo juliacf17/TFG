@@ -93,6 +93,7 @@ class _EditarDatosScreenState extends State<EditClient> {
                     labelText: 'Número de teléfono',
                     border: OutlineInputBorder(),
                   ),
+                  keyboardType: TextInputType.phone,
                 ),
               ),
               SizedBox(height: 16.0),
