@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 import 'utils/common.dart';
 
 class RegisterClient extends StatefulWidget {
@@ -126,9 +125,12 @@ class _RegisterClientState extends State<RegisterClient> {
   Future<bool> _addClientToDatabase(
       String name, String phone, String comments) async {
     try {
-      await client
-          .from('clientes')
-          .insert({'nombre': name, 'telefono': phone, 'comentario': comments});
+      await client.from('clientes').insert({
+        'nombre': name,
+        'telefono': phone,
+        'comentario': comments,
+        'cartera': 0.00
+      });
       return true;
     } catch (e) {
       return false;

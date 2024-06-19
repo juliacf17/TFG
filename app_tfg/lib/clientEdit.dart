@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'utils/common.dart';
 
 class EditClient extends StatefulWidget {
-  @override
   final String clientId;
 
   EditClient({required this.clientId});
 
+  @override
   _EditarDatosScreenState createState() => _EditarDatosScreenState();
 }
-//Funcionara
 
 class _EditarDatosScreenState extends State<EditClient> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -32,7 +31,8 @@ class _EditarDatosScreenState extends State<EditClient> {
       nameController.text = clientData['nombre'] ?? '';
       phoneController.text = clientData['telefono'] ?? '';
       commentsController.text = clientData['comentario'] ?? '';
-      moneyController.text = clientData['cartera'] ?? '';
+      moneyController.text =
+          (clientData['cartera'] ?? '0.00').toStringAsFixed(2);
     });
   }
 
@@ -98,10 +98,20 @@ class _EditarDatosScreenState extends State<EditClient> {
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: moneyController,
+                  keyboardType: TextInputType.numberWithOptions(decimal: true),
                   decoration: const InputDecoration(
                     labelText: 'Monedero',
                     border: OutlineInputBorder(),
                   ),
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'El campo de monedero no puede estar vacío';
+                    }
+                    if (double.tryParse(value) == null) {
+                      return 'Por favor, introduzca un número válido';
+                    }
+                    return null;
+                  },
                 ),
               ),
               SizedBox(height: 32.0),
@@ -110,12 +120,15 @@ class _EditarDatosScreenState extends State<EditClient> {
                   if (_formKey.currentState!.validate()) {
                     // Validación pasada, proceder con la lógica de añadir cliente
 
+                    double money = double.parse(moneyController.text);
+                    money = double.parse(money.toStringAsFixed(2));
+
                     bool success = await _editClient(
                       widget.clientId,
                       nameController.text,
                       phoneController.text,
                       commentsController.text,
-                      moneyController.text,
+                      money,
                     );
 
                     if (success) {
@@ -147,7 +160,7 @@ class _EditarDatosScreenState extends State<EditClient> {
 }
 
 Future<bool> _editClient(String clientId, String name, String phone,
-    String comments, String money) async {
+    String comments, double money) async {
   try {
     await client.from('clientes').update({
       'nombre': name,

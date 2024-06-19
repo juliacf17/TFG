@@ -28,11 +28,18 @@ class ClienteScreen extends StatefulWidget {
 class _ClienteScreenState extends State<ClienteScreen> {
   final TextEditingController _searchController = TextEditingController();
   Stream<List<Map<String, dynamic>>>? clientStream;
+  bool showDebts = false;
 
   @override
   void initState() {
     super.initState();
     clientStream = client.from('clientes').stream(primaryKey: ['id']);
+  }
+
+  void _toggleDebts() {
+    setState(() {
+      showDebts = !showDebts;
+    });
   }
 
   @override
@@ -61,8 +68,13 @@ class _ClienteScreenState extends State<ClienteScreen> {
                   ),
                 ),
                 IconButton(
-                  icon: Icon(Icons.attach_money),
-                  onPressed: () {},
+                  icon: Icon(
+                    Icons.attach_money,
+                    color: showDebts ? Colors.red : Colors.black,
+                  ),
+                  onPressed: () {
+                    _toggleDebts();
+                  },
                 ),
               ],
             ),
@@ -77,13 +89,16 @@ class _ClienteScreenState extends State<ClienteScreen> {
                     final clients = snapshot.data!;
                     final searchQuery = _searchController.text.toLowerCase();
 
-                    // Filtrar clientes si el campo de búsqueda no está vacío
-                    final filteredClients = searchQuery.isNotEmpty
-                        ? clients.where((client) {
-                            final clientName = client['nombre'].toLowerCase();
-                            return clientName.contains(searchQuery);
-                          }).toList()
-                        : clients;
+                    // Filtrar clientes según la búsqueda y el estado del balance negativo
+                    final filteredClients = clients.where((client) {
+                      final clientName = client['nombre'].toLowerCase();
+                      final matchesSearchQuery =
+                          clientName.contains(searchQuery);
+                      final matchesNegativeBalance =
+                          !showDebts || client['cartera'] < 0;
+
+                      return matchesSearchQuery && matchesNegativeBalance;
+                    }).toList();
 
                     return ListView.builder(
                         itemCount: filteredClients.length,
