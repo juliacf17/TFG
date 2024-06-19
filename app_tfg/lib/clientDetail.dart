@@ -30,7 +30,8 @@ class _ViewClientState extends State<ClientDetail> {
       nameController.text = clientData['nombre'] ?? '';
       phoneController.text = clientData['telefono'] ?? '';
       commentsController.text = clientData['comentario'] ?? '';
-      moneyController.text = clientData['cartera'] ?? '';
+      moneyController.text =
+          (clientData['cartera'] ?? '0.00').toStringAsFixed(2);
     });
   }
 
@@ -92,7 +93,7 @@ class _ViewClientState extends State<ClientDetail> {
                 child: TextFormField(
                   controller: moneyController,
                   decoration: const InputDecoration(
-                    labelText: 'Monedero',
+                    labelText: 'Monedero (€)',
                     border: OutlineInputBorder(),
                   ),
                   readOnly: true,

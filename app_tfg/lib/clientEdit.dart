@@ -100,7 +100,7 @@ class _EditarDatosScreenState extends State<EditClient> {
                   controller: moneyController,
                   keyboardType: TextInputType.numberWithOptions(decimal: true),
                   decoration: const InputDecoration(
-                    labelText: 'Monedero',
+                    labelText: 'Monedero (€)',
                     border: OutlineInputBorder(),
                   ),
                   validator: (value) {

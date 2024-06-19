@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'utils/common.dart';
-
 class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
