@@ -6,20 +6,21 @@ import 'newArticle.dart';
 import 'editArticle.dart';
 
 class ArticleView extends StatelessWidget {
+  final String categoryId;
+
+  ArticleView({required this.categoryId});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Pantalla de Artículos',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: ArticleScreen(),
-    );
+    return ArticleScreen(categoryId: categoryId);
   }
 }
 
 class ArticleScreen extends StatefulWidget {
+  final String categoryId;
+
+  ArticleScreen({required this.categoryId});
+
   @override
   _ArticleScreenState createState() => _ArticleScreenState();
 }
@@ -27,17 +28,34 @@ class ArticleScreen extends StatefulWidget {
 class _ArticleScreenState extends State<ArticleScreen> {
   final TextEditingController _searchController = TextEditingController();
   Stream<List<Map<String, dynamic>>>? articleStream;
+  List<String> uniqueSubcategories = [];
 
   @override
   void initState() {
     super.initState();
-    articleStream = client.from('articulos').stream(primaryKey: ['id']);
+    fetchArticles();
+  }
+
+  Future<void> fetchArticles() async {
+    final articles = await client
+        .from('articulos')
+        .select()
+        .eq('categoriaId', widget.categoryId);
+
+    articleStream = Stream.value(articles);
+    setState(() {}); // Actualizar el estado para mostrar los artículos
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         title: Text('Nuestros Artículos'),
       ),
       body: Padding(
@@ -82,14 +100,28 @@ class _ArticleScreenState extends State<ArticleScreen> {
                       .toLowerCase()
                       .compareTo(b['nombre'].toString().toLowerCase()));
 
+                  // Obtener subcategorías únicas
+
+                  filteredArticles.forEach((article) {
+                    final String? subcategoria = article[
+                        'subcategoria']; // Asegúrate de que 'subcategoria' exista en tu estructura de datos
+                    if (subcategoria != null &&
+                        subcategoria.isNotEmpty &&
+                        !uniqueSubcategories.contains(subcategoria)) {
+                      uniqueSubcategories.add(subcategoria);
+                    }
+                  });
+
                   return ListView.builder(
                     itemCount: filteredArticles.length,
                     itemBuilder: (context, index) {
                       final article = filteredArticles[index];
                       final articleId = article['id'].toString();
                       final articleName = article['nombre'];
-                      final articleCantidad = article['cantidad'].toString();
-                      final articlePrecio = article['precio'].toString();
+                      final articleCantidad =
+                          article['cantidad_actual'].toString();
+                      final articlePrecio =
+                          article['precio'].toStringAsFixed(2);
 
                       return Container(
                         decoration: BoxDecoration(
@@ -110,8 +142,8 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(height: 5.0),
+                                Text('Precio: $articlePrecio €'),
                                 Text('Cantidad: $articleCantidad'),
-                                Text('Precio: \$ $articlePrecio'),
                               ],
                             ),
                           ),
@@ -226,18 +258,18 @@ class _ArticleScreenState extends State<ArticleScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          /*final result = await Navigator.push(
+          final result = await Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => NewArticle()),
+            MaterialPageRoute(
+                builder: (context) => NewArticle(
+                      categoryId: widget.categoryId,
+                      existingSubcategories: uniqueSubcategories,
+                    )),
           );
 
-          // Actualizar el stream si se añadió un nuevo artículo
           if (result == true) {
-            articleStream = client.from('articulos').stream(primaryKey: ['id']);
-            setState(() {
-              // Forzar la reconstrucción del widget con el nuevo stream
-            });
-          }*/
+            fetchArticles(); // Actualiza la lista de artículos después de añadir uno nuevo
+          }
         },
         child: Icon(Icons.add),
         backgroundColor: Colors.blue,

@@ -73,7 +73,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            ArticleView(/*category: categoryId*/),
+                            ArticleView(categoryId: categoryId),
                       ),
                     );
                   },
