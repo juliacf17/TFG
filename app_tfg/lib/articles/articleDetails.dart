@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import '../utils/common.dart';
 
-class EditArticleScreen extends StatefulWidget {
+class ArticleDetailsScreen extends StatefulWidget {
   final String categoryId;
-  List<String> existingSubcategories; // List of existing subcategories
-
+  final List<String> existingSubcategories; // List of existing subcategories
   final String articleId;
 
-  EditArticleScreen(
-      {required this.categoryId,
-      required this.existingSubcategories,
-      required this.articleId});
+  ArticleDetailsScreen({
+    required this.categoryId,
+    required this.existingSubcategories,
+    required this.articleId,
+  });
 
   @override
-  _EditArticleScreenState createState() => _EditArticleScreenState();
+  _ArticleDetailsScreenState createState() => _ArticleDetailsScreenState();
 }
 
-class _EditArticleScreenState extends State<EditArticleScreen> {
+class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController nameController = TextEditingController();
   final TextEditingController priceController = TextEditingController();
@@ -28,6 +28,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
   final TextEditingController descriptionController = TextEditingController();
   final TextEditingController dimensionController = TextEditingController();
   final TextEditingController materialController = TextEditingController();
+  final TextEditingController genderController = TextEditingController();
 
   bool showSubcategory = false;
   bool showSize = false;
@@ -36,8 +37,6 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
   bool showDimension = false;
   bool showGender = false;
   bool showMaterial = false;
-
-  String? selectedGender;
 
   @override
   void initState() {
@@ -82,7 +81,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
       descriptionController.text = data['descripcion'] ?? '';
       dimensionController.text = data['tamanio'] ?? '';
       materialController.text = data['material'] ?? '';
-      selectedGender = data['genero'] ?? '';
+      genderController.text = data['genero'] ?? '';
     });
   }
 
@@ -114,7 +113,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
         updateArticle['tamanio'] = dimensionController.text;
       }
       if (showGender) {
-        updateArticle['genero'] = selectedGender!;
+        updateArticle['genero'] = genderController.text;
       }
       if (showMaterial) {
         updateArticle['material'] = materialController.text;
@@ -134,7 +133,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Editar Artículo', style: TextStyle(fontSize: 24.0)),
+        title: Text('Visualizar Artículo', style: TextStyle(fontSize: 24.0)),
         centerTitle: true,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
@@ -152,7 +151,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'Editar Artículo',
+                  'Visualizar Artículo',
                   style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 48.0),
@@ -170,6 +169,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       labelText: 'Nombre',
                       border: OutlineInputBorder(),
                     ),
+                    readOnly: true,
                   ),
                 ),
                 SizedBox(height: 16.0),
@@ -192,6 +192,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       labelText: 'Precio',
                       border: OutlineInputBorder(),
                     ),
+                    readOnly: true,
                   ),
                 ),
                 SizedBox(height: 16.0),
@@ -213,6 +214,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       labelText: 'Cantidad Actual',
                       border: OutlineInputBorder(),
                     ),
+                    readOnly: true,
                   ),
                 ),
                 SizedBox(height: 16.0),
@@ -234,6 +236,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       labelText: 'Cantidad Mínima',
                       border: OutlineInputBorder(),
                     ),
+                    readOnly: true,
                   ),
                 ),
                 Visibility(
@@ -243,64 +246,13 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       SizedBox(height: 16.0),
                       Container(
                         width: 400.0,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              flex: 2,
-                              child: DropdownButtonFormField<String>(
-                                value: subcategoryController.text.isEmpty
-                                    ? null
-                                    : subcategoryController.text,
-                                items: [
-                                  DropdownMenuItem(
-                                    value: '', // Valor vacío para deseleccionar
-                                    child: Text('Dejar blanco'),
-                                  ),
-                                  ...widget.existingSubcategories
-                                      .map((subcategory) => DropdownMenuItem(
-                                            value: subcategory,
-                                            child: Text(subcategory),
-                                          )),
-                                ],
-                                onChanged: (value) {
-                                  setState(() {
-                                    subcategoryController.text = value!;
-                                  });
-                                },
-                                decoration: const InputDecoration(
-                                  labelText: 'Subcategoría',
-                                  border: OutlineInputBorder(),
-                                ),
-                              ),
-                            ),
-                            SizedBox(width: 16.0),
-                            Expanded(
-                              flex: 3,
-                              child: TextFormField(
-                                enabled: subcategoryController.text.isEmpty,
-                                controller: subcategoryController,
-                                decoration: InputDecoration(
-                                  labelText: 'Nueva Subcategoría',
-                                  border: OutlineInputBorder(),
-                                  enabledBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                        color:
-                                            subcategoryController.text.isEmpty
-                                                ? Colors.black
-                                                : Colors.grey),
-                                  ),
-                                  focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                        color:
-                                            subcategoryController.text.isEmpty
-                                                ? Colors.black
-                                                : Colors.grey),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
+                        child: TextFormField(
+                          controller: subcategoryController,
+                          decoration: const InputDecoration(
+                            labelText: 'Subcategoría',
+                            border: OutlineInputBorder(),
+                          ),
+                          readOnly: true,
                         ),
                       ),
                     ],
@@ -313,36 +265,13 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       SizedBox(height: 16.0),
                       Container(
                         width: 400.0,
-                        child: DropdownButtonFormField<String>(
-                          value: selectedGender,
-                          items: ['Femenino', 'Masculino', 'Unisex']
-                              .map((String gender) {
-                            return DropdownMenuItem<String>(
-                              value: gender,
-                              child: Text(gender),
-                            );
-                          }).toList(),
-                          onChanged: (newValue) {
-                            setState(() {
-                              if (!widget.existingSubcategories
-                                  .contains(subcategoryController.text)) {
-                                widget.existingSubcategories
-                                    .add(subcategoryController.text);
-                              }
-
-                              selectedGender = newValue;
-                            });
-                          },
+                        child: TextFormField(
+                          controller: genderController,
                           decoration: const InputDecoration(
                             labelText: 'Género',
                             border: OutlineInputBorder(),
                           ),
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Por favor, seleccione un género';
-                            }
-                            return null;
-                          },
+                          readOnly: true,
                         ),
                       ),
                     ],
@@ -361,6 +290,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                             labelText: 'Talla',
                             border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
                         ),
                       ),
                     ],
@@ -379,6 +309,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                             labelText: 'Color',
                             border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
                         ),
                       ),
                     ],
@@ -397,6 +328,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                             labelText: 'Material',
                             border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
                         ),
                       ),
                     ],
@@ -415,6 +347,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                             labelText: 'Tamaño',
                             border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
                         ),
                       ),
                     ],
@@ -434,47 +367,11 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                             labelText: 'Descripción',
                             border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
                         ),
                       ),
                     ],
                   ),
-                ),
-                SizedBox(height: 32.0),
-                ElevatedButton(
-                  onPressed: () async {
-                    if (_formKey.currentState!.validate()) {
-                      // Validación pasada, proceder con la lógica de añadir cliente
-
-                      double money = double.parse(priceController.text);
-                      money = double.parse(money.toStringAsFixed(2));
-
-                      bool success = await _updateArticle();
-
-                      if (success) {
-                        Navigator.pop(context, true);
-                      } else {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text('Error al actualizar el articulo'),
-                            backgroundColor: Colors.red,
-                          ),
-                        );
-                      }
-
-                      // Limpiar los campos después de añadir el cliente
-                      nameController.clear();
-                      priceController.clear();
-                      quantityController.clear();
-                      minQuantityController.clear();
-                      subcategoryController.clear();
-                      sizeController.clear();
-                      colorController.clear();
-                      descriptionController.clear();
-                      dimensionController.clear();
-                      materialController.clear();
-                    }
-                  },
-                  child: Text('Editar articulo'),
                 ),
               ],
             ),

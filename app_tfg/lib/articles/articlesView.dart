@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../utils/common.dart';
 import 'newArticle.dart';
 import 'editArticle.dart';
+import 'articleDetails.dart';
 
 class ArticleView extends StatelessWidget {
   final String categoryId;
@@ -30,6 +30,9 @@ class _ArticleScreenState extends State<ArticleScreen> {
   Stream<List<Map<String, dynamic>>>? articleStream;
   List<String> uniqueSubcategories = [];
 
+  String subcategoryFilter = '';
+  bool actualizarDesplegable = true;
+
   @override
   void initState() {
     super.initState();
@@ -42,8 +45,19 @@ class _ArticleScreenState extends State<ArticleScreen> {
         .select()
         .eq('categoriaId', widget.categoryId);
 
-    articleStream = Stream.value(articles);
-    setState(() {}); // Actualizar el estado para mostrar los artículos
+    setState(() {
+      articleStream = Stream.value(articles as List<Map<String, dynamic>>);
+
+      articles.forEach((article) {
+        final String? subcategoria = article[
+            'subcategoria']; // Asegúrate de que 'subcategoria' exista en tu estructura de datos
+        if (subcategoria != null &&
+            subcategoria.isNotEmpty &&
+            !uniqueSubcategories.contains(subcategoria)) {
+          uniqueSubcategories.add(subcategoria);
+        }
+      });
+    });
   }
 
   @override
@@ -62,16 +76,49 @@ class _ArticleScreenState extends State<ArticleScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextField(
-              controller: _searchController,
-              decoration: InputDecoration(
-                labelText: 'Buscar',
-                prefixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(),
-              ),
-              onChanged: (value) {
-                setState(() {});
-              },
+            Row(
+              children: [
+                Flexible(
+                  flex: 3,
+                  child: TextField(
+                    controller: _searchController,
+                    decoration: InputDecoration(
+                      labelText: 'Buscar',
+                      prefixIcon: Icon(Icons.search),
+                      border: OutlineInputBorder(),
+                    ),
+                    onChanged: (value) {
+                      setState(() {});
+                    },
+                  ),
+                ),
+                SizedBox(width: 10), // Añadir espacio entre los widgets
+                Flexible(
+                  flex: 1,
+                  child: DropdownButtonFormField<String>(
+                    items: [
+                      DropdownMenuItem(
+                        value: '', // Valor vacío para deseleccionar
+                        child: Text('Dejar blanco'),
+                      ),
+                      ...uniqueSubcategories
+                          .map((subcategory) => DropdownMenuItem(
+                                value: subcategory,
+                                child: Text(subcategory),
+                              )),
+                    ],
+                    onChanged: (value) {
+                      setState(() {
+                        subcategoryFilter = value!;
+                      });
+                    },
+                    decoration: const InputDecoration(
+                      labelText: 'Subcategoría',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: 15.0),
             Expanded(
@@ -91,7 +138,11 @@ class _ArticleScreenState extends State<ArticleScreen> {
                     final matchesSearchQuery =
                         articleName.contains(searchQuery);
 
-                    return matchesSearchQuery;
+                    final articleSubcategory = article['subcategoria'];
+                    final matchesSubcategory = subcategoryFilter.isEmpty ||
+                        articleSubcategory == subcategoryFilter;
+
+                    return matchesSearchQuery && matchesSubcategory;
                   }).toList();
 
                   // Ordenar los artículos por nombre
@@ -101,7 +152,6 @@ class _ArticleScreenState extends State<ArticleScreen> {
                       .compareTo(b['nombre'].toString().toLowerCase()));
 
                   // Obtener subcategorías únicas
-
                   filteredArticles.forEach((article) {
                     final String? subcategoria = article[
                         'subcategoria']; // Asegúrate de que 'subcategoria' exista en tu estructura de datos
@@ -111,6 +161,9 @@ class _ArticleScreenState extends State<ArticleScreen> {
                       uniqueSubcategories.add(subcategoria);
                     }
                   });
+
+                  uniqueSubcategories.sort(
+                      (a, b) => a.toLowerCase().compareTo(b.toLowerCase()));
 
                   return ListView.builder(
                     itemCount: filteredArticles.length,
@@ -123,18 +176,26 @@ class _ArticleScreenState extends State<ArticleScreen> {
                       final articlePrecio =
                           article['precio'].toStringAsFixed(2);
 
-                      return Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.black, width: 1.2),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        margin: EdgeInsets.symmetric(vertical: 2.0),
-                        child: ListTile(
-                          title: GestureDetector(
-                            onTap: () {
-                              //AÑADIR ARTICLES DETAIL
-                            },
-                            child: Column(
+                      return GestureDetector(
+                        onTap: () async {
+                          final result = await Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ArticleDetailsScreen(
+                                  categoryId: widget.categoryId,
+                                  existingSubcategories: uniqueSubcategories,
+                                  articleId: articleId),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 1.2),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          margin: EdgeInsets.symmetric(vertical: 2.0),
+                          child: ListTile(
+                            title: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
@@ -146,105 +207,103 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                 Text('Cantidad: $articleCantidad'),
                               ],
                             ),
-                          ),
-                          trailing: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              IconButton(
-                                onPressed: () async {
-                                  /*final result = await Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => EditArticle(
-                                        articleId: articleId,
+                            trailing: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                IconButton(
+                                  onPressed: () async {
+                                    final result = await Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => EditArticleScreen(
+                                            categoryId: widget.categoryId,
+                                            existingSubcategories:
+                                                uniqueSubcategories,
+                                            articleId: articleId),
                                       ),
-                                    ),
-                                  );
+                                    );
 
-                                  // Actualizar el stream si se editó el artículo
-                                  if (result == true) {
-                                    articleStream = client
-                                        .from('articulos')
-                                        .stream(primaryKey: ['id']);
-
-                                    setState(() {
-                                      // Forzar la reconstrucción del widget con el nuevo stream
-                                    });
-                                  }*/
-                                },
-                                icon: const Icon(Icons.edit),
-                              ),
-                              IconButton(
-                                onPressed: () async {
-                                  bool confirmarEliminacion = await showDialog(
-                                    context: context,
-                                    builder: (context) {
-                                      return AlertDialog(
-                                        title: Center(
-                                            child: Text("Eliminar artículo")),
-                                        content: Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Center(
-                                                child: Text(
-                                                    "¿Seguro que quieres eliminar este artículo?")),
-                                          ],
-                                        ),
-                                        actions: <Widget>[
-                                          Center(
-                                            child: Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceEvenly,
-                                              children: [
-                                                TextButton(
-                                                  child: Text("Cancelar"),
-                                                  onPressed: () {
-                                                    Navigator.of(context)
-                                                        .pop(false);
-                                                  },
-                                                ),
-                                                TextButton(
-                                                  child: Text("Confirmar"),
-                                                  onPressed: () {
-                                                    Navigator.of(context)
-                                                        .pop(true);
-                                                  },
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ],
-                                      );
-                                    },
-                                  );
-
-                                  if (confirmarEliminacion == true) {
-                                    bool eliminado =
-                                        await _deleteArticle(articleId);
-                                    if (eliminado) {
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(
-                                        const SnackBar(
-                                          content: Text(
-                                              'Artículo eliminado correctamente'),
-                                          backgroundColor: Colors.green,
-                                        ),
-                                      );
-                                    } else {
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(
-                                        const SnackBar(
-                                          content: Text(
-                                              'Error al eliminar el artículo'),
-                                          backgroundColor: Colors.red,
-                                        ),
-                                      );
+                                    // Actualizar el stream si se editó el artículo
+                                    if (result == true) {
+                                      fetchArticles();
                                     }
-                                  }
-                                },
-                                icon: const Icon(Icons.delete),
-                              ),
-                            ],
+                                  },
+                                  icon: const Icon(Icons.edit),
+                                ),
+                                IconButton(
+                                  onPressed: () async {
+                                    bool confirmarEliminacion =
+                                        await showDialog(
+                                      context: context,
+                                      builder: (context) {
+                                        return AlertDialog(
+                                          title: Center(
+                                              child: Text("Eliminar artículo")),
+                                          content: Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              Center(
+                                                  child: Text(
+                                                      "¿Seguro que quieres eliminar este artículo?")),
+                                            ],
+                                          ),
+                                          actions: <Widget>[
+                                            Center(
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceEvenly,
+                                                children: [
+                                                  TextButton(
+                                                    child: Text("Cancelar"),
+                                                    onPressed: () {
+                                                      Navigator.of(context)
+                                                          .pop(false);
+                                                    },
+                                                  ),
+                                                  TextButton(
+                                                    child: Text("Confirmar"),
+                                                    onPressed: () {
+                                                      Navigator.of(context)
+                                                          .pop(true);
+                                                    },
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        );
+                                      },
+                                    );
+
+                                    if (confirmarEliminacion == true) {
+                                      bool eliminado =
+                                          await _deleteArticle(articleId);
+                                      if (eliminado) {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          const SnackBar(
+                                            content: Text(
+                                                'Artículo eliminado correctamente'),
+                                            backgroundColor: Colors.green,
+                                          ),
+                                        );
+                                      } else {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          const SnackBar(
+                                            content: Text(
+                                                'Error al eliminar el artículo'),
+                                            backgroundColor: Colors.red,
+                                          ),
+                                        );
+                                      }
+                                    }
+                                  },
+                                  icon: const Icon(Icons.delete),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       );
@@ -281,9 +340,9 @@ class _ArticleScreenState extends State<ArticleScreen> {
     try {
       await client.from('articulos').delete().eq('id', articleId);
 
-      articleStream = client.from('articulos').stream(primaryKey: ['id']);
-      setState(
-          () {}); // Asegurar que el widget se reconstruya con el nuevo stream
+      setState(() {
+        fetchArticles(); // Asegurar que el widget se reconstruya con el nuevo stream
+      });
 
       return true;
     } catch (e) {

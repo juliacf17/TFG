@@ -3,7 +3,7 @@ import '../utils/common.dart';
 
 class NewArticle extends StatefulWidget {
   final String categoryId;
-  List<String> existingSubcategories; // List of existing subcategories
+  List<String> existingSubcategories; // Puede ser final, no la quiero cambiar.
 
   NewArticle({required this.categoryId, required this.existingSubcategories});
 
@@ -252,6 +252,12 @@ class _NewArticleState extends State<NewArticle> {
                           }).toList(),
                           onChanged: (newValue) {
                             setState(() {
+                              if (!widget.existingSubcategories
+                                  .contains(subcategoryController.text)) {
+                                widget.existingSubcategories
+                                    .add(subcategoryController.text);
+                              }
+
                               selectedGender = newValue;
                             });
                           },
