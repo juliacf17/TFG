@@ -36,46 +36,50 @@ Warning--entry type for "visual" isn't style-file defined
 --line 147 of file bibliografia.bib
 Warning--entry type for "goodnotes" isn't style-file defined
 --line 154 of file bibliografia.bib
+Warning--entry type for "supabase" isn't style-file defined
+--line 169 of file bibliografia.bib
+Warning--entry type for "flutter" isn't style-file defined
+--line 176 of file bibliografia.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 20 entries,
+You've used 22 entries,
             6951 wiz_defined-function locations,
-            1361 strings with 13030 characters,
-and the built_in function-call counts, 31513 in all, are:
-= -- 4412
-> -- 200
-< -- 1159
-+ -- 988
-- -- 62
-* -- 1539
-:= -- 4889
-add.period$ -- 81
-call.type$ -- 20
-change.case$ -- 344
+            1368 strings with 13160 characters,
+and the built_in function-call counts, 34288 in all, are:
+= -- 4843
+> -- 220
+< -- 1220
++ -- 1017
+- -- 70
+* -- 1634
+:= -- 5190
+add.period$ -- 89
+call.type$ -- 22
+change.case$ -- 378
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 685
-empty$ -- 1393
-format.name$ -- 280
-if$ -- 6671
+cite$ -- 44
+duplicate$ -- 749
+empty$ -- 1529
+format.name$ -- 308
+if$ -- 7334
 int.to.chr$ -- 0
-int.to.str$ -- 60
+int.to.str$ -- 66
 missing$ -- 0
-newline$ -- 447
-num.names$ -- 160
-pop$ -- 609
+newline$ -- 491
+num.names$ -- 176
+pop$ -- 653
 preamble$ -- 1
-purify$ -- 84
+purify$ -- 92
 quote$ -- 0
-skip$ -- 2852
+skip$ -- 3192
 stack$ -- 0
-substring$ -- 1087
-swap$ -- 340
-text.length$ -- 55
+substring$ -- 1124
+swap$ -- 368
+text.length$ -- 61
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2464
+type$ -- 2768
 warning$ -- 0
-while$ -- 104
+while$ -- 114
 width$ -- 0
-write$ -- 486
-(There were 12 warnings)
+write$ -- 534
+(There were 14 warnings)

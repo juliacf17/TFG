@@ -56,6 +56,30 @@ BBVA.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+CeroIdeas%
+}{%
+CeroIdeas%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+flutter}
+\APACinsertmetastar {%
+flutter}%
+\begin{APACrefauthors}%
+CeroIdeas.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Flutter.} {Flutter.}
+\newblock
+\begin{APACrefURL}
+  \url{https://ceroideas.es/que-es-flutter-caracteristicas-y-funcionalidades/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Clover%
 }{%
 Clover%
@@ -403,6 +427,28 @@ Paradigm, V.%
 \begin{APACrefURL}
   \url{https://www.visual-paradigm.com/support/documents/vpuserguide.jsp}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Supabase%
+}{%
+Supabase%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+supabase}
+\APACinsertmetastar {%
+supabase}%
+\begin{APACrefauthors}%
+Supabase.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Supabase.} {Supabase.}
+\newblock
+\begin{APACrefURL} \url{https://supabase.com/} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
