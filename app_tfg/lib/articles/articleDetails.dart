@@ -3,6 +3,630 @@ import '../utils/common.dart';
 
 class ArticleDetailsScreen extends StatefulWidget {
   final String categoryId;
+  final List<String> existingSubcategories;
+  final String articleId;
+
+  ArticleDetailsScreen({
+    required this.categoryId,
+    required this.existingSubcategories,
+    required this.articleId,
+  });
+
+  @override
+  _ArticleDetailsScreenState createState() => _ArticleDetailsScreenState();
+}
+
+class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController priceController = TextEditingController();
+  final TextEditingController subcategoryController = TextEditingController();
+  final TextEditingController descriptionController = TextEditingController();
+  final TextEditingController dimensionController = TextEditingController();
+  final TextEditingController materialController = TextEditingController();
+  final TextEditingController genderController = TextEditingController();
+
+  List<TextEditingController> sizeControllers = [];
+  List<TextEditingController> colorControllers = [];
+  List<TextEditingController> quantityControllers = [];
+  List<TextEditingController> minQuantityControllers = [];
+
+  bool showSubcategory = false;
+  bool showSize = false;
+  bool showColor = false;
+  bool showDescription = false;
+  bool showDimension = false;
+  bool showGender = false;
+  bool showMaterial = false;
+
+  List<Map<String, dynamic>> tallasData = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchCategoryDetails();
+    _fetchArticleDetails();
+  }
+
+  Future<void> _fetchCategoryDetails() async {
+    final data = await client
+        .from('categorias')
+        .select()
+        .eq('id', widget.categoryId)
+        .single();
+
+    setState(() {
+      showSubcategory = data['tieneSubcategoria'] ?? false;
+      showSize = data['tieneTalla'] ?? false;
+      showColor = data['tieneColor'] ?? false;
+      showDescription = data['tieneDescripcion'] ?? false;
+      showDimension = data['tieneTamanio'] ?? false;
+      showGender = data['tieneGenero'] ?? false;
+      showMaterial = data['tieneMaterial'] ?? false;
+    });
+  }
+
+  Future<void> _fetchArticleDetails() async {
+    final articleData = await client
+        .from('articulos')
+        .select()
+        .eq('id', widget.articleId)
+        .single();
+
+    setState(() {
+      nameController.text = articleData['nombre'] ?? '';
+      priceController.text = (articleData['precio'] ?? 0.0).toString();
+      subcategoryController.text = articleData['subcategoria'] ?? '';
+      descriptionController.text = articleData['descripcion'] ?? '';
+      dimensionController.text = articleData['tamanio'] ?? '';
+      materialController.text = articleData['material'] ?? '';
+      genderController.text = articleData['genero'] ?? '';
+
+      // Fetch tallas associated with the article
+      _fetchTallas();
+    });
+  }
+
+  Future<void> _fetchTallas() async {
+    final tallas = await client
+        .from('tallas')
+        .select()
+        .eq('articuloId', widget.articleId); //Le he quitado un toList()
+
+    setState(() {
+      tallasData = List<Map<String, dynamic>>.from(tallas);
+      _initializeSizeControllers();
+    });
+  }
+
+  void _initializeSizeControllers() {
+    sizeControllers = [];
+    colorControllers = [];
+    quantityControllers = [];
+    minQuantityControllers = [];
+
+    for (int i = 0; i < tallasData.length; i++) {
+      sizeControllers.add(TextEditingController(text: tallasData[i]['talla']));
+      colorControllers.add(TextEditingController(text: tallasData[i]['color']));
+      quantityControllers.add(TextEditingController(
+          text: tallasData[i]['cantidadActual'].toString()));
+      minQuantityControllers.add(TextEditingController(
+          text: tallasData[i]['cantidadMinima'].toString()));
+    }
+  }
+
+/*
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('Editar Artículo', style: TextStyle(fontSize: 24.0)),
+          centerTitle: true,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+        ),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Editar Artículo',
+                      style: TextStyle(
+                          fontSize: 24.0, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(height: 24.0),
+                    TextFormField(
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'El campo de nombre no puede estar vacío';
+                        }
+                        return null;
+                      },
+                      controller: nameController,
+                      decoration: InputDecoration(
+                        labelText: 'Nombre',
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                    SizedBox(height: 16.0),
+                    TextFormField(
+                      controller: priceController,
+                      keyboardType:
+                          TextInputType.numberWithOptions(decimal: true),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'El campo de precio no puede estar vacío';
+                        }
+                        if (double.tryParse(value) == null) {
+                          return 'Por favor, introduzca un número válido';
+                        }
+                        return null;
+                      },
+                      decoration: InputDecoration(
+                        labelText: 'Precio',
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                    Visibility(
+                      visible: showSubcategory,
+                      child: Column(
+                        children: [
+                          SizedBox(height: 16.0),
+                          TextFormField(
+                            controller: subcategoryController,
+                            decoration: InputDecoration(
+                              labelText: 'Subcategoría',
+                              border: OutlineInputBorder(),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Visibility(
+                      visible: showGender,
+                      child: Column(
+                        children: [
+                          SizedBox(height: 16.0),
+                          DropdownButtonFormField<String>(
+                            value: selectedGender,
+                            items: ['Femenino', 'Masculino', 'Unisex']
+                                .map((String gender) {
+                              return DropdownMenuItem<String>(
+                                value: gender,
+                                child: Text(gender),
+                              );
+                            }).toList(),
+                            onChanged: (newValue) {
+                              setState(() {
+                                selectedGender = newValue;
+                              });
+                            },
+                            decoration: InputDecoration(
+                              labelText: 'Género',
+                              border: OutlineInputBorder(),
+                            ),
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Por favor, seleccione un género';
+                              }
+                              return null;
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                    Visibility(
+                      visible: showSize,
+                      child: Column(
+                        children: [
+                          SizedBox(height: 16.0),
+                          ListView.builder(
+                            shrinkWrap: true,
+                            itemCount: sizeControllers.length,
+                            itemBuilder: (context, index) {
+                              return Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Expanded(
+                                    flex: 2,
+                                    child: TextFormField(
+                                      controller: sizeControllers[index],
+                                      decoration: InputDecoration(
+                                        labelText: 'Talla',
+                                        border: OutlineInputBorder(),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: 8.0),
+                                  Expanded(
+                                    flex: 2,
+                                    child: TextFormField(
+                                      controller: colorControllers[index],
+                                      decoration: InputDecoration(
+                                        labelText: 'Color',
+                                        border: OutlineInputBorder(),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: 8.0),
+                                  Expanded(
+                                    flex: 2,
+                                    child: TextFormField(
+                                      controller: quantityControllers[index],
+                                      keyboardType: TextInputType.number,
+                                      decoration: InputDecoration(
+                                        labelText: 'Cantidad Actual',
+                                        border: OutlineInputBorder(),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: 8.0),
+                                  Expanded(
+                                    flex: 2,
+                                    child: TextFormField(
+                                      controller: minQuantityControllers[index],
+                                      keyboardType: TextInputType.number,
+                                      decoration: InputDecoration(
+                                        labelText: 'Cantidad Mínima',
+                                        border: OutlineInputBorder(),
+                                      ),
+                                    ),
+                                  ),
+                                  IconButton(
+                                    icon: Icon(Icons.remove),
+                                    onPressed: () => _removeSizeRow(index),
+                                  ),
+                                ],
+                              );
+                            },
+                          ),
+                          SizedBox(height: 16.0),
+                          TextButton(
+                            onPressed: _addSizeRow,
+                            child: Text('Agregar otra talla'),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Visibility(
+                      visible: showDescription,
+                      child: Column(
+                        children: [
+                          SizedBox(height: 16.0),
+                          TextFormField(
+                            controller: descriptionController,
+                            decoration: InputDecoration(
+                              labelText: 'Descripción',
+                              border: OutlineInputBorder(),
+                            ),
+                            maxLines: 3,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Visibility(
+                      visible: showDimension,
+                      child: Column(
+                        children: [
+                          SizedBox(height: 16.0),
+                          TextFormField(
+                            controller: dimensionController,
+                            decoration: InputDecoration(
+                              labelText: 'Dimensiones',
+                              border: OutlineInputBorder(),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Visibility(
+                      visible: showMaterial,
+                      child: Column(
+                        children: [
+                          SizedBox(height: 16.0),
+                          Container(
+                            width: 400.0,
+                            child: TextFormField(
+                              controller: materialController,
+                              decoration: const InputDecoration(
+                                labelText: 'Material',
+                                border: OutlineInputBorder(),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 32.0),
+                    ElevatedButton(
+                      onPressed: () async {
+                        if (_formKey.currentState!.validate()) {
+                          // Validación pasada, proceder con la lógica de añadir cliente
+
+                          double money = double.parse(priceController.text);
+                          money = double.parse(money.toStringAsFixed(2));
+
+                          bool success = await _updateArticle();
+
+                          if (success) {
+                            Navigator.pop(context, true);
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content:
+                                    Text('Error al actualizar el articulo'),
+                                backgroundColor: Colors.red,
+                              ),
+                            );
+                          }
+
+                          // Limpiar los campos después de añadir el cliente
+                          nameController.clear();
+                          priceController.clear();
+                          subcategoryController.clear();
+                          descriptionController.clear();
+                          dimensionController.clear();
+                          materialController.clear();
+                        }
+                      },
+                      child: Text('Editar articulo'),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ));
+  }
+}*/
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Editar Artículo', style: TextStyle(fontSize: 24.0)),
+        centerTitle: true,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Form(
+              key: _formKey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  SizedBox(height: 24.0),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 200.0),
+                    child: TextFormField(
+                      controller: nameController,
+                      decoration: InputDecoration(
+                        labelText: 'Nombre',
+                        border: OutlineInputBorder(),
+                      ),
+                      readOnly: true,
+                    ),
+                  ),
+                  SizedBox(height: 16.0),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 200.0),
+                    child: TextFormField(
+                      controller: priceController,
+                      decoration: InputDecoration(
+                        labelText: 'Precio',
+                        border: OutlineInputBorder(),
+                      ),
+                      readOnly: true,
+                    ),
+                  ),
+                  Visibility(
+                    visible: showSubcategory,
+                    child: Column(
+                      children: [
+                        SizedBox(height: 16.0),
+                        Padding(
+                          padding:
+                              const EdgeInsets.symmetric(horizontal: 200.0),
+                          child: TextFormField(
+                            controller: subcategoryController,
+                            decoration: InputDecoration(
+                              labelText: 'Subcategoría',
+                              border: OutlineInputBorder(),
+                            ),
+                            readOnly: true,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Visibility(
+                    visible: showGender,
+                    child: Column(
+                      children: [
+                        SizedBox(height: 16.0),
+                        Padding(
+                          padding:
+                              const EdgeInsets.symmetric(horizontal: 200.0),
+                          child: TextFormField(
+                            controller: genderController,
+                            decoration: InputDecoration(
+                              labelText: 'Género',
+                              border: OutlineInputBorder(),
+                            ),
+                            readOnly: true,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Visibility(
+                    visible: showSize,
+                    child: Column(
+                      children: [
+                        SizedBox(height: 16.0),
+                        ListView.builder(
+                          shrinkWrap: true,
+                          itemCount: sizeControllers.length,
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 200.0, vertical: 8.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Expanded(
+                                    flex: 2,
+                                    child: TextFormField(
+                                      controller: sizeControllers[index],
+                                      decoration: InputDecoration(
+                                        labelText: 'Talla',
+                                        border: OutlineInputBorder(),
+                                      ),
+                                      readOnly: true,
+                                    ),
+                                  ),
+                                  SizedBox(width: 8.0),
+                                  Expanded(
+                                    flex: 2,
+                                    child: TextFormField(
+                                      controller: colorControllers[index],
+                                      decoration: InputDecoration(
+                                        labelText: 'Color',
+                                        border: OutlineInputBorder(),
+                                      ),
+                                      readOnly: true,
+                                    ),
+                                  ),
+                                  SizedBox(width: 8.0),
+                                  Expanded(
+                                    flex: 2,
+                                    child: TextFormField(
+                                      controller: quantityControllers[index],
+                                      keyboardType: TextInputType.number,
+                                      decoration: InputDecoration(
+                                        labelText: 'Cantidad Actual',
+                                        border: OutlineInputBorder(),
+                                      ),
+                                      readOnly: true,
+                                    ),
+                                  ),
+                                  SizedBox(width: 8.0),
+                                  Expanded(
+                                    flex: 2,
+                                    child: TextFormField(
+                                      controller: minQuantityControllers[index],
+                                      keyboardType: TextInputType.number,
+                                      decoration: InputDecoration(
+                                        labelText: 'Cantidad Mínima',
+                                        border: OutlineInputBorder(),
+                                      ),
+                                      readOnly: true,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                  Visibility(
+                    visible: showDescription,
+                    child: Column(
+                      children: [
+                        SizedBox(height: 16.0),
+                        Padding(
+                          padding:
+                              const EdgeInsets.symmetric(horizontal: 200.0),
+                          child: TextFormField(
+                            controller: descriptionController,
+                            decoration: InputDecoration(
+                              labelText: 'Descripción',
+                              border: OutlineInputBorder(),
+                            ),
+                            readOnly: true,
+                            maxLines: 3,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Visibility(
+                    visible: showDimension,
+                    child: Column(
+                      children: [
+                        SizedBox(height: 16.0),
+                        Padding(
+                          padding:
+                              const EdgeInsets.symmetric(horizontal: 200.0),
+                          child: TextFormField(
+                            controller: dimensionController,
+                            decoration: InputDecoration(
+                              labelText: 'Dimensiones',
+                              border: OutlineInputBorder(),
+                            ),
+                            readOnly: true,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Visibility(
+                    visible: showMaterial,
+                    child: Column(
+                      children: [
+                        SizedBox(height: 16.0),
+                        Padding(
+                          padding:
+                              const EdgeInsets.symmetric(horizontal: 200.0),
+                          child: TextFormField(
+                            controller: materialController,
+                            decoration: InputDecoration(
+                              labelText: 'Material',
+                              border: OutlineInputBorder(),
+                            ),
+                            readOnly: true,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+/*import 'package:flutter/material.dart';
+import '../utils/common.dart';
+
+class ArticleDetailsScreen extends StatefulWidget {
+  final String categoryId;
   final List<String> existingSubcategories; // List of existing subcategories
   final String articleId;
 
@@ -83,50 +707,6 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
       materialController.text = data['material'] ?? '';
       genderController.text = data['genero'] ?? '';
     });
-  }
-
-  Future<bool> _updateArticle() async {
-    try {
-      double money = double.parse(priceController.text);
-      money = double.parse(money.toStringAsFixed(2));
-
-      final updateArticle = {
-        'nombre': nameController.text,
-        'precio': money,
-        'cantidad_actual': quantityController.text,
-        'cantidad_minima': minQuantityController.text,
-      };
-
-      if (showSubcategory) {
-        updateArticle['subcategoria'] = subcategoryController.text;
-      }
-      if (showSize) {
-        updateArticle['talla'] = sizeController.text;
-      }
-      if (showColor) {
-        updateArticle['color'] = colorController.text;
-      }
-      if (showDescription) {
-        updateArticle['descripcion'] = descriptionController.text;
-      }
-      if (showDimension) {
-        updateArticle['tamanio'] = dimensionController.text;
-      }
-      if (showGender) {
-        updateArticle['genero'] = genderController.text;
-      }
-      if (showMaterial) {
-        updateArticle['material'] = materialController.text;
-      }
-
-      await client
-          .from('articulos')
-          .update(updateArticle)
-          .eq('id', widget.articleId);
-      return true;
-    } catch (e) {
-      return false;
-    }
   }
 
   @override
@@ -381,3 +961,4 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
     );
   }
 }
+*/

@@ -300,6 +300,7 @@ class _NewArticleState extends State<NewArticle> {
                       );
                     },
                   ),
+                  SizedBox(height: 10.0),
                   TextButton(
                     onPressed: _addSizeRow,
                     child: Text('Agregar otra talla'),
