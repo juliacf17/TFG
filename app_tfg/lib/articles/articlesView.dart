@@ -338,6 +338,8 @@ class _ArticleScreenState extends State<ArticleScreen> {
 
   Future<bool> _deleteArticle(String articleId) async {
     try {
+      await client.from('tallas').delete().eq('articuloId', articleId);
+
       await client.from('articulos').delete().eq('id', articleId);
 
       setState(() {
