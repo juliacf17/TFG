@@ -407,84 +407,91 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       shrinkWrap: true,
                       itemCount: sizeControllers.length,
                       itemBuilder: (context, index) {
-                        return Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                        return Column(
                           children: [
-                            Expanded(
-                              child: TextFormField(
-                                controller: sizeControllers[index],
-                                decoration: const InputDecoration(
-                                  labelText: 'Talla',
-                                  border: OutlineInputBorder(),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Expanded(
+                                  child: TextFormField(
+                                    controller: sizeControllers[index],
+                                    decoration: const InputDecoration(
+                                      labelText: 'Talla',
+                                      border: OutlineInputBorder(),
+                                    ),
+                                    validator: (value) {
+                                      if (value!.isEmpty) {
+                                        return 'No puede estar vacío';
+                                      }
+                                      return null;
+                                    },
+                                  ),
                                 ),
-                                validator: (value) {
-                                  if (value!.isEmpty) {
-                                    return 'No puede estar vacío';
-                                  }
-                                  return null;
-                                },
-                              ),
-                            ),
-                            SizedBox(width: 16.0),
-                            Expanded(
-                              child: TextFormField(
-                                controller: colorControllers[index],
-                                decoration: const InputDecoration(
-                                  labelText: 'Color',
-                                  border: OutlineInputBorder(),
+                                SizedBox(width: 16.0),
+                                Expanded(
+                                  child: TextFormField(
+                                    controller: colorControllers[index],
+                                    decoration: const InputDecoration(
+                                      labelText: 'Color',
+                                      border: OutlineInputBorder(),
+                                    ),
+                                    validator: (value) {
+                                      if (value!.isEmpty) {
+                                        return 'No puede estar vacío';
+                                      }
+                                      return null;
+                                    },
+                                  ),
                                 ),
-                                validator: (value) {
-                                  if (value!.isEmpty) {
-                                    return 'No puede estar vacío';
-                                  }
-                                  return null;
-                                },
-                              ),
-                            ),
-                            SizedBox(width: 16.0),
-                            Expanded(
-                              child: TextFormField(
-                                controller: quantityControllers[index],
-                                keyboardType: TextInputType.number,
-                                decoration: const InputDecoration(
-                                  labelText: 'Cantidad Actual',
-                                  border: OutlineInputBorder(),
+                                SizedBox(width: 16.0),
+                                Expanded(
+                                  child: TextFormField(
+                                    controller: quantityControllers[index],
+                                    keyboardType: TextInputType.number,
+                                    decoration: const InputDecoration(
+                                      labelText: 'Cantidad Actual',
+                                      border: OutlineInputBorder(),
+                                    ),
+                                    validator: (value) {
+                                      if (value!.isEmpty) {
+                                        return 'No puede estar vacío';
+                                      }
+                                      if (int.tryParse(value) == null) {
+                                        return 'Número entero válido';
+                                      }
+                                      return null;
+                                    },
+                                  ),
                                 ),
-                                validator: (value) {
-                                  if (value!.isEmpty) {
-                                    return 'No puede estar vacío';
-                                  }
-                                  if (int.tryParse(value) == null) {
-                                    return 'Número entero válido';
-                                  }
-                                  return null;
-                                },
-                              ),
-                            ),
-                            SizedBox(width: 16.0),
-                            Expanded(
-                              child: TextFormField(
-                                controller: minQuantityControllers[index],
-                                keyboardType: TextInputType.number,
-                                decoration: const InputDecoration(
-                                  labelText: 'Cantidad Mínima',
-                                  border: OutlineInputBorder(),
+                                SizedBox(width: 16.0),
+                                Expanded(
+                                  child: TextFormField(
+                                    controller: minQuantityControllers[index],
+                                    keyboardType: TextInputType.number,
+                                    decoration: const InputDecoration(
+                                      labelText: 'Cantidad Mínima',
+                                      border: OutlineInputBorder(),
+                                    ),
+                                    validator: (value) {
+                                      if (value!.isEmpty) {
+                                        return 'No puede estar vacío';
+                                      }
+                                      if (int.tryParse(value) == null) {
+                                        return 'Número entero válido';
+                                      }
+                                      return null;
+                                    },
+                                  ),
                                 ),
-                                validator: (value) {
-                                  if (value!.isEmpty) {
-                                    return 'No puede estar vacío';
-                                  }
-                                  if (int.tryParse(value) == null) {
-                                    return 'Número entero válido';
-                                  }
-                                  return null;
-                                },
-                              ),
+                                IconButton(
+                                  icon: Icon(Icons.remove),
+                                  onPressed: () => _removeSizeRow(index),
+                                ),
+                              ],
                             ),
-                            IconButton(
-                              icon: Icon(Icons.remove),
-                              onPressed: () => _removeSizeRow(index),
-                            ),
+                            SizedBox(
+                                height:
+                                    8.0), // Espacio de 8 unidades entre filas
                           ],
                         );
                       },
