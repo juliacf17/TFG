@@ -30,9 +30,6 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
   List<TextEditingController> quantityControllers = [];
   List<TextEditingController> minQuantityControllers = [];
 
-  bool showSubcategory = false;
-  bool showSize = false;
-  bool showColor = false;
   bool showDescription = false;
   bool showDimension = false;
   bool showGender = false;
@@ -56,9 +53,6 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
         .single();
 
     setState(() {
-      showSubcategory = data['tieneSubcategoria'] ?? false;
-      showSize = data['tieneTalla'] ?? false;
-      showColor = data['tieneColor'] ?? false;
       showDescription = data['tieneDescripcion'] ?? false;
       showDimension = data['tieneTamanio'] ?? false;
       showGender = data['tieneGenero'] ?? false;
@@ -189,282 +183,6 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
     }
   }
 
-/*
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Editar Artículo', style: TextStyle(fontSize: 24.0)),
-          centerTitle: true,
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-        ),
-        body: SingleChildScrollView(
-          child: Center(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Text(
-                      'Editar Artículo',
-                      style: TextStyle(
-                          fontSize: 24.0, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(height: 24.0),
-                    TextFormField(
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'El campo de nombre no puede estar vacío';
-                        }
-                        return null;
-                      },
-                      controller: nameController,
-                      decoration: InputDecoration(
-                        labelText: 'Nombre',
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                    SizedBox(height: 16.0),
-                    TextFormField(
-                      controller: priceController,
-                      keyboardType:
-                          TextInputType.numberWithOptions(decimal: true),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'El campo de precio no puede estar vacío';
-                        }
-                        if (double.tryParse(value) == null) {
-                          return 'Por favor, introduzca un número válido';
-                        }
-                        return null;
-                      },
-                      decoration: InputDecoration(
-                        labelText: 'Precio',
-                        border: OutlineInputBorder(),
-                      ),
-                    ),
-                    Visibility(
-                      visible: showSubcategory,
-                      child: Column(
-                        children: [
-                          SizedBox(height: 16.0),
-                          TextFormField(
-                            controller: subcategoryController,
-                            decoration: InputDecoration(
-                              labelText: 'Subcategoría',
-                              border: OutlineInputBorder(),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Visibility(
-                      visible: showGender,
-                      child: Column(
-                        children: [
-                          SizedBox(height: 16.0),
-                          DropdownButtonFormField<String>(
-                            value: selectedGender,
-                            items: ['Femenino', 'Masculino', 'Unisex']
-                                .map((String gender) {
-                              return DropdownMenuItem<String>(
-                                value: gender,
-                                child: Text(gender),
-                              );
-                            }).toList(),
-                            onChanged: (newValue) {
-                              setState(() {
-                                selectedGender = newValue;
-                              });
-                            },
-                            decoration: InputDecoration(
-                              labelText: 'Género',
-                              border: OutlineInputBorder(),
-                            ),
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Por favor, seleccione un género';
-                              }
-                              return null;
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
-                    Visibility(
-                      visible: showSize,
-                      child: Column(
-                        children: [
-                          SizedBox(height: 16.0),
-                          ListView.builder(
-                            shrinkWrap: true,
-                            itemCount: sizeControllers.length,
-                            itemBuilder: (context, index) {
-                              return Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Expanded(
-                                    flex: 2,
-                                    child: TextFormField(
-                                      controller: sizeControllers[index],
-                                      decoration: InputDecoration(
-                                        labelText: 'Talla',
-                                        border: OutlineInputBorder(),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(width: 8.0),
-                                  Expanded(
-                                    flex: 2,
-                                    child: TextFormField(
-                                      controller: colorControllers[index],
-                                      decoration: InputDecoration(
-                                        labelText: 'Color',
-                                        border: OutlineInputBorder(),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(width: 8.0),
-                                  Expanded(
-                                    flex: 2,
-                                    child: TextFormField(
-                                      controller: quantityControllers[index],
-                                      keyboardType: TextInputType.number,
-                                      decoration: InputDecoration(
-                                        labelText: 'Cantidad Actual',
-                                        border: OutlineInputBorder(),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(width: 8.0),
-                                  Expanded(
-                                    flex: 2,
-                                    child: TextFormField(
-                                      controller: minQuantityControllers[index],
-                                      keyboardType: TextInputType.number,
-                                      decoration: InputDecoration(
-                                        labelText: 'Cantidad Mínima',
-                                        border: OutlineInputBorder(),
-                                      ),
-                                    ),
-                                  ),
-                                  IconButton(
-                                    icon: Icon(Icons.remove),
-                                    onPressed: () => _removeSizeRow(index),
-                                  ),
-                                ],
-                              );
-                            },
-                          ),
-                          SizedBox(height: 16.0),
-                          TextButton(
-                            onPressed: _addSizeRow,
-                            child: Text('Agregar otra talla'),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Visibility(
-                      visible: showDescription,
-                      child: Column(
-                        children: [
-                          SizedBox(height: 16.0),
-                          TextFormField(
-                            controller: descriptionController,
-                            decoration: InputDecoration(
-                              labelText: 'Descripción',
-                              border: OutlineInputBorder(),
-                            ),
-                            maxLines: 3,
-                          ),
-                        ],
-                      ),
-                    ),
-                    Visibility(
-                      visible: showDimension,
-                      child: Column(
-                        children: [
-                          SizedBox(height: 16.0),
-                          TextFormField(
-                            controller: dimensionController,
-                            decoration: InputDecoration(
-                              labelText: 'Dimensiones',
-                              border: OutlineInputBorder(),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Visibility(
-                      visible: showMaterial,
-                      child: Column(
-                        children: [
-                          SizedBox(height: 16.0),
-                          Container(
-                            width: 400.0,
-                            child: TextFormField(
-                              controller: materialController,
-                              decoration: const InputDecoration(
-                                labelText: 'Material',
-                                border: OutlineInputBorder(),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 32.0),
-                    ElevatedButton(
-                      onPressed: () async {
-                        if (_formKey.currentState!.validate()) {
-                          // Validación pasada, proceder con la lógica de añadir cliente
-
-                          double money = double.parse(priceController.text);
-                          money = double.parse(money.toStringAsFixed(2));
-
-                          bool success = await _updateArticle();
-
-                          if (success) {
-                            Navigator.pop(context, true);
-                          } else {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content:
-                                    Text('Error al actualizar el articulo'),
-                                backgroundColor: Colors.red,
-                              ),
-                            );
-                          }
-
-                          // Limpiar los campos después de añadir el cliente
-                          nameController.clear();
-                          priceController.clear();
-                          subcategoryController.clear();
-                          descriptionController.clear();
-                          dimensionController.clear();
-                          materialController.clear();
-                        }
-                      },
-                      child: Text('Editar articulo'),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ));
-  }
-}*/
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -526,75 +244,62 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       ),
                     ),
                   ),
-                  Visibility(
-                    visible: showSubcategory,
-                    child: Column(
+                  SizedBox(height: 16.0),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 200.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 16.0),
-                        Padding(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 200.0),
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                flex: 2,
-                                child: DropdownButtonFormField<String>(
-                                  value: subcategoryController.text.isEmpty
-                                      ? null
-                                      : subcategoryController.text,
-                                  items: [
-                                    DropdownMenuItem(
-                                      value:
-                                          '', // Valor vacío para deseleccionar
-                                      child: Text('Dejar en blanco'),
-                                    ),
-                                    ...widget.existingSubcategories
-                                        .map((subcategory) => DropdownMenuItem(
-                                              value: subcategory,
-                                              child: Text(subcategory),
-                                            )),
-                                  ],
-                                  onChanged: (value) {
-                                    setState(() {
-                                      subcategoryController.text = value!;
-                                    });
-                                  },
-                                  decoration: const InputDecoration(
-                                    labelText: 'Subcategoría',
-                                    border: OutlineInputBorder(),
-                                  ),
-                                ),
+                        Expanded(
+                          flex: 2,
+                          child: DropdownButtonFormField<String>(
+                            value: subcategoryController.text.isEmpty
+                                ? null
+                                : subcategoryController.text,
+                            items: [
+                              DropdownMenuItem(
+                                value: '', // Valor vacío para deseleccionar
+                                child: Text('Dejar blanco'),
                               ),
-                              SizedBox(width: 16.0),
-                              Expanded(
-                                flex: 3,
-                                child: TextFormField(
-                                  enabled: subcategoryController.text.isEmpty,
-                                  controller: subcategoryController,
-                                  decoration: InputDecoration(
-                                    labelText: 'Nueva Subcategoría',
-                                    border: OutlineInputBorder(),
-                                    enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color:
-                                            subcategoryController.text.isEmpty
-                                                ? Colors.black
-                                                : Colors.grey,
-                                      ),
-                                    ),
-                                    focusedBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color:
-                                            subcategoryController.text.isEmpty
-                                                ? Colors.black
-                                                : Colors.grey,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
+                              ...widget.existingSubcategories
+                                  .map((subcategory) => DropdownMenuItem(
+                                        value: subcategory,
+                                        child: Text(subcategory),
+                                      )),
                             ],
+                            onChanged: (value) {
+                              setState(() {
+                                subcategoryController.text = value!;
+                              });
+                            },
+                            decoration: const InputDecoration(
+                              labelText: 'Subcategoría',
+                              border: OutlineInputBorder(),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 16.0),
+                        Expanded(
+                          flex: 3,
+                          child: TextFormField(
+                            enabled: subcategoryController.text.isEmpty,
+                            controller: subcategoryController,
+                            decoration: InputDecoration(
+                              labelText: 'Nueva Subcategoría',
+                              border: OutlineInputBorder(),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    color: subcategoryController.text.isEmpty
+                                        ? Colors.black
+                                        : Colors.grey),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    color: subcategoryController.text.isEmpty
+                                        ? Colors.black
+                                        : Colors.grey),
+                              ),
+                            ),
                           ),
                         ),
                       ],
@@ -638,89 +343,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                     ),
                   ),
                   Visibility(
-                    visible: showSize,
-                    child: Column(
-                      children: [
-                        SizedBox(height: 16.0),
-                        ListView.builder(
-                          shrinkWrap: true,
-                          itemCount: sizeControllers.length,
-                          itemBuilder: (context, index) {
-                            return Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 200.0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Expanded(
-                                    flex: 2,
-                                    child: TextFormField(
-                                      controller: sizeControllers[index],
-                                      decoration: InputDecoration(
-                                        labelText: 'Talla',
-                                        border: OutlineInputBorder(),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(width: 8.0),
-                                  Expanded(
-                                    flex: 2,
-                                    child: TextFormField(
-                                      controller: colorControllers[index],
-                                      decoration: InputDecoration(
-                                        labelText: 'Color',
-                                        border: OutlineInputBorder(),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(width: 8.0),
-                                  Expanded(
-                                    flex: 2,
-                                    child: TextFormField(
-                                      controller: quantityControllers[index],
-                                      keyboardType: TextInputType.number,
-                                      decoration: InputDecoration(
-                                        labelText: 'Cantidad Actual',
-                                        border: OutlineInputBorder(),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(width: 8.0),
-                                  Expanded(
-                                    flex: 2,
-                                    child: TextFormField(
-                                      controller: minQuantityControllers[index],
-                                      keyboardType: TextInputType.number,
-                                      decoration: InputDecoration(
-                                        labelText: 'Cantidad Mínima',
-                                        border: OutlineInputBorder(),
-                                      ),
-                                    ),
-                                  ),
-                                  IconButton(
-                                    icon: Icon(Icons.remove),
-                                    onPressed: () => _removeSizeRow(index),
-                                  ),
-                                ],
-                              ),
-                            );
-                          },
-                        ),
-                        SizedBox(height: 16.0),
-                        Padding(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 200.0),
-                          child: TextButton(
-                            onPressed: _addSizeRow,
-                            child: Text('Agregar otra talla'),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Visibility(
-                    visible: showDescription,
+                    visible: showMaterial,
                     child: Column(
                       children: [
                         SizedBox(height: 16.0),
@@ -728,12 +351,11 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
-                            controller: descriptionController,
+                            controller: materialController,
                             decoration: InputDecoration(
-                              labelText: 'Descripción',
+                              labelText: 'Material',
                               border: OutlineInputBorder(),
                             ),
-                            maxLines: 3,
                           ),
                         ),
                       ],
@@ -759,7 +381,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                     ),
                   ),
                   Visibility(
-                    visible: showMaterial,
+                    visible: showDescription,
                     child: Column(
                       children: [
                         SizedBox(height: 16.0),
@@ -767,15 +389,111 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
-                            controller: materialController,
+                            controller: descriptionController,
                             decoration: InputDecoration(
-                              labelText: 'Material',
+                              labelText: 'Descripción',
                               border: OutlineInputBorder(),
                             ),
+                            maxLines: 3,
                           ),
                         ),
                       ],
                     ),
+                  ),
+                  SizedBox(height: 16.0),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 200.0),
+                    child: ListView.builder(
+                      shrinkWrap: true,
+                      itemCount: sizeControllers.length,
+                      itemBuilder: (context, index) {
+                        return Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Expanded(
+                              child: TextFormField(
+                                controller: sizeControllers[index],
+                                decoration: const InputDecoration(
+                                  labelText: 'Talla',
+                                  border: OutlineInputBorder(),
+                                ),
+                                validator: (value) {
+                                  if (value!.isEmpty) {
+                                    return 'No puede estar vacío';
+                                  }
+                                  return null;
+                                },
+                              ),
+                            ),
+                            SizedBox(width: 16.0),
+                            Expanded(
+                              child: TextFormField(
+                                controller: colorControllers[index],
+                                decoration: const InputDecoration(
+                                  labelText: 'Color',
+                                  border: OutlineInputBorder(),
+                                ),
+                                validator: (value) {
+                                  if (value!.isEmpty) {
+                                    return 'No puede estar vacío';
+                                  }
+                                  return null;
+                                },
+                              ),
+                            ),
+                            SizedBox(width: 16.0),
+                            Expanded(
+                              child: TextFormField(
+                                controller: quantityControllers[index],
+                                keyboardType: TextInputType.number,
+                                decoration: const InputDecoration(
+                                  labelText: 'Cantidad Actual',
+                                  border: OutlineInputBorder(),
+                                ),
+                                validator: (value) {
+                                  if (value!.isEmpty) {
+                                    return 'No puede estar vacío';
+                                  }
+                                  if (int.tryParse(value) == null) {
+                                    return 'Número entero válido';
+                                  }
+                                  return null;
+                                },
+                              ),
+                            ),
+                            SizedBox(width: 16.0),
+                            Expanded(
+                              child: TextFormField(
+                                controller: minQuantityControllers[index],
+                                keyboardType: TextInputType.number,
+                                decoration: const InputDecoration(
+                                  labelText: 'Cantidad Mínima',
+                                  border: OutlineInputBorder(),
+                                ),
+                                validator: (value) {
+                                  if (value!.isEmpty) {
+                                    return 'No puede estar vacío';
+                                  }
+                                  if (int.tryParse(value) == null) {
+                                    return 'Número entero válido';
+                                  }
+                                  return null;
+                                },
+                              ),
+                            ),
+                            IconButton(
+                              icon: Icon(Icons.remove),
+                              onPressed: () => _removeSizeRow(index),
+                            ),
+                          ],
+                        );
+                      },
+                    ),
+                  ),
+                  SizedBox(height: 10.0),
+                  TextButton(
+                    onPressed: _addSizeRow,
+                    child: Text('Agregar otra talla'),
                   ),
                   SizedBox(height: 32.0),
                   Padding(

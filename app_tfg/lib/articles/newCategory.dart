@@ -10,10 +10,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
   final TextEditingController _categoryNameController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
-  bool _talla = true;
-  bool _color = true;
   bool _descripcion = true;
-  bool _subcategoria = true;
   bool _tamano = true;
   bool _genero = true;
   bool _material = true;
@@ -24,10 +21,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
 
       final Map<String, dynamic> categoryData = {
         'nombre': categoryName,
-        'tieneTalla': _talla,
-        'tieneColor': _color,
         'tieneDescripcion': _descripcion,
-        'tieneSubcategoria': _subcategoria,
         'tieneTamanio': _tamano,
         'tieneGenero': _genero,
         'tieneMaterial': _material,
@@ -85,38 +79,11 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
               ),
               CheckboxListTile(
-                title: Text('Talla'),
-                value: _talla,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _talla = value ?? false;
-                  });
-                },
-              ),
-              CheckboxListTile(
-                title: Text('Color'),
-                value: _color,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _color = value ?? false;
-                  });
-                },
-              ),
-              CheckboxListTile(
                 title: Text('Descripción'),
                 value: _descripcion,
                 onChanged: (bool? value) {
                   setState(() {
                     _descripcion = value ?? false;
-                  });
-                },
-              ),
-              CheckboxListTile(
-                title: Text('Subcategoría'),
-                value: _subcategoria,
-                onChanged: (bool? value) {
-                  setState(() {
-                    _subcategoria = value ?? false;
                   });
                 },
               ),

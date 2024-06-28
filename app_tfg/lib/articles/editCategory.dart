@@ -13,10 +13,7 @@ class EditCategoryScreen extends StatefulWidget {
 class _EditCategoryScreenState extends State<EditCategoryScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final TextEditingController _categoryNameController = TextEditingController();
-  bool _talla = false;
-  bool _color = false;
   bool _descripcion = false;
-  bool _subcategoria = false;
   bool _tamano = false;
   bool _genero = false;
   bool _material = false;
@@ -42,10 +39,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
 
     setState(() {
       _categoryNameController.text = category['nombre'] ?? '';
-      _talla = category['tieneTalla'] ?? true;
-      _color = category['tieneColor'] ?? true;
       _descripcion = category['tieneDescripcion'] ?? true;
-      _subcategoria = category['tieneSubcategoria'] ?? true;
       _tamano = category['tieneTamanio'] ?? true;
       _genero = category['tieneGenero'] ?? true;
       _material = category['tieneMaterial'] ?? true;
@@ -57,10 +51,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
       final categoryName = _categoryNameController.text;
       final Map<String, dynamic> categoryData = {
         'nombre': categoryName,
-        'tieneTalla': _talla,
-        'tieneColor': _color,
         'tieneDescripcion': _descripcion,
-        'tieneSubcategoria': _subcategoria,
         'tieneTamanio': _tamano,
         'tieneGenero': _genero,
         'tieneMaterial': _material,
@@ -126,38 +117,11 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
                 ),
                 SizedBox(height: 16.0),
                 CheckboxListTile(
-                  title: Text('Talla'),
-                  value: _talla,
-                  onChanged: (bool? value) {
-                    setState(() {
-                      _talla = value ?? false;
-                    });
-                  },
-                ),
-                CheckboxListTile(
-                  title: Text('Color'),
-                  value: _color,
-                  onChanged: (bool? value) {
-                    setState(() {
-                      _color = value ?? false;
-                    });
-                  },
-                ),
-                CheckboxListTile(
                   title: Text('Descripción'),
                   value: _descripcion,
                   onChanged: (bool? value) {
                     setState(() {
                       _descripcion = value ?? false;
-                    });
-                  },
-                ),
-                CheckboxListTile(
-                  title: Text('Subcategoría'),
-                  value: _subcategoria,
-                  onChanged: (bool? value) {
-                    setState(() {
-                      _subcategoria = value ?? false;
                     });
                   },
                 ),
