@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'movements/newMovement.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -62,7 +63,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {
-                            // Dirigir a la pantalla de nueva venta
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    NuevaVentaScreen(isVenta: true),
+                              ),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                             // Cambia el color de fondo según tu diseño
@@ -91,7 +98,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {
-                            // Dirigir a la pantalla de nueva venta
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    NuevaVentaScreen(isVenta: false),
+                              ),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                             // Cambia el color de fondo según tu diseño
