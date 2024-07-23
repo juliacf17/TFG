@@ -3,6 +3,7 @@ import '../mainpage.dart';
 import '../login.dart';
 import '../clientView.dart';
 import '../articles/categoryView.dart';
+import '../movements/viewMovements.dart';
 import 'common.dart';
 
 class BottomNav extends StatefulWidget {
@@ -17,6 +18,7 @@ class _BottomNavState extends State<BottomNav> {
     MainPage(),
     ClientView(),
     CategoryView(),
+    MovimientosView(),
     // Add other screens here
   ];
 

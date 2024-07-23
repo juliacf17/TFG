@@ -155,6 +155,27 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
     await insertArticulosMov(movimientoId);
   }
 
+  Future<void> updateClientCartera(int clienteId, double amount) async {
+    try {
+      final response = await client
+          .from('clientes')
+          .select('cartera')
+          .eq('id', clienteId)
+          .single();
+
+      final double currentCartera = response['cartera'];
+      final double updatedCartera = currentCartera - amount;
+
+      await client
+          .from('clientes')
+          .update({'cartera': updatedCartera}).eq('id', clienteId);
+
+      print('Cartera updated successfully for client $clienteId');
+    } catch (error) {
+      print('Error updating cartera: $error');
+    }
+  }
+/*
   Future<void> insertPrestamo() async {
     final DateTime now = DateTime.now();
     final String formattedDate =
@@ -173,6 +194,29 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
         .single();
     final movimientoId = response['id'];
     await insertArticulosMov(movimientoId);
+  }*/
+
+  Future<void> insertPrestamo() async {
+    final DateTime now = DateTime.now();
+    final String formattedDate =
+        now.toIso8601String().split('.')[0]; // Truncate milliseconds
+    final response = await client
+        .from('movimientos')
+        .insert({
+          'fecha': formattedDate,
+          'precioTotal': _calculateTotal(),
+          'clienteId': _selectedClientId,
+          'metodoPago': null,
+          'tipoMov': 'Préstamo',
+          'idVenta': null,
+        })
+        .select()
+        .single();
+    final movimientoId = response['id'];
+    await insertArticulosMov(movimientoId);
+
+    // Update client's cartera
+    await updateClientCartera(_selectedClientId, _calculateTotal());
   }
 
   void _addItem() async {
