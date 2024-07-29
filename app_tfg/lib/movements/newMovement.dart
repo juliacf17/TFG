@@ -189,6 +189,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
           'metodoPago': null,
           'tipoMov': 'Préstamo',
           'idMovAnterior': null,
+          'isPrestamo': true,
         })
         .select()
         .single();
