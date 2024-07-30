@@ -6,7 +6,8 @@ class ArticleDetailsScreen extends StatefulWidget {
   final List<String> existingSubcategories;
   final String articleId;
 
-  ArticleDetailsScreen({
+  const ArticleDetailsScreen({
+    super.key,
     required this.categoryId,
     required this.existingSubcategories,
     required this.articleId,
@@ -113,10 +114,11 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Visualizar Artículo', style: TextStyle(fontSize: 24.0)),
+        title:
+            const Text('Visualizar Artículo', style: TextStyle(fontSize: 24.0)),
         centerTitle: true,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -131,36 +133,36 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  SizedBox(height: 24.0),
+                  const SizedBox(height: 24.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 200.0),
                     child: TextFormField(
                       controller: nameController,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Nombre',
                         border: OutlineInputBorder(),
                       ),
                       readOnly: true,
                     ),
                   ),
-                  SizedBox(height: 16.0),
+                  const SizedBox(height: 16.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 200.0),
                     child: TextFormField(
                       controller: priceController,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Precio',
                         border: OutlineInputBorder(),
                       ),
                       readOnly: true,
                     ),
                   ),
-                  SizedBox(height: 16.0),
+                  const SizedBox(height: 16.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 200.0),
                     child: TextFormField(
                       controller: subcategoryController,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Subcategoría',
                         border: OutlineInputBorder(),
                       ),
@@ -171,13 +173,13 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                     visible: showGender,
                     child: Column(
                       children: [
-                        SizedBox(height: 16.0),
+                        const SizedBox(height: 16.0),
                         Padding(
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
                             controller: genderController,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               labelText: 'Género',
                               border: OutlineInputBorder(),
                             ),
@@ -191,13 +193,13 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                     visible: showMaterial,
                     child: Column(
                       children: [
-                        SizedBox(height: 16.0),
+                        const SizedBox(height: 16.0),
                         Padding(
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
                             controller: materialController,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               labelText: 'Material',
                               border: OutlineInputBorder(),
                             ),
@@ -211,13 +213,13 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                     visible: showDimension,
                     child: Column(
                       children: [
-                        SizedBox(height: 16.0),
+                        const SizedBox(height: 16.0),
                         Padding(
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
                             controller: dimensionController,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               labelText: 'Dimensiones',
                               border: OutlineInputBorder(),
                             ),
@@ -231,13 +233,13 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                     visible: showDescription,
                     child: Column(
                       children: [
-                        SizedBox(height: 16.0),
+                        const SizedBox(height: 16.0),
                         Padding(
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
                             controller: descriptionController,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               labelText: 'Descripción',
                               border: OutlineInputBorder(),
                             ),
@@ -248,11 +250,10 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 16.0),
+                  const SizedBox(height: 16.0),
                   sizeControllers.isEmpty
-                      ? Padding(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 200.0),
+                      ? const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 200.0),
                           child: Text(
                             "No hay tallas registradas",
                             style:
@@ -274,45 +275,45 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                                     flex: 2,
                                     child: TextFormField(
                                       controller: sizeControllers[index],
-                                      decoration: InputDecoration(
+                                      decoration: const InputDecoration(
                                         labelText: 'Talla',
                                         border: OutlineInputBorder(),
                                       ),
                                       readOnly: true,
                                     ),
                                   ),
-                                  SizedBox(width: 8.0),
+                                  const SizedBox(width: 8.0),
                                   Expanded(
                                     flex: 2,
                                     child: TextFormField(
                                       controller: colorControllers[index],
-                                      decoration: InputDecoration(
+                                      decoration: const InputDecoration(
                                         labelText: 'Color',
                                         border: OutlineInputBorder(),
                                       ),
                                       readOnly: true,
                                     ),
                                   ),
-                                  SizedBox(width: 8.0),
+                                  const SizedBox(width: 8.0),
                                   Expanded(
                                     flex: 2,
                                     child: TextFormField(
                                       controller: quantityControllers[index],
                                       keyboardType: TextInputType.number,
-                                      decoration: InputDecoration(
+                                      decoration: const InputDecoration(
                                         labelText: 'Cantidad Actual',
                                         border: OutlineInputBorder(),
                                       ),
                                       readOnly: true,
                                     ),
                                   ),
-                                  SizedBox(width: 8.0),
+                                  const SizedBox(width: 8.0),
                                   Expanded(
                                     flex: 2,
                                     child: TextFormField(
                                       controller: minQuantityControllers[index],
                                       keyboardType: TextInputType.number,
-                                      decoration: InputDecoration(
+                                      decoration: const InputDecoration(
                                         labelText: 'Cantidad Mínima',
                                         border: OutlineInputBorder(),
                                       ),

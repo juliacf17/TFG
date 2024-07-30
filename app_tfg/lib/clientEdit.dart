@@ -4,7 +4,7 @@ import 'utils/common.dart';
 class EditClient extends StatefulWidget {
   final String clientId;
 
-  EditClient({required this.clientId});
+  const EditClient({super.key, required this.clientId});
 
   @override
   _EditarDatosScreenState createState() => _EditarDatosScreenState();
@@ -45,7 +45,7 @@ class _EditarDatosScreenState extends State<EditClient> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Editar datos'),
+        title: const Text('Editar datos'),
       ),
       body: Center(
         child: Form(
@@ -54,12 +54,12 @@ class _EditarDatosScreenState extends State<EditClient> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Text(
+              const Text(
                 'Editar cliente',
                 style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 48.0),
-              Container(
+              const SizedBox(height: 48.0),
+              SizedBox(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   validator: (value) {
@@ -75,8 +75,8 @@ class _EditarDatosScreenState extends State<EditClient> {
                   ),
                 ),
               ),
-              SizedBox(height: 16.0),
-              Container(
+              const SizedBox(height: 16.0),
+              SizedBox(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: phoneController,
@@ -96,8 +96,8 @@ class _EditarDatosScreenState extends State<EditClient> {
                   keyboardType: TextInputType.phone,
                 ),
               ),
-              SizedBox(height: 16.0),
-              Container(
+              const SizedBox(height: 16.0),
+              SizedBox(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: commentsController,
@@ -108,12 +108,13 @@ class _EditarDatosScreenState extends State<EditClient> {
                   maxLines: 3,
                 ),
               ),
-              SizedBox(height: 16.0),
-              Container(
+              const SizedBox(height: 16.0),
+              SizedBox(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: moneyController,
-                  keyboardType: TextInputType.numberWithOptions(decimal: true),
+                  keyboardType:
+                      const TextInputType.numberWithOptions(decimal: true),
                   decoration: const InputDecoration(
                     labelText: 'Monedero (€)',
                     border: OutlineInputBorder(),
@@ -129,7 +130,7 @@ class _EditarDatosScreenState extends State<EditClient> {
                   },
                 ),
               ),
-              SizedBox(height: 32.0),
+              const SizedBox(height: 32.0),
               ElevatedButton(
                 onPressed: () async {
                   if (_formKey.currentState!.validate()) {
@@ -150,7 +151,7 @@ class _EditarDatosScreenState extends State<EditClient> {
                       Navigator.pop(context, true);
                     } else {
                       ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
+                        const SnackBar(
                           content: Text('Error al actualizar el cliente'),
                           backgroundColor: Colors.red,
                         ),
@@ -164,7 +165,7 @@ class _EditarDatosScreenState extends State<EditClient> {
                     moneyController.clear();
                   }
                 },
-                child: Text('Editar cliente'),
+                child: const Text('Editar cliente'),
               ),
             ],
           ),

@@ -6,15 +6,15 @@ import 'viewMovements.dart'; // Importa la pantalla de Movimientos
 class DetalleMovimientoScreen extends StatelessWidget {
   final int movimientoId;
 
-  DetalleMovimientoScreen({required this.movimientoId});
+  const DetalleMovimientoScreen({super.key, required this.movimientoId});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ver Movimiento'),
+        title: const Text('Ver Movimiento'),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.popUntil(context, (route) => route.isFirst);
           },
@@ -28,7 +28,7 @@ class DetalleMovimientoScreen extends StatelessWidget {
 class DetalleMovimientoView extends StatefulWidget {
   final int movimientoId;
 
-  DetalleMovimientoView({required this.movimientoId});
+  const DetalleMovimientoView({super.key, required this.movimientoId});
 
   @override
   _DetalleMovimientoViewState createState() => _DetalleMovimientoViewState();
@@ -63,7 +63,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
           .select('*, tallas(id, articuloId, talla, color, cantidadActual)')
           .eq('movimientoId', widget.movimientoId);
       print('Items fetched: $itemsResponse');
-      return itemsResponse as List<Map<String, dynamic>>;
+      return itemsResponse;
     } catch (error) {
       print('Error fetching items: $error');
       return [];
@@ -370,17 +370,17 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           print('FutureBuilder waiting for data...');
-          return Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator());
         }
 
         if (snapshot.hasError) {
           print('FutureBuilder error: ${snapshot.error}');
-          return Center(child: Text('Error al cargar los datos'));
+          return const Center(child: Text('Error al cargar los datos'));
         }
 
         if (!snapshot.hasData || snapshot.data!.isEmpty) {
           print('FutureBuilder has no data');
-          return Center(child: Text('No se encontró el movimiento'));
+          return const Center(child: Text('No se encontró el movimiento'));
         }
 
         final movimiento = snapshot.data!;
@@ -396,14 +396,14 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey),
                     ),
                     child: Text(
                       'Tipo de Movimiento: ${isCompraParcial ? 'Compra' : (isDevolucionParcial ? 'Devolución' : movimiento['tipoMov'])}',
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ),
                   if (movimiento['idMovAnterior'] != -1)
@@ -422,7 +422,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                     totalDevolucionParcial = 0.0;
                                   });
                                 },
-                                child: Text('Devolución parcial'),
+                                child: const Text('Devolución parcial'),
                               ),
                             if (movimiento['tipoMov'] == 'Préstamo')
                               ElevatedButton(
@@ -434,27 +434,27 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                     totalDevolucionParcial = 0.0;
                                   });
                                 },
-                                child: Text('Comprar'),
+                                child: const Text('Comprar'),
                               ),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             ElevatedButton(
                               onPressed: () {
                                 showDialog(
                                   context: context,
                                   builder: (BuildContext context) {
                                     return AlertDialog(
-                                      title: Text('Confirmar devolución'),
-                                      content: Text(
+                                      title: const Text('Confirmar devolución'),
+                                      content: const Text(
                                           '¿Estás seguro de que quieres devolver todos los artículos?'),
                                       actions: [
                                         TextButton(
-                                          child: Text('Cancelar'),
+                                          child: const Text('Cancelar'),
                                           onPressed: () {
                                             Navigator.of(context).pop();
                                           },
                                         ),
                                         TextButton(
-                                          child: Text('Aceptar'),
+                                          child: const Text('Aceptar'),
                                           onPressed: () {
                                             devolverTodo(
                                                 isPrestamo:
@@ -467,7 +467,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                   },
                                 );
                               },
-                              child: Text('Devolver todo'),
+                              child: const Text('Devolver todo'),
                             ),
                           ],
                         )
@@ -485,8 +485,8 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                           },
                           child: movimiento['tipoMov'] == 'Préstamo' ||
                                   movimiento['tipoMov'] == 'Venta'
-                              ? Text('Devolución hecha')
-                              : Text('Movimiento original'),
+                              ? const Text('Devolución hecha')
+                              : const Text('Movimiento original'),
                         ),
                   if (movimiento['idMovAnterior'] != -1 &&
                       movimiento['tipoMov'] == 'Devolución')
@@ -501,11 +501,11 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                           ),
                         );
                       },
-                      child: Text('Movimiento original'),
+                      child: const Text('Movimiento original'),
                     ),
                 ],
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
 
               // Parte central con la lista de artículos
               Expanded(
@@ -515,13 +515,13 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                     if (itemsSnapshot.connectionState ==
                         ConnectionState.waiting) {
                       print('FutureBuilder waiting for items data...');
-                      return Center(child: CircularProgressIndicator());
+                      return const Center(child: CircularProgressIndicator());
                     }
 
                     if (itemsSnapshot.hasError) {
                       print(
                           'FutureBuilder error fetching items: ${itemsSnapshot.error}');
-                      return Center(
+                      return const Center(
                           child: Text(
                               'Error al cargar los datos de los artículos'));
                     }
@@ -539,13 +539,14 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                           builder: (context, articuloSnapshot) {
                             if (articuloSnapshot.connectionState ==
                                 ConnectionState.waiting) {
-                              return Center(child: CircularProgressIndicator());
+                              return const Center(
+                                  child: CircularProgressIndicator());
                             }
 
                             if (articuloSnapshot.hasError) {
                               print(
                                   'FutureBuilder error fetching articulo: ${articuloSnapshot.error}');
-                              return Center(
+                              return const Center(
                                   child: Text(
                                       'Error al cargar el nombre del artículo'));
                             }
@@ -555,7 +556,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                             print('Artículo data: $articuloNombre');
 
                             return Card(
-                              margin: EdgeInsets.symmetric(vertical: 8.0),
+                              margin: const EdgeInsets.symmetric(vertical: 8.0),
                               child: ListTile(
                                 title: Text('Artículo: $articuloNombre'),
                                 subtitle: Column(
@@ -590,7 +591,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                       children: [
                         Expanded(
                           child: DropdownButton<String>(
-                            hint: Text('Método de pago'),
+                            hint: const Text('Método de pago'),
                             value: _selectedPaymentMethod,
                             items:
                                 <String>['Efectivo', 'Tarjeta'].map((method) {
@@ -606,12 +607,12 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                             },
                           ),
                         ),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Text(
                           'Total ${isCompraParcial ? 'compra' : 'devolución'} parcial: \$${totalDevolucionParcial.toStringAsFixed(2)}',
-                          style: TextStyle(fontSize: 18),
+                          style: const TextStyle(fontSize: 18),
                         ),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         ElevatedButton(
                           onPressed: () {
                             if (_selectedPaymentMethod == null) {
@@ -619,12 +620,13 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                 context: context,
                                 builder: (BuildContext context) {
                                   return AlertDialog(
-                                    title: Text('Método de pago requerido'),
-                                    content: Text(
+                                    title:
+                                        const Text('Método de pago requerido'),
+                                    content: const Text(
                                         'Por favor, seleccione un método de pago.'),
                                     actions: [
                                       TextButton(
-                                        child: Text('OK'),
+                                        child: const Text('OK'),
                                         onPressed: () {
                                           Navigator.of(context).pop();
                                         },
@@ -644,13 +646,13 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                         '¿Estás seguro de que quieres ${isCompraParcial ? 'comprar' : 'devolver'} los artículos seleccionados?'),
                                     actions: [
                                       TextButton(
-                                        child: Text('Cancelar'),
+                                        child: const Text('Cancelar'),
                                         onPressed: () {
                                           Navigator.of(context).pop();
                                         },
                                       ),
                                       TextButton(
-                                        child: Text('Aceptar'),
+                                        child: const Text('Aceptar'),
                                         onPressed: () {
                                           if (isCompraParcial) {
                                             comprarParcial();
@@ -668,7 +670,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                               );
                             }
                           },
-                          child: Text('Aceptar'),
+                          child: const Text('Aceptar'),
                         ),
                       ],
                     ),
@@ -676,7 +678,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                 ),
               if (!isDevolucionParcial && !isCompraParcial)
                 Container(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey),
                   ),
@@ -686,13 +688,13 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                       if (clienteSnapshot.connectionState ==
                           ConnectionState.waiting) {
                         print('FutureBuilder waiting for cliente data...');
-                        return Center(child: CircularProgressIndicator());
+                        return const Center(child: CircularProgressIndicator());
                       }
 
                       if (clienteSnapshot.hasError) {
                         print(
                             'FutureBuilder error fetching cliente: ${clienteSnapshot.error}');
-                        return Center(
+                        return const Center(
                             child:
                                 Text('Error al cargar el nombre del cliente'));
                       }
@@ -709,30 +711,30 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                               Expanded(
                                 child: Text(
                                   'Cliente: $clienteNombre',
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                 ),
                               ),
                               Expanded(
                                 child: Text(
                                   'Fecha: ${_formatDate(movimiento['fecha'])}',
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                 ),
                               ),
                             ],
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Row(
                             children: [
                               Expanded(
                                 child: Text(
                                   'Método: ${movimiento['metodoPago'] ?? 'N/A'}',
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                 ),
                               ),
                               Expanded(
                                 child: Text(
                                   'Precio Total: \$${movimiento['precioTotal']}',
-                                  style: TextStyle(fontSize: 18),
+                                  style: const TextStyle(fontSize: 18),
                                 ),
                               ),
                             ],
@@ -742,7 +744,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                     },
                   ),
                 ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
             ],
           ),
         );

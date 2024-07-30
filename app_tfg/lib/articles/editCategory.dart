@@ -4,7 +4,7 @@ import '../utils/common.dart';
 class EditCategoryScreen extends StatefulWidget {
   final String categoryId;
 
-  EditCategoryScreen({required this.categoryId});
+  const EditCategoryScreen({super.key, required this.categoryId});
 
   @override
   _EditCategoryScreenState createState() => _EditCategoryScreenState();
@@ -64,7 +64,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
             .eq('id', widget.categoryId);
 
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Categoría actualizada exitosamente'),
             backgroundColor: Colors.green,
           ),
@@ -72,7 +72,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
         return true;
       } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Error al actualizar la categoría'),
             backgroundColor: Colors.red,
           ),
@@ -87,7 +87,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Editar Categoría'),
+        title: const Text('Editar Categoría'),
       ),
       body: Center(
         child: Form(
@@ -97,11 +97,11 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(
+                const Text(
                   'Editar categoría',
                   style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 24.0),
+                const SizedBox(height: 24.0),
                 TextFormField(
                   controller: _categoryNameController,
                   validator: (value) {
@@ -110,14 +110,14 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
                     }
                     return null;
                   },
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Nombre de la categoría',
                     border: OutlineInputBorder(),
                   ),
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 CheckboxListTile(
-                  title: Text('Descripción'),
+                  title: const Text('Descripción'),
                   value: _descripcion,
                   onChanged: (bool? value) {
                     setState(() {
@@ -126,7 +126,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
                   },
                 ),
                 CheckboxListTile(
-                  title: Text('Tamaño'),
+                  title: const Text('Tamaño'),
                   value: _tamano,
                   onChanged: (bool? value) {
                     setState(() {
@@ -135,7 +135,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
                   },
                 ),
                 CheckboxListTile(
-                  title: Text('Género'),
+                  title: const Text('Género'),
                   value: _genero,
                   onChanged: (bool? value) {
                     setState(() {
@@ -144,7 +144,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
                   },
                 ),
                 CheckboxListTile(
-                  title: Text('Material'),
+                  title: const Text('Material'),
                   value: _material,
                   onChanged: (bool? value) {
                     setState(() {
@@ -152,7 +152,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
                     });
                   },
                 ),
-                SizedBox(height: 32.0),
+                const SizedBox(height: 32.0),
                 Center(
                   child: ElevatedButton(
                     onPressed: () async {
@@ -161,7 +161,7 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
                         Navigator.pop(context, true);
                       }
                     },
-                    child: Text('Editar categoría'),
+                    child: const Text('Editar categoría'),
                   ),
                 ),
               ],

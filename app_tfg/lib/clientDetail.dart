@@ -4,7 +4,7 @@ import 'utils/common.dart';
 class ClientDetail extends StatefulWidget {
   final String clientId;
 
-  ClientDetail({required this.clientId});
+  const ClientDetail({super.key, required this.clientId});
 
   @override
   _ViewClientState createState() => _ViewClientState();
@@ -39,7 +39,7 @@ class _ViewClientState extends State<ClientDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Visualizar datos'),
+        title: const Text('Visualizar datos'),
       ),
       body: Center(
         child: Form(
@@ -47,12 +47,12 @@ class _ViewClientState extends State<ClientDetail> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Text(
+              const Text(
                 'Visualizar cliente',
                 style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 48.0),
-              Container(
+              const SizedBox(height: 48.0),
+              SizedBox(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: nameController,
@@ -63,8 +63,8 @@ class _ViewClientState extends State<ClientDetail> {
                   readOnly: true,
                 ),
               ),
-              SizedBox(height: 16.0),
-              Container(
+              const SizedBox(height: 16.0),
+              SizedBox(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: phoneController,
@@ -75,8 +75,8 @@ class _ViewClientState extends State<ClientDetail> {
                   readOnly: true,
                 ),
               ),
-              SizedBox(height: 16.0),
-              Container(
+              const SizedBox(height: 16.0),
+              SizedBox(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: commentsController,
@@ -87,8 +87,8 @@ class _ViewClientState extends State<ClientDetail> {
                   readOnly: true,
                 ),
               ),
-              SizedBox(height: 16.0),
-              Container(
+              const SizedBox(height: 16.0),
+              SizedBox(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: moneyController,

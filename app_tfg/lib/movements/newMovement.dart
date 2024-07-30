@@ -4,7 +4,7 @@ import '../utils/common.dart';
 class NuevaVentaScreen extends StatefulWidget {
   final bool isVenta; // Variable para determinar si es una venta o un préstamo
 
-  NuevaVentaScreen({required this.isVenta});
+  const NuevaVentaScreen({super.key, required this.isVenta});
 
   @override
   _NuevaVentaScreenState createState() => _NuevaVentaScreenState();
@@ -238,12 +238,12 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              title: Text("Cantidad no disponible"),
+              title: const Text("Cantidad no disponible"),
               content: Text(
                   "La cantidad seleccionada excede la cantidad disponible. Disponible: $_currentQuantity."),
               actions: [
                 TextButton(
-                  child: Text("OK"),
+                  child: const Text("OK"),
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
@@ -259,11 +259,11 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text("Información incompleta"),
-            content: Text("Debes rellenar todos los campos"),
+            title: const Text("Información incompleta"),
+            content: const Text("Debes rellenar todos los campos"),
             actions: [
               TextButton(
-                child: Text("OK"),
+                child: const Text("OK"),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -315,17 +315,18 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
       return (await showDialog(
             context: context,
             builder: (context) => AlertDialog(
-              title: Text("El proceso de venta se finalizará"),
-              content: Text("¿Estás seguro de que deseas finalizar la venta?"),
+              title: const Text("El proceso de venta se finalizará"),
+              content:
+                  const Text("¿Estás seguro de que deseas finalizar la venta?"),
               actions: [
                 TextButton(
-                  child: Text("Cancelar"),
+                  child: const Text("Cancelar"),
                   onPressed: () {
                     Navigator.of(context).pop(false);
                   },
                 ),
                 TextButton(
-                  child: Text("Aceptar"),
+                  child: const Text("Aceptar"),
                   onPressed: () async {
                     for (var item in List.from(_items)) {
                       await fetchCurrentQuantity(
@@ -357,10 +358,10 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
       onWillPop: _onWillPop,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Nueva Venta', style: TextStyle(fontSize: 24.0)),
+          title: const Text('Nueva Venta', style: TextStyle(fontSize: 24.0)),
           centerTitle: true,
           leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back),
             onPressed: () async {
               if (await _onWillPop()) {
                 Navigator.pop(context);
@@ -379,7 +380,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       children: [
                         TextField(
                           controller: _searchController,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             labelText: 'Buscar artículo',
                             prefixIcon: Icon(Icons.search),
                             border: OutlineInputBorder(),
@@ -389,9 +390,9 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                           },
                         ),
                         if (_isSearching)
-                          CircularProgressIndicator()
+                          const CircularProgressIndicator()
                         else if (_filteredArticles.isNotEmpty)
-                          Container(
+                          SizedBox(
                             height: 150,
                             child: ListView.builder(
                               shrinkWrap: true,
@@ -419,9 +420,9 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   DropdownButton<String>(
-                    hint: Text('Talla'),
+                    hint: const Text('Talla'),
                     value: _selectedSize,
                     onChanged: (newValue) {
                       setState(() {
@@ -435,9 +436,9 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       );
                     }).toList(),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   DropdownButton<String>(
-                    hint: Text('Color'),
+                    hint: const Text('Color'),
                     value: _selectedColor,
                     onChanged: (newValue) {
                       setState(() {
@@ -451,11 +452,11 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       );
                     }).toList(),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Row(
                     children: [
                       IconButton(
-                        icon: Icon(Icons.remove),
+                        icon: const Icon(Icons.remove),
                         onPressed: _decrementQuantity,
                       ),
                       SizedBox(
@@ -463,7 +464,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                         child: TextField(
                           controller: _quantityController,
                           keyboardType: TextInputType.number,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             labelText: 'Cantidad',
                             border: OutlineInputBorder(),
                           ),
@@ -471,16 +472,16 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                         ),
                       ),
                       IconButton(
-                        icon: Icon(Icons.add),
+                        icon: const Icon(Icons.add),
                         onPressed: _incrementQuantity,
                       ),
                     ],
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Text('Precio: \$$_partialPrice'),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   IconButton(
-                    icon: Icon(Icons.add),
+                    icon: const Icon(Icons.add),
                     onPressed: _addItem,
                   ),
                 ],
@@ -491,14 +492,14 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                   itemBuilder: (context, index) {
                     final item = _items[index];
                     return Card(
-                      margin: EdgeInsets.symmetric(vertical: 8.0),
+                      margin: const EdgeInsets.symmetric(vertical: 8.0),
                       child: ListTile(
                         title: Text(item['article']),
                         subtitle: Text(
                             'Color: ${item['color']}, Talla: ${item['size']}, Cantidad: ${item['quantity']}'),
                         trailing: Text('\$${item['price'] * item['quantity']}'),
                         leading: IconButton(
-                          icon: Icon(Icons.delete),
+                          icon: const Icon(Icons.delete),
                           onPressed: () async {
                             await fetchCurrentQuantity(
                                 item['id'], item['size']!, item['color']!);
@@ -525,7 +526,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       children: [
                         TextField(
                           controller: _clientSearchController,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             labelText: 'Asignar cliente',
                             prefixIcon: Icon(Icons.search),
                             border: OutlineInputBorder(),
@@ -535,9 +536,9 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                           },
                         ),
                         if (_isClientSearching)
-                          CircularProgressIndicator()
+                          const CircularProgressIndicator()
                         else if (_filteredClients.isNotEmpty)
-                          Container(
+                          SizedBox(
                             height: 150,
                             child: ListView.builder(
                               shrinkWrap: true,
@@ -562,13 +563,13 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       ],
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text('Precio total: \$${_calculateTotal()}'),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Visibility(
                     visible: widget.isVenta,
                     child: DropdownButton<String>(
-                      hint: Text('Método'),
+                      hint: const Text('Método'),
                       value: _selectedPaymentMethod,
                       items: <String>['Efectivo', 'Tarjeta'].map((method) {
                         return DropdownMenuItem<String>(
@@ -583,7 +584,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       },
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   ElevatedButton(
                     onPressed: () async {
                       if (widget.isVenta) {
@@ -595,12 +596,12 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                title: Text("Método de pago requerido"),
-                                content: Text(
+                                title: const Text("Método de pago requerido"),
+                                content: const Text(
                                     "Por favor, seleccione un método de pago."),
                                 actions: [
                                   TextButton(
-                                    child: Text("OK"),
+                                    child: const Text("OK"),
                                     onPressed: () {
                                       Navigator.of(context).pop();
                                     },
@@ -619,11 +620,12 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                title: Text("Cliente requerido"),
-                                content: Text("Por favor, asigne un cliente."),
+                                title: const Text("Cliente requerido"),
+                                content:
+                                    const Text("Por favor, asigne un cliente."),
                                 actions: [
                                   TextButton(
-                                    child: Text("OK"),
+                                    child: const Text("OK"),
                                     onPressed: () {
                                       Navigator.of(context).pop();
                                     },
@@ -635,7 +637,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                         }
                       }
                     },
-                    child: Text('Aceptar'),
+                    child: const Text('Aceptar'),
                   ),
                 ],
               ),

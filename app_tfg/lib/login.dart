@@ -34,12 +34,12 @@ class _LoginState extends State<Login> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Inicio de sesión',
               style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 48.0),
-            Container(
+            const SizedBox(height: 48.0),
+            SizedBox(
               width: 400.0, // Ajusta el ancho del TextField
               child: TextFormField(
                 validator: (value) {
@@ -55,8 +55,8 @@ class _LoginState extends State<Login> {
                 keyboardType: TextInputType.emailAddress,
               ),
             ),
-            SizedBox(height: 16.0),
-            Container(
+            const SizedBox(height: 16.0),
+            SizedBox(
               width: 400.0, // Ajusta el ancho del TextField
               child: TextFormField(
                 validator: (value) {
@@ -66,13 +66,13 @@ class _LoginState extends State<Login> {
                   return null;
                 },
                 controller: _passwordController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'Contraseña',
                 ),
                 obscureText: true,
               ),
             ),
-            SizedBox(height: 32.0),
+            const SizedBox(height: 32.0),
             _isLoading
                 ? const Center(child: CircularProgressIndicator())
                 : OutlinedButton(
@@ -91,7 +91,8 @@ class _LoginState extends State<Login> {
                             email: _usernameController.text,
                             password: _passwordController.text);
                       } catch (e) {
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(const SnackBar(
                           content: Text('Usuario o contraseña incorrectos'),
                           backgroundColor: Colors.redAccent,
                         ));

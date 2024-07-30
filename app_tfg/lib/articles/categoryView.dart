@@ -6,6 +6,8 @@ import 'editCategory.dart';
 import 'articlesView.dart';
 
 class CategoryView extends StatelessWidget {
+  const CategoryView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +22,8 @@ class CategoryView extends StatelessWidget {
 }
 
 class CategoryScreen extends StatefulWidget {
+  const CategoryScreen({super.key});
+
   @override
   _CategoryScreenState createState() => _CategoryScreenState();
 }
@@ -37,7 +41,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Categorías de Artículos'),
+        title: const Text('Categorías de Artículos'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -55,7 +59,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                 .compareTo((b['nombre'] as String).toLowerCase()));
 
             return GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 4,
                 crossAxisSpacing: 8.0,
                 mainAxisSpacing: 8.0,
@@ -90,7 +94,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                             child: Text(
                               category,
                               textAlign: TextAlign.center,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 18.0),
                             ),
                           ),
@@ -102,7 +106,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                         child: Row(
                           children: [
                             IconButton(
-                              icon: Icon(Icons.edit, color: Colors.grey),
+                              icon: const Icon(Icons.edit, color: Colors.grey),
                               onPressed: () async {
                                 final result = await Navigator.push(
                                   context,
@@ -129,9 +133,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
                                     context: context,
                                     builder: (context) {
                                       return AlertDialog(
-                                        title: Center(
+                                        title: const Center(
                                             child: Text("Eliminar categoría")),
-                                        content: Column(
+                                        content: const Column(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [
                                             Center(
@@ -146,14 +150,15 @@ class _CategoryScreenState extends State<CategoryScreen> {
                                                   MainAxisAlignment.spaceEvenly,
                                               children: [
                                                 TextButton(
-                                                  child: Text("Cancelar"),
+                                                  child: const Text("Cancelar"),
                                                   onPressed: () {
                                                     Navigator.of(context)
                                                         .pop(false);
                                                   },
                                                 ),
                                                 TextButton(
-                                                  child: Text("Confirmar"),
+                                                  child:
+                                                      const Text("Confirmar"),
                                                   onPressed: () {
                                                     Navigator.of(context)
                                                         .pop(true);
@@ -215,8 +220,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
             });
           }
         },
-        child: Icon(Icons.add),
         backgroundColor: Colors.blue,
+        child: Icon(Icons.add),
       ),
     );
   }

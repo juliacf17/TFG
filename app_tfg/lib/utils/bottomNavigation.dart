@@ -4,9 +4,12 @@ import '../login.dart';
 import '../clientView.dart';
 import '../articles/categoryView.dart';
 import '../movements/viewMovements.dart';
+import '../graphics/graph.dart';
 import 'common.dart';
 
 class BottomNav extends StatefulWidget {
+  const BottomNav({super.key});
+
   @override
   _BottomNavState createState() => _BottomNavState();
 }
@@ -14,11 +17,12 @@ class BottomNav extends StatefulWidget {
 class _BottomNavState extends State<BottomNav> {
   int _selectedIndex = 0;
 
-  static List<Widget> _widgetOptions = <Widget>[
+  static final List<Widget> _widgetOptions = <Widget>[
     MainPage(),
     ClientView(),
     CategoryView(),
     MovimientosView(),
+    //GraphScreen(),
     // Add other screens here
   ];
 
@@ -28,8 +32,8 @@ class _BottomNavState extends State<BottomNav> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Center(child: Text("Cerrar sesión")),
-            content: Column(
+            title: const Center(child: Text("Cerrar sesión")),
+            content: const Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Center(child: Text("¿Seguro que quieres cerrar sesión?")),
@@ -41,13 +45,13 @@ class _BottomNavState extends State<BottomNav> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     TextButton(
-                      child: Text("Cancelar"),
+                      child: const Text("Cancelar"),
                       onPressed: () {
                         Navigator.of(context).pop(false);
                       },
                     ),
                     TextButton(
-                      child: Text("Confirmar"),
+                      child: const Text("Confirmar"),
                       onPressed: () {
                         Navigator.of(context).pop(true);
                       },
@@ -65,7 +69,7 @@ class _BottomNavState extends State<BottomNav> {
         if (mounted) {
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => Login()),
+            MaterialPageRoute(builder: (context) => const Login()),
           );
         }
       }

@@ -4,6 +4,8 @@ import 'movementDetail.dart';
 import 'package:intl/intl.dart';
 
 class MovimientosScreen extends StatelessWidget {
+  const MovimientosScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,6 +20,8 @@ class MovimientosScreen extends StatelessWidget {
 }
 
 class MovimientosView extends StatefulWidget {
+  const MovimientosView({super.key});
+
   @override
   _MovimientosViewState createState() => _MovimientosViewState();
 }
@@ -27,7 +31,7 @@ class _MovimientosViewState extends State<MovimientosView> {
   Stream<List<Map<String, dynamic>>>? movimientosStream;
   Stream<List<Map<String, dynamic>>>? clientesStream;
   String? _selectedTipoMov;
-  bool _isSearching = false;
+  final bool _isSearching = false;
   List<Map<String, dynamic>> _filteredClients = [];
 
   @override
@@ -97,7 +101,7 @@ class _MovimientosViewState extends State<MovimientosView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pantalla de Movimientos'),
+        title: const Text('Pantalla de Movimientos'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -108,7 +112,7 @@ class _MovimientosViewState extends State<MovimientosView> {
                 Expanded(
                   child: TextField(
                     controller: _searchController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Buscar cliente',
                       prefixIcon: Icon(Icons.search),
                       border: OutlineInputBorder(),
@@ -119,9 +123,9 @@ class _MovimientosViewState extends State<MovimientosView> {
                     },
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 DropdownButton<String>(
-                  hint: Text('Tipo'),
+                  hint: const Text('Tipo'),
                   value: _selectedTipoMov,
                   onChanged: (newValue) {
                     setState(() {
@@ -136,9 +140,9 @@ class _MovimientosViewState extends State<MovimientosView> {
                     );
                   }).toList(),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 IconButton(
-                  icon: Icon(Icons.refresh),
+                  icon: const Icon(Icons.refresh),
                   onPressed: () {
                     setState(() {
                       _searchController.clear();
@@ -151,7 +155,7 @@ class _MovimientosViewState extends State<MovimientosView> {
               ],
             ),
             if (_filteredClients.isNotEmpty)
-              Container(
+              SizedBox(
                 height: 150,
                 child: ListView.builder(
                   shrinkWrap: true,
@@ -171,7 +175,7 @@ class _MovimientosViewState extends State<MovimientosView> {
                   },
                 ),
               ),
-            SizedBox(height: 15.0),
+            const SizedBox(height: 15.0),
             Expanded(
               child: StreamBuilder<List<Map<String, dynamic>>>(
                 stream: movimientosStream,
@@ -198,7 +202,7 @@ class _MovimientosViewState extends State<MovimientosView> {
                         future: _getClienteNombre(movimiento['clienteId']),
                         builder: (context, clienteSnapshot) {
                           if (!clienteSnapshot.hasData) {
-                            return ListTile(
+                            return const ListTile(
                               title: Text('Cargando...'),
                             );
                           }
@@ -211,29 +215,29 @@ class _MovimientosViewState extends State<MovimientosView> {
                           }
 
                           return Card(
-                            margin: EdgeInsets.symmetric(vertical: 8.0),
+                            margin: const EdgeInsets.symmetric(vertical: 8.0),
                             child: ListTile(
                               title: Text(
                                   'Fecha: ${_formatDate(movimiento['fecha'])}'),
                               subtitle: Text(
                                   'Tipo: ${movimiento['tipoMov']}, Cliente: $clienteNombre, Precio: \$${movimiento['precioTotal']}'),
                               trailing: IconButton(
-                                icon: Icon(Icons.delete),
+                                icon: const Icon(Icons.delete),
                                 onPressed: () async {
                                   final result = await showDialog<bool>(
                                     context: context,
                                     builder: (context) => AlertDialog(
-                                      title: Text("Eliminar movimiento"),
-                                      content: Text(
+                                      title: const Text("Eliminar movimiento"),
+                                      content: const Text(
                                           "¿Estás seguro de que deseas eliminar este movimiento?"),
                                       actions: [
                                         TextButton(
-                                          child: Text("Cancelar"),
+                                          child: const Text("Cancelar"),
                                           onPressed: () =>
                                               Navigator.of(context).pop(false),
                                         ),
                                         TextButton(
-                                          child: Text("Eliminar"),
+                                          child: const Text("Eliminar"),
                                           onPressed: () =>
                                               Navigator.of(context).pop(true),
                                         ),
