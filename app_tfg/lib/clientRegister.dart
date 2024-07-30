@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'utils/common.dart';
 
 class RegisterClient extends StatefulWidget {
-  const RegisterClient({super.key});
-
   @override
   _RegisterClientState createState() => _RegisterClientState();
 }
@@ -23,11 +21,10 @@ class _RegisterClientState extends State<RegisterClient> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:
-            const Text('Registrar cliente', style: TextStyle(fontSize: 24.0)),
+        title: Text('Registrar cliente', style: TextStyle(fontSize: 24.0)),
         centerTitle: true,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -40,12 +37,12 @@ class _RegisterClientState extends State<RegisterClient> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              const Text(
+              Text(
                 'Registrar cliente',
                 style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 48.0),
-              SizedBox(
+              SizedBox(height: 48.0),
+              Container(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   validator: (value) {
@@ -61,8 +58,8 @@ class _RegisterClientState extends State<RegisterClient> {
                   ),
                 ),
               ),
-              const SizedBox(height: 16.0),
-              SizedBox(
+              SizedBox(height: 16.0),
+              Container(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: phoneController,
@@ -81,8 +78,8 @@ class _RegisterClientState extends State<RegisterClient> {
                   ),
                 ),
               ),
-              const SizedBox(height: 16.0),
-              SizedBox(
+              SizedBox(height: 16.0),
+              Container(
                 width: 400.0, // Ajusta el ancho del TextField
                 child: TextFormField(
                   controller: commentsController,
@@ -93,7 +90,7 @@ class _RegisterClientState extends State<RegisterClient> {
                   maxLines: 3,
                 ),
               ),
-              const SizedBox(height: 32.0),
+              SizedBox(height: 32.0),
               ElevatedButton(
                 onPressed: () async {
                   if (_formKey.currentState!.validate()) {
@@ -107,14 +104,14 @@ class _RegisterClientState extends State<RegisterClient> {
 
                     if (success) {
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
+                        SnackBar(
                           content: Text('Cliente añadido exitosamente'),
                           backgroundColor: Colors.green,
                         ),
                       );
                     } else {
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
+                        SnackBar(
                           content: Text('Error al añadir el cliente'),
                           backgroundColor: Colors.red,
                         ),
@@ -130,7 +127,7 @@ class _RegisterClientState extends State<RegisterClient> {
                         context, success); // Volver a la pantalla anterior)
                   }
                 },
-                child: const Text('Añadir cliente'),
+                child: Text('Añadir cliente'),
               ),
             ],
           ),

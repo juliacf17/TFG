@@ -7,8 +7,6 @@ import 'clientEdit.dart';
 import 'clientDetail.dart';
 
 class ClientView extends StatelessWidget {
-  const ClientView({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,8 +21,6 @@ class ClientView extends StatelessWidget {
 }
 
 class ClienteScreen extends StatefulWidget {
-  const ClienteScreen({super.key});
-
   @override
   _ClienteScreenState createState() => _ClienteScreenState();
 }
@@ -48,9 +44,9 @@ class _ClienteScreenState extends State<ClienteScreen> {
 
   Color _getBackgroundColor(double cartera) {
     if (cartera < 0) {
-      return const Color.fromARGB(242, 219, 88, 88); // Deuda
+      return Color.fromARGB(242, 219, 88, 88); // Deuda
     } else if (cartera > 0) {
-      return const Color.fromARGB(255, 78, 201, 105); // Positivo
+      return Color.fromARGB(255, 78, 201, 105); // Positivo
     } else {
       return Colors.white; // Igual a 0
     }
@@ -60,7 +56,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Nuestros clientes'),
+        title: Text('Nuestros clientes'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -71,7 +67,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
                 Expanded(
                   child: TextField(
                     controller: _searchController,
-                    decoration: const InputDecoration(
+                    decoration: InputDecoration(
                       labelText: 'Buscar',
                       prefixIcon: Icon(Icons.search),
                       border: OutlineInputBorder(),
@@ -92,7 +88,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
                 ),
               ],
             ),
-            const SizedBox(height: 15.0),
+            SizedBox(height: 15.0),
             Expanded(
               child: StreamBuilder<List<Map<String, dynamic>>>(
                 stream: clientStream,
@@ -134,7 +130,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
                           border: Border.all(color: Colors.black, width: 1.2),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
-                        margin: const EdgeInsets.symmetric(vertical: 2.0),
+                        margin: EdgeInsets.symmetric(vertical: 2.0),
                         child: ListTile(
                           title: GestureDetector(
                             onTap: () async {
@@ -148,8 +144,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
                             },
                             child: Text(
                               clientName,
-                              style:
-                                  const TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ),
                           trailing: Row(
@@ -183,9 +178,9 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                       context: context,
                                       builder: (context) {
                                         return AlertDialog(
-                                          title: const Center(
+                                          title: Center(
                                               child: Text("Eliminar cliente")),
-                                          content: const Column(
+                                          content: Column(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
                                               Center(
@@ -201,16 +196,14 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                                         .spaceEvenly,
                                                 children: [
                                                   TextButton(
-                                                    child:
-                                                        const Text("Cancelar"),
+                                                    child: Text("Cancelar"),
                                                     onPressed: () {
                                                       Navigator.of(context)
                                                           .pop(false);
                                                     },
                                                   ),
                                                   TextButton(
-                                                    child:
-                                                        const Text("Confirmar"),
+                                                    child: Text("Confirmar"),
                                                     onPressed: () {
                                                       Navigator.of(context)
                                                           .pop(true);
@@ -272,8 +265,8 @@ class _ClienteScreenState extends State<ClienteScreen> {
             });
           }
         },
-        backgroundColor: Colors.blue,
         child: Icon(Icons.add),
+        backgroundColor: Colors.blue,
       ),
     );
   }

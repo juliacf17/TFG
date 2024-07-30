@@ -5,10 +5,7 @@ class NewArticle extends StatefulWidget {
   final String categoryId;
   List<String> existingSubcategories;
 
-  NewArticle(
-      {super.key,
-      required this.categoryId,
-      required this.existingSubcategories});
+  NewArticle({required this.categoryId, required this.existingSubcategories});
 
   @override
   _NewArticleState createState() => _NewArticleState();
@@ -79,11 +76,10 @@ class _NewArticleState extends State<NewArticle> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Añadir Nuevo Artículo',
-            style: TextStyle(fontSize: 24.0)),
+        title: Text('Añadir Nuevo Artículo', style: TextStyle(fontSize: 24.0)),
         centerTitle: true,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -99,12 +95,12 @@ class _NewArticleState extends State<NewArticle> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  const Text(
+                  Text(
                     'Añadir Nuevo Artículo',
                     style:
                         TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(height: 48.0),
+                  SizedBox(height: 48.0),
                   TextFormField(
                     validator: (value) {
                       if (value!.isEmpty) {
@@ -118,11 +114,11 @@ class _NewArticleState extends State<NewArticle> {
                       border: OutlineInputBorder(),
                     ),
                   ),
-                  const SizedBox(height: 16.0),
+                  SizedBox(height: 16.0),
                   TextFormField(
                     controller: priceController,
                     keyboardType:
-                        const TextInputType.numberWithOptions(decimal: true),
+                        TextInputType.numberWithOptions(decimal: true),
                     validator: (value) {
                       if (value!.isEmpty) {
                         return 'El campo de precio no puede estar vacío';
@@ -137,7 +133,7 @@ class _NewArticleState extends State<NewArticle> {
                       border: OutlineInputBorder(),
                     ),
                   ),
-                  const SizedBox(height: 16.0),
+                  SizedBox(height: 16.0),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -148,7 +144,7 @@ class _NewArticleState extends State<NewArticle> {
                               ? null
                               : subcategoryController.text,
                           items: [
-                            const DropdownMenuItem(
+                            DropdownMenuItem(
                               value: '', // Valor vacío para deseleccionar
                               child: Text('Dejar blanco'),
                             ),
@@ -169,7 +165,7 @@ class _NewArticleState extends State<NewArticle> {
                           ),
                         ),
                       ),
-                      const SizedBox(width: 16.0),
+                      SizedBox(width: 16.0),
                       Expanded(
                         flex: 3,
                         child: TextFormField(
@@ -177,7 +173,7 @@ class _NewArticleState extends State<NewArticle> {
                           controller: subcategoryController,
                           decoration: InputDecoration(
                             labelText: 'Nueva Subcategoría',
-                            border: const OutlineInputBorder(),
+                            border: OutlineInputBorder(),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                   color: subcategoryController.text.isEmpty
@@ -199,7 +195,7 @@ class _NewArticleState extends State<NewArticle> {
                     visible: showGender,
                     child: Column(
                       children: [
-                        const SizedBox(height: 16.0),
+                        SizedBox(height: 16.0),
                         DropdownButtonFormField<String>(
                           value: selectedGender,
                           items: ['Femenino', 'Masculino', 'Unisex']
@@ -212,6 +208,7 @@ class _NewArticleState extends State<NewArticle> {
                           onChanged: (newValue) {
                             setState(() {
                               if (subcategoryController.text != '' &&
+                                  subcategoryController.text != null &&
                                   !widget.existingSubcategories
                                       .contains(subcategoryController.text)) {
                                 widget.existingSubcategories
@@ -239,7 +236,7 @@ class _NewArticleState extends State<NewArticle> {
                     visible: showMaterial,
                     child: Column(
                       children: [
-                        const SizedBox(height: 16.0),
+                        SizedBox(height: 16.0),
                         TextFormField(
                           controller: materialController,
                           decoration: const InputDecoration(
@@ -254,7 +251,7 @@ class _NewArticleState extends State<NewArticle> {
                     visible: showDimension,
                     child: Column(
                       children: [
-                        const SizedBox(height: 16.0),
+                        SizedBox(height: 16.0),
                         TextFormField(
                           controller: dimensionController,
                           decoration: const InputDecoration(
@@ -269,7 +266,7 @@ class _NewArticleState extends State<NewArticle> {
                     visible: showDescription,
                     child: Column(
                       children: [
-                        const SizedBox(height: 16.0),
+                        SizedBox(height: 16.0),
                         TextFormField(
                           controller: descriptionController,
                           decoration: const InputDecoration(
@@ -281,7 +278,7 @@ class _NewArticleState extends State<NewArticle> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 16.0),
+                  SizedBox(height: 16.0),
                   ListView.builder(
                     shrinkWrap: true,
                     itemCount: sizeControllers.length,
@@ -306,7 +303,7 @@ class _NewArticleState extends State<NewArticle> {
                                   },
                                 ),
                               ),
-                              const SizedBox(width: 16.0),
+                              SizedBox(width: 16.0),
                               Expanded(
                                 child: TextFormField(
                                   controller: colorControllers[index],
@@ -322,7 +319,7 @@ class _NewArticleState extends State<NewArticle> {
                                   },
                                 ),
                               ),
-                              const SizedBox(width: 16.0),
+                              SizedBox(width: 16.0),
                               Expanded(
                                 child: TextFormField(
                                   controller: quantityControllers[index],
@@ -342,7 +339,7 @@ class _NewArticleState extends State<NewArticle> {
                                   },
                                 ),
                               ),
-                              const SizedBox(width: 16.0),
+                              SizedBox(width: 16.0),
                               Expanded(
                                 child: TextFormField(
                                   controller: minQuantityControllers[index],
@@ -363,23 +360,23 @@ class _NewArticleState extends State<NewArticle> {
                                 ),
                               ),
                               IconButton(
-                                icon: const Icon(Icons.remove),
+                                icon: Icon(Icons.remove),
                                 onPressed: () => _removeSizeRow(index),
                               ),
                             ],
                           ),
-                          const SizedBox(
+                          SizedBox(
                               height: 8.0), // Espacio de 8 unidades entre filas
                         ],
                       );
                     },
                   ),
-                  const SizedBox(height: 10.0),
+                  SizedBox(height: 10.0),
                   TextButton(
                     onPressed: _addSizeRow,
-                    child: const Text('Agregar otra talla'),
+                    child: Text('Agregar otra talla'),
                   ),
-                  const SizedBox(height: 16.0),
+                  SizedBox(height: 16.0),
                   ElevatedButton(
                     onPressed: () async {
                       if (_formKey.currentState!.validate()) {
@@ -387,7 +384,7 @@ class _NewArticleState extends State<NewArticle> {
 
                         if (success) {
                           ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
+                            SnackBar(
                               content: Text('Artículo añadido exitosamente'),
                               backgroundColor: Colors.green,
                             ),
@@ -395,7 +392,7 @@ class _NewArticleState extends State<NewArticle> {
                           Navigator.pop(context, true);
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
+                            SnackBar(
                               content: Text('Error al añadir el artículo'),
                               backgroundColor: Colors.red,
                             ),
@@ -403,7 +400,7 @@ class _NewArticleState extends State<NewArticle> {
                         }
                       }
                     },
-                    child: const Text('Añadir Artículo'),
+                    child: Text('Añadir Artículo'),
                   ),
                 ],
               ),

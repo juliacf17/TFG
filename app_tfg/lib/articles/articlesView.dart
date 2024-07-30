@@ -9,7 +9,7 @@ import 'stock.dart';
 class ArticleView extends StatelessWidget {
   final String categoryId;
 
-  const ArticleView({super.key, required this.categoryId});
+  ArticleView({required this.categoryId});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class ArticleView extends StatelessWidget {
 class ArticleScreen extends StatefulWidget {
   final String categoryId;
 
-  const ArticleScreen({super.key, required this.categoryId});
+  ArticleScreen({required this.categoryId});
 
   @override
   _ArticleScreenState createState() => _ArticleScreenState();
@@ -47,9 +47,9 @@ class _ArticleScreenState extends State<ArticleScreen> {
         .eq('categoriaId', widget.categoryId);
 
     setState(() {
-      articleStream = Stream.value(articles);
+      articleStream = Stream.value(articles as List<Map<String, dynamic>>);
 
-      for (var article in articles) {
+      articles.forEach((article) {
         final String? subcategoria = article[
             'subcategoria']; // Asegúrate de que 'subcategoria' exista en tu estructura de datos
         if (subcategoria != null &&
@@ -57,7 +57,7 @@ class _ArticleScreenState extends State<ArticleScreen> {
             !uniqueSubcategories.contains(subcategoria)) {
           uniqueSubcategories.add(subcategoria);
         }
-      }
+      });
     });
   }
 
@@ -73,7 +73,7 @@ class _ArticleScreenState extends State<ArticleScreen> {
             Navigator.pop(context);
           },
         ),
-        title: const Text('Nuestros Artículos'),
+        title: Text('Nuestros Artículos'),
       ),
       body: Stack(
         children: [
@@ -87,7 +87,7 @@ class _ArticleScreenState extends State<ArticleScreen> {
                       flex: 3,
                       child: TextField(
                         controller: _searchController,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Buscar',
                           prefixIcon: Icon(Icons.search),
                           border: OutlineInputBorder(),
@@ -97,13 +97,12 @@ class _ArticleScreenState extends State<ArticleScreen> {
                         },
                       ),
                     ),
-                    const SizedBox(
-                        width: 10), // Añadir espacio entre los widgets
+                    SizedBox(width: 10), // Añadir espacio entre los widgets
                     Flexible(
                       flex: 1,
                       child: DropdownButtonFormField<String>(
                         items: [
-                          const DropdownMenuItem(
+                          DropdownMenuItem(
                             value: '', // Valor vacío para deseleccionar
                             child: Text('Dejar blanco'),
                           ),
@@ -126,7 +125,7 @@ class _ArticleScreenState extends State<ArticleScreen> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 15.0),
+                SizedBox(height: 15.0),
                 Expanded(
                   child: StreamBuilder<List<Map<String, dynamic>>>(
                     stream: articleStream,
@@ -199,17 +198,17 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                     Border.all(color: Colors.black, width: 1.2),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
-                              margin: const EdgeInsets.symmetric(vertical: 2.0),
+                              margin: EdgeInsets.symmetric(vertical: 2.0),
                               child: ListTile(
                                 title: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
                                       articleName,
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    const SizedBox(height: 5.0),
+                                    SizedBox(height: 5.0),
                                     Text('Precio: $articlePrecio €'),
                                   ],
                                 ),
@@ -245,10 +244,10 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                           context: context,
                                           builder: (context) {
                                             return AlertDialog(
-                                              title: const Center(
+                                              title: Center(
                                                   child: Text(
                                                       "Eliminar artículo")),
-                                              content: const Column(
+                                              content: Column(
                                                 mainAxisSize: MainAxisSize.min,
                                                 children: [
                                                   Center(
@@ -264,16 +263,15 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                                             .spaceEvenly,
                                                     children: [
                                                       TextButton(
-                                                        child: const Text(
-                                                            "Cancelar"),
+                                                        child: Text("Cancelar"),
                                                         onPressed: () {
                                                           Navigator.of(context)
                                                               .pop(false);
                                                         },
                                                       ),
                                                       TextButton(
-                                                        child: const Text(
-                                                            "Confirmar"),
+                                                        child:
+                                                            Text("Confirmar"),
                                                         onPressed: () {
                                                           Navigator.of(context)
                                                               .pop(true);
@@ -341,7 +339,7 @@ class _ArticleScreenState extends State<ArticleScreen> {
                   ),
                 );
               },
-              child: const Text('Renovar stock'),
+              child: Text('Renovar stock'),
             ),
           ),
         ],
@@ -361,8 +359,8 @@ class _ArticleScreenState extends State<ArticleScreen> {
             fetchArticles(); // Actualiza la lista de artículos después de añadir uno nuevo
           }
         },
-        backgroundColor: Colors.blue,
         child: Icon(Icons.add),
+        backgroundColor: Colors.blue,
       ),
     );
   }

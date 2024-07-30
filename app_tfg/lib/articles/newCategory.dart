@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import '../utils/common.dart';
 
 class AddCategoryScreen extends StatefulWidget {
-  const AddCategoryScreen({super.key});
-
   @override
   _AddCategoryScreenState createState() => _AddCategoryScreenState();
 }
@@ -32,7 +30,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
       try {
         await client.from('categorias').insert(categoryData);
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
+          SnackBar(
             content: Text('Categoría añadida exitosamente'),
             backgroundColor: Colors.green,
           ),
@@ -40,7 +38,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
         Navigator.pop(context, true);
       } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
+          SnackBar(
             content: Text('Error al añadir la categoría'),
             backgroundColor: Colors.red,
           ),
@@ -53,7 +51,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Añadir Categoría'),
+        title: Text('Añadir Categoría'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -64,7 +62,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
             children: [
               TextFormField(
                 controller: _categoryNameController,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Nombre de la categoría',
                   border: OutlineInputBorder(),
                 ),
@@ -75,13 +73,13 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
                   return null;
                 },
               ),
-              const SizedBox(height: 20.0),
-              const Text(
+              SizedBox(height: 20.0),
+              Text(
                 'Información adicional',
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
               ),
               CheckboxListTile(
-                title: const Text('Descripción'),
+                title: Text('Descripción'),
                 value: _descripcion,
                 onChanged: (bool? value) {
                   setState(() {
@@ -90,7 +88,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
                 },
               ),
               CheckboxListTile(
-                title: const Text('Tamaño'),
+                title: Text('Tamaño'),
                 value: _tamano,
                 onChanged: (bool? value) {
                   setState(() {
@@ -99,7 +97,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
                 },
               ),
               CheckboxListTile(
-                title: const Text('Género'),
+                title: Text('Género'),
                 value: _genero,
                 onChanged: (bool? value) {
                   setState(() {
@@ -108,7 +106,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
                 },
               ),
               CheckboxListTile(
-                title: const Text('Material'),
+                title: Text('Material'),
                 value: _material,
                 onChanged: (bool? value) {
                   setState(() {
@@ -116,11 +114,11 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
                   });
                 },
               ),
-              const SizedBox(height: 20.0),
+              SizedBox(height: 20.0),
               Center(
                 child: ElevatedButton(
                   onPressed: _addCategory,
-                  child: const Text('Registrar Categoría'),
+                  child: Text('Registrar Categoría'),
                 ),
               ),
             ],

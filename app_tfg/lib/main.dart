@@ -13,7 +13,7 @@ void main() async {
       anonKey:
           "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZrbHVkcXpha2N1YWt4cXpqZG5sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg1NTE3MDIsImV4cCI6MjAzNDEyNzcwMn0.jNYcPrfjdGu8RvTJJxHfz9CiHYnzSi58zaAlDCGJKOk");
 
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

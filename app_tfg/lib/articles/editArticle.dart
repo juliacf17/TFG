@@ -6,8 +6,7 @@ class EditArticleScreen extends StatefulWidget {
   final List<String> existingSubcategories;
   final String articleId;
 
-  const EditArticleScreen({
-    super.key,
+  EditArticleScreen({
     required this.categoryId,
     required this.existingSubcategories,
     required this.articleId,
@@ -188,10 +187,10 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Editar Artículo', style: TextStyle(fontSize: 24.0)),
+        title: Text('Editar Artículo', style: TextStyle(fontSize: 24.0)),
         centerTitle: true,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -206,7 +205,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  const SizedBox(height: 24.0),
+                  SizedBox(height: 24.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 200.0),
                     child: TextFormField(
@@ -217,19 +216,19 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                         return null;
                       },
                       controller: nameController,
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         labelText: 'Nombre',
                         border: OutlineInputBorder(),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 16.0),
+                  SizedBox(height: 16.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 200.0),
                     child: TextFormField(
                       controller: priceController,
                       keyboardType:
-                          const TextInputType.numberWithOptions(decimal: true),
+                          TextInputType.numberWithOptions(decimal: true),
                       validator: (value) {
                         if (value!.isEmpty) {
                           return 'El campo de precio no puede estar vacío';
@@ -239,13 +238,13 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                         }
                         return null;
                       },
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         labelText: 'Precio',
                         border: OutlineInputBorder(),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 16.0),
+                  SizedBox(height: 16.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 200.0),
                     child: Row(
@@ -258,7 +257,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                                 ? null
                                 : subcategoryController.text,
                             items: [
-                              const DropdownMenuItem(
+                              DropdownMenuItem(
                                 value: '', // Valor vacío para deseleccionar
                                 child: Text('Dejar blanco'),
                               ),
@@ -279,7 +278,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                             ),
                           ),
                         ),
-                        const SizedBox(width: 16.0),
+                        SizedBox(width: 16.0),
                         Expanded(
                           flex: 3,
                           child: TextFormField(
@@ -287,7 +286,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                             controller: subcategoryController,
                             decoration: InputDecoration(
                               labelText: 'Nueva Subcategoría',
-                              border: const OutlineInputBorder(),
+                              border: OutlineInputBorder(),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                     color: subcategoryController.text.isEmpty
@@ -310,7 +309,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                     visible: showGender,
                     child: Column(
                       children: [
-                        const SizedBox(height: 16.0),
+                        SizedBox(height: 16.0),
                         Padding(
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
@@ -328,7 +327,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                                 selectedGender = newValue;
                               });
                             },
-                            decoration: const InputDecoration(
+                            decoration: InputDecoration(
                               labelText: 'Género',
                               border: OutlineInputBorder(),
                             ),
@@ -347,13 +346,13 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                     visible: showMaterial,
                     child: Column(
                       children: [
-                        const SizedBox(height: 16.0),
+                        SizedBox(height: 16.0),
                         Padding(
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
                             controller: materialController,
-                            decoration: const InputDecoration(
+                            decoration: InputDecoration(
                               labelText: 'Material',
                               border: OutlineInputBorder(),
                             ),
@@ -366,13 +365,13 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                     visible: showDimension,
                     child: Column(
                       children: [
-                        const SizedBox(height: 16.0),
+                        SizedBox(height: 16.0),
                         Padding(
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
                             controller: dimensionController,
-                            decoration: const InputDecoration(
+                            decoration: InputDecoration(
                               labelText: 'Dimensiones',
                               border: OutlineInputBorder(),
                             ),
@@ -385,13 +384,13 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                     visible: showDescription,
                     child: Column(
                       children: [
-                        const SizedBox(height: 16.0),
+                        SizedBox(height: 16.0),
                         Padding(
                           padding:
                               const EdgeInsets.symmetric(horizontal: 200.0),
                           child: TextFormField(
                             controller: descriptionController,
-                            decoration: const InputDecoration(
+                            decoration: InputDecoration(
                               labelText: 'Descripción',
                               border: OutlineInputBorder(),
                             ),
@@ -401,7 +400,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 16.0),
+                  SizedBox(height: 16.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 200.0),
                     child: ListView.builder(
@@ -428,7 +427,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                                     },
                                   ),
                                 ),
-                                const SizedBox(width: 16.0),
+                                SizedBox(width: 16.0),
                                 Expanded(
                                   child: TextFormField(
                                     controller: colorControllers[index],
@@ -444,7 +443,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                                     },
                                   ),
                                 ),
-                                const SizedBox(width: 16.0),
+                                SizedBox(width: 16.0),
                                 Expanded(
                                   child: TextFormField(
                                     controller: quantityControllers[index],
@@ -464,7 +463,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                                     },
                                   ),
                                 ),
-                                const SizedBox(width: 16.0),
+                                SizedBox(width: 16.0),
                                 Expanded(
                                   child: TextFormField(
                                     controller: minQuantityControllers[index],
@@ -485,12 +484,12 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                                   ),
                                 ),
                                 IconButton(
-                                  icon: const Icon(Icons.remove),
+                                  icon: Icon(Icons.remove),
                                   onPressed: () => _removeSizeRow(index),
                                 ),
                               ],
                             ),
-                            const SizedBox(
+                            SizedBox(
                                 height:
                                     8.0), // Espacio de 8 unidades entre filas
                           ],
@@ -498,12 +497,12 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       },
                     ),
                   ),
-                  const SizedBox(height: 10.0),
+                  SizedBox(height: 10.0),
                   TextButton(
                     onPressed: _addSizeRow,
-                    child: const Text('Agregar otra talla'),
+                    child: Text('Agregar otra talla'),
                   ),
-                  const SizedBox(height: 32.0),
+                  SizedBox(height: 32.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 200.0),
                     child: ElevatedButton(
@@ -518,7 +517,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                             Navigator.pop(context, true);
                           } else {
                             ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
+                              SnackBar(
                                 content:
                                     Text('Error al actualizar el artículo'),
                                 backgroundColor: Colors.red,
@@ -535,7 +534,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                           materialController.clear();
                         }
                       },
-                      child: const Text('Editar artículo'),
+                      child: Text('Editar artículo'),
                     ),
                   ),
                 ],

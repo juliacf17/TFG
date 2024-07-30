@@ -3,8 +3,6 @@ import 'movements/newMovement.dart';
 import '../utils/common.dart'; // Asegúrate de tener acceso al cliente de supabase
 
 class MainPage extends StatelessWidget {
-  const MainPage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,8 +16,6 @@ class MainPage extends StatelessWidget {
 }
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -70,8 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:
-            const Text('Pantalla principal', style: TextStyle(fontSize: 24.0)),
+        title: Text('Pantalla principal', style: TextStyle(fontSize: 24.0)),
         centerTitle: true,
       ),
       body: Center(
@@ -92,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text(
                     'Ganancias diarias: ${dailyEarnings.toStringAsFixed(2)} €'),
               ),
-              const SizedBox(width: 100.0), // Espacio entre las celdas
+              SizedBox(width: 100.0), // Espacio entre las celdas
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -125,12 +120,12 @@ class _HomeScreenState extends State<HomeScreen> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
-                          child: const Text('Nueva venta'),
+                          child: Text('Nueva venta'),
                         ),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 100.0),
+                  SizedBox(height: 100.0),
                   Container(
                     width: 200.0,
                     height: 100.0,
@@ -160,7 +155,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
-                          child: const Text('Nuevo préstamo'),
+                          child: Text('Nuevo préstamo'),
                         ),
                       ),
                     ),

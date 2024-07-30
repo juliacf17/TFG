@@ -5,8 +5,7 @@ class StockRenewalScreen extends StatelessWidget {
   final String categoryId;
   final List<Map<String, dynamic>> articles;
 
-  const StockRenewalScreen(
-      {super.key, required this.categoryId, required this.articles});
+  StockRenewalScreen({required this.categoryId, required this.articles});
 
   Future<List<Map<String, dynamic>>> getLowStockArticles() async {
     List<Map<String, dynamic>> lowStockArticles = [];
@@ -41,13 +40,13 @@ class StockRenewalScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lista renovación stock'),
+        title: Text('Lista renovación stock'),
       ),
       body: FutureBuilder<List<Map<String, dynamic>>>(
         future: getLowStockArticles(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
-            return const Center(child: CircularProgressIndicator());
+            return Center(child: CircularProgressIndicator());
           }
 
           final lowStockArticles = snapshot.data!;
@@ -66,55 +65,55 @@ class StockRenewalScreen extends StatelessWidget {
                       flex: 2,
                       child: TextFormField(
                         initialValue: article['nombre'],
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Nombre artículo',
                           border: OutlineInputBorder(),
                         ),
                         readOnly: true,
                       ),
                     ),
-                    const SizedBox(width: 8.0),
+                    SizedBox(width: 8.0),
                     Expanded(
                       flex: 1,
                       child: TextFormField(
                         initialValue: article['talla'],
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Talla',
                           border: OutlineInputBorder(),
                         ),
                         readOnly: true,
                       ),
                     ),
-                    const SizedBox(width: 8.0),
+                    SizedBox(width: 8.0),
                     Expanded(
                       flex: 1,
                       child: TextFormField(
                         initialValue: article['color'],
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Color',
                           border: OutlineInputBorder(),
                         ),
                         readOnly: true,
                       ),
                     ),
-                    const SizedBox(width: 8.0),
+                    SizedBox(width: 8.0),
                     Expanded(
                       flex: 1,
                       child: TextFormField(
                         initialValue: article['cantidad_actual'].toString(),
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Cantidad actual',
                           border: OutlineInputBorder(),
                         ),
                         readOnly: true,
                       ),
                     ),
-                    const SizedBox(width: 8.0),
+                    SizedBox(width: 8.0),
                     Expanded(
                       flex: 1,
                       child: TextFormField(
                         initialValue: article['cantidad_minima'].toString(),
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Cantidad mínima',
                           border: OutlineInputBorder(),
                         ),
