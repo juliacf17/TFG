@@ -1,6 +1,21 @@
 \chapter{Diseño}
 \label{chap:design}
 
+\section{Diagrama de la arquitectura del sistema}
+
+Como se puede observar en la imagen, la arquitectura del sistema es una arquitectura sencilla. El usuario interacciona únicamente con la interfaz gráfica de la aplicación y la aplicación solicita a la base de datos la información que el usuario requiere. De la misma forma, la base de datos envía la información a la aplicación y la aplicación se la muestra al usuario. El usuario y la base de datos no se relacionan directamente, siempre estará la aplicación como intermediario. 
+
+No es necesaria la existencia de un servidor gracias a la herramienta que se está utilizando como base de datos, Supabase. Esta herramienta da servicio para construir aplicaciones software. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{imagenes/imagenesDiagramas/DiagramaArquitecturaSistema.jpeg}
+	\caption{Diagrama de la arquitectura del sistema.}
+	\label{fig:diagArquitectura}
+\end{figure}
+
+\newpage
+
 \section{Diseño de la interfaz gráfica}
 
 Debemos buscar la usabilidad y accesibilidad en una aplicación de estas características ya que el usuario final puede no tener grandes destrezas tecnológicas. Por tanto, hay que conseguir un diseño sencillo, fácil de usar e intuitivo. \\
@@ -15,6 +30,7 @@ Para ello, habrá que tener en cuenta los siguientes criterios:
 	\item \textbf{Feedback:} La aplicación debe proporcionar una respuesta a las acciones del usuario para confirmar que se realizan de manera correcta. 
 \end{itemize} 
 
+\newpage
 
 \subsection{Pantalla de inicio de sesión}
 
