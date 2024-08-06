@@ -29,8 +29,8 @@
 \contentsline {subsection}{\numberline {3.4.2}Estudio de accesibilidad}{28}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Legislación actual de protección de datos}{30}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Aplicaciones similares y comparativas}{31}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Interfaz gráfica de myGestión}{31}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Interfaz gráfica de Clover}{32}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.1}myGESTIÓN}{31}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Clover}{32}{subsection.3.6.2}%
 \contentsline {chapter}{\numberline {4}Análisis de tecnologías a utilizar}{34}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Dispositivo destino para la aplicación}{34}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Tecnología de documentación}{34}{section.4.2}%

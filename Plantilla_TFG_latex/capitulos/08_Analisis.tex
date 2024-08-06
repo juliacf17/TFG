@@ -15,12 +15,12 @@ Cada requisito se identificará de forma única mediante un código que indica e
 Los requisitos funcionales son aquellos que definen las tareas específicas que el sistema debe ser capaz de realizar. Podemos ordenar estos requisitos en 6 grupos según la función que habilitan: 
 
 \begin{itemize}
-	\item \textbf{Grupo 1:} Apertura y cierre de sesión. 
-	\item \textbf{Grupo 2:} Gestión de artículos.
-	\item \textbf{Grupo 3:} Gestión de inventario. 
-	\item \textbf{Grupo 4:} Gestión de clientes. 
-	\item \textbf{Grupo 5:} Gestión de movimientos.
-	\item \textbf{Grupo 6:} Gestión de resúmenes y gráficas. 
+	\item \textbf{Grupo 1:} Apertura y cierre de sesión - En este grupo se encuentran los requisitos funcionales relacionados con el inicio y cierre de sesión.  
+	\item \textbf{Grupo 2:} Gestión de artículos - En este grupo se encuentran los requisitos funcionales relacionados con los artículos de la tienda.
+	\item \textbf{Grupo 3:} Gestión de inventario - En este grupo se encuentran los requisitos funcionales encargados de realizar la actualización del inventario. 
+	\item \textbf{Grupo 4:} Gestión de clientes - En este grupo se encuentras los requisitos funcionales relacionados con los clientes de la tienda. 
+	\item \textbf{Grupo 5:} Gestión de movimientos - En este grupo se encuentran los requisitos funcionales relacionados con las ventas, préstamos y devoluciones. 
+	\item \textbf{Grupo 6:} Gestión de resúmenes y gráficas - En este grupo se encuentran los requisitos funcionales relacionados con la visualización y realización de gráficas. 
 \end{itemize}
 
 A continuación se especificarán los requisitos funcionales del proyecto clasificándolos en las secciones anteriormente mencionadas. 
@@ -810,22 +810,7 @@ Los requisitos no funcionales son los que aportan calidad al sistema. Los requis
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RNF1} & \textbf{Rendimiento} \\
-		\hline
-		\textbf{Prioridad} & Media \\
-		\hline
-		\textbf{Descripción} & El sistema debe ser capaz de dar respuesta en menos de 5 segundos para ser efectivo.\\
-		\hline
-	\end{tabular}
-	\caption{RNF1}
-\end{table}
-
- % Tabla para requisito no funcional.
-\begin{table}[H]
-	\centering % Centra la tabla en la página
-	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
-		\hline
-		\rowcolor{grayshade} \textbf{RNF2} & \textbf{Seguridad} \\
+		\rowcolor{grayshade} \textbf{RNF1} & \textbf{Seguridad} \\
 		\hline
 		\textbf{Prioridad} & Alta \\
 		\hline
@@ -840,14 +825,44 @@ Los requisitos no funcionales son los que aportan calidad al sistema. Los requis
 	\centering % Centra la tabla en la página
 	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
 		\hline
-		\rowcolor{grayshade} \textbf{RNF3} & \textbf{Compatibilidad} \\
+		\rowcolor{grayshade} \textbf{RNF2} & \textbf{Compatibilidad} \\
 		\hline
 		\textbf{Prioridad} & Baja \\
 		\hline
 		\textbf{Descripción} & El software debe estar disponible en varios sistemas operativos (Android e IOS).\\
 		\hline
 	\end{tabular}
+	\caption{RNF2}
+\end{table}
+
+ % Tabla para requisito no funcional.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RNF3} & \textbf{Usabilidad} \\
+		\hline
+		\textbf{Prioridad} & Media \\
+		\hline
+		\textbf{Descripción} & El sistema debe sencillo para que los usuarios puedan interaccionar con este sin problema.\\
+		\hline
+	\end{tabular}
 	\caption{RNF3}
+\end{table}
+
+ % Tabla para requisito no funcional.
+\begin{table}[H]
+	\centering % Centra la tabla en la página
+	\begin{tabular}{|p{0.35\linewidth}|p{0.6\linewidth}|}
+		\hline
+		\rowcolor{grayshade} \textbf{RNF4} & \textbf{Accesibilidad} \\
+		\hline
+		\textbf{Prioridad} & Media \\
+		\hline
+		\textbf{Descripción} & El sistema debe ser utilizable por el mayor número de personas, incluidas las personas con discapacidades.\\
+		\hline
+	\end{tabular}
+	\caption{RNF4}
 \end{table}
 
 \newpage
@@ -2033,11 +2048,11 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
 		\hline
-		Referencias & \multicolumn{3}{l|}{RF19} \\ 
+		Referencias & RF19 & Include & R10 \\ 
 		\hline
-		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Deben existir los artículos de la venta} \\ 
+		Precondición & \multicolumn{3}{m{0.6\textwidth}|}{Deben existir los artículos de la venta} \\ 
 		\hline
-		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se registra una nueva venta.} \\ 
+		Postcondición & \multicolumn{3}{m{0.6\textwidth}|}{Se registra una nueva venta.} \\ 
 		\hline
 		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
 		\hline
@@ -2045,6 +2060,8 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 	\end{tabular}
 \end{table}
+
+
 
 \begin{table}[H]
 	\centering
@@ -2171,7 +2188,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
 		\hline
-		Referencias & \multicolumn{3}{l|}{RF21} \\ 
+		Referencias & RF21 & Include & R10 \\ 
 		\hline
 		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Deben existir la venta que vamos a devolver.} \\ 
 		\hline
@@ -2242,7 +2259,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
 		\hline
-		Referencias & \multicolumn{3}{l|}{RF22} \\ 
+		Referencias & RF22 & Include & R10 \\ 
 		\hline
 		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el movimiento previamente.} \\ 
 		\hline
@@ -2563,7 +2580,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 		\hline
 		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
 		\hline
-		Referencias & \multicolumn{3}{l|}{RF27} \\ 
+		Referencias & RF27 & Include & R10 \\ 
 		\hline
 		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el préstamo} \\ 
 		\hline
@@ -2747,6 +2764,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\caption{Caso de uso - Visualización de gráficas}
 \end{table}
 
+
 \newpage
 
 
@@ -2766,7 +2784,7 @@ En esta sección se muestra el modelo conceptual del sistema, donde podemos ver 
 
 \section{Modelos de comportamiento}
 
-En esta sección vamos a especificar cómo opera el sistema ante las acciones del actor mediante diagramas de secuencia. 
+En esta sección vamos a especificar cómo opera el sistema ante las acciones del actor mediante diagramas de secuencia del sistema. 
 
 \subsection{Apertura y cierra de sesión}
 
