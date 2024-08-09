@@ -1,46 +1,47 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Presupuesto total}}{21}{table.2.1}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Distribución de horas por fase}}{19}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Presupuesto total}}{23}{table.2.2}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Descripción de la tabla}}{33}{table.3.1}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Descripción de la tabla}}{35}{table.3.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces RF1}}{42}{table.5.1}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces RF2}}{43}{table.5.2}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces RF3}}{43}{table.5.3}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces RF4}}{44}{table.5.4}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces RF5}}{44}{table.5.5}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces RF6}}{45}{table.5.6}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces RF7}}{45}{table.5.7}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces RF8}}{46}{table.5.8}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces RF9}}{46}{table.5.9}%
-\contentsline {table}{\numberline {5.10}{\ignorespaces RF10}}{47}{table.5.10}%
-\contentsline {table}{\numberline {5.11}{\ignorespaces RF11}}{47}{table.5.11}%
-\contentsline {table}{\numberline {5.12}{\ignorespaces RF12}}{48}{table.5.12}%
-\contentsline {table}{\numberline {5.13}{\ignorespaces RF13}}{48}{table.5.13}%
-\contentsline {table}{\numberline {5.14}{\ignorespaces RF14}}{49}{table.5.14}%
-\contentsline {table}{\numberline {5.15}{\ignorespaces RF15}}{49}{table.5.15}%
-\contentsline {table}{\numberline {5.16}{\ignorespaces RF16}}{50}{table.5.16}%
-\contentsline {table}{\numberline {5.17}{\ignorespaces RF17}}{50}{table.5.17}%
-\contentsline {table}{\numberline {5.18}{\ignorespaces RF18}}{51}{table.5.18}%
-\contentsline {table}{\numberline {5.19}{\ignorespaces RF19}}{52}{table.5.19}%
-\contentsline {table}{\numberline {5.20}{\ignorespaces RF20}}{53}{table.5.20}%
-\contentsline {table}{\numberline {5.21}{\ignorespaces RF21}}{54}{table.5.21}%
-\contentsline {table}{\numberline {5.22}{\ignorespaces RF22}}{55}{table.5.22}%
-\contentsline {table}{\numberline {5.23}{\ignorespaces RF23}}{55}{table.5.23}%
-\contentsline {table}{\numberline {5.24}{\ignorespaces RF24}}{56}{table.5.24}%
-\contentsline {table}{\numberline {5.25}{\ignorespaces RF25}}{56}{table.5.25}%
-\contentsline {table}{\numberline {5.26}{\ignorespaces RF26}}{57}{table.5.26}%
-\contentsline {table}{\numberline {5.27}{\ignorespaces RF27}}{57}{table.5.27}%
-\contentsline {table}{\numberline {5.28}{\ignorespaces RF28}}{58}{table.5.28}%
-\contentsline {table}{\numberline {5.29}{\ignorespaces RF29}}{58}{table.5.29}%
-\contentsline {table}{\numberline {5.30}{\ignorespaces RNF1}}{59}{table.5.30}%
-\contentsline {table}{\numberline {5.31}{\ignorespaces RNF2}}{59}{table.5.31}%
-\contentsline {table}{\numberline {5.32}{\ignorespaces RNF3}}{59}{table.5.32}%
-\contentsline {table}{\numberline {5.33}{\ignorespaces RNF4}}{59}{table.5.33}%
-\contentsline {table}{\numberline {5.34}{\ignorespaces Caso de uso - Inicio de sesión}}{64}{table.5.34}%
-\contentsline {table}{\numberline {5.35}{\ignorespaces Caso de uso - Cierre de sesión}}{65}{table.5.35}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces RF1}}{44}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces RF2}}{45}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces RF3}}{45}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces RF4}}{46}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces RF5}}{46}{table.5.5}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces RF6}}{47}{table.5.6}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces RF7}}{47}{table.5.7}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces RF8}}{48}{table.5.8}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces RF9}}{48}{table.5.9}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces RF10}}{49}{table.5.10}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces RF11}}{49}{table.5.11}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces RF12}}{50}{table.5.12}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces RF13}}{50}{table.5.13}%
+\contentsline {table}{\numberline {5.14}{\ignorespaces RF14}}{51}{table.5.14}%
+\contentsline {table}{\numberline {5.15}{\ignorespaces RF15}}{51}{table.5.15}%
+\contentsline {table}{\numberline {5.16}{\ignorespaces RF16}}{52}{table.5.16}%
+\contentsline {table}{\numberline {5.17}{\ignorespaces RF17}}{52}{table.5.17}%
+\contentsline {table}{\numberline {5.18}{\ignorespaces RF18}}{53}{table.5.18}%
+\contentsline {table}{\numberline {5.19}{\ignorespaces RF19}}{54}{table.5.19}%
+\contentsline {table}{\numberline {5.20}{\ignorespaces RF20}}{55}{table.5.20}%
+\contentsline {table}{\numberline {5.21}{\ignorespaces RF21}}{56}{table.5.21}%
+\contentsline {table}{\numberline {5.22}{\ignorespaces RF22}}{57}{table.5.22}%
+\contentsline {table}{\numberline {5.23}{\ignorespaces RF23}}{57}{table.5.23}%
+\contentsline {table}{\numberline {5.24}{\ignorespaces RF24}}{58}{table.5.24}%
+\contentsline {table}{\numberline {5.25}{\ignorespaces RF25}}{58}{table.5.25}%
+\contentsline {table}{\numberline {5.26}{\ignorespaces RF26}}{59}{table.5.26}%
+\contentsline {table}{\numberline {5.27}{\ignorespaces RF27}}{59}{table.5.27}%
+\contentsline {table}{\numberline {5.28}{\ignorespaces RF28}}{60}{table.5.28}%
+\contentsline {table}{\numberline {5.29}{\ignorespaces RF29}}{60}{table.5.29}%
+\contentsline {table}{\numberline {5.30}{\ignorespaces RNF1}}{61}{table.5.30}%
+\contentsline {table}{\numberline {5.31}{\ignorespaces RNF2}}{61}{table.5.31}%
+\contentsline {table}{\numberline {5.32}{\ignorespaces RNF3}}{61}{table.5.32}%
+\contentsline {table}{\numberline {5.33}{\ignorespaces RNF4}}{61}{table.5.33}%
+\contentsline {table}{\numberline {5.34}{\ignorespaces Caso de uso - Inicio de sesión}}{66}{table.5.34}%
+\contentsline {table}{\numberline {5.35}{\ignorespaces Caso de uso - Cierre de sesión}}{67}{table.5.35}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

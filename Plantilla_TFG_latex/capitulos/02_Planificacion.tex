@@ -8,30 +8,90 @@ La planificación del desarrollo del proyecto se ha dividido en las fases que va
 
 \subsection{Fase inicial}
 
-En esta etapa es donde se definen las bases del proyecto. Se identifican las necesidades y se establecen unos objetivos principales que deberán de cumplirse a lo largo del desarrollo del proyecto. Esta información podemos verla en el capítulo 1 (\hyperref[chap:introduction]{ver página}) de este documento. Además, se realiza un estudio de la viabilidad y un caso de negocio, donde se pueda observar los beneficios que la aplicación es capaz de producir frente a los gastos y los riesgos. 
+En esta etapa es donde se definen las bases del proyecto. Se expone la motivación que nos conduce a llevar el proyecto a cabo, se identifican las necesidades y se establecen unos objetivos principales que deberán de cumplirse a lo largo del desarrollo del proyecto. Esta información podemos verla en el capítulo 1 (\hyperref[chap:introduction]{ver página}) de este documento. 
+
+\subsection{Fase de investigación}
+
+Durante esta fase, se recopila información para entender el entorno donde se pondrá en práctica la aplicación. Para ello, se investigarán cuestiones como la definición de negocio minorista, un estudio de los pequeños negocios mixtos y un estudio de los comerciantes minoristas. Además, con el objetivo de que la aplicación cumpla los términos legales, también se realizará un estudio sobre usabilidad, accesibilidad y la legislación de protección de datos. 
+
+Para finalizar esta fase de investigación y entender la verdadera necesidad de desarrollar esta aplicación, se realizará una comparación de aplicaciones similares en el mercado. 
 
 \subsection{Fase de análisis}
 
-Durante la fase de análisis se estudia de forma minuciosa los requisitos del proyecto. Se deben comprender de forma exacta las necesidades del cliente y posteriormente convertirlas en una lista de especificaciones que el software debe cumplir. \\ 
+En esta fase encontraremos 2 apartados: 
 
-Además se realiza un análisis de los posibles riesgos que nos podemos encontrar en el desarrollo del proyecto. Con todo esto, se elabora un plan que englobe todos los requisitos y tenga en cuenta las amenazas del proyecto y cómo actuar ante ellas. Tras esta fase de análisis se debe tener una planificación buena para conseguir el desarrollo exitoso del proyecto. 
+\begin{itemize}
+	\item \textbf{Análisis de las tecnologías:} En este apartado encontraremos una lista de las tecnologías que se han utilizado para el desarrollo del proyecto, además de una explicación de porqué han sido seleccionadas y cuáles son sus principales características.  
+	\item \textbf{Análisis de la aplicación:} Durante este aparado se estudian los requisitos que deberá de cumplir la aplicación para satisfacer las necesidades del cliente. Para una mayor especificación y claridad, se desarrollarán los casos de uso y los diagramas de secuencia del sistema. Para entender como se relacionan las entidades, también se hará un modelo conceptual. 
+\end{itemize}
+
+
+\subsection{Fase de diseño}
+
+En esta fase, se especifica más en detalle cómo va a construirse la aplicación mediante un diagrama de la arquitectura del sistema y los bocetos de la interfaz gráfica del usuario. Los bocetos se harán pantalla a pantalla y organizados por los mismos grupos que los requisitos para una mayor claridad. 
 
 
 \subsection{Fase de desarrollo}
 
-Esta es la fase donde se construye el producto que hemos definido en la fase de análisis. Suele ser la etapa más larga ya que se transforman todos los planes y diseños previos en código, dando como resultado un entregable final funcional.\\
+Esta es la fase donde se construye el producto que hemos definido en la fase de análisis y diseño. Será la etapa más larga ya que se transforman todos los planes y diseños previos en código, dando como resultado un entregable final funcional.\\
 
-Durante la fase de desarrollo suelen haber principalmente tareas de diseño, construcción, codificación, integración y prototipado. Con la realización de cada una de estas tareas se consigue un producto final al terminar la fase de desarrollo. 
+Esta fase se dividirá en tres iteraciones, ya que la metodología utilizada para la implementación de la aplicación es una metodología ágil. En cada iteración se escogerá el alcance de la iteración, es decir, los requisitos que se van a llevar a cabo, se realizará la implementación de estos, se testeará y se le expondrá al usuario para que pueda validarlo. Con la validación de usuario se obtendrá información de mejoras que deberán de ser aplicadas en las siguientes iteraciones. 
 
-\subsection{Fase de prueba y corrección}
+Tras finalizar las tres iteraciones, se obtendrá un entregable final funcional que se le proporcionará al cliente para que pueda disfrutar de este. 
 
-Tras terminar la fase de desarrollo es importante comprobar que aquello construido hace sus funcionalidades de forma correcta. Para ello se inicia una fase de prueba y corrección, donde el producto se evalúa y se comprueban que los resultados obtenidos sean los esperados. 
 
 \subsection{Redacción de la memoria}
 
-Con el objetivo de documentar el desarrollo del proyecto, se va a plasmar toda la información relevante en este documento. 
+Con el objetivo de documentar el desarrollo del proyecto, se va a plasmar toda la información relevante en este documento. No se ha incluido en ninguna fase ya que la documentación se irá haciendo a lo largo de todo el desarrollo del proyecto. 
 
-Para conseguir un buen diseño y ordenación del documento se va utilizar la herramienta de LaTeX. 
+\subsection{Diagrama de Gantt}
+
+En la siguiente tabla podemos ver cuál ha sido la duración en horas de cada una de las tareas que se exponen en el diagrama de Gantt. El diagrama representa la planificación temporal de las tareas del proyecto. Cada celda representa una semana del mes. En la tabla se muestran las horas y en el diagrama el momento en el que se realizó. 
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|l|c|}
+		\hline
+		\textbf{Fase} & \textbf{Horas} \\ \hline
+		Motivación & 2 \\ \hline
+		Objetivos del proyecto & 3 \\ \hline
+		Estructura del documento & 2 \\ \hline
+		Definición de un negocio minorista & 10 \\ \hline
+		Estudio de los pequeños negocios mixtos & 10 \\ \hline
+		Estudio de comerciantes minoristas & 10 \\ \hline
+		Estudio de usabilidad y accesibilidad & 12 \\ \hline
+		Legislación actual de protección de datos & 5 \\ \hline
+		Aplicaciones similares y comparativas & 15 \\ \hline
+		Análisis de tecnologías a utilizar & 10 \\ \hline
+		Especificación de requisitos & 15 \\ \hline
+		Modelos de casos de uso & 20 \\ \hline
+		Modelo conceptual & 3 \\ \hline
+		Modelos de comportamiento & 20 \\ \hline
+		Diagrama de arquitectura del sistema & 1 \\ \hline
+		Diseño de la interfaz gráfica & 10 \\ \hline
+		Primera iteración & 40 \\ \hline
+		Segunda iteración & 45 \\ \hline
+		Tercera iteración & 30 \\ \hline
+		Creación y modificaciones de la base de datos & 15 \\ \hline
+		Redacción de la memoria & 40 \\ \hline
+		\textbf{Total} & \textbf{308} \\ \hline
+	\end{tabular}
+	\caption{Distribución de horas por fase}
+	\label{tabla:resumen}
+\end{table}
+
+
+
+\newpage
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.6\textwidth, angle=90]{imagenes/imagenesDiagramas/diagramaGantt.png}
+	\caption{Diagrama de Gantt}
+	\label{fig:diagramaGantt}
+\end{figure}
+
+
 
 \newpage
 

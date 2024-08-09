@@ -225,7 +225,7 @@ class _MovimientosViewState extends State<MovimientosView> {
                                     builder: (context) => AlertDialog(
                                       title: Text("Eliminar movimiento"),
                                       content: Text(
-                                          "¿Estás seguro de que deseas eliminar este movimiento?"),
+                                          "¿Estás seguro de que deseas eliminar este movimiento? No se actualizará el inventario"),
                                       actions: [
                                         TextButton(
                                           child: Text("Cancelar"),

@@ -1,45 +1,59 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama de Gantt}}{20}{figure.2.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Interfaz gráfica de myGestión}}{32}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Interfaz gráfica de Clover}}{32}{figure.3.2}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Interfaz gráfica de myGestión}}{34}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Interfaz gráfica de Clover}}{34}{figure.3.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Logo LaTeX}}{35}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Logo Visual Paradigm}}{36}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Logo GoodNotes}}{37}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Metodología iterativa}}{38}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Logo Supabase}}{39}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Logo Flutter}}{40}{figure.4.6}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Logo LaTeX}}{37}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Logo Visual Paradigm}}{38}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Logo GoodNotes}}{39}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Metodología iterativa}}{40}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Logo Supabase}}{41}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Logo Flutter}}{42}{figure.4.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de paquetes de casos de uso}}{60}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Casos de uso del inicio y cierre de sesión}}{61}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Casos de uso de la gestión de artículos}}{61}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Casos de uso de la gestión de clientes}}{62}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Casos de uso de la gestión de movimientos}}{62}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Casos de uso de la gestión de gráficos y resúmenes}}{63}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Modelo conceptual}}{66}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagrama de secuencia de inicio de sesión}}{67}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de secuencia de cierre de sesión}}{67}{figure.5.9}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de paquetes de casos de uso}}{62}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Casos de uso del inicio y cierre de sesión}}{63}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Casos de uso de la gestión de artículos}}{63}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Casos de uso de la gestión de clientes}}{64}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Casos de uso de la gestión de movimientos}}{64}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Casos de uso de la gestión de gráficos y resúmenes}}{65}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Modelo conceptual}}{68}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagrama de secuencia de inicio de sesión}}{69}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama de secuencia de cierre de sesión}}{69}{figure.5.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de la arquitectura del sistema.}}{68}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Diseño de la pantalla de inicio de sesión.}}{70}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Diseño de la pantalla principal.}}{71}{figure.6.3}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Diseño de la pantalla clientes.}}{72}{figure.6.4}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Diseño de la pantalla artículos.}}{73}{figure.6.5}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Diseño de la pantalla movimientos.}}{74}{figure.6.6}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Diseño de la pantalla gráficos.}}{75}{figure.6.7}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de la arquitectura del sistema.}}{70}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diseño de la pantalla de inicio de sesión.}}{72}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diseño de la pantalla principal.}}{73}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diseño de la pantalla clientes.}}{74}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diseño de la pantalla artículos.}}{75}{figure.6.5}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Diseño de la pantalla movimientos.}}{76}{figure.6.6}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Diseño de la pantalla gráficos.}}{77}{figure.6.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Interfaz de usuario de inicio de sesión.}}{77}{figure.7.1}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Interfaz de usuario de la pantalla principal.}}{77}{figure.7.2}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Interfaz de usuario de la pantalla de visualización de clientes.}}{78}{figure.7.3}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Interfaz de usuario de la pantalla de nuevo cliente.}}{78}{figure.7.4}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Interfaz de usuario de la pantalla de editar cliente.}}{79}{figure.7.5}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Interfaz de usuario de la pantalla de visualizar datos de un cliente.}}{79}{figure.7.6}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Interfaz de usuario de la pantalla de visualizar las categorías.}}{80}{figure.7.7}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Interfaz de usuario de la pantalla de añadir nueva categoría.}}{80}{figure.7.8}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Interfaz de usuario de la pantalla de editar una categoría.}}{81}{figure.7.9}%
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Interfaz de usuario de la pantalla de visualizar artículos.}}{81}{figure.7.10}%
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Interfaz de usuario de la pantalla de añadir un nuevo artículo.}}{82}{figure.7.11}%
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Interfaz de usuario de la pantalla de editar un artículo existente.}}{82}{figure.7.12}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Interfaz de usuario de inicio de sesión.}}{79}{figure.7.1}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Interfaz de usuario de la pantalla principal.}}{79}{figure.7.2}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Interfaz de usuario de la pantalla de visualización de clientes.}}{80}{figure.7.3}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Interfaz de usuario de la pantalla de nuevo cliente.}}{80}{figure.7.4}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Interfaz de usuario de la pantalla de editar cliente.}}{81}{figure.7.5}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Interfaz de usuario de la pantalla de visualizar datos de un cliente.}}{81}{figure.7.6}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Interfaz de usuario de la pantalla de visualizar las categorías.}}{82}{figure.7.7}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Interfaz de usuario de la pantalla de añadir nueva categoría.}}{82}{figure.7.8}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Interfaz de usuario de la pantalla de editar una categoría.}}{83}{figure.7.9}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Interfaz de usuario de la pantalla de visualizar artículos.}}{83}{figure.7.10}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Interfaz de usuario de la pantalla de añadir un nuevo artículo.}}{84}{figure.7.11}%
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Interfaz de usuario de la pantalla de editar un artículo existente.}}{84}{figure.7.12}%
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Interfaz de usuario de la pantalla principal.}}{86}{figure.7.13}%
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Interfaz de usuario de la pantalla de nueva venta.}}{87}{figure.7.14}%
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Interfaz de usuario de la pantalla de nuevo préstamo.}}{88}{figure.7.15}%
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Interfaz de usuario de la pantalla de visualización de movimientos.}}{88}{figure.7.16}%
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Interfaz de usuario de la pantalla de detalles de una venta.}}{89}{figure.7.17}%
+\contentsline {figure}{\numberline {7.18}{\ignorespaces Interfaz de usuario de la pantalla de devolución de una venta.}}{90}{figure.7.18}%
+\contentsline {figure}{\numberline {7.19}{\ignorespaces Interfaz de usuario de la pantalla de una venta con devolución hecha.}}{90}{figure.7.19}%
+\contentsline {figure}{\numberline {7.20}{\ignorespaces Interfaz de usuario de la pantalla los detalles de un préstamo.}}{91}{figure.7.20}%
+\contentsline {figure}{\numberline {7.21}{\ignorespaces Interfaz de usuario de la pantalla de compra a partir de un préstamo.}}{91}{figure.7.21}%
+\contentsline {figure}{\numberline {7.22}{\ignorespaces Interfaz de usuario de la pantalla de detalles de una devolución.}}{92}{figure.7.22}%
+\contentsline {figure}{\numberline {7.23}{\ignorespaces Interfaz de usuario que muestra el cambio de la gestión de las tallas.}}{92}{figure.7.23}%
+\contentsline {figure}{\numberline {7.24}{\ignorespaces Instancia de la base de datos.}}{93}{figure.7.24}%
+\contentsline {figure}{\numberline {7.25}{\ignorespaces Diagrama de la base de datos.}}{95}{figure.7.25}%
 \addvspace {10\p@ }
