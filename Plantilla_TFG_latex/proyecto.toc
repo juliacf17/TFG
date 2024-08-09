@@ -114,5 +114,6 @@
 \contentsline {subsection}{\numberline {7.4.2}Tablas de la base de datos}{94}{subsection.7.4.2}%
 \contentsline {subsection}{\numberline {7.4.3}Modificaciones intermedias de la base de datos}{95}{subsection.7.4.3}%
 \contentsline {subsection}{\numberline {7.4.4}Diagrama final del diseño de la base de datos}{95}{subsection.7.4.4}%
-\contentsline {chapter}{\numberline {8}Validación de la aplicación por el usuario}{96}{chapter.8}%
-\contentsline {section}{Referencias}{97}{section*.7}%
+\contentsline {section}{\numberline {7.5}Diagrama de clases}{95}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Validación de la aplicación por el usuario}{97}{chapter.8}%
+\contentsline {section}{Referencias}{98}{section*.7}%
