@@ -4,6 +4,7 @@ import '../login.dart';
 import '../clientView.dart';
 import '../articles/categoryView.dart';
 import '../movements/viewMovements.dart';
+import '../graphics/graphic.dart';
 import 'common.dart';
 
 class BottomNav extends StatefulWidget {
@@ -19,6 +20,7 @@ class _BottomNavState extends State<BottomNav> {
     ClientView(),
     CategoryView(),
     MovimientosView(),
+    ChartScreen(),
     // Add other screens here
   ];
 
