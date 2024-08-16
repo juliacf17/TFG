@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../utils/common.dart';
 import 'package:intl/intl.dart';
 import 'viewMovements.dart'; // Importa la pantalla de Movimientos
+import '../utils/changeNotifier.dart';
+import 'package:provider/provider.dart';
 
 class DetalleMovimientoScreen extends StatelessWidget {
   final int movimientoId;
@@ -171,6 +173,9 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
             movimiento['clienteId'], movimiento['precioTotal']);
       }
 
+      // Notificar a todas las pantallas activas que se ha creado un nuevo movimiento
+      Provider.of<RefreshNotifier>(context, listen: false).notifyRefresh();
+
       print('Devolución completada con éxito');
 
       // Recargar la pantalla
@@ -238,6 +243,9 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
         await actualizarCarteraCliente(
             movimiento['clienteId'], precioTotalParcial);
       }
+
+      // Notificar a todas las pantallas activas que se ha creado un nuevo movimiento
+      Provider.of<RefreshNotifier>(context, listen: false).notifyRefresh();
 
       print('Devolución parcial completada con éxito');
 
@@ -341,6 +349,9 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
 
       await actualizarCarteraCliente(
           movimiento['clienteId'], movimiento['precioTotal']);
+
+      // Notificar a todas las pantallas activas que se ha creado un nuevo movimiento
+      Provider.of<RefreshNotifier>(context, listen: false).notifyRefresh();
 
       print('Compra parcial completada con éxito');
 

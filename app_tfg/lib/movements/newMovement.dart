@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../utils/common.dart';
+import '../utils/changeNotifier.dart';
+import 'package:provider/provider.dart';
 
 class NuevaVentaScreen extends StatefulWidget {
   final bool isVenta; // Variable para determinar si es una venta o un préstamo
@@ -153,6 +155,9 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
 
     final int movimientoId = response['id'];
     await insertArticulosMov(movimientoId);
+
+    // Notificar a todas las pantallas activas que se ha creado un nuevo movimiento
+    Provider.of<RefreshNotifier>(context, listen: false).notifyRefresh();
   }
 
   Future<void> updateClientCartera(int clienteId, double amount) async {
@@ -198,6 +203,9 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
 
     // Update client's cartera
     await updateClientCartera(_selectedClientId, _calculateTotal());
+
+    // Notificar a todas las pantallas activas que se ha creado un nuevo movimiento
+    Provider.of<RefreshNotifier>(context, listen: false).notifyRefresh();
   }
 
   void _addItem() async {
