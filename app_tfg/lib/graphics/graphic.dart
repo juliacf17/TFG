@@ -67,7 +67,9 @@ class _ChartScreenState extends State<ChartScreen> {
             barRods: [
               BarChartRodData(
                 toY: monthlyEarnings[index],
-                color: monthlyEarnings[index] >= 0 ? Colors.blue : Colors.red,
+                color: monthlyEarnings[index] >= 0
+                    ? Colors.green[400]
+                    : Colors.red[400],
                 width: 20,
               ),
             ],
@@ -117,7 +119,9 @@ class _ChartScreenState extends State<ChartScreen> {
             barRods: [
               BarChartRodData(
                 toY: annualEarnings[index],
-                color: annualEarnings[index] >= 0 ? Colors.blue : Colors.red,
+                color: annualEarnings[index] >= 0
+                    ? Colors.green[400]
+                    : Colors.red[400],
                 width: 20,
               ),
             ],
@@ -144,7 +148,15 @@ class _ChartScreenState extends State<ChartScreen> {
       builder: (context, notifier, child) {
         return Scaffold(
           appBar: AppBar(
-            title: Text('Pantalla de gráficos'),
+            title: Text(
+              'Pantalla de gráficos',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            foregroundColor: Colors.blue[900],
+            backgroundColor: Colors.blue[200],
             actions: [
               Padding(
                 padding: const EdgeInsets.only(right: 16.0),
