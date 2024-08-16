@@ -115,13 +115,18 @@ class _BottomNavState extends State<BottomNav> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
+        backgroundColor: Colors.blue[200], // Fondo de la barra de navegación
+        selectedItemColor:
+            Colors.blue[900], // Color de los iconos seleccionados
+        unselectedItemColor:
+            Colors.white, // Color de los iconos no seleccionados
         onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed,
       ),
     );
   }
 }
+
 
 
 /*import 'package:flutter/material.dart';

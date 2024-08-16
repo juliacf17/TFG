@@ -246,12 +246,32 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              title: Text("Cantidad no disponible"),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                side: BorderSide(
+                    color: Colors.blue[900]!, width: 5.0), // Borde azul 900
+              ),
+              title: Text(
+                "Cantidad no disponible",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               content: Text(
                   "La cantidad seleccionada excede la cantidad disponible. Disponible: $_currentQuantity."),
               actions: [
                 TextButton(
-                  child: Text("OK"),
+                  child: Text(
+                    "OK",
+                    style: TextStyle(
+                      color: Colors.yellow[600], // Texto en amarillo
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        Colors.blue[900]!), // Fondo azul 900
+                  ),
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
@@ -267,11 +287,31 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text("Información incompleta"),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+              side: BorderSide(
+                  color: Colors.blue[900]!, width: 5.0), // Borde azul 900
+            ),
+            title: Text(
+              "Información incompleta",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             content: Text("Debes rellenar todos los campos"),
             actions: [
               TextButton(
-                child: Text("OK"),
+                child: Text(
+                  "OK",
+                  style: TextStyle(
+                    color: Colors.yellow[600], // Texto en azul 900
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      Colors.blue[900]!), // Fondo azul 900
+                ),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -323,17 +363,45 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
       return (await showDialog(
             context: context,
             builder: (context) => AlertDialog(
-              title: Text("El proceso de venta se finalizará"),
-              content: Text("¿Estás seguro de que deseas finalizar la venta?"),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                side: BorderSide(
+                    color: Colors.blue[800]!, width: 5), // Borde azul 900
+              ),
+              title: Text(
+                widget.isVenta
+                    ? 'El proceso de venta se finalizará'
+                    : 'El proceso de préstamo se finalizará',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold, // Texto en negrita
+                ),
+              ),
+              content: Text(widget.isVenta
+                  ? '¿Estás seguro de que deseas finalizar la venta?'
+                  : '¿Estás seguro de que deseas finalizar el préstamo?'),
               actions: [
                 TextButton(
-                  child: Text("Cancelar"),
+                  child: Text(
+                    "Cancelar",
+                    style: TextStyle(
+                        color: Colors.blue[900],
+                        fontWeight: FontWeight.bold), // Botón azul 700
+                  ),
                   onPressed: () {
                     Navigator.of(context).pop(false);
                   },
                 ),
                 TextButton(
-                  child: Text("Aceptar"),
+                  child: Text(
+                    "Aceptar",
+                    style: TextStyle(
+                        color: Colors.yellow[600],
+                        fontWeight: FontWeight.bold), // Botón azul 900
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        Colors.blue[900]!), // Fondo azul 900
+                  ),
                   onPressed: () async {
                     for (var item in List.from(_items)) {
                       await fetchCurrentQuantity(
@@ -365,8 +433,17 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
       onWillPop: _onWillPop,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Nueva Venta', style: TextStyle(fontSize: 24.0)),
-          centerTitle: true,
+          title: Text(
+            widget.isVenta
+                ? 'Nueva Venta'
+                : 'Nuevo Préstamo', // Cambia el texto según isVenta
+            style: TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          foregroundColor: Colors.blue[900],
+          backgroundColor: Colors.blue[200],
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () async {
@@ -500,6 +577,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                     final item = _items[index];
                     return Card(
                       margin: EdgeInsets.symmetric(vertical: 8.0),
+                      color: Colors.blue[50],
                       child: ListTile(
                         title: Text(item['article']),
                         subtitle: Text(
@@ -603,12 +681,36 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                title: Text("Método de pago requerido"),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20.0)),
+                                  side: BorderSide(
+                                      color: Colors.blue[900]!,
+                                      width: 5.0), // Borde azul 900
+                                ),
+                                title: Text(
+                                  "Método de pago requerido",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 content: Text(
                                     "Por favor, seleccione un método de pago."),
                                 actions: [
                                   TextButton(
-                                    child: Text("OK"),
+                                    child: Text(
+                                      "OK",
+                                      style: TextStyle(
+                                        color: Colors
+                                            .yellow[600], // Texto en amarillo
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    style: ButtonStyle(
+                                      backgroundColor: MaterialStateProperty
+                                          .all<Color>(Colors
+                                              .blue[900]!), // Fondo azul 900
+                                    ),
                                     onPressed: () {
                                       Navigator.of(context).pop();
                                     },
@@ -627,11 +729,35 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                title: Text("Cliente requerido"),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20.0)),
+                                  side: BorderSide(
+                                      color: Colors.blue[900]!,
+                                      width: 5.0), // Borde azul 900
+                                ),
+                                title: Text(
+                                  "Cliente requerido",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 content: Text("Por favor, asigne un cliente."),
                                 actions: [
                                   TextButton(
-                                    child: Text("OK"),
+                                    child: Text(
+                                      "OK",
+                                      style: TextStyle(
+                                        color: Colors
+                                            .yellow[600], // Texto en amarillo
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    style: ButtonStyle(
+                                      backgroundColor: MaterialStateProperty
+                                          .all<Color>(Colors
+                                              .blue[900]!), // Fondo azul 900
+                                    ),
                                     onPressed: () {
                                       Navigator.of(context).pop();
                                     },
@@ -643,7 +769,18 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                         }
                       }
                     },
-                    child: Text('Aceptar'),
+                    child: Text(
+                      'Aceptar',
+                      style: TextStyle(
+                        color: Colors.yellow[600], // Texto en amarillo
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                        Colors.blue[900]!, // Fondo azul
+                      ),
+                    ),
                   ),
                 ],
               ),

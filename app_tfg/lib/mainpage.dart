@@ -11,6 +11,7 @@ class MainPage extends StatelessWidget {
       title: 'Pantalla Principal',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.white,
       ),
       home: HomeScreen(),
     );
@@ -73,8 +74,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text('Pantalla principal', style: TextStyle(fontSize: 24.0)),
-            centerTitle: true,
+            title: Text('Pantalla principal',
+                style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)),
+            foregroundColor: Colors.blue[900],
+            centerTitle: false,
+            //backgroundColor: Colors.blueGrey[200],
+            backgroundColor: Colors.blue[200],
           ),
           body: Center(
             child: Padding(
@@ -84,15 +89,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Container(
-                    width: 200.0,
-                    height: 100.0,
+                    width: 300.0,
+                    height: 150.0,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
-                      borderRadius: BorderRadius.circular(8.0),
+                      border: Border.all(color: Colors.blue[900]!, width: 5.0),
+                      borderRadius: BorderRadius.circular(20.0),
                     ),
                     child: Text(
                       'Ganancias diarias: ${dailyEarnings.toStringAsFixed(2)} €',
+                      style: TextStyle(
+                        color: Colors.blue[
+                            900], // Establece el color del texto a blue 900
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   SizedBox(width: 100.0), // Espacio entre las celdas
@@ -100,12 +111,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Container(
-                        width: 200.0,
-                        height: 100.0,
+                        width: 300.0,
+                        height: 150.0,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.black),
-                          borderRadius: BorderRadius.circular(8.0),
+                          border:
+                              Border.all(color: Colors.green[600]!, width: 9.0),
+                          borderRadius: BorderRadius.circular(50.0),
                         ),
                         child: Align(
                           alignment: Alignment.center,
@@ -125,22 +137,31 @@ class _HomeScreenState extends State<HomeScreen> {
                               style: ElevatedButton.styleFrom(
                                 // Cambia el color de fondo según tu diseño
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(40.0),
+                                ),
+                                backgroundColor: Colors.blue[900],
+                              ),
+                              child: Text(
+                                'Nueva venta',
+                                style: TextStyle(
+                                  color: Colors.grey[
+                                      300], // Establece el color del texto a blue 900
+                                  fontSize: 24.0,
                                 ),
                               ),
-                              child: Text('Nueva venta'),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(height: 100.0),
                       Container(
-                        width: 200.0,
-                        height: 100.0,
+                        width: 300.0,
+                        height: 150.0,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.black),
-                          borderRadius: BorderRadius.circular(8.0),
+                          border: Border.all(
+                              color: Colors.purple[400]!, width: 9.0),
+                          borderRadius: BorderRadius.circular(50.0),
                         ),
                         child: Align(
                           alignment: Alignment.center,
@@ -160,10 +181,18 @@ class _HomeScreenState extends State<HomeScreen> {
                               style: ElevatedButton.styleFrom(
                                 // Cambia el color de fondo según tu diseño
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(40.0),
+                                ),
+                                backgroundColor: Colors.blue[900],
+                              ),
+                              child: Text(
+                                'Nuevo préstamo',
+                                style: TextStyle(
+                                  color: Colors.grey[
+                                      300], // Establece el color del texto a blue 900
+                                  fontSize: 24.0,
                                 ),
                               ),
-                              child: Text('Nuevo préstamo'),
                             ),
                           ),
                         ),
