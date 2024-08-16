@@ -100,7 +100,15 @@ class _MovimientosViewState extends State<MovimientosView> {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text('Pantalla de Movimientos'),
+            title: Text(
+              'Pantalla de Movimientos',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            foregroundColor: Colors.blue[900],
+            backgroundColor: Colors.blue[200],
           ),
           body: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -215,6 +223,7 @@ class _MovimientosViewState extends State<MovimientosView> {
 
                               return Card(
                                 margin: EdgeInsets.symmetric(vertical: 8.0),
+                                color: Colors.blue[50],
                                 child: ListTile(
                                   title: Text(
                                       'Fecha: ${_formatDate(movimiento['fecha'])}'),
@@ -226,18 +235,51 @@ class _MovimientosViewState extends State<MovimientosView> {
                                       final result = await showDialog<bool>(
                                         context: context,
                                         builder: (context) => AlertDialog(
-                                          title: Text("Eliminar movimiento"),
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(20.0)),
+                                            side: BorderSide(
+                                              color: Colors.blue[900]!,
+                                              width: 5.0,
+                                            ),
+                                          ),
+                                          title: Text(
+                                            "Eliminar movimiento",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                           content: Text(
-                                              "¿Estás seguro de que deseas eliminar este movimiento? No se actualizará el inventario"),
+                                            "¿Estás seguro de que deseas eliminar este movimiento? No se actualizará el inventario",
+                                          ),
                                           actions: [
                                             TextButton(
-                                              child: Text("Cancelar"),
+                                              child: Text(
+                                                "Cancelar",
+                                                style: TextStyle(
+                                                  color: Colors.blue[900],
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
                                               onPressed: () =>
                                                   Navigator.of(context)
                                                       .pop(false),
                                             ),
                                             TextButton(
-                                              child: Text("Eliminar"),
+                                              child: Text(
+                                                "Eliminar",
+                                                style: TextStyle(
+                                                  color: Colors.yellow[600],
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              style: ButtonStyle(
+                                                backgroundColor:
+                                                    MaterialStateProperty.all<
+                                                        Color>(
+                                                  Colors.blue[900]!,
+                                                ),
+                                              ),
                                               onPressed: () =>
                                                   Navigator.of(context)
                                                       .pop(true),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import '../utils/common.dart';
 import 'package:intl/intl.dart';
-import 'viewMovements.dart'; // Importa la pantalla de Movimientos
 import '../utils/changeNotifier.dart';
 import 'package:provider/provider.dart';
+import '../utils/bottomNavigation.dart';
 
 class DetalleMovimientoScreen extends StatelessWidget {
   final int movimientoId;
@@ -14,7 +14,15 @@ class DetalleMovimientoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ver Movimiento'),
+        title: Text(
+          'Ver Movimiento',
+          style: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        foregroundColor: Colors.blue[900],
+        backgroundColor: Colors.blue[200],
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -409,12 +417,14 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                   Container(
                     padding: EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey),
+                      border: Border.all(color: Colors.blue[900]!, width: 1.5),
                     ),
                     child: Text(
                       'Tipo de Movimiento: ${isCompraParcial ? 'Compra' : (isDevolucionParcial ? 'Devolución' : movimiento['tipoMov'])}',
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue[900]),
                     ),
                   ),
                   if (movimiento['idMovAnterior'] != -1)
@@ -433,7 +443,20 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                     totalDevolucionParcial = 0.0;
                                   });
                                 },
-                                child: Text('Devolución parcial'),
+                                child: Text(
+                                  'Devolución parcial',
+                                  style: TextStyle(
+                                    color:
+                                        Colors.yellow[600], // Texto en amarillo
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                    Colors.blue[900]!, // Fondo azul
+                                  ),
+                                ),
                               ),
                             if (movimiento['tipoMov'] == 'Préstamo')
                               ElevatedButton(
@@ -445,7 +468,20 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                     totalDevolucionParcial = 0.0;
                                   });
                                 },
-                                child: Text('Comprar'),
+                                child: Text(
+                                  'Comprar',
+                                  style: TextStyle(
+                                    color:
+                                        Colors.yellow[600], // Texto en amarillo
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                    Colors.blue[900]!, // Fondo azul
+                                  ),
+                                ),
                               ),
                             SizedBox(width: 10),
                             ElevatedButton(
@@ -454,18 +490,49 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                   context: context,
                                   builder: (BuildContext context) {
                                     return AlertDialog(
-                                      title: Text('Confirmar devolución'),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(20.0)),
+                                        side: BorderSide(
+                                          color: Colors.blue[900]!,
+                                          width: 5.0,
+                                        ),
+                                      ),
+                                      title: Text(
+                                        'Confirmar devolución',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                       content: Text(
-                                          '¿Estás seguro de que quieres devolver todos los artículos?'),
+                                        '¿Estás seguro de que quieres devolver todos los artículos?',
+                                      ),
                                       actions: [
                                         TextButton(
-                                          child: Text('Cancelar'),
+                                          child: Text(
+                                            'Cancelar',
+                                            style: TextStyle(
+                                              color: Colors.blue[900],
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                           onPressed: () {
                                             Navigator.of(context).pop();
                                           },
                                         ),
                                         TextButton(
-                                          child: Text('Aceptar'),
+                                          child: Text(
+                                            'Aceptar',
+                                            style: TextStyle(
+                                              color: Colors.yellow[600],
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all<
+                                                    Color>(Colors.blue[900]!),
+                                          ),
                                           onPressed: () {
                                             devolverTodo(
                                                 isPrestamo:
@@ -478,7 +545,20 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                   },
                                 );
                               },
-                              child: Text('Devolver todo'),
+                              child: Text(
+                                'Devolver todo',
+                                style: TextStyle(
+                                  color:
+                                      Colors.yellow[600], // Texto en amarillo
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              style: ButtonStyle(
+                                backgroundColor:
+                                    MaterialStateProperty.all<Color>(
+                                  Colors.blue[900]!, // Fondo azul
+                                ),
+                              ),
                             ),
                           ],
                         )
@@ -494,10 +574,21 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                               ),
                             );
                           },
-                          child: movimiento['tipoMov'] == 'Préstamo' ||
-                                  movimiento['tipoMov'] == 'Venta'
-                              ? Text('Devolución hecha')
-                              : Text('Movimiento original'),
+                          child: Text(
+                            movimiento['tipoMov'] == 'Préstamo' ||
+                                    movimiento['tipoMov'] == 'Venta'
+                                ? 'Devolución hecha'
+                                : 'Movimiento original',
+                            style: TextStyle(
+                              color: Colors.yellow[600], // Texto en amarillo
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.blue[900]!, // Fondo azul
+                            ),
+                          ),
                         ),
                   if (movimiento['idMovAnterior'] != -1 &&
                       movimiento['tipoMov'] == 'Devolución')
@@ -512,7 +603,18 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                           ),
                         );
                       },
-                      child: Text('Movimiento original'),
+                      child: Text(
+                        'Movimiento original',
+                        style: TextStyle(
+                          color: Colors.yellow[600], // Texto en amarillo
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                          Colors.blue[900]!, // Fondo azul
+                        ),
+                      ),
                     ),
                 ],
               ),
@@ -567,8 +669,12 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
 
                             return Card(
                               margin: EdgeInsets.symmetric(vertical: 8.0),
+                              color: Colors.blue[50],
                               child: ListTile(
-                                title: Text('Artículo: $articuloNombre'),
+                                title: Text(
+                                  'Artículo: $articuloNombre',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                                 subtitle: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -599,24 +705,22 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                   children: [
                     Row(
                       children: [
-                        Expanded(
-                          child: DropdownButton<String>(
-                            hint: Text('Método de pago'),
-                            value: _selectedPaymentMethod,
-                            items:
-                                <String>['Efectivo', 'Tarjeta'].map((method) {
-                              return DropdownMenuItem<String>(
-                                value: method,
-                                child: Text(method),
-                              );
-                            }).toList(),
-                            onChanged: (value) {
-                              setState(() {
-                                _selectedPaymentMethod = value;
-                              });
-                            },
-                          ),
+                        DropdownButton<String>(
+                          hint: Text('Método de pago'),
+                          value: _selectedPaymentMethod,
+                          items: <String>['Efectivo', 'Tarjeta'].map((method) {
+                            return DropdownMenuItem<String>(
+                              value: method,
+                              child: Text(method),
+                            );
+                          }).toList(),
+                          onChanged: (value) {
+                            setState(() {
+                              _selectedPaymentMethod = value;
+                            });
+                          },
                         ),
+                        Spacer(),
                         SizedBox(width: 10),
                         Text(
                           'Total ${isCompraParcial ? 'compra' : 'devolución'} parcial: \$${totalDevolucionParcial.toStringAsFixed(2)}',
@@ -630,12 +734,40 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                 context: context,
                                 builder: (BuildContext context) {
                                   return AlertDialog(
-                                    title: Text('Método de pago requerido'),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(20.0)),
+                                      side: BorderSide(
+                                        color:
+                                            Colors.blue[900]!, // Borde azul 900
+                                        width: 3.0,
+                                      ),
+                                    ),
+                                    title: Text(
+                                      'Método de pago requerido',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight
+                                            .bold, // Título en negrita
+                                      ),
+                                    ),
                                     content: Text(
                                         'Por favor, seleccione un método de pago.'),
                                     actions: [
                                       TextButton(
-                                        child: Text('OK'),
+                                        child: Text(
+                                          'OK',
+                                          style: TextStyle(
+                                            color: Colors.yellow[
+                                                600], // Texto en amarillo
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        style: ButtonStyle(
+                                          backgroundColor:
+                                              MaterialStateProperty.all<Color>(
+                                            Colors.blue[900]!, // Fondo azul
+                                          ),
+                                        ),
                                         onPressed: () {
                                           Navigator.of(context).pop();
                                         },
@@ -649,19 +781,54 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                                 context: context,
                                 builder: (BuildContext context) {
                                   return AlertDialog(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(20.0)),
+                                      side: BorderSide(
+                                        color: Colors.blue[900]!,
+                                        width: 5.0,
+                                      ),
+                                    ),
                                     title: Text(
-                                        'Confirmar ${isCompraParcial ? 'compra' : 'devolución'} parcial'),
+                                      'Confirmar ${isCompraParcial ? 'compra' : 'devolución'} parcial',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     content: Text(
-                                        '¿Estás seguro de que quieres ${isCompraParcial ? 'comprar' : 'devolver'} los artículos seleccionados?'),
+                                      '¿Estás seguro de que quieres ${isCompraParcial ? 'comprar' : 'devolver'} los artículos seleccionados?',
+                                    ),
                                     actions: [
                                       TextButton(
-                                        child: Text('Cancelar'),
+                                        child: Text(
+                                          'Cancelar',
+                                          style: TextStyle(
+                                            color: Colors.yellow[600],
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        style: ButtonStyle(
+                                          backgroundColor:
+                                              MaterialStateProperty.all<Color>(
+                                                  Colors.blue[900]!),
+                                        ),
                                         onPressed: () {
                                           Navigator.of(context).pop();
                                         },
                                       ),
                                       TextButton(
-                                        child: Text('Aceptar'),
+                                        child: Text(
+                                          'Aceptar',
+                                          style: TextStyle(
+                                            color: Colors.yellow[600],
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        style: ButtonStyle(
+                                          backgroundColor:
+                                              MaterialStateProperty.all<Color>(
+                                                  Colors.blue[900]!),
+                                        ),
                                         onPressed: () {
                                           if (isCompraParcial) {
                                             comprarParcial();
@@ -679,7 +846,18 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                               );
                             }
                           },
-                          child: Text('Aceptar'),
+                          child: Text(
+                            'Aceptar',
+                            style: TextStyle(
+                              color: Colors.yellow[600], // Texto en amarillo
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.blue[900]!, // Fondo azul
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -689,7 +867,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                 Container(
                   padding: EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey),
+                    border: Border.all(color: Colors.blue[900]!, width: 1.5),
                   ),
                   child: FutureBuilder<String>(
                     future: getClienteNombre(movimiento['clienteId']),
@@ -720,13 +898,19 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                               Expanded(
                                 child: Text(
                                   'Cliente: $clienteNombre',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.blue[900],
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ),
                               Expanded(
                                 child: Text(
                                   'Fecha: ${_formatDate(movimiento['fecha'])}',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.blue[900],
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ),
                             ],
@@ -737,13 +921,19 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                               Expanded(
                                 child: Text(
                                   'Método: ${movimiento['metodoPago'] ?? 'N/A'}',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.blue[900],
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ),
                               Expanded(
                                 child: Text(
                                   'Precio Total: \$${movimiento['precioTotal']}',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.blue[900],
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ),
                             ],

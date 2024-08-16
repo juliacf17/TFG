@@ -579,7 +579,10 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       margin: EdgeInsets.symmetric(vertical: 8.0),
                       color: Colors.blue[50],
                       child: ListTile(
-                        title: Text(item['article']),
+                        title: Text(
+                          item['article'],
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
                         subtitle: Text(
                             'Color: ${item['color']}, Talla: ${item['size']}, Cantidad: ${item['quantity']}'),
                         trailing: Text('\$${item['price'] * item['quantity']}'),
