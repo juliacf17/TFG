@@ -40,7 +40,15 @@ class StockRenewalScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista renovación stock'),
+        title: Text(
+          'Lista de renovación de stock',
+          style: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        foregroundColor: Colors.blue[900],
+        backgroundColor: Colors.blue[200],
       ),
       body: FutureBuilder<List<Map<String, dynamic>>>(
         future: getLowStockArticles(),

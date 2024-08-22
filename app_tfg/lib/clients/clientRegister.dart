@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'utils/common.dart';
+import '../utils/common.dart';
 
 class RegisterClient extends StatefulWidget {
   @override
@@ -21,8 +21,15 @@ class _RegisterClientState extends State<RegisterClient> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Registrar cliente', style: TextStyle(fontSize: 24.0)),
-        centerTitle: true,
+        title: Text(
+          'Añadir cliente',
+          style: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        foregroundColor: Colors.blue[900],
+        backgroundColor: Colors.blue[200],
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {

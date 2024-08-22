@@ -113,8 +113,15 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Visualizar Artículo', style: TextStyle(fontSize: 24.0)),
-        centerTitle: true,
+        title: Text(
+          'Visualizar datos del artículo',
+          style: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        foregroundColor: Colors.blue[900],
+        backgroundColor: Colors.blue[200],
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -131,58 +138,54 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  SizedBox(height: 24.0),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 200.0),
-                    child: TextFormField(
-                      controller: nameController,
-                      decoration: InputDecoration(
-                        labelText: 'Nombre',
-                        border: OutlineInputBorder(),
-                      ),
-                      readOnly: true,
+                  SizedBox(height: 20.0),
+                  Text(
+                    'Datos del artículo',
+                    style: TextStyle(
+                      fontSize: 26.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue[900],
                     ),
                   ),
-                  SizedBox(height: 16.0),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 200.0),
-                    child: TextFormField(
-                      controller: priceController,
-                      decoration: InputDecoration(
-                        labelText: 'Precio',
-                        border: OutlineInputBorder(),
-                      ),
-                      readOnly: true,
+                  SizedBox(height: 25.0),
+                  TextFormField(
+                    controller: nameController,
+                    decoration: InputDecoration(
+                      labelText: 'Nombre',
+                      border: OutlineInputBorder(),
                     ),
+                    readOnly: true,
                   ),
                   SizedBox(height: 16.0),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 200.0),
-                    child: TextFormField(
-                      controller: subcategoryController,
-                      decoration: InputDecoration(
-                        labelText: 'Subcategoría',
-                        border: OutlineInputBorder(),
-                      ),
-                      readOnly: true,
+                  TextFormField(
+                    controller: priceController,
+                    decoration: InputDecoration(
+                      labelText: 'Precio',
+                      border: OutlineInputBorder(),
                     ),
+                    readOnly: true,
+                  ),
+                  SizedBox(height: 16.0),
+                  TextFormField(
+                    controller: subcategoryController,
+                    decoration: InputDecoration(
+                      labelText: 'Subcategoría',
+                      border: OutlineInputBorder(),
+                    ),
+                    readOnly: true,
                   ),
                   Visibility(
                     visible: showGender,
                     child: Column(
                       children: [
                         SizedBox(height: 16.0),
-                        Padding(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 200.0),
-                          child: TextFormField(
-                            controller: genderController,
-                            decoration: InputDecoration(
-                              labelText: 'Género',
-                              border: OutlineInputBorder(),
-                            ),
-                            readOnly: true,
+                        TextFormField(
+                          controller: genderController,
+                          decoration: InputDecoration(
+                            labelText: 'Género',
+                            border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
                         ),
                       ],
                     ),
@@ -192,17 +195,13 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                     child: Column(
                       children: [
                         SizedBox(height: 16.0),
-                        Padding(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 200.0),
-                          child: TextFormField(
-                            controller: materialController,
-                            decoration: InputDecoration(
-                              labelText: 'Material',
-                              border: OutlineInputBorder(),
-                            ),
-                            readOnly: true,
+                        TextFormField(
+                          controller: materialController,
+                          decoration: InputDecoration(
+                            labelText: 'Material',
+                            border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
                         ),
                       ],
                     ),
@@ -212,17 +211,13 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                     child: Column(
                       children: [
                         SizedBox(height: 16.0),
-                        Padding(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 200.0),
-                          child: TextFormField(
-                            controller: dimensionController,
-                            decoration: InputDecoration(
-                              labelText: 'Dimensiones',
-                              border: OutlineInputBorder(),
-                            ),
-                            readOnly: true,
+                        TextFormField(
+                          controller: dimensionController,
+                          decoration: InputDecoration(
+                            labelText: 'Dimensiones',
+                            border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
                         ),
                       ],
                     ),
@@ -232,32 +227,23 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                     child: Column(
                       children: [
                         SizedBox(height: 16.0),
-                        Padding(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 200.0),
-                          child: TextFormField(
-                            controller: descriptionController,
-                            decoration: InputDecoration(
-                              labelText: 'Descripción',
-                              border: OutlineInputBorder(),
-                            ),
-                            readOnly: true,
-                            maxLines: 3,
+                        TextFormField(
+                          controller: descriptionController,
+                          decoration: InputDecoration(
+                            labelText: 'Descripción',
+                            border: OutlineInputBorder(),
                           ),
+                          readOnly: true,
+                          maxLines: 3,
                         ),
                       ],
                     ),
                   ),
                   SizedBox(height: 16.0),
                   sizeControllers.isEmpty
-                      ? Padding(
-                          padding:
-                              const EdgeInsets.symmetric(horizontal: 200.0),
-                          child: Text(
-                            "No hay tallas registradas",
-                            style:
-                                TextStyle(fontSize: 16.0, color: Colors.grey),
-                          ),
+                      ? Text(
+                          "No hay tallas registradas",
+                          style: TextStyle(fontSize: 16.0, color: Colors.grey),
                         )
                       : ListView.builder(
                           shrinkWrap: true,
@@ -324,6 +310,7 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                             );
                           },
                         ),
+                  SizedBox(height: 16.0),
                 ],
               ),
             ),

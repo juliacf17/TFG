@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'utils/common.dart';
+import '../utils/common.dart';
 
 class EditClient extends StatefulWidget {
   final String clientId;
@@ -45,7 +45,15 @@ class _EditarDatosScreenState extends State<EditClient> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Editar datos'),
+        title: Text(
+          'Editar datos del cliente',
+          style: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        foregroundColor: Colors.blue[900],
+        backgroundColor: Colors.blue[200],
       ),
       body: Center(
         child: Form(

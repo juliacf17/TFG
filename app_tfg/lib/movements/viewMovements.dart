@@ -101,7 +101,7 @@ class _MovimientosViewState extends State<MovimientosView> {
         return Scaffold(
           appBar: AppBar(
             title: Text(
-              'Pantalla de Movimientos',
+              'Movimientos',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -121,8 +121,36 @@ class _MovimientosViewState extends State<MovimientosView> {
                         controller: _searchController,
                         decoration: InputDecoration(
                           labelText: 'Buscar cliente',
-                          prefixIcon: Icon(Icons.search),
+                          labelStyle: TextStyle(
+                            color:
+                                Colors.blue[900], // Color del texto del label
+                            fontWeight: FontWeight.bold,
+                          ),
                           border: OutlineInputBorder(),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Colors.blue[
+                                  900]!, // Color azul cuando está seleccionado
+                              width:
+                                  2.0, // Grosor del borde cuando está seleccionado
+                            ),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Colors.blue[
+                                  900]!, // Color gris cuando no está seleccionado
+                              width:
+                                  2.0, // Grosor del borde cuando no está seleccionado
+                            ),
+                          ),
+                          prefixIcon: Icon(
+                            Icons.search,
+                            color: Colors.blue[900], // Color del icono
+                          ),
+                        ),
+                        style: TextStyle(
+                          color: Colors.blue[
+                              900], // Color del texto cuando está enfocado
                         ),
                         onChanged: (value) {
                           _fetchClients(value);
@@ -222,7 +250,7 @@ class _MovimientosViewState extends State<MovimientosView> {
                               }
 
                               return Card(
-                                margin: EdgeInsets.symmetric(vertical: 8.0),
+                                margin: EdgeInsets.symmetric(vertical: 6.0),
                                 color: Colors.blue[50],
                                 child: ListTile(
                                   title: Text(

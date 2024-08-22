@@ -73,7 +73,15 @@ class _ArticleScreenState extends State<ArticleScreen> {
             Navigator.pop(context);
           },
         ),
-        title: Text('Nuestros Artículos'),
+        title: Text(
+          'Nuestros artículos',
+          style: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        foregroundColor: Colors.blue[900],
+        backgroundColor: Colors.blue[200],
       ),
       body: Stack(
         children: [
@@ -89,8 +97,32 @@ class _ArticleScreenState extends State<ArticleScreen> {
                         controller: _searchController,
                         decoration: InputDecoration(
                           labelText: 'Buscar',
-                          prefixIcon: Icon(Icons.search),
+                          labelStyle: TextStyle(
+                            color:
+                                Colors.blue[900], // Color del texto del label
+                            fontWeight: FontWeight.bold,
+                          ),
                           border: OutlineInputBorder(),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Colors.blue[
+                                  900]!, // Color azul cuando está seleccionado
+                              width:
+                                  2.0, // Grosor del borde cuando está seleccionado
+                            ),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Colors.blue[
+                                  900]!, // Color gris cuando no está seleccionado
+                              width:
+                                  2.0, // Grosor del borde cuando no está seleccionado
+                            ),
+                          ),
+                          prefixIcon: Icon(
+                            Icons.search,
+                            color: Colors.blue[900],
+                          ),
                         ),
                         onChanged: (value) {
                           setState(() {});
@@ -185,20 +217,19 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => ArticleDetailsScreen(
-                                      categoryId: widget.categoryId,
-                                      existingSubcategories:
-                                          uniqueSubcategories,
-                                      articleId: articleId),
+                                    categoryId: widget.categoryId,
+                                    existingSubcategories: uniqueSubcategories,
+                                    articleId: articleId,
+                                  ),
                                 ),
                               );
                             },
                             child: Container(
                               decoration: BoxDecoration(
-                                border:
-                                    Border.all(color: Colors.black, width: 1.2),
-                                borderRadius: BorderRadius.circular(8.0),
+                                color: Colors.blue[50], // Fondo azul claro
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
-                              margin: EdgeInsets.symmetric(vertical: 2.0),
+                              margin: EdgeInsets.symmetric(vertical: 6.0),
                               child: ListTile(
                                 title: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -206,9 +237,10 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                     Text(
                                       articleName,
                                       style: TextStyle(
-                                          fontWeight: FontWeight.bold),
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.blue[900]),
                                     ),
-                                    SizedBox(height: 5.0),
+                                    SizedBox(height: 1.0),
                                     Text('Precio: $articlePrecio €'),
                                   ],
                                 ),
@@ -222,11 +254,11 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 EditArticleScreen(
-                                                    categoryId:
-                                                        widget.categoryId,
-                                                    existingSubcategories:
-                                                        uniqueSubcategories,
-                                                    articleId: articleId),
+                                              categoryId: widget.categoryId,
+                                              existingSubcategories:
+                                                  uniqueSubcategories,
+                                              articleId: articleId,
+                                            ),
                                           ),
                                         );
 
@@ -235,7 +267,8 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                           fetchArticles();
                                         }
                                       },
-                                      icon: const Icon(Icons.edit),
+                                      icon: Icon(Icons.edit,
+                                          color: Colors.blue[300]),
                                     ),
                                     IconButton(
                                       onPressed: () async {
@@ -244,34 +277,70 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                           context: context,
                                           builder: (context) {
                                             return AlertDialog(
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius: BorderRadius.all(
+                                                    Radius.circular(20.0)),
+                                                side: BorderSide(
+                                                  color: Colors.blue[900]!,
+                                                  width: 5.0,
+                                                ),
+                                              ),
                                               title: Center(
-                                                  child: Text(
-                                                      "Eliminar artículo")),
+                                                child: Text(
+                                                  "Eliminar artículo",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                              ),
                                               content: Column(
                                                 mainAxisSize: MainAxisSize.min,
                                                 children: [
                                                   Center(
-                                                      child: Text(
-                                                          "¿Seguro que quieres eliminar este artículo?")),
+                                                    child: Text(
+                                                      "¿Seguro que quieres eliminar este artículo?",
+                                                    ),
+                                                  ),
                                                 ],
                                               ),
                                               actions: <Widget>[
                                                 Center(
                                                   child: Row(
                                                     mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceEvenly,
+                                                        MainAxisAlignment.end,
                                                     children: [
                                                       TextButton(
-                                                        child: Text("Cancelar"),
+                                                        child: Text(
+                                                          "Cancelar",
+                                                          style: TextStyle(
+                                                            color: Colors
+                                                                .blue[900],
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                          ),
+                                                        ),
                                                         onPressed: () {
                                                           Navigator.of(context)
                                                               .pop(false);
                                                         },
                                                       ),
                                                       TextButton(
-                                                        child:
-                                                            Text("Confirmar"),
+                                                        child: Text(
+                                                          "Confirmar",
+                                                          style: TextStyle(
+                                                            color: Colors
+                                                                .yellow[600],
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                          ),
+                                                        ),
+                                                        style: ButtonStyle(
+                                                          backgroundColor:
+                                                              MaterialStateProperty
+                                                                  .all<Color>(
+                                                            Colors.blue[900]!,
+                                                          ),
+                                                        ),
                                                         onPressed: () {
                                                           Navigator.of(context)
                                                               .pop(true);
@@ -288,28 +357,11 @@ class _ArticleScreenState extends State<ArticleScreen> {
                                         if (confirmarEliminacion == true) {
                                           bool eliminado =
                                               await _deleteArticle(articleId);
-                                          if (eliminado) {
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              const SnackBar(
-                                                content: Text(
-                                                    'Artículo eliminado correctamente'),
-                                                backgroundColor: Colors.green,
-                                              ),
-                                            );
-                                          } else {
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              const SnackBar(
-                                                content: Text(
-                                                    'Error al eliminar el artículo'),
-                                                backgroundColor: Colors.red,
-                                              ),
-                                            );
-                                          }
                                         }
                                       },
-                                      icon: const Icon(Icons.delete),
+                                      icon: Icon(
+                                        Icons.delete,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -327,7 +379,27 @@ class _ArticleScreenState extends State<ArticleScreen> {
           Positioned(
             bottom: 20,
             left: 20,
-            child: ElevatedButton(
+            child: TextButton(
+              child: Text(
+                "Renovar stock",
+                style: TextStyle(
+                  color: Colors.yellow[600],
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                  Colors.blue[900]!,
+                ),
+                padding: MaterialStateProperty.all<EdgeInsets>(
+                  EdgeInsets.symmetric(vertical: 12.0, horizontal: 24.0),
+                ),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                ),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -339,7 +411,6 @@ class _ArticleScreenState extends State<ArticleScreen> {
                   ),
                 );
               },
-              child: Text('Renovar stock'),
             ),
           ),
         ],
@@ -360,7 +431,7 @@ class _ArticleScreenState extends State<ArticleScreen> {
           }
         },
         child: Icon(Icons.add),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.yellow[600],
       ),
     );
   }

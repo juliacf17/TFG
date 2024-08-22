@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart'; // Importar provider
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import '../utils/common.dart';
-import '../utils/changeNotifier.dart'; // Importar el RefreshNotifier
+import '../../utils/common.dart';
+import '../../utils/changeNotifier.dart'; // Importar el RefreshNotifier
 import 'clientRegister.dart';
 import 'clientEdit.dart';
 import 'clientDetail.dart';
@@ -67,7 +67,15 @@ class _ClienteScreenState extends State<ClienteScreen> {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text('Nuestros clientes'),
+            title: Text(
+              'Nuestros clientes',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            foregroundColor: Colors.blue[900],
+            backgroundColor: Colors.blue[200],
           ),
           body: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -80,8 +88,30 @@ class _ClienteScreenState extends State<ClienteScreen> {
                         controller: _searchController,
                         decoration: InputDecoration(
                           labelText: 'Buscar',
-                          prefixIcon: Icon(Icons.search),
+                          labelStyle: TextStyle(
+                            color:
+                                Colors.blue[900], // Color del texto del label
+                            fontWeight: FontWeight.bold,
+                          ),
                           border: OutlineInputBorder(),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Colors.blue[
+                                  900]!, // Color azul cuando está seleccionado
+                              width:
+                                  2.0, // Grosor del borde cuando está seleccionado
+                            ),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Colors.blue[
+                                  900]!, // Color gris cuando no está seleccionado
+                              width:
+                                  2.0, // Grosor del borde cuando no está seleccionado
+                            ),
+                          ),
+                          prefixIcon:
+                              Icon(Icons.search, color: Colors.blue[900]),
                         ),
                         onChanged: (value) {
                           setState(() {});
@@ -233,21 +263,6 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                       if (confirmarEliminacion == true) {
                                         bool eliminado =
                                             await _deleteClient(clientId);
-                                        if (eliminado) {
-                                          ScaffoldMessenger.of(context)
-                                              .showSnackBar(const SnackBar(
-                                            content: Text(
-                                                'Cliente eliminado correctamente'),
-                                            backgroundColor: Colors.green,
-                                          ));
-                                        } else {
-                                          ScaffoldMessenger.of(context)
-                                              .showSnackBar(const SnackBar(
-                                            content: Text(
-                                                'Error al eliminar el cliente'),
-                                            backgroundColor: Colors.red,
-                                          ));
-                                        }
                                       }
                                     },
                                     icon: const Icon(Icons.delete),
@@ -277,7 +292,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
               }
             },
             child: Icon(Icons.add),
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.yellow[600],
           ),
         );
       },

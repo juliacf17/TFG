@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../mainpage.dart';
 import '../login.dart';
-import '../clientView.dart';
+import '../clients/clientView.dart';
 import '../articles/categoryView.dart';
 import '../movements/viewMovements.dart';
 import '../graphics/graphic.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'utils/common.dart';
+import '../utils/common.dart';
 
 class ClientDetail extends StatefulWidget {
   final String clientId;
@@ -39,7 +39,15 @@ class _ViewClientState extends State<ClientDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Visualizar datos'),
+        title: Text(
+          'Detalles del cliente',
+          style: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        foregroundColor: Colors.blue[900],
+        backgroundColor: Colors.blue[200],
       ),
       body: Center(
         child: Form(

@@ -9,7 +9,7 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Pantalla Principal',
+      title: 'Principal',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white,
@@ -75,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text('Pantalla principal',
+            title: Text('Inicio',
                 style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)),
             foregroundColor: Colors.blue[900],
             centerTitle: false,

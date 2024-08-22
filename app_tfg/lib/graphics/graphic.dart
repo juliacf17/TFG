@@ -149,7 +149,7 @@ class _ChartScreenState extends State<ChartScreen> {
         return Scaffold(
           appBar: AppBar(
             title: Text(
-              'Pantalla de gráficos',
+              'Gráficas',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
