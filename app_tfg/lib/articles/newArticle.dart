@@ -85,7 +85,6 @@ class _NewArticleState extends State<NewArticle> {
         ),
         foregroundColor: Colors.blue[900],
         backgroundColor: Colors.blue[200],
-        centerTitle: true,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -140,7 +139,7 @@ class _NewArticleState extends State<NewArticle> {
                       return null;
                     },
                     decoration: InputDecoration(
-                      labelText: 'Precio',
+                      labelText: 'Precio (€)',
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -371,42 +370,46 @@ class _NewArticleState extends State<NewArticle> {
                   ),
                   SizedBox(height: 24.0),
                   Center(
-                    child: TextButton(
-                      onPressed: () async {
-                        if (_formKey.currentState!.validate()) {
-                          double money = double.parse(priceController.text);
-                          money = double.parse(money.toStringAsFixed(2));
+                    child: SizedBox(
+                      width: 200, // Establece el ancho del botón
+                      child: TextButton(
+                        onPressed: () async {
+                          if (_formKey.currentState!.validate()) {
+                            double money = double.parse(priceController.text);
+                            money = double.parse(money.toStringAsFixed(2));
 
-                          bool success = await _addTallasToDatabase();
+                            bool success = await _addTallasToDatabase();
 
-                          if (success) {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text('Artículo añadido exitosamente'),
-                                backgroundColor: Colors.green,
-                              ),
-                            );
-                            Navigator.pop(context, true);
-                          } else {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text('Error al añadir el artículo'),
-                                backgroundColor: Colors.red,
-                              ),
-                            );
+                            if (success) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content:
+                                      Text('Artículo añadido exitosamente'),
+                                  backgroundColor: Colors.green,
+                                ),
+                              );
+                              Navigator.pop(context, true);
+                            } else {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Error al añadir el artículo'),
+                                  backgroundColor: Colors.red,
+                                ),
+                              );
+                            }
                           }
-                        }
-                      },
-                      child: Text(
-                        "Añadir Artículo",
-                        style: TextStyle(
-                          color: Colors.yellow[600],
-                          fontWeight: FontWeight.bold,
+                        },
+                        child: Text(
+                          "Añadir Artículo",
+                          style: TextStyle(
+                            color: Colors.yellow[600],
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(
-                          Colors.blue[900]!,
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                            Colors.blue[900]!,
+                          ),
                         ),
                       ),
                     ),

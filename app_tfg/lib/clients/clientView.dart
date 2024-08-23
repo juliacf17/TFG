@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart'; // Importar provider
+import 'package:provider/provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../utils/common.dart';
-import '../../utils/changeNotifier.dart'; // Importar el RefreshNotifier
+import '../../utils/changeNotifier.dart';
 import 'clientRegister.dart';
 import 'clientEdit.dart';
 import 'clientDetail.dart';
@@ -16,6 +16,65 @@ class ClientView extends StatelessWidget {
       title: 'Pantalla Clientes',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        primaryColor: Colors.blue[900],
+        scaffoldBackgroundColor: Colors.white,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.blue,
+        ).copyWith(
+          primary: Colors.blue[900],
+          secondary: Colors.blue[900],
+        ),
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: Colors.blue[900],
+          selectionColor: Colors.blue[900]?.withOpacity(0.5),
+          selectionHandleColor: Colors.blue[900],
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.grey[600]!),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.grey[600]!),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.blue[900]!),
+          ),
+          labelStyle: TextStyle(
+            color: Colors.grey[600]!,
+          ),
+          floatingLabelStyle: TextStyle(
+            color: Colors.blue[900],
+          ),
+        ),
+        checkboxTheme: CheckboxThemeData(
+          fillColor: MaterialStateProperty.resolveWith<Color?>(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.selected)) {
+                return Colors.blue[900];
+              }
+              return Colors.white;
+            },
+          ),
+          checkColor: MaterialStateProperty.resolveWith<Color?>(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.selected)) {
+                return Colors.white;
+              }
+              return Colors.black;
+            },
+          ),
+          side: MaterialStateBorderSide.resolveWith(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.selected)) {
+                return BorderSide(color: Colors.blue[900]!);
+              }
+              return BorderSide(color: Colors.black);
+            },
+          ),
+        ),
+        dialogTheme: DialogTheme(
+          backgroundColor: Colors.white,
+        ),
       ),
       home: ClienteScreen(),
     );
@@ -48,21 +107,10 @@ class _ClienteScreenState extends State<ClienteScreen> {
     });
   }
 
-  Color _getBackgroundColor(double cartera) {
-    if (cartera < 0) {
-      return Color.fromARGB(242, 219, 88, 88); // Deuda
-    } else if (cartera > 0) {
-      return Color.fromARGB(255, 78, 201, 105); // Positivo
-    } else {
-      return Colors.white; // Igual a 0
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Consumer<RefreshNotifier>(
       builder: (context, notifier, child) {
-        // Recargar el stream cuando se notifique un cambio
         loadStream();
 
         return Scaffold(
@@ -88,30 +136,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
                         controller: _searchController,
                         decoration: InputDecoration(
                           labelText: 'Buscar',
-                          labelStyle: TextStyle(
-                            color:
-                                Colors.blue[900], // Color del texto del label
-                            fontWeight: FontWeight.bold,
-                          ),
-                          border: OutlineInputBorder(),
-                          focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Colors.blue[
-                                  900]!, // Color azul cuando está seleccionado
-                              width:
-                                  2.0, // Grosor del borde cuando está seleccionado
-                            ),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Colors.blue[
-                                  900]!, // Color gris cuando no está seleccionado
-                              width:
-                                  2.0, // Grosor del borde cuando no está seleccionado
-                            ),
-                          ),
-                          prefixIcon:
-                              Icon(Icons.search, color: Colors.blue[900]),
+                          prefixIcon: Icon(Icons.search),
                         ),
                         onChanged: (value) {
                           setState(() {});
@@ -121,7 +146,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
                     IconButton(
                       icon: Icon(
                         Icons.attach_money,
-                        color: showDebts ? Colors.red : Colors.black,
+                        color: showDebts ? Colors.blue[900] : Colors.black,
                       ),
                       onPressed: () {
                         _toggleDebts();
@@ -141,7 +166,6 @@ class _ClienteScreenState extends State<ClienteScreen> {
                       final clients = snapshot.data!;
                       final searchQuery = _searchController.text.toLowerCase();
 
-                      // Filtrar clientes según la búsqueda y el estado del balance negativo
                       final filteredClients = clients.where((client) {
                         final clientName = client['nombre'].toLowerCase();
                         final matchesSearchQuery =
@@ -152,7 +176,6 @@ class _ClienteScreenState extends State<ClienteScreen> {
                         return matchesSearchQuery && matchesNegativeBalance;
                       }).toList();
 
-                      // Ordenar los clientes por nombre
                       filteredClients.sort((a, b) => a['nombre']
                           .toString()
                           .toLowerCase()
@@ -166,15 +189,27 @@ class _ClienteScreenState extends State<ClienteScreen> {
                           final cartera = client['cartera'];
                           final clientName = client['nombre'];
 
-                          return Container(
-                            decoration: BoxDecoration(
-                              color: _getBackgroundColor(cartera),
-                              border:
-                                  Border.all(color: Colors.black, width: 1.2),
-                              borderRadius: BorderRadius.circular(8.0),
+                          final Widget? arrowIcon;
+                          if (cartera > 0) {
+                            arrowIcon =
+                                Icon(Icons.arrow_upward, color: Colors.green);
+                          } else if (cartera < 0) {
+                            arrowIcon =
+                                Icon(Icons.arrow_downward, color: Colors.red);
+                          } else {
+                            arrowIcon = null;
+                          }
+
+                          return Card(
+                            margin: EdgeInsets.symmetric(vertical: 8.0),
+                            elevation: 3.0, // Añade una sombra a la card
+                            color: Colors.blue[50],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
-                            margin: EdgeInsets.symmetric(vertical: 2.0),
                             child: ListTile(
+                              contentPadding: EdgeInsets.symmetric(
+                                  vertical: 5.0, horizontal: 16.0),
                               title: GestureDetector(
                                 onTap: () async {
                                   await Navigator.push(
@@ -187,12 +222,17 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                 },
                                 child: Text(
                                   clientName,
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.blue[900]),
                                 ),
                               ),
                               trailing: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
+                                  if (arrowIcon != null)
+                                    arrowIcon, // Mostrar si no es nulo
+                                  if (arrowIcon != null) SizedBox(width: 8.0),
                                   IconButton(
                                     onPressed: () async {
                                       final result = await Navigator.push(
@@ -207,7 +247,8 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                         setState(() {});
                                       }
                                     },
-                                    icon: const Icon(Icons.edit),
+                                    icon: const Icon(Icons.edit,
+                                        color: Colors.blueAccent),
                                   ),
                                   IconButton(
                                     onPressed: () async {
@@ -216,16 +257,40 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                               context: context,
                                               builder: (context) {
                                                 return AlertDialog(
+                                                  shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.all(
+                                                            Radius.circular(
+                                                                20.0)),
+                                                    side: BorderSide(
+                                                      color: Colors.blue[900]!,
+                                                      width: 5.0,
+                                                    ),
+                                                  ),
                                                   title: Center(
-                                                      child: Text(
-                                                          "Eliminar cliente")),
+                                                    child: Text(
+                                                      "Eliminar cliente",
+                                                      style: TextStyle(
+                                                        fontSize: 20.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        color: Colors.blue[900],
+                                                      ),
+                                                    ),
+                                                  ),
                                                   content: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.min,
                                                     children: [
                                                       Center(
-                                                          child: Text(
-                                                              "¿Seguro que quieres eliminar este cliente?")),
+                                                        child: Text(
+                                                          "¿Seguro que quieres eliminar este cliente?",
+                                                          style: TextStyle(
+                                                            fontSize: 16.0,
+                                                            color: Colors.black,
+                                                          ),
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
                                                   actions: <Widget>[
@@ -233,11 +298,19 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                                       child: Row(
                                                         mainAxisAlignment:
                                                             MainAxisAlignment
-                                                                .spaceEvenly,
+                                                                .end,
                                                         children: [
                                                           TextButton(
                                                             child: Text(
-                                                                "Cancelar"),
+                                                              "Cancelar",
+                                                              style: TextStyle(
+                                                                color: Colors
+                                                                    .blue[900],
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
                                                             onPressed: () {
                                                               Navigator.of(
                                                                       context)
@@ -246,7 +319,25 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                                           ),
                                                           TextButton(
                                                             child: Text(
-                                                                "Confirmar"),
+                                                              "Confirmar",
+                                                              style: TextStyle(
+                                                                color: Colors
+                                                                        .yellow[
+                                                                    600],
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                            style: ButtonStyle(
+                                                              backgroundColor:
+                                                                  MaterialStateProperty
+                                                                      .all<
+                                                                          Color>(
+                                                                Colors
+                                                                    .blue[900]!,
+                                                              ),
+                                                            ),
                                                             onPressed: () {
                                                               Navigator.of(
                                                                       context)
@@ -321,8 +412,8 @@ class _ClienteScreenState extends State<ClienteScreen> {
 import 'package:provider/provider.dart'; // Importar provider
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import '../utils/common.dart';
-import '../utils/changeNotifier.dart'; // Importar el RefreshNotifier
+import '../../utils/common.dart';
+import '../../utils/changeNotifier.dart'; // Importar el RefreshNotifier
 import 'clientRegister.dart';
 import 'clientEdit.dart';
 import 'clientDetail.dart';
@@ -330,16 +421,82 @@ import 'clientDetail.dart';
 class ClientView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => RefreshNotifier(),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Pantalla Clientes',
-        theme: ThemeData(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Pantalla Clientes',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        primaryColor: Colors.blue[900], // Establece el color primario a blue900
+        scaffoldBackgroundColor: Colors.white,
+        colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.blue,
+        ).copyWith(
+          primary: Colors.blue[900], // Aplica blue900 como el color primario
+          secondary:
+              Colors.blue[900], // Establece el color secundario a blue900
         ),
-        home: ClienteScreen(),
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: Colors
+              .blue[900], // Cambia el color del cursor en los campos de texto
+          selectionColor: Colors.blue[900]
+              ?.withOpacity(0.5), // Cambia el color de la selección de texto
+          selectionHandleColor:
+              Colors.blue[900], // Cambia el color del manejador de selección
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderSide:
+                BorderSide(color: Colors.grey[600]!), // Borde por defecto
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+                color: Colors.grey[600]!), // Borde cuando no está en foco
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.blue[900]!),
+          ),
+          labelStyle: TextStyle(
+            color: Colors.grey[600]!, // Color gris cuando no está enfocado
+          ),
+          floatingLabelStyle: TextStyle(
+            color: Colors.blue[900], // Color azul cuando está enfocado
+          ),
+        ),
+        checkboxTheme: CheckboxThemeData(
+          fillColor: MaterialStateProperty.resolveWith<Color?>(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.selected)) {
+                return Colors.blue[900]; // Color azul cuando está seleccionado
+              }
+              return Colors.white; // Color blanco cuando no está seleccionado
+            },
+          ),
+          checkColor: MaterialStateProperty.resolveWith<Color?>(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.selected)) {
+                return Colors
+                    .white; // El color del checkmark dentro de la casilla
+              }
+              return Colors.black; // Color del checkmark cuando está vacío
+            },
+          ),
+          side: MaterialStateBorderSide.resolveWith(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.selected)) {
+                return BorderSide(
+                    color: Colors
+                        .blue[900]!); // Borde azul cuando está seleccionado
+              }
+              return BorderSide(
+                  color: Colors.black); // Borde negro cuando está vacío
+            },
+          ),
+        ),
+        dialogTheme: DialogTheme(
+          backgroundColor: Colors.white,
+        ),
       ),
+      home: ClienteScreen(),
     );
   }
 }
@@ -370,16 +527,6 @@ class _ClienteScreenState extends State<ClienteScreen> {
     });
   }
 
-  Color _getBackgroundColor(double cartera) {
-    if (cartera < 0) {
-      return Color.fromARGB(242, 219, 88, 88); // Deuda
-    } else if (cartera > 0) {
-      return Color.fromARGB(255, 78, 201, 105); // Positivo
-    } else {
-      return Colors.white; // Igual a 0
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Consumer<RefreshNotifier>(
@@ -389,7 +536,15 @@ class _ClienteScreenState extends State<ClienteScreen> {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text('Nuestros clientes'),
+            title: Text(
+              'Nuestros clientes',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            foregroundColor: Colors.blue[900],
+            backgroundColor: Colors.blue[200],
           ),
           body: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -403,7 +558,6 @@ class _ClienteScreenState extends State<ClienteScreen> {
                         decoration: InputDecoration(
                           labelText: 'Buscar',
                           prefixIcon: Icon(Icons.search),
-                          border: OutlineInputBorder(),
                         ),
                         onChanged: (value) {
                           setState(() {});
@@ -413,7 +567,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
                     IconButton(
                       icon: Icon(
                         Icons.attach_money,
-                        color: showDebts ? Colors.red : Colors.black,
+                        color: showDebts ? Colors.blue[900] : Colors.black,
                       ),
                       onPressed: () {
                         _toggleDebts();
@@ -458,14 +612,24 @@ class _ClienteScreenState extends State<ClienteScreen> {
                           final cartera = client['cartera'];
                           final clientName = client['nombre'];
 
+                          // Determinar el ícono de flecha según el valor de la cartera
+                          final Widget? arrowIcon;
+                          if (cartera > 0) {
+                            arrowIcon =
+                                Icon(Icons.arrow_upward, color: Colors.green);
+                          } else if (cartera < 0) {
+                            arrowIcon =
+                                Icon(Icons.arrow_downward, color: Colors.red);
+                          } else {
+                            arrowIcon = null;
+                          }
+
                           return Container(
                             decoration: BoxDecoration(
-                              color: _getBackgroundColor(cartera),
-                              border:
-                                  Border.all(color: Colors.black, width: 1.2),
-                              borderRadius: BorderRadius.circular(8.0),
+                              color: Colors.blue[50],
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
-                            margin: EdgeInsets.symmetric(vertical: 2.0),
+                            margin: EdgeInsets.symmetric(vertical: 4.0),
                             child: ListTile(
                               title: GestureDetector(
                                 onTap: () async {
@@ -485,6 +649,9 @@ class _ClienteScreenState extends State<ClienteScreen> {
                               trailing: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
+                                  if (arrowIcon != null)
+                                    arrowIcon, // Solo mostrar si no es nulo
+                                  if (arrowIcon != null) SizedBox(width: 8.0),
                                   IconButton(
                                     onPressed: () async {
                                       final result = await Navigator.push(
@@ -499,7 +666,8 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                         setState(() {});
                                       }
                                     },
-                                    icon: const Icon(Icons.edit),
+                                    icon: const Icon(Icons.edit,
+                                        color: Colors.blueAccent),
                                   ),
                                   IconButton(
                                     onPressed: () async {
@@ -508,16 +676,42 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                               context: context,
                                               builder: (context) {
                                                 return AlertDialog(
+                                                  shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.all(
+                                                            Radius.circular(
+                                                                20.0)),
+                                                    side: BorderSide(
+                                                      color: Colors.blue[900]!,
+                                                      width: 5.0,
+                                                    ),
+                                                  ),
                                                   title: Center(
-                                                      child: Text(
-                                                          "Eliminar cliente")),
+                                                    child: Text(
+                                                      "Eliminar cliente",
+                                                      style: TextStyle(
+                                                        fontSize:
+                                                            20.0, // Ajusta el tamaño según sea necesario
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        color: Colors.blue[900],
+                                                      ),
+                                                    ),
+                                                  ),
                                                   content: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.min,
                                                     children: [
                                                       Center(
-                                                          child: Text(
-                                                              "¿Seguro que quieres eliminar este cliente?")),
+                                                        child: Text(
+                                                          "¿Seguro que quieres eliminar este cliente?",
+                                                          style: TextStyle(
+                                                            fontSize:
+                                                                16.0, // Ajusta el tamaño según sea necesario
+                                                            color: Colors.black,
+                                                          ),
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
                                                   actions: <Widget>[
@@ -525,11 +719,19 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                                       child: Row(
                                                         mainAxisAlignment:
                                                             MainAxisAlignment
-                                                                .spaceEvenly,
+                                                                .end,
                                                         children: [
                                                           TextButton(
                                                             child: Text(
-                                                                "Cancelar"),
+                                                              "Cancelar",
+                                                              style: TextStyle(
+                                                                color: Colors
+                                                                    .blue[900],
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
                                                             onPressed: () {
                                                               Navigator.of(
                                                                       context)
@@ -538,7 +740,25 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                                           ),
                                                           TextButton(
                                                             child: Text(
-                                                                "Confirmar"),
+                                                              "Confirmar",
+                                                              style: TextStyle(
+                                                                color: Colors
+                                                                        .yellow[
+                                                                    600],
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                            style: ButtonStyle(
+                                                              backgroundColor:
+                                                                  MaterialStateProperty
+                                                                      .all<
+                                                                          Color>(
+                                                                Colors
+                                                                    .blue[900]!,
+                                                              ),
+                                                            ),
                                                             onPressed: () {
                                                               Navigator.of(
                                                                       context)
@@ -555,21 +775,6 @@ class _ClienteScreenState extends State<ClienteScreen> {
                                       if (confirmarEliminacion == true) {
                                         bool eliminado =
                                             await _deleteClient(clientId);
-                                        if (eliminado) {
-                                          ScaffoldMessenger.of(context)
-                                              .showSnackBar(const SnackBar(
-                                            content: Text(
-                                                'Cliente eliminado correctamente'),
-                                            backgroundColor: Colors.green,
-                                          ));
-                                        } else {
-                                          ScaffoldMessenger.of(context)
-                                              .showSnackBar(const SnackBar(
-                                            content: Text(
-                                                'Error al eliminar el cliente'),
-                                            backgroundColor: Colors.red,
-                                          ));
-                                        }
                                       }
                                     },
                                     icon: const Icon(Icons.delete),
@@ -599,7 +804,7 @@ class _ClienteScreenState extends State<ClienteScreen> {
               }
             },
             child: Icon(Icons.add),
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.yellow[600],
           ),
         );
       },

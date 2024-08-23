@@ -55,17 +55,18 @@ class MyApp extends StatelessWidget {
         ),
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.grey), // Borde por defecto
+            borderSide:
+                BorderSide(color: Colors.grey[600]!), // Borde por defecto
           ),
           enabledBorder: OutlineInputBorder(
-            borderSide:
-                BorderSide(color: Colors.grey), // Borde cuando no está en foco
+            borderSide: BorderSide(
+                color: Colors.grey[600]!), // Borde cuando no está en foco
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.blue[900]!),
           ),
           labelStyle: TextStyle(
-            color: Colors.grey, // Color gris cuando no está enfocado
+            color: Colors.grey[600]!, // Color gris cuando no está enfocado
           ),
           floatingLabelStyle: TextStyle(
             color: Colors.blue[900], // Color azul cuando está enfocado

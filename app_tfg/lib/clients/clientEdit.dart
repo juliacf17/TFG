@@ -56,125 +56,140 @@ class _EditarDatosScreenState extends State<EditClient> {
         backgroundColor: Colors.blue[200],
       ),
       body: Center(
-        child: Form(
-          key: _formKey,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'Editar cliente',
-                style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 48.0),
-              Container(
-                width: 400.0, // Ajusta el ancho del TextField
-                child: TextFormField(
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'El campo de nombre no puede estar vacío';
-                    }
-                    return null;
-                  },
-                  controller: nameController,
-                  decoration: const InputDecoration(
-                    labelText: 'Nombre',
-                    border: OutlineInputBorder(),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: Form(
+            key: _formKey,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                SizedBox(height: 20.0),
+                Text(
+                  'Editar cliente',
+                  style: TextStyle(
+                    fontSize: 26.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue[900],
                   ),
                 ),
-              ),
-              SizedBox(height: 16.0),
-              Container(
-                width: 400.0, // Ajusta el ancho del TextField
-                child: TextFormField(
-                  controller: phoneController,
-                  validator: (value) {
-                    if (value!.isNotEmpty) {
-                      if (!phoneRegex.hasMatch(value)) {
-                        return 'Formato de teléfono inválido';
+                SizedBox(height: 25.0),
+                Container(
+                  width: 400.0, // Ajusta el ancho del TextField
+                  child: TextFormField(
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return 'El campo de nombre no puede estar vacío';
                       }
-                    }
-
-                    return null;
-                  },
-                  decoration: const InputDecoration(
-                    labelText: 'Número de teléfono',
-                    border: OutlineInputBorder(),
+                      return null;
+                    },
+                    controller: nameController,
+                    decoration: const InputDecoration(
+                      labelText: 'Nombre',
+                      border: OutlineInputBorder(),
+                    ),
                   ),
-                  keyboardType: TextInputType.phone,
                 ),
-              ),
-              SizedBox(height: 16.0),
-              Container(
-                width: 400.0, // Ajusta el ancho del TextField
-                child: TextFormField(
-                  controller: commentsController,
-                  decoration: const InputDecoration(
-                    labelText: 'Comentario',
-                    border: OutlineInputBorder(),
+                SizedBox(height: 16.0),
+                Container(
+                  width: 400.0, // Ajusta el ancho del TextField
+                  child: TextFormField(
+                    controller: phoneController,
+                    validator: (value) {
+                      if (value!.isNotEmpty) {
+                        if (!phoneRegex.hasMatch(value)) {
+                          return 'Formato de teléfono inválido';
+                        }
+                      }
+
+                      return null;
+                    },
+                    decoration: const InputDecoration(
+                      labelText: 'Número de teléfono',
+                      border: OutlineInputBorder(),
+                    ),
+                    keyboardType: TextInputType.phone,
                   ),
-                  maxLines: 3,
                 ),
-              ),
-              SizedBox(height: 16.0),
-              Container(
-                width: 400.0, // Ajusta el ancho del TextField
-                child: TextFormField(
-                  controller: moneyController,
-                  keyboardType: TextInputType.numberWithOptions(decimal: true),
-                  decoration: const InputDecoration(
-                    labelText: 'Monedero (€)',
-                    border: OutlineInputBorder(),
+                SizedBox(height: 16.0),
+                Container(
+                  width: 400.0, // Ajusta el ancho del TextField
+                  child: TextFormField(
+                    controller: commentsController,
+                    decoration: const InputDecoration(
+                      labelText: 'Comentario',
+                      border: OutlineInputBorder(),
+                    ),
+                    maxLines: 3,
                   ),
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'El campo de monedero no puede estar vacío';
-                    }
-                    if (double.tryParse(value) == null) {
-                      return 'Por favor, introduzca un número válido';
-                    }
-                    return null;
-                  },
                 ),
-              ),
-              SizedBox(height: 32.0),
-              ElevatedButton(
-                onPressed: () async {
-                  if (_formKey.currentState!.validate()) {
-                    // Validación pasada, proceder con la lógica de añadir cliente
+                SizedBox(height: 16.0),
+                Container(
+                  width: 400.0, // Ajusta el ancho del TextField
+                  child: TextFormField(
+                    controller: moneyController,
+                    keyboardType:
+                        TextInputType.numberWithOptions(decimal: true),
+                    decoration: const InputDecoration(
+                      labelText: 'Monedero (€)',
+                      border: OutlineInputBorder(),
+                    ),
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return 'El campo de monedero no puede estar vacío';
+                      }
+                      if (double.tryParse(value) == null) {
+                        return 'Por favor, introduzca un número válido';
+                      }
+                      return null;
+                    },
+                  ),
+                ),
+                SizedBox(height: 32.0),
+                Center(
+                  child: SizedBox(
+                    width: 200, // Establece el ancho del botón
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        if (_formKey.currentState!.validate()) {
+                          // Validación pasada, proceder con la lógica de añadir cliente
 
-                    double money = double.parse(moneyController.text);
-                    money = double.parse(money.toStringAsFixed(2));
+                          double money = double.parse(moneyController.text);
+                          money = double.parse(money.toStringAsFixed(2));
 
-                    bool success = await _editClient(
-                      widget.clientId,
-                      nameController.text,
-                      phoneController.text,
-                      commentsController.text,
-                      money,
-                    );
+                          bool success = await _editClient(
+                            widget.clientId,
+                            nameController.text,
+                            phoneController.text,
+                            commentsController.text,
+                            money,
+                          );
 
-                    if (success) {
-                      Navigator.pop(context, true);
-                    } else {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('Error al actualizar el cliente'),
-                          backgroundColor: Colors.red,
+                          Navigator.pop(context, true);
+
+                          // Limpiar los campos después de añadir el cliente
+                          nameController.clear();
+                          phoneController.clear();
+                          commentsController.clear();
+                          moneyController.clear();
+                        }
+                      },
+                      child: Text(
+                        "Editar cliente",
+                        style: TextStyle(
+                          color: Colors.yellow[600],
+                          fontWeight: FontWeight.bold,
                         ),
-                      );
-                    }
-
-                    // Limpiar los campos después de añadir el cliente
-                    nameController.clear();
-                    phoneController.clear();
-                    commentsController.clear();
-                    moneyController.clear();
-                  }
-                },
-                child: Text('Editar cliente'),
-              ),
-            ],
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                          Colors.blue[900]!,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

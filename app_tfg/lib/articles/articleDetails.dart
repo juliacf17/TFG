@@ -114,7 +114,7 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Visualizar datos del artículo',
+          'Detalles del artículo',
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
@@ -160,7 +160,7 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
                   TextFormField(
                     controller: priceController,
                     decoration: InputDecoration(
-                      labelText: 'Precio',
+                      labelText: 'Precio (€)',
                       border: OutlineInputBorder(),
                     ),
                     readOnly: true,

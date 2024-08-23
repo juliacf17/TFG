@@ -51,18 +51,22 @@ class _ViewClientState extends State<ClientDetail> {
       ),
       body: Center(
         child: Form(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'Visualizar cliente',
-                style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 48.0),
-              Container(
-                width: 400.0, // Ajusta el ancho del TextField
-                child: TextFormField(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                SizedBox(height: 20.0),
+                Text(
+                  'Datos del cliente',
+                  style: TextStyle(
+                    fontSize: 26.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue[900],
+                  ),
+                ),
+                SizedBox(height: 25.0),
+                TextFormField(
                   controller: nameController,
                   decoration: const InputDecoration(
                     labelText: 'Nombre',
@@ -70,11 +74,8 @@ class _ViewClientState extends State<ClientDetail> {
                   ),
                   readOnly: true,
                 ),
-              ),
-              SizedBox(height: 16.0),
-              Container(
-                width: 400.0, // Ajusta el ancho del TextField
-                child: TextFormField(
+                SizedBox(height: 16.0),
+                TextFormField(
                   controller: phoneController,
                   decoration: const InputDecoration(
                     labelText: 'Número de teléfono',
@@ -82,11 +83,8 @@ class _ViewClientState extends State<ClientDetail> {
                   ),
                   readOnly: true,
                 ),
-              ),
-              SizedBox(height: 16.0),
-              Container(
-                width: 400.0, // Ajusta el ancho del TextField
-                child: TextFormField(
+                SizedBox(height: 16.0),
+                TextFormField(
                   controller: commentsController,
                   decoration: const InputDecoration(
                     labelText: 'Comentario',
@@ -94,11 +92,8 @@ class _ViewClientState extends State<ClientDetail> {
                   ),
                   readOnly: true,
                 ),
-              ),
-              SizedBox(height: 16.0),
-              Container(
-                width: 400.0, // Ajusta el ancho del TextField
-                child: TextFormField(
+                SizedBox(height: 16.0),
+                TextFormField(
                   controller: moneyController,
                   decoration: const InputDecoration(
                     labelText: 'Monedero (€)',
@@ -106,8 +101,8 @@ class _ViewClientState extends State<ClientDetail> {
                   ),
                   readOnly: true,
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

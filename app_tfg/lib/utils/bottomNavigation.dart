@@ -30,32 +30,49 @@ class _BottomNavState extends State<BottomNav> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Center(child: Text("Cerrar sesión")),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Center(child: Text("¿Seguro que quieres cerrar sesión?")),
-              ],
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+              side: BorderSide(
+                color: Colors.blue[900]!,
+                width: 5.0,
+              ),
             ),
-            actions: <Widget>[
-              Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    TextButton(
-                      child: Text("Cancelar"),
-                      onPressed: () {
-                        Navigator.of(context).pop(false);
-                      },
-                    ),
-                    TextButton(
-                      child: Text("Confirmar"),
-                      onPressed: () {
-                        Navigator.of(context).pop(true);
-                      },
-                    ),
-                  ],
+            title: Center(
+              child: Text(
+                "Cerrar sesión",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
                 ),
+              ),
+            ),
+            content: Text(
+              "¿Seguro que quieres cerrar sesión?",
+            ),
+            actions: [
+              TextButton(
+                child: Text(
+                  "Cancelar",
+                  style: TextStyle(
+                    color: Colors.blue[900],
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                onPressed: () => Navigator.of(context).pop(false),
+              ),
+              TextButton(
+                child: Text(
+                  "Confirmar",
+                  style: TextStyle(
+                    color: Colors.yellow[600],
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                    Colors.blue[900]!,
+                  ),
+                ),
+                onPressed: () => Navigator.of(context).pop(true),
               ),
             ],
           );

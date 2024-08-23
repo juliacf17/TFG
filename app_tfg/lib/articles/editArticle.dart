@@ -250,7 +250,7 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                       return null;
                     },
                     decoration: InputDecoration(
-                      labelText: 'Precio',
+                      labelText: 'Precio (€)',
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -481,37 +481,40 @@ class _EditArticleScreenState extends State<EditArticleScreen> {
                   ),
                   SizedBox(height: 24.0),
                   Center(
-                    child: TextButton(
-                      onPressed: () async {
-                        if (_formKey.currentState!.validate()) {
-                          double money = double.parse(priceController.text);
-                          money = double.parse(money.toStringAsFixed(2));
+                    child: SizedBox(
+                      width: 200, // Establece el ancho del botón
+                      child: TextButton(
+                        onPressed: () async {
+                          if (_formKey.currentState!.validate()) {
+                            double money = double.parse(priceController.text);
+                            money = double.parse(money.toStringAsFixed(2));
 
-                          bool success = await _updateArticle();
+                            bool success = await _updateArticle();
 
-                          if (success) {
-                            Navigator.pop(context, true);
+                            if (success) {
+                              Navigator.pop(context, true);
+                            }
+
+                            // Limpiar los campos después de añadir el cliente
+                            nameController.clear();
+                            priceController.clear();
+                            subcategoryController.clear();
+                            descriptionController.clear();
+                            dimensionController.clear();
+                            materialController.clear();
                           }
-
-                          // Limpiar los campos después de añadir el cliente
-                          nameController.clear();
-                          priceController.clear();
-                          subcategoryController.clear();
-                          descriptionController.clear();
-                          dimensionController.clear();
-                          materialController.clear();
-                        }
-                      },
-                      child: Text(
-                        "Editar artículo",
-                        style: TextStyle(
-                          color: Colors.yellow[600],
-                          fontWeight: FontWeight.bold,
+                        },
+                        child: Text(
+                          "Editar artículo",
+                          style: TextStyle(
+                            color: Colors.yellow[600],
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(
-                          Colors.blue[900]!,
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                            Colors.blue[900]!,
+                          ),
                         ),
                       ),
                     ),

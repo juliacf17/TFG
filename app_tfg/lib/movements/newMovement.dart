@@ -435,8 +435,8 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
         appBar: AppBar(
           title: Text(
             widget.isVenta
-                ? 'Nueva Venta'
-                : 'Nuevo Préstamo', // Cambia el texto según isVenta
+                ? 'Nueva venta'
+                : 'Nuevo préstamo', // Cambia el texto según isVenta
             style: TextStyle(
               fontSize: 24.0,
               fontWeight: FontWeight.bold,
@@ -562,7 +562,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                     ],
                   ),
                   SizedBox(width: 10),
-                  Text('Precio: \$$_partialPrice'),
+                  Text('Precio: $_partialPrice€'),
                   SizedBox(width: 10),
                   IconButton(
                     icon: Icon(Icons.add),
@@ -581,11 +581,13 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                       child: ListTile(
                         title: Text(
                           item['article'],
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue[900]),
                         ),
                         subtitle: Text(
                             'Color: ${item['color']}, Talla: ${item['size']}, Cantidad: ${item['quantity']}'),
-                        trailing: Text('\$${item['price'] * item['quantity']}'),
+                        trailing: Text('${item['price'] * item['quantity']}€'),
                         leading: IconButton(
                           icon: Icon(Icons.delete),
                           onPressed: () async {
@@ -652,7 +654,7 @@ class _NuevaVentaScreenState extends State<NuevaVentaScreen> {
                     ),
                   ),
                   Spacer(),
-                  Text('Precio total: \$${_calculateTotal()}'),
+                  Text('Precio total: ${_calculateTotal()}€'),
                   SizedBox(width: 10),
                   Visibility(
                     visible: widget.isVenta,

@@ -3,7 +3,6 @@ import '../utils/common.dart';
 import 'package:intl/intl.dart';
 import '../utils/changeNotifier.dart';
 import 'package:provider/provider.dart';
-import '../utils/bottomNavigation.dart';
 
 class DetalleMovimientoScreen extends StatelessWidget {
   final int movimientoId;
@@ -15,7 +14,7 @@ class DetalleMovimientoScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Ver Movimiento',
+          'Detalles del movimiento',
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
@@ -723,7 +722,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                         Spacer(),
                         SizedBox(width: 10),
                         Text(
-                          'Total ${isCompraParcial ? 'compra' : 'devolución'} parcial: \$${totalDevolucionParcial.toStringAsFixed(2)}',
+                          'Total ${isCompraParcial ? 'compra' : 'devolución'} parcial: ${totalDevolucionParcial.toStringAsFixed(2)}€',
                           style: TextStyle(fontSize: 18),
                         ),
                         SizedBox(width: 10),
@@ -929,7 +928,7 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                               ),
                               Expanded(
                                 child: Text(
-                                  'Precio Total: \$${movimiento['precioTotal']}',
+                                  'Precio Total: ${movimiento['precioTotal']}€',
                                   style: TextStyle(
                                       fontSize: 18,
                                       color: Colors.blue[900],

@@ -185,31 +185,33 @@ class _EditCategoryScreenState extends State<EditCategoryScreen> {
                     },
                     activeColor: Colors.blue[900],
                   ),
+                  SizedBox(height: 40.0),
+                  Center(
+                    child: SizedBox(
+                      width: 200,
+                      child: ElevatedButton(
+                        onPressed: () async {
+                          bool success = await _updateCategory();
+                          if (success) {
+                            Navigator.pop(context, true);
+                          }
+                        },
+                        child: Text(
+                          'Editar categoría',
+                          style: TextStyle(
+                            color: Colors.yellow[600],
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                            Colors.blue[900]!,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
-              ),
-            ),
-          ),
-          Positioned(
-            bottom: 16.0,
-            right: 16.0,
-            child: ElevatedButton(
-              onPressed: () async {
-                bool success = await _updateCategory();
-                if (success) {
-                  Navigator.pop(context, true);
-                }
-              },
-              child: Text(
-                'Editar categoría',
-                style: TextStyle(
-                  color: Colors.yellow[600],
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(
-                  Colors.blue[900]!,
-                ),
               ),
             ),
           ),

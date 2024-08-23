@@ -37,7 +37,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Añadir categoría',
+          'Añadir una categoría',
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
@@ -155,9 +155,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
               ),
             ),
           ),
-          Positioned(
-            bottom: 16.0,
-            right: 16.0,
+          Center(
             child: ElevatedButton(
               onPressed: _addCategory,
               child: Text(
