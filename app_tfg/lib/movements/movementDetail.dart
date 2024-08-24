@@ -416,14 +416,17 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                   Container(
                     padding: EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
+                      color: Colors.blue[900], // Fondo azul oscuro
                       border: Border.all(color: Colors.blue[900]!, width: 1.5),
+                      borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Text(
                       'Tipo de Movimiento: ${isCompraParcial ? 'Compra' : (isDevolucionParcial ? 'Devolución' : movimiento['tipoMov'])}',
                       style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.blue[900]),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white, // Texto en blanco
+                      ),
                     ),
                   ),
                   if (movimiento['idMovAnterior'] != -1)
@@ -861,7 +864,10 @@ class _DetalleMovimientoViewState extends State<DetalleMovimientoView> {
                 Container(
                   padding: EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.blue[900]!, width: 1.5),
+                    color: Colors.blue[300], // Fondo azul oscuro
+                    border: Border.all(color: Colors.blue[200]!, width: 1.5),
+                    borderRadius:
+                        BorderRadius.circular(8.0), // Esquinas redondeadas
                   ),
                   child: FutureBuilder<String>(
                     future: getClienteNombre(movimiento['clienteId']),
