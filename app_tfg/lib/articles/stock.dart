@@ -65,7 +65,7 @@ class StockRenewalScreen extends StatelessWidget {
               final article = lowStockArticles[index];
               return Padding(
                 padding: const EdgeInsets.symmetric(
-                    horizontal: 50.0, vertical: 10.0),
+                    horizontal: 16.0, vertical: 10.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

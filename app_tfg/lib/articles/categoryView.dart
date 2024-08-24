@@ -287,6 +287,57 @@ class _CategoryScreenState extends State<CategoryScreen> {
                                 if (confirmarEliminacion == true) {
                                   bool eliminado =
                                       await _deleteCategory(categoryId);
+
+                                  if (!eliminado) {
+                                    showDialog(
+                                      context: context,
+                                      builder: (BuildContext context) {
+                                        return AlertDialog(
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(20.0)),
+                                            side: BorderSide(
+                                              color: Colors.blue[900]!,
+                                              width: 5.0,
+                                            ),
+                                          ),
+                                          title: Center(
+                                            child: Text(
+                                              "Categoría no eliminada",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ),
+                                          content: Text(
+                                            "No se puede eliminar una categoría que contiene artículos.",
+                                          ),
+                                          actions: [
+                                            TextButton(
+                                              child: Text(
+                                                "Aceptar",
+                                                style: TextStyle(
+                                                  color: Colors.yellow[600],
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              style: ButtonStyle(
+                                                backgroundColor:
+                                                    MaterialStateProperty.all<
+                                                        Color>(
+                                                  Colors.blue[900]!,
+                                                ),
+                                              ),
+                                              onPressed: () {
+                                                Navigator.of(context)
+                                                    .pop(); // Cierra el diálogo
+                                              },
+                                            ),
+                                          ],
+                                        );
+                                      },
+                                    );
+                                  }
                                 }
                               },
                               icon: const Icon(
@@ -329,8 +380,21 @@ class _CategoryScreenState extends State<CategoryScreen> {
 
   Future<bool> _deleteCategory(String categoryId) async {
     try {
+      // Verificar si hay artículos asociados a la categoría
+      final articlesResponse = await client
+          .from('articulos')
+          .select('id')
+          .eq('categoriaId', categoryId);
+
+      // Si hay artículos asociados a la categoría, no se elimina
+      if (articlesResponse.isNotEmpty) {
+        return false;
+      }
+
+      // Eliminar la categoría
       await client.from('categorias').delete().eq('id', categoryId);
 
+      // Actualizar el stream de categorías
       categoryStream = client.from('categorias').stream(primaryKey: ['id']);
       setState(
           () {}); // Asegurar que el widget se reconstruya con el nuevo stream
