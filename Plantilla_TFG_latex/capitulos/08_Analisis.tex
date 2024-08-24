@@ -1,6 +1,7 @@
 \chapter{Análisis de la aplicación}
 \label{chap:analysis}
 
+
 \section{Especificación de requisitos}
 
 Dentro del desarrollo de un proyecto, la fase de especificación de requisitos cumple un rol fundamental, ya que será aquí donde se establezcan las características esenciales y las expectativas que debe cumplir el sistema. 
@@ -931,6 +932,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 
 \subsection{Descripción de casos de uso}
 
+En este apartado podremos ver una descripción detallada de los casos de uso de la aplicación, los cuales representan las principales interacciones entre el usuario y el sistema. A raíz de estos casos de uso, podremos identificar las principales funciones de la aplicación. 
 
 %Inicio sesión
 
@@ -1056,7 +1058,7 @@ En esta sección se mostrarán los distintos casos de uso divididos en paquetes 
 	\caption{Caso de uso - Cierre de sesión}
 \end{table}
 
-Para seguir viendo la explicación de los casos de uso, consultar el anexo "CasosUso.pdf".
+Para seguir viendo la explicación de los casos de uso, consultar el Anexo \ref{chap:anexo1}.
 
 
 \newpage
@@ -1067,10 +1069,22 @@ En esta sección se muestra el modelo conceptual del sistema, donde podemos ver 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{imagenes/imagenesDiagramas/modelo_conceptual.jpg}
+	\includegraphics[width=0.8\textwidth]{imagenes/imagenesDiagramas/modelo_conceptual.jpg}
 	\caption{Modelo conceptual}
 	\label{fig:modelo_conceptual}
 \end{figure}
+
+
+En este diagrama podemos ver los principales conceptos que existirán en nuestra aplicación: 
+
+\begin{itemize}
+	\item \textbf{Tienda:} Se trata de la entidad padre de la aplicación. La tienda es la que tiene clientes, artículos, movimientos, etc. 
+	\item \textbf{Cliente:} Representa las personas que habitúan a ir a la tienda para comprar artículos, generando movimientos. De cada cliente almacenamos el nombre, el número de teléfono, un apartado de comentarios y una cartera, la cual permite tener dinero en la tienda. 
+	\item \textbf{Articulo:} Representa cada producto disponible en la tienda. Cada movimiento tiene una lista de artículos. Se almacena información relevante para la diferenciación de todos los artículos de la tienda. 
+	\item \textbf{Textil:} Representa la talla concreta de cada artículo y la cantidad que se tiene de ella. 
+	\item \textbf{Movimiento:} Representa cualquier operación que se realiza en la tienda, ya sea un préstamo, una devolución o una venta. Para cada operación, habrá un cliente asignado, una lista de artículos y otra información relevante que puede verse en el diagrama. 	
+\end{itemize}
+
 
 \newpage
 
@@ -1099,4 +1113,4 @@ En esta sección vamos a especificar cómo opera el sistema ante las acciones de
 	\label{fig:seqdiag2}
 \end{figure}
 
-Para seguir viendo la explicación de los casos de uso, consultar el anexo "DiagramasSecuencia.pdf".
+Para seguir viendo la explicación de los diagramas de secuencia del sistema, consultar el Anexo \ref{chap:anexo2}.

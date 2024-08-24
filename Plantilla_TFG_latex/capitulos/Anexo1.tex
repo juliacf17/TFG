@@ -1,0 +1,1838 @@
+\chapter{Descripción de casos de uso}
+\label{chap:anexo1}
+
+
+%Inicio sesión
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{inicioSesión} &  CU1\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF1} \\ 
+		\hline
+		Precondición & \multicolumn{3}{l|}{El encargado debe estar registrado en el sistema.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{El encargado entra en el sistema.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de acceder al sistema.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce sus credenciales y entra en el sistema.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Introduce su nombre de usuario y su contraseña. & 2. &  Verifica que las credenciales sean correctas \\ 
+		\hline
+		3. & Encargado: Entra en el sistema & &  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		2a & \multicolumn{3}{l|}{Las credenciales no son correctas.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Inicio de sesión}
+\end{table}
+
+\newpage
+
+%Cerrar sesión
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{cierreSesión} &  CU2\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF2} \\ 
+		\hline
+		Precondición & \multicolumn{3}{l|}{El encargado debe estar dentro del sistema.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{El encargado sale del sistema.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de cerrar sesión.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado pulsa la opción de cierre de sesión y sale del sistema.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Solicita cierre de sesión. & 2. & Cerrar sesión. \\ 
+		\hline
+		3. & Encargado: Sale del sistema. &  &  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Cierre de sesión}
+\end{table}
+
+\newpage
+
+%Introducción de un nuevo artículo 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|l|}{nuevoArtículo} &  CU3\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF3} \\ 
+		\hline
+		Precondición & \multicolumn{3}{l|}{} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{El artículo es creado.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de introducir nuevos artículos en la tienda.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los datos del artículo y lo registra en el sistema.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere introducir un nuevo artículo. & 2. &  Solicitar datos del nuevo artículo.  \\ 
+		\hline
+		3. & Encargado: Introduce datos necesarios del artículo. & 4. & Registrar el artículo. \\ 
+		\hline
+		&  & 5. & Actualizar lista de artículos existentes. \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce la información en un formato erróneo.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Introducción de un nuevo artículo}
+\end{table}
+
+\newpage
+
+%Edición de un artículo existente 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{editarArtículo} &  CU4\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF4} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{El artículo a editar debe estar registrado en el sistema.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{La información del artículo es modificada.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de editar información de los artículos de la tienda.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los nuevos datos del artículo y lo edita.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere editar un artículo. & 2. &  Solicitar información a editar del artículo.  \\ 
+		\hline
+		3. & Encargado: Introduce nuevos datos del artículo. & 4. & Actualizar el artículo. \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce la información en un formato erróneo.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Edición de un artículo existente}
+\end{table}
+
+\newpage
+
+%Eliminación de un artículo  
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{eliminarArtículo} &  CU5\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF5} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{El artículo debe estar registrado en el sistema.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{El artículo es eliminado.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de eliminar los artículos de la tienda.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado elimina el artículo.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere eliminar un artículo. & 2. &  Enviar mensaje de confirmación.  \\ 
+		\hline
+		3. & Encargado: Aceptar la eliminación. & 4. & Verificar que el artículo no esté vinculado a movimientos existentes. \\ 
+		\hline
+		& & 5. & Eliminar el artículo. \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado rechaza el mensaje de confirmación del sistema.} \\ 
+		\hline
+		4a & \multicolumn{3}{m{0.67\textwidth}|}{El sistema encuentra movimientos vinculados a ese artículo.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Eliminación de un artículo}
+\end{table}
+
+\newpage
+
+%Visualización de los datos de un artículo  
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarDatosArtículos} &  CU6\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF6} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe de existir el artículo.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{l|}{Los datos del artículo son visualizados.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar los datos de los artículos de la tienda.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado ve los datos.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere visualizar los datos de un artículo. & 2. &  Mostrar los datos del artículo dado.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de los datos de un artículo}
+\end{table}
+
+\newpage
+
+%Búsqueda de un artículo por nombre  
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{buscarArtículo} &  CU7\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF7} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el artículo.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Muestra el artículo que coincida con el nombre especificado.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de buscar un artículo por nombre.}   \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce el nombre del artículo y el sistema le muestra las coincidencias.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Introduce el nombre de un artículo. & 2. &  Filtrar la lista de artículos existentes en base al nombre introducido.  \\ 
+		\hline
+		&  & 3. & Mostrar el artículo coincidente con el nombre.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{No existe ninguna coincidencia y no muestra nada.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Búsqueda de un artículo por nombre }
+\end{table}
+
+\newpage
+
+%Categorización de un artículo  
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{categorizarArtículo} &  CU8\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF8} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Deben existir categorías.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Muestra los artículos de una determinada categoría.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de categorizar los artículos de la tienda.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado selecciona la categoría y se muestran todos los artículos que pertenezcan a esta.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Selecciona la categoría. & 2. &  Filtrar la lista de artículos existentes en base a la categoría.  \\ 
+		\hline
+		&  & 3. & Mostrar los artículos de esa categoría.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{No existen artículos de esa categoría y no muestra nada.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Categorización de un artículo}
+\end{table}
+
+\newpage
+
+%Visualización de la lista de artículos existentes  
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarListaArtículos} &  CU8\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF9} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir al menos un artículo.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Muestra los artículos registrados en la tienda.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar los artículos de la tienda.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado ve los artículos registrados en la tienda.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere ver los artículos registrados. & 2. &  Muestra todos los artículos existentes en la tienda.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de la lista de los artículos existentes}
+\end{table}
+
+\newpage
+
+%Visualización de lista de renovación de artículos
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarListaRenovación} &  CU10\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF11} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Muestra los artículos que se deben de renovar para la tienda.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar los artículos de la tienda.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado ve los artículos registrados en la tienda.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere ver los artículos que necesita comprar. & 2. &  Muestra  los artículos con un stock escaso.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de lista de renovación de artículos}
+\end{table}
+
+\newpage
+
+%Registro de un nuevo cliente habitual
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{nuevoCliente} &  CU11\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF12} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{El cliente es creado.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de registrar nuevos clientes en la tienda.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado pregunta al cliente e introduce los datos en el sistema} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere registrar un nuevo cliente. & 2. &  Solicita los datos del nuevo cliente.  \\ 
+		\hline
+		3. & Encargado: Pregunta datos al cliente. &  &   \\ 
+		\hline
+		4. & Cliente: Proporciona datos al encargado. &  &   \\ 
+		\hline
+		5. & Encargado: Introduce los datos. & 6. & Verifica el formato de los datos. \\ 
+		\hline
+		&  & 7. & Registra el cliente \\ 
+		\hline
+		&  & 8. & Actualizar la lista de clientes existentes. \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		4a & \multicolumn{3}{m{0.67\textwidth}|}{El cliente se niega a dar ciertos dato.} \\ 
+		\hline
+		6a & \multicolumn{3}{m{0.67\textwidth}|}{El formato de los datos es erróneo.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Registro de un nuevo cliente habitual}
+\end{table}
+
+\newpage
+
+%Edición de los datos de un cliente existente
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{editarCliente} &  CU12\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF13} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el cliente previamente} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Los datos del cliente son modificados.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de modificar los datos del cliente.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado pregunta al cliente y modifica los datos.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere modicar los datos de un cliente existente. & 2. &  Solicita los nuevos datos del cliente.  \\ 
+		\hline
+		3. & Encargado: Pregunta datos al cliente. &  &   \\ 
+		\hline
+		4. & Cliente: Proporciona datos al encargado. &  &   \\ 
+		\hline
+		5. & Encargado: Introduce los nuevos datos. & 6. & Verifica el formato de los datos. \\ 
+		\hline
+		&  & 7. & Actualiza los datos del cliente \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		4a & \multicolumn{3}{m{0.67\textwidth}|}{El cliente proporciona los datos de forma errónea.} \\ 
+		\hline
+		6a & \multicolumn{3}{m{0.67\textwidth}|}{El formato de los datos es erróneo.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Edición de los datos de un cliente existente}
+\end{table}
+
+\newpage
+
+%Eliminación de un cliente
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{eliminarCliente} &  CU13\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF14} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el cliente previamente.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{El cliente se elimina.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de eliminar a un cliente.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado elimina al cliente.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere eliminar un cliente. & 2. &  Envía un mensaje de confirmación.  \\ 
+		\hline
+		3. & Encargado: Acepta el mensaje de confirmación. &  4. & Verifica que el cliente no esté vinculado a ningún movimiento activo.   \\ 
+		\hline
+		&  & 5. & Elimina al cliente y actualiza la lista de clientes existentes.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado rechaza el mensaje de confirmación.} \\ 
+		\hline
+		4a & \multicolumn{3}{m{0.67\textwidth}|}{El sistema identifica un movimiento vinculado al cliente.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Eliminación de un cliente}
+\end{table}
+
+\newpage
+
+%Visualización de los datos de un cliente
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarDatosCliente} &  CU14\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF15} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el cliente previamente.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se visualizan los datos almacenados de dicho cliente.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar los datos de un cliente.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado selecciona un cliente y visualiza sus datos.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere visualizar los datos de un cliente. & 2. &  Muestra los datos del cliente.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de los datos de un cliente}
+\end{table}
+
+\newpage
+
+%Visualización de la lista de clientes existentes
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarListaClientes} &  CU15\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF16} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir al menos un cliente.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se visualiza la lista de clientes registrados en la tienda.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar los clientes registrados en la tienda.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado visualiza la lista de clientes.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere visualizar la lista de clientes existentes. & 2. &  Muestra la lista de clientes.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de la lista de clientes existentes}
+\end{table}
+
+\newpage
+
+%Búsqueda de un cliente por nombre
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{buscarCliente} &  CU16\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF17} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir al menos un cliente} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se obtienen los clientes coincidentes con la búsqueda.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de buscar clientes por nombre.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce un nombre y obtiene los clientes coincidentes.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Introduce un nombre de un cliente. & 2. &  Realiza una búsqueda entre los clientes disponibles.  \\ 
+		\hline
+		&  & 3. &  Muestra los clientes coincidentes con la búsqueda.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{No hay clientes coincidentes} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Búsqueda de un cliente por nombre}
+\end{table}
+
+\newpage
+
+%Filtrado de clientes con préstamos
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{filtrarClientes} &  CU17\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF18} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir al menos un cliente} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se obtienen los clientes con préstamos.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de filtrar clientes con préstamos.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado filtra y visualiza los clientes que tienen préstamos en la tienda.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere filtrar los clientes con préstamos. & 2. &  Realiza un filtrado de clientes con préstamos.  \\ 
+		\hline
+		&  & 3. &  Muestra los clientes coincidentes con el filtrado.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{No hay clientes coincidentes} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Filtrado de clientes con préstamos}
+\end{table}
+
+\newpage
+
+%Introducción de una nueva venta
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{nuevaVenta} &  CU18\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & RF19 & Include & R10 \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.6\textwidth}|}{Deben existir los artículos de la venta} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.6\textwidth}|}{Se registra una nueva venta.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de introducir una venta.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los artículos que va a vender, rellena la información necesaria y registra la nueva venta en el sistema.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere introducir una nueva venta. & 2. &  Solicita los artículos vendidos.  \\ 
+		\hline
+		3. & Encargado: Introduce los artículos y las cantidades. & 4. &  Solicita el cliente asignado.  \\ 
+		\hline
+		5. & Encargado: Introduce el cliente. & 6. & Solicita el método de pago.  \\ 
+		\hline
+		7. & Encargado: Introduce el método de pago. & 8. & Registrar la venta en la base de datos.  \\ 
+		\hline
+		&  & 9. &  include <<actualizaciónInventario>>  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		5a & \multicolumn{3}{m{0.67\textwidth}|}{No introduce el cliente, puesto que la asignación es opcional.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Introducción de una nueva venta}
+\end{table}
+
+\newpage
+
+%Introducción de un nuevo préstamo
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{nuevoPréstamo} &  CU19\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF20} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Deben existir los artículos del préstamo.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se registra un préstamo.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de introducir un préstamo.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los artículos que va a vender, rellena la información necesaria y registra el préstamo en el sistema.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere intorducir un préstamo. & 2. &  Solicita los artículos a prestar.  \\ 
+		\hline
+		3. & Encargado: Introduce los artículos y las cantidades. & 4. &  Solicita el cliente asignado.  \\ 
+		\hline
+		5. & Encargado: Introduce el cliente. & 6. & Registrar el préstamo en la base de datos.  \\ 
+		\hline
+		&  & 7. &  include <<actualizaciónInventario>>  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Introducción de un nuevo préstamo}
+\end{table}
+
+\newpage
+
+%Introducción de una devolución
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{realizarDevolución} &  CU20\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & RF21 & Include & R10 \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Deben existir la venta que vamos a devolver.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se realiza la devolución de los productos.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de hacer una devolución.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado busca la venta y realiza la devolución de los productos correspondientes. } \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere realizar una devolución. &  &    \\ 
+		\hline
+		2. & Encargado: Busca la venta que va a devolver. & 3. &  Solicita los artículos que se van a devolver.  \\ 
+		\hline
+		4. & Encargado: Introduce los artículos y las cantidades. & 5. &  Solicita el método de devolución de dinero.  \\ 
+		\hline
+		6. & Encargado: Introduce método de devolución de dinero. & 7. & Registrar la devolución en la base de datos.  \\ 
+		\hline
+		&  & 8. &  include <<actualizaciónInventario>>  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		2a & \multicolumn{3}{m{0.67\textwidth}|}{No se encuentra la venta} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Introducción de una devolución}
+\end{table}
+
+\newpage
+
+
+%Eliminación de un movimiento
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{eliminarMovimiento} &  CU21\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & RF22 & Include & R10 \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el movimiento previamente.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{El movimiento se elimina.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de eliminar un movimiento.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado elimina al movimiento.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere eliminar un movimiento. & 2. &  Envía un mensaje de confirmación.  \\ 
+		\hline
+		3. & Encargado: Acepta el mensaje de confirmación. &   &    \\ 
+		\hline
+		&  & 4. & Elimina al movimiento y actualiza la lista de movimientos existentes.  \\ 
+		\hline
+		&  & 5. & include <<actualizaciónInventario>>.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado rechaza el mensaje de confirmación.} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Eliminación de un movimiento}
+\end{table}
+
+\newpage
+
+
+%Visualización de los datos de un movimiento
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarDatosMovimiento} &  CU22\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF23} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el movimiento previamente.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se visualizan los datos almacenados de dicho movimiento.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar los datos de un movimiento.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado selecciona un movimiento y visualiza sus datos.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere visualizar los datos de un movimiento. & 2. &  Muestra los datos del movimiento.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de los datos de un movimiento}
+\end{table}
+
+\newpage
+
+%Visualización de la lista de movimientos existentes
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarListaMovimientos} &  CU23\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF24} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir al menos un movimiento.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se visualiza la lista de movimientos registrados en la tienda.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar los movimientos registrados en la tienda.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado visualiza la lista de movimientos.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere visualizar la lista de movimientos existentes. & 2. &  Muestra la lista de movimientos.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de la lista de movimientos existentes}
+\end{table}
+
+\newpage
+
+%Filtrado de movimientos según su tipo
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{filtrarMocimientos} &  CU24\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF25} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir al menos un movimiento} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se obtienen los movimientos del tipo correspondiente.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de filtrar movimientos según su tipo.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado filtra y visualiza los movimientos de un tipo seleccionado.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Introduce el tipo de movimiento por el que quiere filtrar. & 2. &  Realiza un filtrado de movimientos según ese tipo.  \\ 
+		\hline
+		&  & 3. &  Muestra los movimientos coincidentes con el filtrado.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{No hay movimientos coincidentes} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Filtrado de movimientos según su tipo}
+\end{table}
+
+\newpage
+
+%Búsqueda movimientos por fecha o cliente
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{buscarMovimientos} &  CU25\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF26} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir al menos un movimiento} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se obtienen los movimientos coincidentes con la búsqueda.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de buscar movimientos por fecha o vinculados a un cliente.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce una fecha o un nombre y obtiene los movimientos coincidentes.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Introduce una fecha o un nombre de un cliente. & 2. &  Realiza una búsqueda entre los movimientos disponibles.  \\ 
+		\hline
+		&  & 3. &  Muestra los movimientos coincidentes con la búsqueda.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		3a & \multicolumn{3}{m{0.67\textwidth}|}{No hay movimientos coincidentes} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Búsqueda de un movimiento por fecha o cliente}
+\end{table}
+
+\newpage
+
+%Generación de una compra a partir de un préstamo
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{compraDesdePréstamo} &  CU26\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & RF27 & Include & R10 \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir el préstamo} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se elimina el préstamo y se transforma en una venta.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de generar una compra a partir de un préstamo.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado introduce los productos con los que el cliente se queda y genera una compra a partir de un préstamo anterior.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Identifica el préstamo. &  &   \\ 
+		\hline
+		2. & Encargado: Quiere realizar una venta a partir de ese préstamo. & 3. &  Solicita los productos que van a ser comprados.  \\ 
+		\hline
+		4. & Encargado: Introduce los artículos con los que el cliente se queda. & 5. &  Solicita el método de pago.  \\ 
+		\hline
+		6. & Encargado: Introduce el método de pago de preferencia del cliente. & 7. &  Genera una venta con los datos recopilados.  \\ 
+		\hline
+		&  & 8. &  Elimina el movimiento préstamo anterior.  \\ 
+		\hline
+		&  & 9. &  include <<actualizaciónInventario>>  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		1a & \multicolumn{3}{m{0.67\textwidth}|}{El encargado no encuentra el préstamo} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Generación de una compra a partir de un préstamo}
+\end{table}
+
+\newpage
+
+%Visualización de la caja diaria
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarCajaDiaria} &  CU27\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF28} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se muestra el cómputo de dinero recopilado en el día.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar la caja diaria.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado ve el valor de la caja diaria.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere ver el valor de la caja diaria. & 2. & El sistema calcula y muestra el valor de las ganancias diarias.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de la caja diaria}
+\end{table}
+
+\newpage
+
+%Visualización de gráficas
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth}|}
+		\hline
+		\rowcolor{grayshade} Caso de Uso & \multicolumn{2}{|m{0.43\textwidth}|}{visualizarGráficos} &  CU28\\ 
+		\hline
+		Actores & \multicolumn{3}{l|}{Encargado} \\ 
+		\hline
+		Tipo & \multicolumn{3}{l|}{Obligatorio} \\ 
+		\hline
+		Referencias & \multicolumn{3}{l|}{RF29} \\ 
+		\hline
+		Precondición & \multicolumn{3}{m{0.67\textwidth}|}{Debe existir al menos un movimiento.} \\ 
+		\hline
+		Postcondición & \multicolumn{3}{m{0.67\textwidth}|}{Se muestra una gráfica resumen de las ganancias mensuales o anuales.} \\ 
+		\hline
+		Autor & \multicolumn{3}{l|}{Julia Cano} \\ 
+		\hline
+		Fecha & 02/03/2024 & Versión & 1.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		Propósito & \multicolumn{3}{m{0.67\textwidth}|}{El encargado debe ser capaz de visualizar gráficas que reflejen el progreso económico del negocio.}  \\ 
+		\hline
+		Resumen & \multicolumn{3}{m{0.67\textwidth}|}{El encargado ve las gráficas generadas.} \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.03\textwidth} | m{0.37\textwidth} | m{0.03\textwidth} | m{0.37\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Curso normal}     \\ 
+		\hline
+		1. & Encargado: Quiere ver el valor de las gráficas. &  & \\ 
+		\hline
+		2. & Encargado: Elige el tipo de gráfica que desea ver, mensual o anual. & 3. & El sistema calcula y muestra una gráfica que represente el progreso de la tienda durante el periodo de tiempo establecido.  \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{| m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} | m{0.2\textwidth} |}
+		\hline
+		\multicolumn{4}{|m{0.9\textwidth}|}{Cursos alternos}     \\ 
+		\hline
+		& \multicolumn{3}{m{0.67\textwidth}|}{} \\ 
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Visualización de gráficas}
+\end{table}
+
+
+\newpage

@@ -61,9 +61,14 @@
 \usepackage{colortbl,longtable}
 \usepackage[stable]{footmisc}
 \usepackage{index}
+\usepackage{appendix}
+\usepackage{hyperref}
+\usepackage{titlesec}
 
 \usepackage{tabularx} 
 \usepackage{pdflscape}  % Controlar la página en horizontal.
+
+
 
 
 \makeindex
@@ -134,8 +139,14 @@
 	
 	\input{capitulos/Implementacion}
 	
-	\input{capitulos/10_Validacion}
+	\input{capitulos/BDeImplementacion}
+
+	\appendix
+
+	\input{capitulos/Anexo1}
 	
+	\input{capitulos/Anexo2}
+
 	\newpage
 	
 	\bibliography{bibliografia}

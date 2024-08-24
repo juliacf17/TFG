@@ -1,5 +1,5 @@
-\chapter{Implementación de la aplicación}
-\label{chap:appvalidation}
+\chapter{División en iteraciones}
+\label{chap:iteraciones}
 
 \section{Primera iteración}
 
@@ -319,61 +319,179 @@ Para la próxima iteración se propone:
 
 \section{Tercera iteración}
 
-\section{Creación y modificaciones de la base de datos}
+\subsection{Alcance de la iteración}
 
-\subsection{Creación de la base de datos}
+En esta iteración se llevarán a cabo los siguientes requisitos: RF29, RNF3 y RNF4. 
 
-Para crear la base de datos se ha utilizado la herramienta de Supabase. Esta herramienta permite crear una base de datos y sus tablas correspondientes de forma sencilla. Además, tiene una fácil integración con Flutter, por lo que conectar la aplicación a la base de datos no fue complicado. Fue suficiente con añadir librerías y las claves de configuración.  
+El primero de ellos corresponde con la creación de la pantalla de gráficos. Los últimos son requisitos no funcionales de usabilidad y accesibilidad. Debido a que en esta iteración se mejorará la interfaz gráfica de usuario, se tendrá en cuenta la mejora de la usabilidad y la accesibilidad. 
 
-Una vez configurada la base de datos dentro del proyecto, se genera una instancia que se utilizará cada vez que sea necesario hacer operaciones en la base de datos: 
+\subsection{Pantalla de gráficos}
+
+Esta es la última pantalla que quedaba por implementar para completar el funcionamiento total de la aplicación. Como podemos observar, en la esquina superior de la pantalla hay un desplegable que permite adaptar la gráfica generada en función de si queremos que sea una gráfica mensual o anual. 
+
+La gráfica mensual hace un resumen de las ganancias o pérdidas del mes actual. Además, se adapta al número de días que tenga el mes. 
+
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{imagenes/clientBD.png}
-	\caption{Instancia de la base de datos.}
-	\label{fig:instanciaBD}
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/graficosMensual.png}
+	\caption{Pantalla de gráficos en modo Mensual.}
+	\label{fig:mensual}
 \end{figure}
 
-\subsection{Tablas de la base de datos}
+La gráfica anual hace un resumen de las ganancias o pérdidas de año actual. Estas dos gráficas permiten obtener una visión general de progreso del negocio. 
 
-Las tablas que están dentro de la base de datos son: 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/graficosAnual.png}
+	\caption{Pantalla de gráficos en modo Anual.}
+	\label{fig:anual}
+\end{figure}
 
+Para hacer las cuentas y representarlas en las gráficas, únicamente se tienen en cuenta las ventas y las devoluciones. Los préstamos no se tienen en cuenta ya que es dinero que no ha sido recibido aún. 
+
+
+
+\subsection{Mejora de la interfaz gráfica y la accesibilidad}
+
+A lo largo de toda la aplicación, se mantiene: 
 
 \begin{itemize}
-	\item \textbf{clientes:} En esta tabla se almacena toda la información relativa a los clientes. Podemos encontrar campos como el nombre, el teléfono, un comentario para añadir más información y una cartera, que permitirá que el cliente pueda tener dinero negativo o positivo en la tienda. 
-	\item \textbf{categorias:} En esta tabla se crean categorías para organizar los artículos dentro de la tienda. Sus atributos tieneTamanio, tieneDescripcion, tieneMaterial, tieneGenero, son booleanos que permiten personalizar los atributos que tendrá un artículo. Si no se seleccionan alguno de estos atributos, todos los artículos que se creen bajo esa categoría no tendrán ese atributo. El atributo nombre indica el nombre de la categoría. 
-	\item \textbf{articulos:} En esta tabla se almacena la información de cada uno de los artículos de la tienda. Sus atributos fijos son el nombre, el precio y la subcategoría (que permite categorizar más fino dentro de una categoría y posteriormente filtrar por dichas subcategorías). El resto de atributos son opcionales y se elegirán en la creación de la categoría de dicho artículo. Un artículo representa un modelo, dentro de una prenda podrán haber varias tallas o varios colores, lo que se contempla en la siguiente tabla. 
-	\item \textbf{tallas:}  En esta tabla se registran las tallas y los colores disponibles de cada uno de los artículos. Para cada talla se especifica un color, la cantidad actual y la cantidad mínima. La cantidad mínima sirve para detectar cuando un artículo necesita ser renovado. Cuando se tienen igual o menos artículos de los especificados en la cantidad mínima, se mete en una lista de renovación de stock para indicar que deben ser renovados. 
-	\item \textbf{movimientos:} En esta tabla se registra toda la información relacionada con los movimientos de la tienda. Se registra el precio total del movimiento, el cliente asignado, el método de pago, la fecha, el tipo de movimiento y el movimiento anterior, este atributo sirve para relacionar unos tickets con otros. Cuando se hace una devolución, se le asigna el movimiento anterior del que procede para poder ver cuál es su procedencia. Además, a las ventas / préstamos también se le asignan las devoluciones para una mejor sincronización.  
-	\item \textbf{articulosMov:} En esta tabla se registran todos los artículos que pertenecen a cada movimiento. Es la tabla resultante de una relación muchos a muchos. Además, también se almacena como información adicional, la cantidad comprada de esa talla y el precio parcial. 
+	\item Un diseño sencillo e intuitivo para que sea usable.
+	\item Fondos lisos y claros para facilitar la lectura del texto. 
+	\item Fuente de letra estándar y colores que contrasten con el fondo.  
+	\item Etiquetado de las pantallas para que el usuario pueda saber dónde está situado en cada momento. 
 \end{itemize}
 
-
-\subsection{Modificaciones intermedias de la base de datos}
-
-Debido al cambio que solicitó el cliente con las tallas, se tuvo que crear una nueva tabla, la tabla tallas. Esto permitió que un artículo pudiera tener distintas tallas o distintos colores. 
-
-
-\subsection{Diagrama final del diseño de la base de datos}
-
-En este diagrama podemos ver los atributos que posee cada una de las tablas y como se relacionan entre ellas. Las líneas discontinuas indican las claves externas y los atributos con la llave a la izquierda representan las claves primarias de cada tabla. 
+\subsubsection{Inicio y cierre de sesión}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{imagenes/imagenesDiagramas/diagramaBD.png}
-	\caption{Diagrama de la base de datos.}
-	\label{fig:diagramaBD}
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/login.png}
+	\caption{Pantalla de inicio de sesión.}
 \end{figure}
-
-\section{Diagrama de clases}
-
-Tras finalizar la implementación de la aplicación, se ha construido un diagrama de clases para poder observar las clases que componen el proyecto y las relaciones entre estas. También se pueden ver los atributos y los métodos que tiene cada una de las clases. 
-
-\newpage
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.6\textwidth, angle=90]{imagenes/imagenesDiagramas/diagramaClases.jpg}
-	\caption{Diagrama de clases.}
-	\label{fig:diagramaClases}
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/logout.png}
+	\caption{Cierre de sesión.}
 \end{figure}
+
+\subsubsection{Pantalla principal}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/mainPage.png}
+	\caption{Pantalla principal.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/nuevaVenta.png}
+	\caption{Pantalla de nueva venta.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/nuevoPrestamo.png}
+	\caption{Pantalla de nuevo préstamo.}
+\end{figure}
+
+\subsubsection{Pantalla de clientes}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/clientView.png}
+	\caption{Pantalla de visualización de clientes.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/clientDetails.png}
+	\caption{Pantalla de visualización de los datos de un cliente.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/clientEdit.png}
+	\caption{Pantalla de edición de los datos de un cliente.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/newClient.png}
+	\caption{Pantalla de registro de un nuevo cliente.}
+\end{figure}
+
+\subsubsection{Pantalla de artículos}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/categoryView.png}
+	\caption{Pantalla de visualización de las categorías.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/categoryEdit.png}
+	\caption{Pantalla de edición de las propiedades de una categoría.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/newCategory.png}
+	\caption{Pantalla de registro de una nueva categoría.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/articleView.png}
+	\caption{Pantalla de visualización de los artículos de una categoría.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/articleDetails.png}
+	\caption{Pantalla de visualización de los datos de un artículo.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/articleEdit.png}
+	\caption{Pantalla de edición de los datos de un artículo.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/newArticle.png}
+	\caption{Pantalla de registro de un nuevo artículo.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/stock.png}
+	\caption{Pantalla de visualización la lista de renovación del stock.}
+\end{figure}
+
+\subsubsection{Pantalla de movimientos}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/movementsView.png}
+	\caption{Pantalla de visualización los movimientos de la tienda.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/movementDetails.png}
+	\caption{Pantalla de visualización de los detalles de un movimiento.}
+\end{figure}
+
+\subsubsection{Pantalla de gráficos}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/graficosMensual.png}
+	\caption{Pantalla de gráficos en modo mensual.}
+\end{figure}
+

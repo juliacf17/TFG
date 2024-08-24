@@ -1,47 +1,77 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Distribución de horas por fase}}{19}{table.2.1}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Presupuesto total}}{23}{table.2.2}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Distribución de horas por fase}}{20}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Presupuesto total}}{24}{table.2.2}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Descripción de la tabla}}{35}{table.3.1}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces RF1}}{44}{table.5.1}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces RF2}}{45}{table.5.2}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces RF3}}{45}{table.5.3}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces RF4}}{46}{table.5.4}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces RF5}}{46}{table.5.5}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces RF6}}{47}{table.5.6}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces RF7}}{47}{table.5.7}%
-\contentsline {table}{\numberline {5.8}{\ignorespaces RF8}}{48}{table.5.8}%
-\contentsline {table}{\numberline {5.9}{\ignorespaces RF9}}{48}{table.5.9}%
-\contentsline {table}{\numberline {5.10}{\ignorespaces RF10}}{49}{table.5.10}%
-\contentsline {table}{\numberline {5.11}{\ignorespaces RF11}}{49}{table.5.11}%
-\contentsline {table}{\numberline {5.12}{\ignorespaces RF12}}{50}{table.5.12}%
-\contentsline {table}{\numberline {5.13}{\ignorespaces RF13}}{50}{table.5.13}%
-\contentsline {table}{\numberline {5.14}{\ignorespaces RF14}}{51}{table.5.14}%
-\contentsline {table}{\numberline {5.15}{\ignorespaces RF15}}{51}{table.5.15}%
-\contentsline {table}{\numberline {5.16}{\ignorespaces RF16}}{52}{table.5.16}%
-\contentsline {table}{\numberline {5.17}{\ignorespaces RF17}}{52}{table.5.17}%
-\contentsline {table}{\numberline {5.18}{\ignorespaces RF18}}{53}{table.5.18}%
-\contentsline {table}{\numberline {5.19}{\ignorespaces RF19}}{54}{table.5.19}%
-\contentsline {table}{\numberline {5.20}{\ignorespaces RF20}}{55}{table.5.20}%
-\contentsline {table}{\numberline {5.21}{\ignorespaces RF21}}{56}{table.5.21}%
-\contentsline {table}{\numberline {5.22}{\ignorespaces RF22}}{57}{table.5.22}%
-\contentsline {table}{\numberline {5.23}{\ignorespaces RF23}}{57}{table.5.23}%
-\contentsline {table}{\numberline {5.24}{\ignorespaces RF24}}{58}{table.5.24}%
-\contentsline {table}{\numberline {5.25}{\ignorespaces RF25}}{58}{table.5.25}%
-\contentsline {table}{\numberline {5.26}{\ignorespaces RF26}}{59}{table.5.26}%
-\contentsline {table}{\numberline {5.27}{\ignorespaces RF27}}{59}{table.5.27}%
-\contentsline {table}{\numberline {5.28}{\ignorespaces RF28}}{60}{table.5.28}%
-\contentsline {table}{\numberline {5.29}{\ignorespaces RF29}}{60}{table.5.29}%
-\contentsline {table}{\numberline {5.30}{\ignorespaces RNF1}}{61}{table.5.30}%
-\contentsline {table}{\numberline {5.31}{\ignorespaces RNF2}}{61}{table.5.31}%
-\contentsline {table}{\numberline {5.32}{\ignorespaces RNF3}}{61}{table.5.32}%
-\contentsline {table}{\numberline {5.33}{\ignorespaces RNF4}}{61}{table.5.33}%
-\contentsline {table}{\numberline {5.34}{\ignorespaces Caso de uso - Inicio de sesión}}{66}{table.5.34}%
-\contentsline {table}{\numberline {5.35}{\ignorespaces Caso de uso - Cierre de sesión}}{67}{table.5.35}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Descripción de la tabla}}{36}{table.3.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces RF1}}{45}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces RF2}}{46}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces RF3}}{46}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces RF4}}{47}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces RF5}}{47}{table.5.5}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces RF6}}{48}{table.5.6}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces RF7}}{48}{table.5.7}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces RF8}}{49}{table.5.8}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces RF9}}{49}{table.5.9}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces RF10}}{50}{table.5.10}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces RF11}}{50}{table.5.11}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces RF12}}{51}{table.5.12}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces RF13}}{51}{table.5.13}%
+\contentsline {table}{\numberline {5.14}{\ignorespaces RF14}}{52}{table.5.14}%
+\contentsline {table}{\numberline {5.15}{\ignorespaces RF15}}{52}{table.5.15}%
+\contentsline {table}{\numberline {5.16}{\ignorespaces RF16}}{53}{table.5.16}%
+\contentsline {table}{\numberline {5.17}{\ignorespaces RF17}}{53}{table.5.17}%
+\contentsline {table}{\numberline {5.18}{\ignorespaces RF18}}{54}{table.5.18}%
+\contentsline {table}{\numberline {5.19}{\ignorespaces RF19}}{55}{table.5.19}%
+\contentsline {table}{\numberline {5.20}{\ignorespaces RF20}}{56}{table.5.20}%
+\contentsline {table}{\numberline {5.21}{\ignorespaces RF21}}{57}{table.5.21}%
+\contentsline {table}{\numberline {5.22}{\ignorespaces RF22}}{58}{table.5.22}%
+\contentsline {table}{\numberline {5.23}{\ignorespaces RF23}}{58}{table.5.23}%
+\contentsline {table}{\numberline {5.24}{\ignorespaces RF24}}{59}{table.5.24}%
+\contentsline {table}{\numberline {5.25}{\ignorespaces RF25}}{59}{table.5.25}%
+\contentsline {table}{\numberline {5.26}{\ignorespaces RF26}}{60}{table.5.26}%
+\contentsline {table}{\numberline {5.27}{\ignorespaces RF27}}{60}{table.5.27}%
+\contentsline {table}{\numberline {5.28}{\ignorespaces RF28}}{61}{table.5.28}%
+\contentsline {table}{\numberline {5.29}{\ignorespaces RF29}}{61}{table.5.29}%
+\contentsline {table}{\numberline {5.30}{\ignorespaces RNF1}}{62}{table.5.30}%
+\contentsline {table}{\numberline {5.31}{\ignorespaces RNF2}}{62}{table.5.31}%
+\contentsline {table}{\numberline {5.32}{\ignorespaces RNF3}}{62}{table.5.32}%
+\contentsline {table}{\numberline {5.33}{\ignorespaces RNF4}}{62}{table.5.33}%
+\contentsline {table}{\numberline {5.34}{\ignorespaces Caso de uso - Inicio de sesión}}{67}{table.5.34}%
+\contentsline {table}{\numberline {5.35}{\ignorespaces Caso de uso - Cierre de sesión}}{68}{table.5.35}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Caso de uso - Inicio de sesión}}{108}{table.Alph1.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Caso de uso - Cierre de sesión}}{109}{table.Alph1.2}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Caso de uso - Introducción de un nuevo artículo}}{110}{table.Alph1.3}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Caso de uso - Edición de un artículo existente}}{111}{table.Alph1.4}%
+\contentsline {table}{\numberline {A.5}{\ignorespaces Caso de uso - Eliminación de un artículo}}{112}{table.Alph1.5}%
+\contentsline {table}{\numberline {A.6}{\ignorespaces Caso de uso - Visualización de los datos de un artículo}}{113}{table.Alph1.6}%
+\contentsline {table}{\numberline {A.7}{\ignorespaces Caso de uso - Búsqueda de un artículo por nombre }}{114}{table.Alph1.7}%
+\contentsline {table}{\numberline {A.8}{\ignorespaces Caso de uso - Categorización de un artículo}}{115}{table.Alph1.8}%
+\contentsline {table}{\numberline {A.9}{\ignorespaces Caso de uso - Visualización de la lista de los artículos existentes}}{116}{table.Alph1.9}%
+\contentsline {table}{\numberline {A.10}{\ignorespaces Caso de uso - Visualización de lista de renovación de artículos}}{117}{table.Alph1.10}%
+\contentsline {table}{\numberline {A.11}{\ignorespaces Caso de uso - Registro de un nuevo cliente habitual}}{118}{table.Alph1.11}%
+\contentsline {table}{\numberline {A.12}{\ignorespaces Caso de uso - Edición de los datos de un cliente existente}}{119}{table.Alph1.12}%
+\contentsline {table}{\numberline {A.13}{\ignorespaces Caso de uso - Eliminación de un cliente}}{120}{table.Alph1.13}%
+\contentsline {table}{\numberline {A.14}{\ignorespaces Caso de uso - Visualización de los datos de un cliente}}{121}{table.Alph1.14}%
+\contentsline {table}{\numberline {A.15}{\ignorespaces Caso de uso - Visualización de la lista de clientes existentes}}{122}{table.Alph1.15}%
+\contentsline {table}{\numberline {A.16}{\ignorespaces Caso de uso - Búsqueda de un cliente por nombre}}{123}{table.Alph1.16}%
+\contentsline {table}{\numberline {A.17}{\ignorespaces Caso de uso - Filtrado de clientes con préstamos}}{124}{table.Alph1.17}%
+\contentsline {table}{\numberline {A.18}{\ignorespaces Caso de uso - Introducción de una nueva venta}}{125}{table.Alph1.18}%
+\contentsline {table}{\numberline {A.19}{\ignorespaces Caso de uso - Introducción de un nuevo préstamo}}{126}{table.Alph1.19}%
+\contentsline {table}{\numberline {A.20}{\ignorespaces Caso de uso - Introducción de una devolución}}{127}{table.Alph1.20}%
+\contentsline {table}{\numberline {A.21}{\ignorespaces Caso de uso - Eliminación de un movimiento}}{128}{table.Alph1.21}%
+\contentsline {table}{\numberline {A.22}{\ignorespaces Caso de uso - Visualización de los datos de un movimiento}}{129}{table.Alph1.22}%
+\contentsline {table}{\numberline {A.23}{\ignorespaces Caso de uso - Visualización de la lista de movimientos existentes}}{130}{table.Alph1.23}%
+\contentsline {table}{\numberline {A.24}{\ignorespaces Caso de uso - Filtrado de movimientos según su tipo}}{131}{table.Alph1.24}%
+\contentsline {table}{\numberline {A.25}{\ignorespaces Caso de uso - Búsqueda de un movimiento por fecha o cliente}}{132}{table.Alph1.25}%
+\contentsline {table}{\numberline {A.26}{\ignorespaces Caso de uso - Generación de una compra a partir de un préstamo}}{133}{table.Alph1.26}%
+\contentsline {table}{\numberline {A.27}{\ignorespaces Caso de uso - Visualización de la caja diaria}}{134}{table.Alph1.27}%
+\contentsline {table}{\numberline {A.28}{\ignorespaces Caso de uso - Visualización de gráficas}}{135}{table.Alph1.28}%
 \addvspace {10\p@ }
