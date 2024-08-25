@@ -46,32 +46,32 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Caso de uso - Inicio de sesión}}{108}{table.Alph1.1}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces Caso de uso - Cierre de sesión}}{109}{table.Alph1.2}%
-\contentsline {table}{\numberline {A.3}{\ignorespaces Caso de uso - Introducción de un nuevo artículo}}{110}{table.Alph1.3}%
-\contentsline {table}{\numberline {A.4}{\ignorespaces Caso de uso - Edición de un artículo existente}}{111}{table.Alph1.4}%
-\contentsline {table}{\numberline {A.5}{\ignorespaces Caso de uso - Eliminación de un artículo}}{112}{table.Alph1.5}%
-\contentsline {table}{\numberline {A.6}{\ignorespaces Caso de uso - Visualización de los datos de un artículo}}{113}{table.Alph1.6}%
-\contentsline {table}{\numberline {A.7}{\ignorespaces Caso de uso - Búsqueda de un artículo por nombre }}{114}{table.Alph1.7}%
-\contentsline {table}{\numberline {A.8}{\ignorespaces Caso de uso - Categorización de un artículo}}{115}{table.Alph1.8}%
-\contentsline {table}{\numberline {A.9}{\ignorespaces Caso de uso - Visualización de la lista de los artículos existentes}}{116}{table.Alph1.9}%
-\contentsline {table}{\numberline {A.10}{\ignorespaces Caso de uso - Visualización de lista de renovación de artículos}}{117}{table.Alph1.10}%
-\contentsline {table}{\numberline {A.11}{\ignorespaces Caso de uso - Registro de un nuevo cliente habitual}}{118}{table.Alph1.11}%
-\contentsline {table}{\numberline {A.12}{\ignorespaces Caso de uso - Edición de los datos de un cliente existente}}{119}{table.Alph1.12}%
-\contentsline {table}{\numberline {A.13}{\ignorespaces Caso de uso - Eliminación de un cliente}}{120}{table.Alph1.13}%
-\contentsline {table}{\numberline {A.14}{\ignorespaces Caso de uso - Visualización de los datos de un cliente}}{121}{table.Alph1.14}%
-\contentsline {table}{\numberline {A.15}{\ignorespaces Caso de uso - Visualización de la lista de clientes existentes}}{122}{table.Alph1.15}%
-\contentsline {table}{\numberline {A.16}{\ignorespaces Caso de uso - Búsqueda de un cliente por nombre}}{123}{table.Alph1.16}%
-\contentsline {table}{\numberline {A.17}{\ignorespaces Caso de uso - Filtrado de clientes con préstamos}}{124}{table.Alph1.17}%
-\contentsline {table}{\numberline {A.18}{\ignorespaces Caso de uso - Introducción de una nueva venta}}{125}{table.Alph1.18}%
-\contentsline {table}{\numberline {A.19}{\ignorespaces Caso de uso - Introducción de un nuevo préstamo}}{126}{table.Alph1.19}%
-\contentsline {table}{\numberline {A.20}{\ignorespaces Caso de uso - Introducción de una devolución}}{127}{table.Alph1.20}%
-\contentsline {table}{\numberline {A.21}{\ignorespaces Caso de uso - Eliminación de un movimiento}}{128}{table.Alph1.21}%
-\contentsline {table}{\numberline {A.22}{\ignorespaces Caso de uso - Visualización de los datos de un movimiento}}{129}{table.Alph1.22}%
-\contentsline {table}{\numberline {A.23}{\ignorespaces Caso de uso - Visualización de la lista de movimientos existentes}}{130}{table.Alph1.23}%
-\contentsline {table}{\numberline {A.24}{\ignorespaces Caso de uso - Filtrado de movimientos según su tipo}}{131}{table.Alph1.24}%
-\contentsline {table}{\numberline {A.25}{\ignorespaces Caso de uso - Búsqueda de un movimiento por fecha o cliente}}{132}{table.Alph1.25}%
-\contentsline {table}{\numberline {A.26}{\ignorespaces Caso de uso - Generación de una compra a partir de un préstamo}}{133}{table.Alph1.26}%
-\contentsline {table}{\numberline {A.27}{\ignorespaces Caso de uso - Visualización de la caja diaria}}{134}{table.Alph1.27}%
-\contentsline {table}{\numberline {A.28}{\ignorespaces Caso de uso - Visualización de gráficas}}{135}{table.Alph1.28}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Caso de uso - Inicio de sesión}}{113}{table.Alph1.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Caso de uso - Cierre de sesión}}{114}{table.Alph1.2}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Caso de uso - Introducción de un nuevo artículo}}{115}{table.Alph1.3}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Caso de uso - Edición de un artículo existente}}{116}{table.Alph1.4}%
+\contentsline {table}{\numberline {A.5}{\ignorespaces Caso de uso - Eliminación de un artículo}}{117}{table.Alph1.5}%
+\contentsline {table}{\numberline {A.6}{\ignorespaces Caso de uso - Visualización de los datos de un artículo}}{118}{table.Alph1.6}%
+\contentsline {table}{\numberline {A.7}{\ignorespaces Caso de uso - Búsqueda de un artículo por nombre }}{119}{table.Alph1.7}%
+\contentsline {table}{\numberline {A.8}{\ignorespaces Caso de uso - Categorización de un artículo}}{120}{table.Alph1.8}%
+\contentsline {table}{\numberline {A.9}{\ignorespaces Caso de uso - Visualización de la lista de los artículos existentes}}{121}{table.Alph1.9}%
+\contentsline {table}{\numberline {A.10}{\ignorespaces Caso de uso - Visualización de lista de renovación de artículos}}{122}{table.Alph1.10}%
+\contentsline {table}{\numberline {A.11}{\ignorespaces Caso de uso - Registro de un nuevo cliente habitual}}{123}{table.Alph1.11}%
+\contentsline {table}{\numberline {A.12}{\ignorespaces Caso de uso - Edición de los datos de un cliente existente}}{124}{table.Alph1.12}%
+\contentsline {table}{\numberline {A.13}{\ignorespaces Caso de uso - Eliminación de un cliente}}{125}{table.Alph1.13}%
+\contentsline {table}{\numberline {A.14}{\ignorespaces Caso de uso - Visualización de los datos de un cliente}}{126}{table.Alph1.14}%
+\contentsline {table}{\numberline {A.15}{\ignorespaces Caso de uso - Visualización de la lista de clientes existentes}}{127}{table.Alph1.15}%
+\contentsline {table}{\numberline {A.16}{\ignorespaces Caso de uso - Búsqueda de un cliente por nombre}}{128}{table.Alph1.16}%
+\contentsline {table}{\numberline {A.17}{\ignorespaces Caso de uso - Filtrado de clientes con préstamos}}{129}{table.Alph1.17}%
+\contentsline {table}{\numberline {A.18}{\ignorespaces Caso de uso - Introducción de una nueva venta}}{130}{table.Alph1.18}%
+\contentsline {table}{\numberline {A.19}{\ignorespaces Caso de uso - Introducción de un nuevo préstamo}}{131}{table.Alph1.19}%
+\contentsline {table}{\numberline {A.20}{\ignorespaces Caso de uso - Introducción de una devolución}}{132}{table.Alph1.20}%
+\contentsline {table}{\numberline {A.21}{\ignorespaces Caso de uso - Eliminación de un movimiento}}{133}{table.Alph1.21}%
+\contentsline {table}{\numberline {A.22}{\ignorespaces Caso de uso - Visualización de los datos de un movimiento}}{134}{table.Alph1.22}%
+\contentsline {table}{\numberline {A.23}{\ignorespaces Caso de uso - Visualización de la lista de movimientos existentes}}{135}{table.Alph1.23}%
+\contentsline {table}{\numberline {A.24}{\ignorespaces Caso de uso - Filtrado de movimientos según su tipo}}{136}{table.Alph1.24}%
+\contentsline {table}{\numberline {A.25}{\ignorespaces Caso de uso - Búsqueda de un movimiento por fecha o cliente}}{137}{table.Alph1.25}%
+\contentsline {table}{\numberline {A.26}{\ignorespaces Caso de uso - Generación de una compra a partir de un préstamo}}{138}{table.Alph1.26}%
+\contentsline {table}{\numberline {A.27}{\ignorespaces Caso de uso - Visualización de la caja diaria}}{139}{table.Alph1.27}%
+\contentsline {table}{\numberline {A.28}{\ignorespaces Caso de uso - Visualización de gráficas}}{140}{table.Alph1.28}%
 \addvspace {10\p@ }

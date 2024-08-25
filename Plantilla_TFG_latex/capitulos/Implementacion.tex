@@ -363,7 +363,40 @@ A lo largo de toda la aplicación, se mantiene:
 	\item Etiquetado de las pantallas para que el usuario pueda saber dónde está situado en cada momento. 
 \end{itemize}
 
+\subsection{Colores de la aplicación}
+
+Para la interfaz de la aplicación se ha escogido como color primario el azul y como color secundario el amarillo. Estos dos colores son complementarios y hace que sea fácil llamar la atención del usuario realizando una buena combinación de ambos. 
+
+Dentro del color primario, se ha trabajado con una gama de azules: 
+\begin{itemize}
+	\item \textbf{Azul claro:} Se ha seleccionado Colors.blue[50]. 
+	\item \textbf{Azul medio:} Se ha seleccionado Colors.blue[200]. 
+	\item \textbf{Azul oscuro:} Se ha seleccionado Colors.blue[900]. 
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.33\textwidth]{imagenes/TerceraIteracion/ColorsBlue.png}
+	\caption{Gama de colores azules de Flutter.}
+\end{figure}
+
+
+Como color secundario, se ha seleccionado Colors.yellow[600]. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.33\textwidth]{imagenes/TerceraIteracion/ColorsYellow.png}
+	\caption{Gama de colores amarillos de Flutter.}
+\end{figure}
+
+Para el fondo de la aplicación y algunos textos, se ha utilizado el blanco, Colors.white. 
+
+\newpage
+
 \subsubsection{Inicio y cierre de sesión}
+
+
+En esta pantalla de inicio de sesión se utilizan campos de texto que permiten que el usuario proporcione las credenciales a la aplicación. Se hace uso de \textit{validator} para comprobar que los campos no se dejan vacíos. Si las credenciales son incorrectas al presionar \textit{Iniciar sesión}, aparece un diálogo similar al de cerrar sesión informando al usuario del problema. 
 
 \begin{figure}[H]
 	\centering
@@ -371,19 +404,31 @@ A lo largo de toda la aplicación, se mantiene:
 	\caption{Pantalla de inicio de sesión.}
 \end{figure}
 
+Al presionar el botón de \textit{Confirmar} del diálogo, se cierra la sesión activa del usuario. 
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/logout.png}
 	\caption{Cierre de sesión.}
 \end{figure}
 
+\newpage
+
 \subsubsection{Pantalla principal}
+
+Esta pantalla está compuesta por un campo de texto no editable, para mostrar las ganancias diarias, y dos \textit{ElevatedButton} que permiten crear una nueva venta o préstamo. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/mainPage.png}
 	\caption{Pantalla principal.}
 \end{figure}
+
+La pantalla de \textit{Nueva venta} y \textit{Nuevo préstamo} parten de la misma implementación y se diferencian con un booleano que especifica el movimiento que se está creando. Para la búsqueda se utiliza un campo de texto que escucha cada cambio y encuentra los artículos dinámicamente. Una vez encontrado el artículo, los desplegables de \textit{Talla} y \textit{Color} realizan una consulta a la base de datos y ofrecen las opciones que tiene ese artículo para esos valores. La cantidad mínima es 1 y la cantidad máxima la determina la cantidad de stock que haya en la tienda. Si la cantidad seleccionada sobrepasa la cantidad existente en la tienda, se muestra un diálogo avisando de que la cantidad seleccionada es incorrecta y se muestra le cantidad posible. El precio, se va actualizando dinámicamente, multiplicando el precio del producto por la cantidad seleccionada de este. Al pulsar el símbolo \textit{+}, se genera una \textit{Card} con la información especificada y, a continuación, se puede añadir otro artículo a la factura. 
+
+Si es una venta, el campo de cliente, puede dejarse vacío. Si es un préstamo, es obligatorio que se asigne un cliente ya que es un movimiento que no se paga en el momento. El campo de búsqueda del cliente funciona de la misma forma que la búsqueda del artículo. Si es una venta, aparece el desplegable para seleccionar el método de pago y es obligatorio rellenarlo, ya que deberá ser pagado en el momento. Ambos movimientos finalizan al presionar el botón de \textit{Aceptar}. 
+
+Cada vez que se añade un nuevo movimiento, se manda una notificación mediante el uso de un \textit{Provider ChangeNotifier} para avisar de que el resto de pantallas deben actualizarse con la nueva información que se acaba de añadir. El resto de pantallas escuchan con un \textit{Consumer}. 
 
 \begin{figure}[H]
 	\centering
@@ -397,13 +442,23 @@ A lo largo de toda la aplicación, se mantiene:
 	\caption{Pantalla de nuevo préstamo.}
 \end{figure}
 
+\newpage
+
 \subsubsection{Pantalla de clientes}
+
+En esta pantalla, el buscador funciona de la misma forma que explicamos con anterioridad. A la derecha, podemos ver un icono de dinero que activa y desactiva un booleano para filtrar aquellos clientes que se encuentran en dinero negativo en la tienda. Addemás, en cada \textit{Card} de clientes con dinero positivo o negativo podemos ver una flecha. Esto se ha llevado a cabo como requisito que se añadió en la primera iteración. El cliente expresó que quería poder diferenciar el estado positivo o negativo del cliente no solamente con el color, sino también con algún símbolo, para aquellas personas que no diferencien los colores de forma correcta. Por tanto, se añadió una flecha hacia arriba o hacia abajo para ser más accesibles. 
+
+La parte central de la pantalla es un \textit{StreamBuilder} que reconstruye su contenido cada vez que hay algún \textit{insert}, \textit{update} o \textit{delete}. De esta forma, el contenido que se muestra en la pantalla de visualización de los clientes, está siempre actualizado. Además, escucha los \textit{ChangeNotifier} con el \textit{Consumer} para actualizar los datos monetarios del cliente que se vean afectados con los movimientos de la tienda. 
+
+Para eliminar un cliente, no debe de estar vinculado a ningún movimiento. Si está vinculado a un movimiento, debe de existir, para mantener el histórico de la tienda. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/clientView.png}
 	\caption{Pantalla de visualización de clientes.}
 \end{figure}
+
+Las tres pantallas siguientes son muy similares. La primera de ellas, la que muestra los detalles, son unos campos de texto inicializados a los valores almacenados en la base de datos y con la propiedad \textit{readonly}. La segunda pantalla, la pantalla de edición, tiene los mismos campos de texto inicializados a dichos valores, pero sin la propiedad \textit{readonly} para permitir modificar la información. Además, se comprueba que el número de teléfono sea correcto mediante una expresión regular. En la tercera pantalla, la pantalla de registro, los campos no están inicializados y se compueba que el nombre esté relleno mediante un \textit{validator}.  
 
 \begin{figure}[H]
 	\centering
@@ -423,7 +478,13 @@ A lo largo de toda la aplicación, se mantiene:
 	\caption{Pantalla de registro de un nuevo cliente.}
 \end{figure}
 
+\newpage
+
 \subsubsection{Pantalla de artículos}
+
+Esta pantalla muestra las categorías en forma de \textit{Card} mediante un StreamBuilder, de la misma forma que se explicó en la pantalla de los clientes. Se puede añadir o editar una categoría, de la forma que se muestra en las siguientes imágenes. 
+
+Para eliminar una categoría, no debe de tener artículos dentro de ella. 
 
 \begin{figure}[H]
 	\centering
@@ -443,11 +504,17 @@ A lo largo de toda la aplicación, se mantiene:
 	\caption{Pantalla de registro de una nueva categoría.}
 \end{figure}
 
+La pantalla de visualización de artículos es muy similar a la pantalla de visualización de clientes. Un aspecto a destacar es el desplegable de \textit{Subcategoría}. Este desplegable realiza una consulta en la base de datos y trae las posibles subcategorías de artículos dentro de esa categoría. Permite seleccionar una subcategoría y filtrar por dicha subcategoría. 
+
+Para eliminar un artículo, no debe de estar vinculado a ningún movimiento. Si está vinculado a un movimiento, debe de mantenerse para mantener el histórico de la tienda. 
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/articleView.png}
 	\caption{Pantalla de visualización de los artículos de una categoría.}
 \end{figure}
+
+Las pantallas de visualización de los detalles de un artículo, editar o añadir son similares a las pantallas comentadas en el apartado de clientes. Al añadir un artículo, es obligatorio añadir mínimo una talla, se compueba mediante un \textit{validator}. 
 
 \begin{figure}[H]
 	\centering
@@ -467,13 +534,23 @@ A lo largo de toda la aplicación, se mantiene:
 	\caption{Pantalla de registro de un nuevo artículo.}
 \end{figure}
 
+\newpage
+
+La pantalla de stock muestra los artículos cuya cantidad actual es crítica y necesita ser renovada. Se muestra mediante campo de texto \textit{readonly}.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/stock.png}
 	\caption{Pantalla de visualización la lista de renovación del stock.}
 \end{figure}
 
+\newpage
+
 \subsubsection{Pantalla de movimientos}
+
+La pantalla de visualización de movimientos es similar a las anteriores que muestran todas las instancias almacenadas. La búsqueda permite buscar movimientos de un cliente en específico. El desplegable filtra por tipo de movimiento, por lo que permite seleccionar \textit{Venta}, \textit{Préstamo} o \textit{Devolución}. La rueda situada en la derecha sirve para quitar la selección del desplegable. 
+
+Para la parte central, donde se muestran los movimientos en forma de \textit{Card}, se utiliza un \textit{StreamBuilder} que reconstruye su contenido cada vez que hay algún \textit{insert}, \textit{update} o \textit{delete}. De esta forma, el contenido que se muestra en la pantalla de movimientos, está siempre actualizado. El icono de la papelera permite eliminar un movimiento solo si no está vinculado a otro. Si no se puede eliminar, se muestra un diálogo avisando del motivo.   
 
 \begin{figure}[H]
 	\centering
@@ -481,13 +558,23 @@ A lo largo de toda la aplicación, se mantiene:
 	\caption{Pantalla de visualización los movimientos de la tienda.}
 \end{figure}
 
+Esta pantalla recoge muchas funcionalidades y muestra unas u otras en función del tipo de movimiento y su estado. Para \textit{Ventas}, si no se ha hecho una devolución anteriormente, se muestran dos botones en la parte superior que permiten realizar una devolución parcial o total. Si se decide una devolución total de la venta, se muestra un diálogo de confirmación. Al confirmar, se crea un movimiento de devolución con los datos de la venta. Si se elige una devolución parcial, la interfaz de la visualización de los detalles del movimiento cambia ligeramente y se asemeja a la creación de una \textit{Nueva venta}. Permite seleccionar los artículos que se desean devolver y el método de pago con el que se desea recibir la devolución. Esto se consigue con un \textit{booleano} que cambia de estado al pulsar el botón de \textit{Devolución parcial}. Si está activo, desaparecen algunos campos de detalle del movimiento para mostrar los elementos que permiten la creación de la devolución parcial. Cuando una venta sí que tiene una devolución hecha, ambos movimientos se vinculan. En la parte superior derecha desaparecen los dos botones que se comentaban antes y aparece un botón que te lleva directamente a los detalles de la devolución. En la devolución también estará ese mismo botón que te redirige a la venta de la que proviene dicha devolución. De esta forma, ambos movimientos están relacionados entre ellos. 
+
+Si es un \textit{Pŕestamo}, funciona de la misma forma que la venta, pero en lugar del botón de \textit{Devolución parcial}, estará el botón de \textit{Compra}. Este botón te redirige a la misma pantalla de selección de artículos y creación de movimientos de la que hablábamos anteriormente. Sin embargo, se llama a otro método distinto, ya que los artículos seleccionados serán comprados en vez de devueltos. Además, los artículos que no se seleccionen, se mostrarán reflejados en un movimiento de devolución. Por tanto, al pulsar este botón, se podrán comprar todos los artículos, generando un único movimiento de \textit{Venta} o se podrá hacer una compra parcial, generando dos movimientos: una \textit{Venta} con los artículos seleccionados y una \textit{Devolución} con los artículos que restan. 
+
+Si es una \textit{Devolución}, únicamente se podrán ver los detalles de la devolución y se podrá utilizar el botón de la parte superior derecha para ir al movimiento del que proviene. 
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/movementDetails.png}
 	\caption{Pantalla de visualización de los detalles de un movimiento.}
 \end{figure}
 
+\newpage
+
 \subsubsection{Pantalla de gráficos}
+
+Esta pantalla muestra un resumen de las ganancias de forma mensual o anual, según se elija en el desplegable de la parte superior derecha. Para conseguir ser más accesibles, las estadísticas positivas no solo se muestran con el color verde, sino que también se reflejan positivas en el eje. Las estadísticas negativas, se reflejan en la parte inferior del eje, además del color rojo. Esto se realiza con el pensamiento de las personas daltónicas que no puedan diferenciar los colores. De esta forma, quedan claras cuáles son las ganancias y cuáles son las pérdidas prestando atención al eje de la izquierda. 
 
 \begin{figure}[H]
 	\centering
