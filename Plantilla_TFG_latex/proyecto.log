@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.22)  29 AUG 2024 18:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.22)  6 SEP 2024 09:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,7 +571,7 @@ LaTeX Info: Redefining \BHBI on input line 139.
 )
 (./portada/portada.tex
 \centeroffset=\skip76
-<imagenes/logo_ugr.jpg, id=373, 777.90625pt x 231.86626pt>
+<imagenes/logo_ugr.jpg, id=401, 777.90625pt x 231.86626pt>
 File: imagenes/logo_ugr.jpg Graphic file (type jpg)
 <use imagenes/logo_ugr.jpg>
 Package pdftex.def Info: imagenes/logo_ugr.jpg  used on input line 12.
@@ -582,7 +582,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 23.
-<imagenes/etsiit_logo.png, id=374, 110.814pt x 40.4712pt>
+<imagenes/etsiit_logo.png, id=402, 110.814pt x 40.4712pt>
 File: imagenes/etsiit_logo.png Graphic file (type png)
 <use imagenes/etsiit_logo.png>
 Package pdftex.def Info: imagenes/etsiit_logo.png  used on input line 32.
@@ -706,7 +706,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
  []
 
 [19] [20]
-<imagenes/imagenesDiagramas/diagramaGantt.png, id=918, 1805.74625pt x 555.07375
+<imagenes/imagenesDiagramas/diagramaGantt.png, id=953, 1805.74625pt x 555.07375
 pt>
 File: imagenes/imagenesDiagramas/diagramaGantt.png Graphic file (type png)
 <use imagenes/imagenesDiagramas/diagramaGantt.png>
@@ -843,7 +843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
-<imagenes/aplicacionesSimilares/caracteristicas-mygestion.png, id=1031, 501.875
+<imagenes/aplicacionesSimilares/caracteristicas-mygestion.png, id=1066, 501.875
 pt x 244.915pt>
 File: imagenes/aplicacionesSimilares/caracteristicas-mygestion.png Graphic file
  (type png)
@@ -852,7 +852,7 @@ Package pdftex.def Info: imagenes/aplicacionesSimilares/caracteristicas-mygesti
 on.png  used on input line 154.
 (pdftex.def)             Requested size: 288.0011pt x 140.5522pt.
 [34]
-<imagenes/aplicacionesSimilares/clover.png, id=1038, 552.0625pt x 351.3125pt>
+<imagenes/aplicacionesSimilares/clover.png, id=1073, 552.0625pt x 351.3125pt>
 File: imagenes/aplicacionesSimilares/clover.png Graphic file (type png)
 <use imagenes/aplicacionesSimilares/clover.png>
 Package pdftex.def Info: imagenes/aplicacionesSimilares/clover.png  used on inp
@@ -889,14 +889,14 @@ Cap\'{\i }tulo 4.
 [37
 
 ]
-<imagenes/imagenesTecnologias/latex.png, id=1057, 696.6025pt x 293.095pt>
+<imagenes/imagenesTecnologias/latex.png, id=1092, 696.6025pt x 293.095pt>
 File: imagenes/imagenesTecnologias/latex.png Graphic file (type png)
 <use imagenes/imagenesTecnologias/latex.png>
 Package pdftex.def Info: imagenes/imagenesTecnologias/latex.png  used on input 
 line 28.
 (pdftex.def)             Requested size: 180.0pt x 75.7333pt.
  [38 <./imagenes/imagenesTecnologias/latex.png>]
-<imagenes/imagenesTecnologias/Visual_Paradigm_logo.png, id=1066, 524.96124pt x 
+<imagenes/imagenesTecnologias/Visual_Paradigm_logo.png, id=1101, 524.96124pt x 
 128.48pt>
 File: imagenes/imagenesTecnologias/Visual_Paradigm_logo.png Graphic file (type 
 png)
@@ -905,14 +905,14 @@ Package pdftex.def Info: imagenes/imagenesTecnologias/Visual_Paradigm_logo.png
  used on input line 54.
 (pdftex.def)             Requested size: 251.9989pt x 61.67361pt.
  [39 <./imagenes/imagenesTecnologias/Visual_Paradigm_logo.png>]
-<imagenes/imagenesTecnologias/goodnotes.jpg, id=1075, 3854.4pt x 2168.1pt>
+<imagenes/imagenesTecnologias/goodnotes.jpg, id=1110, 3854.4pt x 2168.1pt>
 File: imagenes/imagenesTecnologias/goodnotes.jpg Graphic file (type jpg)
 <use imagenes/imagenesTecnologias/goodnotes.jpg>
 Package pdftex.def Info: imagenes/imagenesTecnologias/goodnotes.jpg  used on in
 put line 76.
 (pdftex.def)             Requested size: 251.9989pt x 141.72542pt.
  [40 <./imagenes/imagenesTecnologias/goodnotes.jpg>]
-<imagenes/imagenesTecnologias/iterativa.jpg, id=1083, 1567.8575pt x 918.43124pt
+<imagenes/imagenesTecnologias/iterativa.jpg, id=1119, 1567.8575pt x 918.43124pt
 >
 File: imagenes/imagenesTecnologias/iterativa.jpg Graphic file (type jpg)
 <use imagenes/imagenesTecnologias/iterativa.jpg>
@@ -920,14 +920,14 @@ Package pdftex.def Info: imagenes/imagenesTecnologias/iterativa.jpg  used on in
 put line 101.
 (pdftex.def)             Requested size: 251.9989pt x 147.61066pt.
  [41 <./imagenes/imagenesTecnologias/iterativa.jpg>]
-<imagenes/imagenesTecnologias/supabase.jpg, id=1091, 1284.8pt x 310.15875pt>
+<imagenes/imagenesTecnologias/supabase.jpg, id=1127, 1284.8pt x 310.15875pt>
 File: imagenes/imagenesTecnologias/supabase.jpg Graphic file (type jpg)
 <use imagenes/imagenesTecnologias/supabase.jpg>
 Package pdftex.def Info: imagenes/imagenesTecnologias/supabase.jpg  used on inp
 ut line 123.
 (pdftex.def)             Requested size: 251.9989pt x 60.83328pt.
  [42 <./imagenes/imagenesTecnologias/supabase.jpg>]
-<imagenes/imagenesTecnologias/flutter.jpg, id=1099, 869.2475pt x 652.4375pt>
+<imagenes/imagenesTecnologias/flutter.jpg, id=1135, 869.2475pt x 652.4375pt>
 File: imagenes/imagenesTecnologias/flutter.jpg Graphic file (type jpg)
 <use imagenes/imagenesTecnologias/flutter.jpg>
 Package pdftex.def Info: imagenes/imagenesTecnologias/flutter.jpg  used on inpu
@@ -1126,14 +1126,14 @@ Overfull \hbox (7.20438pt too wide) in paragraph at lines 857--866
  []
 
 [62]
-<imagenes/imagenesDiagramas/useCases/useCases.jpg, id=1276, 662.475pt x 395.477
+<imagenes/imagenesDiagramas/useCases/useCases.jpg, id=1312, 662.475pt x 395.477
 5pt>
 File: imagenes/imagenesDiagramas/useCases/useCases.jpg Graphic file (type jpg)
 <use imagenes/imagenesDiagramas/useCases/useCases.jpg>
 Package pdftex.def Info: imagenes/imagenesDiagramas/useCases/useCases.jpg  used
  on input line 891.
 (pdftex.def)             Requested size: 316.80176pt x 189.121pt.
-<imagenes/imagenesDiagramas/useCases/useCaseSesion.jpg, id=1277, 339.2675pt x 2
+<imagenes/imagenesDiagramas/useCases/useCaseSesion.jpg, id=1313, 339.2675pt x 2
 11.79124pt>
 File: imagenes/imagenesDiagramas/useCases/useCaseSesion.jpg Graphic file (type 
 jpg)
@@ -1142,7 +1142,7 @@ Package pdftex.def Info: imagenes/imagenesDiagramas/useCases/useCaseSesion.jpg
  used on input line 898.
 (pdftex.def)             Requested size: 316.80176pt x 197.77496pt.
  [63 <./imagenes/imagenesDiagramas/useCases/useCases.jpg>]
-<imagenes/imagenesDiagramas/useCases/useCaseArticulos.jpg, id=1284, 514.92375pt
+<imagenes/imagenesDiagramas/useCases/useCaseArticulos.jpg, id=1320, 514.92375pt
  x 485.815pt>
 File: imagenes/imagenesDiagramas/useCases/useCaseArticulos.jpg Graphic file (ty
 pe jpg)
@@ -1150,7 +1150,7 @@ pe jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/useCases/useCaseArticulos.j
 pg  used on input line 905.
 (pdftex.def)             Requested size: 316.80176pt x 298.89676pt.
-<imagenes/imagenesDiagramas/useCases/useCaseCliente.jpg, id=1285, 612.2875pt x 
+<imagenes/imagenesDiagramas/useCases/useCaseCliente.jpg, id=1321, 612.2875pt x 
 412.54124pt>
 File: imagenes/imagenesDiagramas/useCases/useCaseCliente.jpg Graphic file (type
  jpg)
@@ -1160,7 +1160,7 @@ Package pdftex.def Info: imagenes/imagenesDiagramas/useCases/useCaseCliente.jpg
 (pdftex.def)             Requested size: 316.80176pt x 213.45255pt.
  [64 <./imagenes/imagenesDiagramas/useCases/useCaseSesion.jpg> <./imagenes/imag
 enesDiagramas/useCases/useCaseArticulos.jpg>]
-<imagenes/imagenesDiagramas/useCases/useCaseMovimiento.jpg, id=1290, 642.4pt x 
+<imagenes/imagenesDiagramas/useCases/useCaseMovimiento.jpg, id=1326, 642.4pt x 
 500.87125pt>
 File: imagenes/imagenesDiagramas/useCases/useCaseMovimiento.jpg Graphic file (t
 ype jpg)
@@ -1168,7 +1168,7 @@ ype jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/useCases/useCaseMovimiento.
 jpg  used on input line 919.
 (pdftex.def)             Requested size: 316.80176pt x 247.01108pt.
-<imagenes/imagenesDiagramas/useCases/useCaseGraficos.jpg, id=1291, 378.41376pt 
+<imagenes/imagenesDiagramas/useCases/useCaseGraficos.jpg, id=1327, 378.41376pt 
 x 180.675pt>
 File: imagenes/imagenesDiagramas/useCases/useCaseGraficos.jpg Graphic file (typ
 e jpg)
@@ -1189,7 +1189,7 @@ Underfull \hbox (badness 2503) in paragraph at lines 1042--1042
  []
 
 [68]
-<imagenes/imagenesDiagramas/modelo_conceptual.jpg, id=1311, 964.60374pt x 690.5
+<imagenes/imagenesDiagramas/modelo_conceptual.jpg, id=1346, 964.60374pt x 690.5
 8pt>
 File: imagenes/imagenesDiagramas/modelo_conceptual.jpg Graphic file (type jpg)
 <use imagenes/imagenesDiagramas/modelo_conceptual.jpg>
@@ -1197,7 +1197,7 @@ Package pdftex.def Info: imagenes/imagenesDiagramas/modelo_conceptual.jpg  used
  on input line 1072.
 (pdftex.def)             Requested size: 288.0011pt x 206.18507pt.
  [69 <./imagenes/imagenesDiagramas/modelo_conceptual.jpg>]
-<imagenes/imagenesDiagramas/InicioCierre/inicioSesión.jpg, id=1316, 574.145pt 
+<imagenes/imagenesDiagramas/InicioCierre/inicioSesión.jpg, id=1351, 574.145pt 
 x 187.70125pt>
 File: imagenes/imagenesDiagramas/InicioCierre/inicioSesión.jpg Graphic file (t
 ype jpg)
@@ -1205,7 +1205,7 @@ ype jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/InicioCierre/inicioSesión.
 jpg  used on input line 1102.
 (pdftex.def)             Requested size: 360.0pt x 117.69391pt.
-<imagenes/imagenesDiagramas/InicioCierre/cierreSesión.jpg, id=1317, 357.335pt 
+<imagenes/imagenesDiagramas/InicioCierre/cierreSesión.jpg, id=1352, 357.335pt 
 x 156.585pt>
 File: imagenes/imagenesDiagramas/InicioCierre/cierreSesión.jpg Graphic file (t
 ype jpg)
@@ -1217,7 +1217,7 @@ jpg  used on input line 1111.
 (./capitulos/09_Diseno.tex [70 <./imagenes/imagenesDiagramas/InicioCierre/inici
 oSesión.jpg> <./imagenes/imagenesDiagramas/InicioCierre/cierreSesión.jpg>]
 Cap\'{\i }tulo 6.
-<imagenes/imagenesDiagramas/DiagramaArquitecturaSistema.jpeg, id=1325, 454.3976
+<imagenes/imagenesDiagramas/DiagramaArquitecturaSistema.jpeg, id=1360, 454.3976
 3pt x 134.15118pt>
 File: imagenes/imagenesDiagramas/DiagramaArquitecturaSistema.jpeg Graphic file 
 (type jpg)
@@ -1233,73 +1233,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
  []
 
 [72]
-<imagenes/inicio_sesion.JPG, id=1334, 1003.75pt x 1453.43pt>
+<imagenes/inicio_sesion.JPG, id=1369, 1003.75pt x 1453.43pt>
 File: imagenes/inicio_sesion.JPG Graphic file (type jpg)
 <use imagenes/inicio_sesion.JPG>
-Package pdftex.def Info: imagenes/inicio_sesion.JPG  used on input line 41.
+Package pdftex.def Info: imagenes/inicio_sesion.JPG  used on input line 40.
 (pdftex.def)             Requested size: 251.9989pt x 364.88686pt.
 
-Overfull \hbox (4.88686pt too wide) in paragraph at lines 41--42
+Overfull \hbox (4.88686pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
 [73 <./imagenes/inicio_sesion.JPG>]
-<imagenes/pantalla_principal.JPG, id=1340, 1003.75pt x 1470.49374pt>
+<imagenes/pantalla_principal.JPG, id=1375, 1003.75pt x 1470.49374pt>
 File: imagenes/pantalla_principal.JPG Graphic file (type jpg)
 <use imagenes/pantalla_principal.JPG>
-Package pdftex.def Info: imagenes/pantalla_principal.JPG  used on input line 54
+Package pdftex.def Info: imagenes/pantalla_principal.JPG  used on input line 53
 .
 (pdftex.def)             Requested size: 288.0011pt x 421.92226pt.
 
-Overfull \hbox (61.92226pt too wide) in paragraph at lines 54--55
+Overfull \hbox (61.92226pt too wide) in paragraph at lines 53--54
  [][] 
  []
 
 [74 <./imagenes/pantalla_principal.JPG>]
-<imagenes/pantalla_clientes.JPG, id=1345, 1002.74625pt x 1290.8225pt>
+<imagenes/pantalla_clientes.JPG, id=1380, 1002.74625pt x 1290.8225pt>
 File: imagenes/pantalla_clientes.JPG Graphic file (type jpg)
 <use imagenes/pantalla_clientes.JPG>
-Package pdftex.def Info: imagenes/pantalla_clientes.JPG  used on input line 68.
+Package pdftex.def Info: imagenes/pantalla_clientes.JPG  used on input line 67.
 
 (pdftex.def)             Requested size: 288.0011pt x 370.7442pt.
 
-Overfull \hbox (10.7442pt too wide) in paragraph at lines 68--69
+Overfull \hbox (10.7442pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
 [75 <./imagenes/pantalla_clientes.JPG>]
-<imagenes/pantalla_articulos.JPG, id=1350, 1003.75pt x 1293.83376pt>
+<imagenes/pantalla_articulos.JPG, id=1385, 1003.75pt x 1293.83376pt>
 File: imagenes/pantalla_articulos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_articulos.JPG>
-Package pdftex.def Info: imagenes/pantalla_articulos.JPG  used on input line 82
+Package pdftex.def Info: imagenes/pantalla_articulos.JPG  used on input line 81
 .
 (pdftex.def)             Requested size: 288.0011pt x 371.23398pt.
 
-Overfull \hbox (11.23398pt too wide) in paragraph at lines 82--83
+Overfull \hbox (11.23398pt too wide) in paragraph at lines 81--82
  [][] 
  []
 
 [76 <./imagenes/pantalla_articulos.JPG>]
-<imagenes/pantalla_movimientos.JPG, id=1355, 1002.74625pt x 1309.89375pt>
+<imagenes/pantalla_movimientos.JPG, id=1390, 1002.74625pt x 1309.89375pt>
 File: imagenes/pantalla_movimientos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_movimientos.JPG>
 Package pdftex.def Info: imagenes/pantalla_movimientos.JPG  used on input line 
-97.
+96.
 (pdftex.def)             Requested size: 288.0011pt x 376.22177pt.
 
-Overfull \hbox (16.22177pt too wide) in paragraph at lines 97--98
+Overfull \hbox (16.22177pt too wide) in paragraph at lines 96--97
  [][] 
  []
 
 [77 <./imagenes/pantalla_movimientos.JPG>]
-<imagenes/pantalla_graficos.JPG, id=1360, 1003.75pt x 1426.32875pt>
+<imagenes/pantalla_graficos.JPG, id=1395, 1003.75pt x 1426.32875pt>
 File: imagenes/pantalla_graficos.JPG Graphic file (type jpg)
 <use imagenes/pantalla_graficos.JPG>
-Package pdftex.def Info: imagenes/pantalla_graficos.JPG  used on input line 113
+Package pdftex.def Info: imagenes/pantalla_graficos.JPG  used on input line 112
 .
 (pdftex.def)             Requested size: 288.0011pt x 409.25018pt.
 
-Overfull \hbox (49.25018pt too wide) in paragraph at lines 113--114
+Overfull \hbox (49.25018pt too wide) in paragraph at lines 112--113
  [][] 
  []
 
@@ -1308,14 +1308,14 @@ Cap\'{\i }tulo 7.
 [79
 
 ]
-<imagenes/PrimeraIteracion/inicioSesion.png, id=1371, 1277.77374pt x 721.69624p
+<imagenes/PrimeraIteracion/inicioSesion.png, id=1406, 1277.77374pt x 721.69624p
 t>
 File: imagenes/PrimeraIteracion/inicioSesion.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/inicioSesion.png>
 Package pdftex.def Info: imagenes/PrimeraIteracion/inicioSesion.png  used on in
 put line 28.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
-<imagenes/PrimeraIteracion/pantallaPrincipal.png, id=1372, 1277.77374pt x 721.6
+<imagenes/PrimeraIteracion/pantallaPrincipal.png, id=1407, 1277.77374pt x 721.6
 9624pt>
 File: imagenes/PrimeraIteracion/pantallaPrincipal.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/pantallaPrincipal.png>
@@ -1324,7 +1324,7 @@ on input line 37.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
  [80 <./imagenes/PrimeraIteracion/inicioSesion.png> <./imagenes/PrimeraIteracio
 n/pantallaPrincipal.png>]
-<imagenes/PrimeraIteracion/visualizacionClientes.png, id=1381, 1277.77374pt x 7
+<imagenes/PrimeraIteracion/visualizacionClientes.png, id=1417, 1277.77374pt x 7
 21.69624pt>
 File: imagenes/PrimeraIteracion/visualizacionClientes.png Graphic file (type pn
 g)
@@ -1332,14 +1332,14 @@ g)
 Package pdftex.def Info: imagenes/PrimeraIteracion/visualizacionClientes.png  u
 sed on input line 50.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
-<imagenes/PrimeraIteracion/nuevoCliente.png, id=1382, 1277.77374pt x 721.69624p
+<imagenes/PrimeraIteracion/nuevoCliente.png, id=1418, 1277.77374pt x 721.69624p
 t>
 File: imagenes/PrimeraIteracion/nuevoCliente.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/nuevoCliente.png>
 Package pdftex.def Info: imagenes/PrimeraIteracion/nuevoCliente.png  used on in
 put line 59.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
-<imagenes/PrimeraIteracion/editarCliente.png, id=1383, 1277.77374pt x 721.69624
+<imagenes/PrimeraIteracion/editarCliente.png, id=1419, 1277.77374pt x 721.69624
 pt>
 File: imagenes/PrimeraIteracion/editarCliente.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/editarCliente.png>
@@ -1348,14 +1348,14 @@ nput line 68.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
  [81 <./imagenes/PrimeraIteracion/visualizacionClientes.png> <./imagenes/Primer
 aIteracion/nuevoCliente.png>]
-<imagenes/PrimeraIteracion/detallesCliente.png, id=1392, 1277.77374pt x 721.696
+<imagenes/PrimeraIteracion/detallesCliente.png, id=1428, 1277.77374pt x 721.696
 24pt>
 File: imagenes/PrimeraIteracion/detallesCliente.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/detallesCliente.png>
 Package pdftex.def Info: imagenes/PrimeraIteracion/detallesCliente.png  used on
  input line 77.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
-<imagenes/PrimeraIteracion/visualizarCategorias.png, id=1393, 1277.77374pt x 72
+<imagenes/PrimeraIteracion/visualizarCategorias.png, id=1429, 1277.77374pt x 72
 1.69624pt>
 File: imagenes/PrimeraIteracion/visualizarCategorias.png Graphic file (type png
 )
@@ -1365,14 +1365,14 @@ ed on input line 88.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
  [82 <./imagenes/PrimeraIteracion/editarCliente.png> <./imagenes/PrimeraIteraci
 on/detallesCliente.png>]
-<imagenes/PrimeraIteracion/nuevaCategoria.png, id=1404, 1277.77374pt x 721.6962
+<imagenes/PrimeraIteracion/nuevaCategoria.png, id=1439, 1277.77374pt x 721.6962
 4pt>
 File: imagenes/PrimeraIteracion/nuevaCategoria.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/nuevaCategoria.png>
 Package pdftex.def Info: imagenes/PrimeraIteracion/nuevaCategoria.png  used on 
 input line 99.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
-<imagenes/PrimeraIteracion/editarCategoria.png, id=1405, 1277.77374pt x 721.696
+<imagenes/PrimeraIteracion/editarCategoria.png, id=1440, 1277.77374pt x 721.696
 24pt>
 File: imagenes/PrimeraIteracion/editarCategoria.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/editarCategoria.png>
@@ -1381,7 +1381,7 @@ Package pdftex.def Info: imagenes/PrimeraIteracion/editarCategoria.png  used on
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
  [83 <./imagenes/PrimeraIteracion/visualizarCategorias.png> <./imagenes/Primera
 Iteracion/nuevaCategoria.png>]
-<imagenes/PrimeraIteracion/visualizarArticulos.png, id=1414, 1277.77374pt x 721
+<imagenes/PrimeraIteracion/visualizarArticulos.png, id=1449, 1277.77374pt x 721
 .69624pt>
 File: imagenes/PrimeraIteracion/visualizarArticulos.png Graphic file (type png)
 
@@ -1389,7 +1389,7 @@ File: imagenes/PrimeraIteracion/visualizarArticulos.png Graphic file (type png)
 Package pdftex.def Info: imagenes/PrimeraIteracion/visualizarArticulos.png  use
 d on input line 119.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
-<imagenes/PrimeraIteracion/nuevoArticulo.png, id=1415, 1277.77374pt x 721.69624
+<imagenes/PrimeraIteracion/nuevoArticulo.png, id=1450, 1277.77374pt x 721.69624
 pt>
 File: imagenes/PrimeraIteracion/nuevoArticulo.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/nuevoArticulo.png>
@@ -1398,7 +1398,7 @@ nput line 128.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
  [84 <./imagenes/PrimeraIteracion/editarCategoria.png> <./imagenes/PrimeraItera
 cion/visualizarArticulos.png>]
-<imagenes/PrimeraIteracion/editarArticulo.png, id=1424, 1277.77374pt x 721.6962
+<imagenes/PrimeraIteracion/editarArticulo.png, id=1459, 1277.77374pt x 721.6962
 4pt>
 File: imagenes/PrimeraIteracion/editarArticulo.png Graphic file (type png)
 <use imagenes/PrimeraIteracion/editarArticulo.png>
@@ -1406,283 +1406,282 @@ Package pdftex.def Info: imagenes/PrimeraIteracion/editarArticulo.png  used on
 input line 137.
 (pdftex.def)             Requested size: 251.9989pt x 142.32146pt.
  [85 <./imagenes/PrimeraIteracion/nuevoArticulo.png> <./imagenes/PrimeraIteraci
-on/editarArticulo.png>] [86]
-<imagenes/SegundaIteracion/pantallaPrincipal.png, id=1440, 1288.815pt x 720.692
+on/editarArticulo.png>] [86] [87]
+<imagenes/SegundaIteracion/pantallaPrincipal.png, id=1479, 1288.815pt x 720.692
 5pt>
 File: imagenes/SegundaIteracion/pantallaPrincipal.png Graphic file (type png)
 <use imagenes/SegundaIteracion/pantallaPrincipal.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/pantallaPrincipal.png  used 
-on input line 190.
+on input line 216.
 (pdftex.def)             Requested size: 251.9989pt x 140.91386pt.
- [87 <./imagenes/SegundaIteracion/pantallaPrincipal.png>]
-<imagenes/SegundaIteracion/nuevaVenta.png, id=1448, 1284.8pt x 767.86874pt>
+ [88 <./imagenes/SegundaIteracion/pantallaPrincipal.png>]
+<imagenes/SegundaIteracion/nuevaVenta.png, id=1487, 1284.8pt x 767.86874pt>
 File: imagenes/SegundaIteracion/nuevaVenta.png Graphic file (type png)
 <use imagenes/SegundaIteracion/nuevaVenta.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/nuevaVenta.png  used on inpu
-t line 201.
+t line 227.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
-<imagenes/SegundaIteracion/nuevoPrestamo.png, id=1449, 1284.8pt x 767.86874pt>
+<imagenes/SegundaIteracion/nuevoPrestamo.png, id=1488, 1284.8pt x 767.86874pt>
 File: imagenes/SegundaIteracion/nuevoPrestamo.png Graphic file (type png)
 <use imagenes/SegundaIteracion/nuevoPrestamo.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/nuevoPrestamo.png  used on i
-nput line 212.
+nput line 238.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
- [88 <./imagenes/SegundaIteracion/nuevaVenta.png>]
-<imagenes/SegundaIteracion/listaMovimientos.png, id=1456, 1284.8pt x 767.86874p
+
+[89 <./imagenes/SegundaIteracion/nuevaVenta.png>]
+<imagenes/SegundaIteracion/listaMovimientos.png, id=1495, 1284.8pt x 767.86874p
 t>
 File: imagenes/SegundaIteracion/listaMovimientos.png Graphic file (type png)
 <use imagenes/SegundaIteracion/listaMovimientos.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/listaMovimientos.png  used o
-n input line 223.
+n input line 249.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
- [89 <./imagenes/SegundaIteracion/nuevoPrestamo.png> <./imagenes/SegundaIteraci
+ [90 <./imagenes/SegundaIteracion/nuevoPrestamo.png> <./imagenes/SegundaIteraci
 on/listaMovimientos.png>]
-<imagenes/SegundaIteracion/detallesVenta.png, id=1465, 1284.8pt x 767.86874pt>
+<imagenes/SegundaIteracion/detallesVenta.png, id=1504, 1284.8pt x 767.86874pt>
 File: imagenes/SegundaIteracion/detallesVenta.png Graphic file (type png)
 <use imagenes/SegundaIteracion/detallesVenta.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/detallesVenta.png  used on i
-nput line 236.
+nput line 262.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
-<imagenes/SegundaIteracion/devolucionVenta.png, id=1466, 1284.8pt x 767.86874pt
+<imagenes/SegundaIteracion/devolucionVenta.png, id=1505, 1284.8pt x 767.86874pt
 >
 File: imagenes/SegundaIteracion/devolucionVenta.png Graphic file (type png)
 <use imagenes/SegundaIteracion/devolucionVenta.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/devolucionVenta.png  used on
- input line 245.
+ input line 271.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
- [90 <./imagenes/SegundaIteracion/detallesVenta.png>]
-<imagenes/SegundaIteracion/devolucionHechaVenta.png, id=1472, 1284.8pt x 767.86
+
+[91 <./imagenes/SegundaIteracion/detallesVenta.png>]
+<imagenes/SegundaIteracion/devolucionHechaVenta.png, id=1512, 1284.8pt x 767.86
 874pt>
 File: imagenes/SegundaIteracion/devolucionHechaVenta.png Graphic file (type png
 )
 <use imagenes/SegundaIteracion/devolucionHechaVenta.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/devolucionHechaVenta.png  us
-ed on input line 254.
+ed on input line 280.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
-<imagenes/SegundaIteracion/detallesPrestamo.png, id=1473, 1284.8pt x 767.86874p
+<imagenes/SegundaIteracion/detallesPrestamo.png, id=1513, 1284.8pt x 767.86874p
 t>
 File: imagenes/SegundaIteracion/detallesPrestamo.png Graphic file (type png)
 <use imagenes/SegundaIteracion/detallesPrestamo.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/detallesPrestamo.png  used o
-n input line 266.
+n input line 292.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
- [91 <./imagenes/SegundaIteracion/devolucionVenta.png> <./imagenes/SegundaItera
+ [92 <./imagenes/SegundaIteracion/devolucionVenta.png> <./imagenes/SegundaItera
 cion/devolucionHechaVenta.png>]
-<imagenes/SegundaIteracion/compraPrestamo.png, id=1481, 1284.8pt x 767.86874pt>
+<imagenes/SegundaIteracion/compraPrestamo.png, id=1520, 1284.8pt x 767.86874pt>
 
 File: imagenes/SegundaIteracion/compraPrestamo.png Graphic file (type png)
 <use imagenes/SegundaIteracion/compraPrestamo.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/compraPrestamo.png  used on 
-input line 275.
+input line 301.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
- [92 <./imagenes/SegundaIteracion/detallesPrestamo.png> <./imagenes/SegundaIter
+ [93 <./imagenes/SegundaIteracion/detallesPrestamo.png> <./imagenes/SegundaIter
 acion/compraPrestamo.png>]
-<imagenes/SegundaIteracion/detallesDevolucion.png, id=1488, 1284.8pt x 767.8687
+<imagenes/SegundaIteracion/detallesDevolucion.png, id=1527, 1284.8pt x 767.8687
 4pt>
 File: imagenes/SegundaIteracion/detallesDevolucion.png Graphic file (type png)
 <use imagenes/SegundaIteracion/detallesDevolucion.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/detallesDevolucion.png  used
- on input line 288.
+ on input line 314.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
-<imagenes/SegundaIteracion/tallasMultiples.png, id=1489, 1284.8pt x 767.86874pt
+<imagenes/SegundaIteracion/tallasMultiples.png, id=1528, 1284.8pt x 767.86874pt
 >
 File: imagenes/SegundaIteracion/tallasMultiples.png Graphic file (type png)
 <use imagenes/SegundaIteracion/tallasMultiples.png>
 Package pdftex.def Info: imagenes/SegundaIteracion/tallasMultiples.png  used on
- input line 299.
+ input line 325.
 (pdftex.def)             Requested size: 251.9989pt x 150.60669pt.
- [93 <./imagenes/SegundaIteracion/detallesDevolucion.png> <./imagenes/SegundaIt
-eracion/tallasMultiples.png>]
-<imagenes/TerceraIteracion/graficosMensual.png, id=1497, 1288.815pt x 726.715pt
+ [94 <./imagenes/SegundaIteracion/detallesDevolucion.png> <./imagenes/SegundaIt
+eracion/tallasMultiples.png>] [95]
+<imagenes/TerceraIteracion/graficosMensual.png, id=1541, 1288.815pt x 726.715pt
 >
 File: imagenes/TerceraIteracion/graficosMensual.png Graphic file (type png)
 <use imagenes/TerceraIteracion/graficosMensual.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/graficosMensual.png  used on
- input line 337.
+ input line 385.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [94]
-<imagenes/TerceraIteracion/graficosAnual.png, id=1502, 1288.815pt x 726.715pt>
+ [96]
+<imagenes/TerceraIteracion/graficosAnual.png, id=1546, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/graficosAnual.png Graphic file (type png)
 <use imagenes/TerceraIteracion/graficosAnual.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/graficosAnual.png  used on i
-nput line 346.
+nput line 394.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [95 <./imagenes/TerceraIteracion/graficosMensual.png> <./imagenes/TerceraItera
+ [97 <./imagenes/TerceraIteracion/graficosMensual.png> <./imagenes/TerceraItera
 cion/graficosAnual.png>]
-<imagenes/TerceraIteracion/ColorsBlue.png, id=1509, 461.725pt x 696.6025pt>
+<imagenes/TerceraIteracion/ColorsBlue.png, id=1554, 461.725pt x 696.6025pt>
 File: imagenes/TerceraIteracion/ColorsBlue.png Graphic file (type png)
 <use imagenes/TerceraIteracion/ColorsBlue.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/ColorsBlue.png  used on inpu
-t line 379.
+t line 427.
 (pdftex.def)             Requested size: 118.80066pt x 179.23099pt.
-<imagenes/TerceraIteracion/ColorsYellow.png, id=1510, 460.72125pt x 190.7125pt>
+<imagenes/TerceraIteracion/ColorsYellow.png, id=1555, 460.72125pt x 190.7125pt>
 
 File: imagenes/TerceraIteracion/ColorsYellow.png Graphic file (type png)
 <use imagenes/TerceraIteracion/ColorsYellow.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/ColorsYellow.png  used on in
-put line 388.
+put line 436.
 (pdftex.def)             Requested size: 118.80066pt x 49.17667pt.
-
-[96 <./imagenes/TerceraIteracion/ColorsBlue.png> <./imagenes/TerceraIteracion/C
-olorsYellow.png>]
-<imagenes/TerceraIteracion/login.png, id=1515, 1288.815pt x 726.715pt>
+ [98 <./imagenes/TerceraIteracion/ColorsBlue.png> <./imagenes/TerceraIteracion/
+ColorsYellow.png>]
+<imagenes/TerceraIteracion/login.png, id=1560, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/login.png Graphic file (type png)
 <use imagenes/TerceraIteracion/login.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/login.png  used on input lin
-e 403.
+e 451.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-<imagenes/TerceraIteracion/logout.png, id=1516, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/logout.png, id=1561, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/logout.png Graphic file (type png)
 <use imagenes/TerceraIteracion/logout.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/logout.png  used on input li
-ne 411.
+ne 459.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [97 <./imagenes/TerceraIteracion/login.png> <./imagenes/TerceraIteracion/logou
+ [99 <./imagenes/TerceraIteracion/login.png> <./imagenes/TerceraIteracion/logou
 t.png>]
-<imagenes/TerceraIteracion/mainPage.png, id=1526, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/mainPage.png, id=1570, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/mainPage.png Graphic file (type png)
 <use imagenes/TerceraIteracion/mainPage.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/mainPage.png  used on input 
-line 423.
+line 471.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [98 <./imagenes/TerceraIteracion/mainPage.png>]
-<imagenes/TerceraIteracion/nuevaVenta.png, id=1534, 1288.815pt x 726.715pt>
+ [100 <./imagenes/TerceraIteracion/mainPage.png>]
+<imagenes/TerceraIteracion/nuevaVenta.png, id=1577, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/nuevaVenta.png Graphic file (type png)
 <use imagenes/TerceraIteracion/nuevaVenta.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/nuevaVenta.png  used on inpu
-t line 435.
+t line 483.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-<imagenes/TerceraIteracion/nuevoPrestamo.png, id=1535, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/nuevoPrestamo.png, id=1578, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/nuevoPrestamo.png Graphic file (type png)
 <use imagenes/TerceraIteracion/nuevoPrestamo.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/nuevoPrestamo.png  used on i
-nput line 441.
+nput line 489.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-
-[99 <./imagenes/TerceraIteracion/nuevaVenta.png> <./imagenes/TerceraIteracion/n
-uevoPrestamo.png>]
-<imagenes/TerceraIteracion/clientView.png, id=1542, 1288.815pt x 726.715pt>
+ [101 <./imagenes/TerceraIteracion/nuevaVenta.png> <./imagenes/TerceraIteracion
+/nuevoPrestamo.png>]
+<imagenes/TerceraIteracion/clientView.png, id=1585, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/clientView.png Graphic file (type png)
 <use imagenes/TerceraIteracion/clientView.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/clientView.png  used on inpu
-t line 457.
+t line 505.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-<imagenes/TerceraIteracion/clientDetails.png, id=1543, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/clientDetails.png, id=1586, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/clientDetails.png Graphic file (type png)
 <use imagenes/TerceraIteracion/clientDetails.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/clientDetails.png  used on i
-nput line 465.
+nput line 513.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [100 <./imagenes/TerceraIteracion/clientView.png>]
-<imagenes/TerceraIteracion/clientEdit.png, id=1550, 1288.815pt x 726.715pt>
+ [102 <./imagenes/TerceraIteracion/clientView.png>]
+<imagenes/TerceraIteracion/clientEdit.png, id=1593, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/clientEdit.png Graphic file (type png)
 <use imagenes/TerceraIteracion/clientEdit.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/clientEdit.png  used on inpu
-t line 471.
+t line 519.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-<imagenes/TerceraIteracion/newClient.png, id=1551, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/newClient.png, id=1594, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/newClient.png Graphic file (type png)
 <use imagenes/TerceraIteracion/newClient.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/newClient.png  used on input
- line 477.
+ line 525.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [101 <./imagenes/TerceraIteracion/clientDetails.png> <./imagenes/TerceraIterac
+ [103 <./imagenes/TerceraIteracion/clientDetails.png> <./imagenes/TerceraIterac
 ion/clientEdit.png> <./imagenes/TerceraIteracion/newClient.png>]
-<imagenes/TerceraIteracion/categoryView.png, id=1559, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/categoryView.png, id=1603, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/categoryView.png Graphic file (type png)
 <use imagenes/TerceraIteracion/categoryView.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/categoryView.png  used on in
-put line 491.
+put line 539.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-<imagenes/TerceraIteracion/categoryEdit.png, id=1560, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/categoryEdit.png, id=1604, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/categoryEdit.png Graphic file (type png)
 <use imagenes/TerceraIteracion/categoryEdit.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/categoryEdit.png  used on in
-put line 497.
+put line 545.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-<imagenes/TerceraIteracion/newCategory.png, id=1561, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/newCategory.png, id=1605, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/newCategory.png Graphic file (type png)
 <use imagenes/TerceraIteracion/newCategory.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/newCategory.png  used on inp
-ut line 503.
+ut line 551.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [102 <./imagenes/TerceraIteracion/categoryView.png> <./imagenes/TerceraIteraci
+ [104 <./imagenes/TerceraIteracion/categoryView.png> <./imagenes/TerceraIteraci
 on/categoryEdit.png>]
-<imagenes/TerceraIteracion/articleView.png, id=1569, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/articleView.png, id=1613, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/articleView.png Graphic file (type png)
 <use imagenes/TerceraIteracion/articleView.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/articleView.png  used on inp
-ut line 513.
+ut line 561.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-<imagenes/TerceraIteracion/articleDetails.png, id=1570, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/articleDetails.png, id=1614, 1288.815pt x 726.715pt>
 
 File: imagenes/TerceraIteracion/articleDetails.png Graphic file (type png)
 <use imagenes/TerceraIteracion/articleDetails.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/articleDetails.png  used on 
-input line 521.
+input line 569.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-
-[103 <./imagenes/TerceraIteracion/newCategory.png> <./imagenes/TerceraIteracion
-/articleView.png>]
-<imagenes/TerceraIteracion/articleEdit.png, id=1578, 1288.815pt x 726.715pt>
+ [105 <./imagenes/TerceraIteracion/newCategory.png> <./imagenes/TerceraIteracio
+n/articleView.png>]
+<imagenes/TerceraIteracion/articleEdit.png, id=1621, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/articleEdit.png Graphic file (type png)
 <use imagenes/TerceraIteracion/articleEdit.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/articleEdit.png  used on inp
-ut line 527.
+ut line 575.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-<imagenes/TerceraIteracion/newArticle.png, id=1579, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/newArticle.png, id=1622, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/newArticle.png Graphic file (type png)
 <use imagenes/TerceraIteracion/newArticle.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/newArticle.png  used on inpu
-t line 533.
+t line 581.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [104 <./imagenes/TerceraIteracion/articleDetails.png> <./imagenes/TerceraItera
+ [106 <./imagenes/TerceraIteracion/articleDetails.png> <./imagenes/TerceraItera
 cion/articleEdit.png> <./imagenes/TerceraIteracion/newArticle.png>]
-<imagenes/TerceraIteracion/stock.png, id=1587, 1288.815pt x 726.715pt>
+<imagenes/TerceraIteracion/stock.png, id=1630, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/stock.png Graphic file (type png)
 <use imagenes/TerceraIteracion/stock.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/stock.png  used on input lin
-e 543.
+e 591.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [105 <./imagenes/TerceraIteracion/stock.png>]
-<imagenes/TerceraIteracion/movementsView.png, id=1593, 1288.815pt x 726.715pt>
+ [107 <./imagenes/TerceraIteracion/stock.png>]
+<imagenes/TerceraIteracion/movementsView.png, id=1636, 1288.815pt x 726.715pt>
 File: imagenes/TerceraIteracion/movementsView.png Graphic file (type png)
 <use imagenes/TerceraIteracion/movementsView.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/movementsView.png  used on i
-nput line 557.
+nput line 605.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [106 <./imagenes/TerceraIteracion/movementsView.png>]
-<imagenes/TerceraIteracion/movementDetails.png, id=1600, 1288.815pt x 726.715pt
+ [108 <./imagenes/TerceraIteracion/movementsView.png>]
+<imagenes/TerceraIteracion/movementDetails.png, id=1643, 1288.815pt x 726.715pt
 >
 File: imagenes/TerceraIteracion/movementDetails.png Graphic file (type png)
 <use imagenes/TerceraIteracion/movementDetails.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/movementDetails.png  used on
- input line 569.
+ input line 617.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
- [107 <./imagenes/TerceraIteracion/movementDetails.png>]
+ [109 <./imagenes/TerceraIteracion/movementDetails.png>]
 File: imagenes/TerceraIteracion/graficosMensual.png Graphic file (type png)
 <use imagenes/TerceraIteracion/graficosMensual.png>
 Package pdftex.def Info: imagenes/TerceraIteracion/graficosMensual.png  used on
- input line 581.
+ input line 629.
 (pdftex.def)             Requested size: 251.9989pt x 142.09142pt.
-) (./capitulos/BDeImplementacion.tex [108]
+) (./capitulos/BDeImplementacion.tex [110]
 Cap\'{\i }tulo 8.
-<imagenes/clientBD.png, id=1611, 611.28375pt x 170.6375pt>
+<imagenes/clientBD.png, id=1655, 611.28375pt x 170.6375pt>
 File: imagenes/clientBD.png Graphic file (type png)
 <use imagenes/clientBD.png>
 Package pdftex.def Info: imagenes/clientBD.png  used on input line 15.
 (pdftex.def)             Requested size: 251.9989pt x 70.34456pt.
-[109
+[111
 
- <./imagenes/clientBD.png>] [110]
-<imagenes/imagenesDiagramas/diagramaBD.png, id=1622, 1284.8pt x 627.34375pt>
+ <./imagenes/clientBD.png>] [112]
+<imagenes/imagenesDiagramas/diagramaBD.png, id=1665, 1284.8pt x 627.34375pt>
 File: imagenes/imagenesDiagramas/diagramaBD.png Graphic file (type png)
 <use imagenes/imagenesDiagramas/diagramaBD.png>
 Package pdftex.def Info: imagenes/imagenesDiagramas/diagramaBD.png  used on inp
 ut line 48.
 (pdftex.def)             Requested size: 251.9989pt x 123.04468pt.
- [111 <./imagenes/imagenesDiagramas/diagramaBD.png>]
-<imagenes/imagenesDiagramas/diagramaClases.jpg, id=1628, 1003.75pt x 1467.4825p
+ [113 <./imagenes/imagenesDiagramas/diagramaBD.png>]
+<imagenes/imagenesDiagramas/diagramaClases.jpg, id=1672, 1003.75pt x 1467.4825p
 t>
 File: imagenes/imagenesDiagramas/diagramaClases.jpg Graphic file (type jpg)
 <use imagenes/imagenesDiagramas/diagramaClases.jpg>
@@ -1698,13 +1697,13 @@ Overfull \hbox (36.0022pt too wide) in paragraph at lines 61--62
 Overfull \vbox (3.89935pt too high) has occurred while \output is active []
 
 
-[112 <./imagenes/imagenesDiagramas/diagramaClases.jpg>] [113]
+[114 <./imagenes/imagenesDiagramas/diagramaClases.jpg>] [115]
 Overfull \hbox (1.62418pt too wide) in paragraph at lines 98--99
 \OT1/cmr/m/n/10.95 yo nom-bre con-ten-ga la ca-de-na de ca-rac-te-res pro-por-c
 io-na-da por par^^Same-
  []
 
-[114]
+[116]
 Overfull \hbox (5.73715pt too wide) in paragraph at lines 111--112
 []\OT1/cmr/bx/n/10.95 incrementQuantity()\OT1/cmr/m/n/10.95 : In-cre-men-ta la 
 can-ti-dad se-lec-cio-na-da del art^^S^^Pcu-
@@ -1716,63 +1715,67 @@ Overfull \hbox (11.20454pt too wide) in paragraph at lines 112--113
 can-ti-dad se-lec-cio-na-da del art^^S^^Pcu-
  []
 
-[115]
+[117]
 Overfull \hbox (2.06413pt too wide) in paragraph at lines 132--133
 []\OT1/cmr/bx/n/10.95 addClientToDatabase(String na-me, String pho-ne, String c
 om-
  []
 
-[116] [117] [118] [119]
+[118] [119] [120] [121]
 Overfull \hbox (9.23457pt too wide) in paragraph at lines 264--265
 []\OT1/cmr/bx/n/10.95 getArticuloNombre(int ar-ticu-loId)\OT1/cmr/m/n/10.95 : O
 b-tie-ne el nom-bre de un art^^S^^Pcu-
  []
 
-[120] [121]) (./capitulos/Anexo1.tex [122]
+[122] [123]) (./capitulos/conclusion.tex [124]
+Cap\'{\i }tulo 9.
+[125
+
+] [126]) (./capitulos/Anexo1.tex [127]
 Ap\'{e}ndice A.
 
 Underfull \hbox (badness 8132) in paragraph at lines 47--47
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce su
  []
 
-[123
+[128
 
 ]
 Underfull \hbox (badness 2503) in paragraph at lines 110--110
 []|\OT1/cmr/m/n/10.95 Encargado: So-li-ci-ta cie-rre
  []
 
-[124]
+[129]
 Underfull \hbox (badness 2221) in paragraph at lines 173--174
 []|\OT1/cmr/m/n/10.95 Solicitar da-tos del nue-vo
  []
 
-[125] [126] [127] [128]
+[130] [131] [132] [133]
 Underfull \hbox (badness 10000) in paragraph at lines 433--433
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce el
  []
 
-[129] [130] [131] [132]
+[134] [135] [136] [137]
 Underfull \hbox (badness 4927) in paragraph at lines 692--692
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce los
  []
 
-[133]
+[138]
 Underfull \hbox (badness 4927) in paragraph at lines 766--766
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce los
  []
 
-[134]
+[139]
 Underfull \hbox (badness 1005) in paragraph at lines 834--835
 []|\OT1/cmr/m/n/10.95 Verifica que el clien-te no
  []
 
-[135] [136] [137]
+[140] [141] [142]
 Underfull \hbox (badness 5696) in paragraph at lines 1024--1024
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce un
  []
 
-[138] [139]
+[143] [144]
 Underfull \hbox (badness 4927) in paragraph at lines 1156--1156
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce los
  []
@@ -1796,7 +1799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1162--1163
 []|\OT1/cmr/m/n/10.95 include []actualizaci^^SonIn-
  []
 
-[140]
+[145]
 Underfull \hbox (badness 4927) in paragraph at lines 1226--1226
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce los
  []
@@ -1811,7 +1814,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1230--1231
 []|\OT1/cmr/m/n/10.95 include []actualizaci^^SonIn-
  []
 
-[141]
+[146]
 Underfull \hbox (badness 4927) in paragraph at lines 1296--1296
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce los
  []
@@ -1821,17 +1824,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1300--1301
 []|\OT1/cmr/m/n/10.95 include []actualizaci^^SonIn-
  []
 
-[142]
+[147]
 Underfull \hbox (badness 10000) in paragraph at lines 1369--1370
 []|\OT1/cmr/m/n/10.95 include []actualizaci^^SonIn-
  []
 
-[143] [144] [145]
+[148] [149] [150]
 Underfull \hbox (badness 5331) in paragraph at lines 1558--1559
 []|\OT1/cmr/m/n/10.95 Muestra los mo-vi-mien-tos
  []
 
-[146]
+[151]
 Underfull \hbox (badness 1297) in paragraph at lines 1620--1620
 []|\OT1/cmr/m/n/10.95 Encargado: In-tro-du-ce una
  []
@@ -1841,7 +1844,7 @@ Underfull \hbox (badness 5331) in paragraph at lines 1622--1623
 []|\OT1/cmr/m/n/10.95 Muestra los mo-vi-mien-tos
  []
 
-[147]
+[152]
 Underfull \hbox (badness 10000) in paragraph at lines 1684--1684
 []|\OT1/cmr/m/n/10.95 Encargado: Iden-ti-fi-ca el
  []
@@ -1866,7 +1869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1694--1695
 []|\OT1/cmr/m/n/10.95 include []actualizaci^^SonIn-
  []
 
-[148] [149] [150]) (./capitulos/Anexo2.tex
+[153] [154] [155]) (./capitulos/Anexo2.tex
 Ap\'{e}ndice B.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
@@ -1884,10 +1887,10 @@ ype jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/InicioCierre/cierreSesión.
 jpg  used on input line 21.
 (pdftex.def)             Requested size: 360.0pt x 157.76013pt.
-[151
+[156
 
 ]
-<imagenes/imagenesDiagramas/Articulos/nuevoArtículo.jpg, id=1822, 817.0525pt x
+<imagenes/imagenesDiagramas/Articulos/nuevoArtículo.jpg, id=1877, 817.0525pt x
  327.2225pt>
 File: imagenes/imagenesDiagramas/Articulos/nuevoArtículo.jpg Graphic file (typ
 e jpg)
@@ -1895,7 +1898,7 @@ e jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/nuevoArtículo.jp
 g  used on input line 32.
 (pdftex.def)             Requested size: 360.0pt x 144.17805pt.
-<imagenes/imagenesDiagramas/Articulos/editarArtículo.jpg, id=1823, 651.43375pt
+<imagenes/imagenesDiagramas/Articulos/editarArtículo.jpg, id=1878, 651.43375pt
  x 327.2225pt>
 File: imagenes/imagenesDiagramas/Articulos/editarArtículo.jpg Graphic file (ty
 pe jpg)
@@ -1903,8 +1906,8 @@ pe jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/editarArtículo.j
 pg  used on input line 41.
 (pdftex.def)             Requested size: 360.0pt x 180.83672pt.
- [152 <./imagenes/imagenesDiagramas/Articulos/nuevoArtículo.jpg>]
-<imagenes/imagenesDiagramas/Articulos/eliminarArtículo.jpg, id=1830, 485.815pt
+ [157 <./imagenes/imagenesDiagramas/Articulos/nuevoArtículo.jpg>]
+<imagenes/imagenesDiagramas/Articulos/eliminarArtículo.jpg, id=1886, 485.815pt
  x 327.2225pt>
 File: imagenes/imagenesDiagramas/Articulos/eliminarArtículo.jpg Graphic file (
 type jpg)
@@ -1912,7 +1915,7 @@ type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/eliminarArtículo
 .jpg  used on input line 50.
 (pdftex.def)             Requested size: 360.0pt x 242.47539pt.
-<imagenes/imagenesDiagramas/Articulos/visualizarDatosArtículo.jpg, id=1831, 48
+<imagenes/imagenesDiagramas/Articulos/visualizarDatosArtículo.jpg, id=1887, 48
 3.8075pt x 337.26pt>
 File: imagenes/imagenesDiagramas/Articulos/visualizarDatosArtículo.jpg Graphic
  file (type jpg)
@@ -1921,9 +1924,9 @@ Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/visualizarDatosAr
 tículo.jpg  used on input line 59.
 (pdftex.def)             Requested size: 360.0pt x 250.96309pt.
 
-[153 <./imagenes/imagenesDiagramas/Articulos/editarArtículo.jpg> <./imagenes/i
+[158 <./imagenes/imagenesDiagramas/Articulos/editarArtículo.jpg> <./imagenes/i
 magenesDiagramas/Articulos/eliminarArtículo.jpg>]
-<imagenes/imagenesDiagramas/Articulos/buscarArtículo.jpg, id=1838, 485.815pt x
+<imagenes/imagenesDiagramas/Articulos/buscarArtículo.jpg, id=1895, 485.815pt x
  327.2225pt>
 File: imagenes/imagenesDiagramas/Articulos/buscarArtículo.jpg Graphic file (ty
 pe jpg)
@@ -1931,8 +1934,8 @@ pe jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/buscarArtículo.j
 pg  used on input line 68.
 (pdftex.def)             Requested size: 360.0pt x 242.47539pt.
- [154 <./imagenes/imagenesDiagramas/Articulos/visualizarDatosArtículo.jpg>]
-<imagenes/imagenesDiagramas/Articulos/categorizarArtículos.jpg, id=1844, 614.2
+ [159 <./imagenes/imagenesDiagramas/Articulos/visualizarDatosArtículo.jpg>]
+<imagenes/imagenesDiagramas/Articulos/categorizarArtículos.jpg, id=1901, 614.2
 95pt x 327.2225pt>
 File: imagenes/imagenesDiagramas/Articulos/categorizarArtículos.jpg Graphic fi
 le (type jpg)
@@ -1940,7 +1943,7 @@ le (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/categorizarArtíc
 ulos.jpg  used on input line 77.
 (pdftex.def)             Requested size: 360.0pt x 191.7664pt.
-<imagenes/imagenesDiagramas/Articulos/visualizarListaArtículos.jpg, id=1845, 4
+<imagenes/imagenesDiagramas/Articulos/visualizarListaArtículos.jpg, id=1902, 4
 08.52625pt x 163.61125pt>
 File: imagenes/imagenesDiagramas/Articulos/visualizarListaArtículos.jpg Graphi
 c file (type jpg)
@@ -1948,9 +1951,9 @@ c file (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/visualizarListaAr
 tículos.jpg  used on input line 86.
 (pdftex.def)             Requested size: 360.0pt x 144.18555pt.
- [155 <./imagenes/imagenesDiagramas/Articulos/buscarArtículo.jpg> <./imagenes/
+ [160 <./imagenes/imagenesDiagramas/Articulos/buscarArtículo.jpg> <./imagenes/
 imagenesDiagramas/Articulos/categorizarArtículos.jpg>]
-<imagenes/imagenesDiagramas/Articulos/actualizarInventario.jpg, id=1852, 562.1p
+<imagenes/imagenesDiagramas/Articulos/actualizarInventario.jpg, id=1909, 562.1p
 t x 222.8325pt>
 File: imagenes/imagenesDiagramas/Articulos/actualizarInventario.jpg Graphic fil
 e (type jpg)
@@ -1958,7 +1961,7 @@ e (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/actualizarInventa
 rio.jpg  used on input line 97.
 (pdftex.def)             Requested size: 360.0pt x 142.71431pt.
-<imagenes/imagenesDiagramas/Articulos/visualizarListaRenovación.jpg, id=1853, 
+<imagenes/imagenesDiagramas/Articulos/visualizarListaRenovación.jpg, id=1910, 
 396.48125pt x 163.61125pt>
 File: imagenes/imagenesDiagramas/Articulos/visualizarListaRenovación.jpg Graph
 ic file (type jpg)
@@ -1966,9 +1969,9 @@ ic file (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Articulos/visualizarListaRe
 novación.jpg  used on input line 106.
 (pdftex.def)             Requested size: 360.0pt x 148.55942pt.
- [156 <./imagenes/imagenesDiagramas/Articulos/visualizarListaArtículos.jpg> <.
+ [161 <./imagenes/imagenesDiagramas/Articulos/visualizarListaArtículos.jpg> <.
 /imagenes/imagenesDiagramas/Articulos/actualizarInventario.jpg>]
-<imagenes/imagenesDiagramas/Cliente/nuevoCliente.jpg, id=1860, 797.98125pt x 32
+<imagenes/imagenesDiagramas/Cliente/nuevoCliente.jpg, id=1917, 797.98125pt x 32
 7.2225pt>
 File: imagenes/imagenesDiagramas/Cliente/nuevoCliente.jpg Graphic file (type jp
 g)
@@ -1976,7 +1979,7 @@ g)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Cliente/nuevoCliente.jpg  u
 sed on input line 117.
 (pdftex.def)             Requested size: 360.0pt x 147.62323pt.
-<imagenes/imagenesDiagramas/Cliente/editarCliente.jpg, id=1861, 647.41875pt x 3
+<imagenes/imagenesDiagramas/Cliente/editarCliente.jpg, id=1918, 647.41875pt x 3
 27.2225pt>
 File: imagenes/imagenesDiagramas/Cliente/editarCliente.jpg Graphic file (type j
 pg)
@@ -1984,9 +1987,9 @@ pg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Cliente/editarCliente.jpg  
 used on input line 126.
 (pdftex.def)             Requested size: 360.0pt x 181.95515pt.
- [157 <./imagenes/imagenesDiagramas/Articulos/visualizarListaRenovación.jpg> <
+ [162 <./imagenes/imagenesDiagramas/Articulos/visualizarListaRenovación.jpg> <
 ./imagenes/imagenesDiagramas/Cliente/nuevoCliente.jpg>]
-<imagenes/imagenesDiagramas/Cliente/eliminarCliente.jpg, id=1869, 485.815pt x 3
+<imagenes/imagenesDiagramas/Cliente/eliminarCliente.jpg, id=1925, 485.815pt x 3
 27.2225pt>
 File: imagenes/imagenesDiagramas/Cliente/eliminarCliente.jpg Graphic file (type
  jpg)
@@ -1994,7 +1997,7 @@ File: imagenes/imagenesDiagramas/Cliente/eliminarCliente.jpg Graphic file (type
 Package pdftex.def Info: imagenes/imagenesDiagramas/Cliente/eliminarCliente.jpg
   used on input line 135.
 (pdftex.def)             Requested size: 360.0pt x 242.47539pt.
-<imagenes/imagenesDiagramas/Cliente/visualizarDatosCliente.jpg, id=1870, 483.80
+<imagenes/imagenesDiagramas/Cliente/visualizarDatosCliente.jpg, id=1926, 483.80
 75pt x 327.2225pt>
 File: imagenes/imagenesDiagramas/Cliente/visualizarDatosCliente.jpg Graphic fil
 e (type jpg)
@@ -2002,9 +2005,9 @@ e (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Cliente/visualizarDatosClie
 nte.jpg  used on input line 144.
 (pdftex.def)             Requested size: 360.0pt x 243.49396pt.
- [158 <./imagenes/imagenesDiagramas/Cliente/editarCliente.jpg> <./imagenes/imag
+ [163 <./imagenes/imagenesDiagramas/Cliente/editarCliente.jpg> <./imagenes/imag
 enesDiagramas/Cliente/eliminarCliente.jpg>]
-<imagenes/imagenesDiagramas/Cliente/visualizarListaClientes.jpg, id=1877, 408.5
+<imagenes/imagenesDiagramas/Cliente/visualizarListaClientes.jpg, id=1934, 408.5
 2625pt x 163.61125pt>
 File: imagenes/imagenesDiagramas/Cliente/visualizarListaClientes.jpg Graphic fi
 le (type jpg)
@@ -2012,7 +2015,7 @@ le (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Cliente/visualizarListaClie
 ntes.jpg  used on input line 153.
 (pdftex.def)             Requested size: 360.0pt x 144.18555pt.
-<imagenes/imagenesDiagramas/Cliente/buscarClientes.jpg, id=1878, 488.82625pt x 
+<imagenes/imagenesDiagramas/Cliente/buscarClientes.jpg, id=1935, 488.82625pt x 
 327.2225pt>
 File: imagenes/imagenesDiagramas/Cliente/buscarClientes.jpg Graphic file (type 
 jpg)
@@ -2020,9 +2023,9 @@ jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Cliente/buscarClientes.jpg 
  used on input line 162.
 (pdftex.def)             Requested size: 360.0pt x 240.98747pt.
- [159 <./imagenes/imagenesDiagramas/Cliente/visualizarDatosCliente.jpg> <./imag
+ [164 <./imagenes/imagenesDiagramas/Cliente/visualizarDatosCliente.jpg> <./imag
 enes/imagenesDiagramas/Cliente/visualizarListaClientes.jpg>]
-<imagenes/imagenesDiagramas/Cliente/filtrarClientes.jpg, id=1886, 432.61626pt x
+<imagenes/imagenesDiagramas/Cliente/filtrarClientes.jpg, id=1942, 432.61626pt x
  196.735pt>
 File: imagenes/imagenesDiagramas/Cliente/filtrarClientes.jpg Graphic file (type
  jpg)
@@ -2030,7 +2033,7 @@ File: imagenes/imagenesDiagramas/Cliente/filtrarClientes.jpg Graphic file (type
 Package pdftex.def Info: imagenes/imagenesDiagramas/Cliente/filtrarClientes.jpg
   used on input line 171.
 (pdftex.def)             Requested size: 360.0pt x 163.71927pt.
-<imagenes/imagenesDiagramas/Movimientos/nuevaVenta.jpg, id=1887, 545.03625pt x 
+<imagenes/imagenesDiagramas/Movimientos/nuevaVenta.jpg, id=1943, 545.03625pt x 
 383.4325pt>
 File: imagenes/imagenesDiagramas/Movimientos/nuevaVenta.jpg Graphic file (type 
 jpg)
@@ -2038,9 +2041,9 @@ jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/nuevaVenta.jpg 
  used on input line 182.
 (pdftex.def)             Requested size: 360.0pt x 253.25931pt.
- [160 <./imagenes/imagenesDiagramas/Cliente/buscarClientes.jpg> <./imagenes/ima
+ [165 <./imagenes/imagenesDiagramas/Cliente/buscarClientes.jpg> <./imagenes/ima
 genesDiagramas/Cliente/filtrarClientes.jpg>]
-<imagenes/imagenesDiagramas/Movimientos/nuevoPréstamo.jpg, id=1894, 551.05875p
+<imagenes/imagenesDiagramas/Movimientos/nuevoPréstamo.jpg, id=1950, 551.05875p
 t x 383.4325pt>
 File: imagenes/imagenesDiagramas/Movimientos/nuevoPréstamo.jpg Graphic file (t
 ype jpg)
@@ -2048,8 +2051,8 @@ ype jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/nuevoPréstamo.
 jpg  used on input line 191.
 (pdftex.def)             Requested size: 360.0pt x 250.50362pt.
- [161 <./imagenes/imagenesDiagramas/Movimientos/nuevaVenta.jpg>]
-<imagenes/imagenesDiagramas/Movimientos/realizarDevolución.jpg, id=1900, 574.1
+ [166 <./imagenes/imagenesDiagramas/Movimientos/nuevaVenta.jpg>]
+<imagenes/imagenesDiagramas/Movimientos/realizarDevolución.jpg, id=1956, 574.1
 45pt x 332.24126pt>
 File: imagenes/imagenesDiagramas/Movimientos/realizarDevolución.jpg Graphic fi
 le (type jpg)
@@ -2057,7 +2060,7 @@ le (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/realizarDevoluc
 ión.jpg  used on input line 200.
 (pdftex.def)             Requested size: 360.0pt x 208.32452pt.
-<imagenes/imagenesDiagramas/Movimientos/eliminarMovimiento.jpg, id=1901, 362.35
+<imagenes/imagenesDiagramas/Movimientos/eliminarMovimiento.jpg, id=1957, 362.35
 374pt x 264.99pt>
 File: imagenes/imagenesDiagramas/Movimientos/eliminarMovimiento.jpg Graphic fil
 e (type jpg)
@@ -2065,9 +2068,9 @@ e (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/eliminarMovimie
 nto.jpg  used on input line 209.
 (pdftex.def)             Requested size: 360.0pt x 263.27493pt.
- [162 <./imagenes/imagenesDiagramas/Movimientos/nuevoPréstamo.jpg> <./imagenes
+ [167 <./imagenes/imagenesDiagramas/Movimientos/nuevoPréstamo.jpg> <./imagenes
 /imagenesDiagramas/Movimientos/realizarDevolución.jpg>]
-<imagenes/imagenesDiagramas/Movimientos/visualizarDatosMovimiento.jpg, id=1908,
+<imagenes/imagenesDiagramas/Movimientos/visualizarDatosMovimiento.jpg, id=1964,
  483.8075pt x 327.2225pt>
 File: imagenes/imagenesDiagramas/Movimientos/visualizarDatosMovimiento.jpg Grap
 hic file (type jpg)
@@ -2075,8 +2078,8 @@ hic file (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/visualizarDatos
 Movimiento.jpg  used on input line 218.
 (pdftex.def)             Requested size: 360.0pt x 243.49396pt.
- [163 <./imagenes/imagenesDiagramas/Movimientos/eliminarMovimiento.jpg>]
-<imagenes/imagenesDiagramas/Movimientos/visualizarListaMovimientos.jpg, id=1915
+ [168 <./imagenes/imagenesDiagramas/Movimientos/eliminarMovimiento.jpg>]
+<imagenes/imagenesDiagramas/Movimientos/visualizarListaMovimientos.jpg, id=1970
 , 439.6425pt x 163.61125pt>
 File: imagenes/imagenesDiagramas/Movimientos/visualizarListaMovimientos.jpg Gra
 phic file (type jpg)
@@ -2084,7 +2087,7 @@ phic file (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/visualizarLista
 Movimientos.jpg  used on input line 227.
 (pdftex.def)             Requested size: 360.0pt x 133.97734pt.
-<imagenes/imagenesDiagramas/Movimientos/filtrarMovimientos.jpg, id=1916, 640.39
+<imagenes/imagenesDiagramas/Movimientos/filtrarMovimientos.jpg, id=1971, 640.39
 25pt x 339.2675pt>
 File: imagenes/imagenesDiagramas/Movimientos/filtrarMovimientos.jpg Graphic fil
 e (type jpg)
@@ -2092,9 +2095,9 @@ e (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/filtrarMovimien
 tos.jpg  used on input line 236.
 (pdftex.def)             Requested size: 360.0pt x 190.7236pt.
- [164 <./imagenes/imagenesDiagramas/Movimientos/visualizarDatosMovimiento.jpg> 
+ [169 <./imagenes/imagenesDiagramas/Movimientos/visualizarDatosMovimiento.jpg> 
 <./imagenes/imagenesDiagramas/Movimientos/visualizarListaMovimientos.jpg>]
-<imagenes/imagenesDiagramas/Movimientos/buscarMovimientos.jpg, id=1923, 488.826
+<imagenes/imagenesDiagramas/Movimientos/buscarMovimientos.jpg, id=1979, 488.826
 25pt x 327.2225pt>
 File: imagenes/imagenesDiagramas/Movimientos/buscarMovimientos.jpg Graphic file
  (type jpg)
@@ -2102,7 +2105,7 @@ File: imagenes/imagenesDiagramas/Movimientos/buscarMovimientos.jpg Graphic file
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/buscarMovimient
 os.jpg  used on input line 245.
 (pdftex.def)             Requested size: 360.0pt x 240.98747pt.
-<imagenes/imagenesDiagramas/Movimientos/compraDesdePréstamo.jpg, id=1924, 678.
+<imagenes/imagenesDiagramas/Movimientos/compraDesdePréstamo.jpg, id=1980, 678.
 535pt x 437.635pt>
 File: imagenes/imagenesDiagramas/Movimientos/compraDesdePréstamo.jpg Graphic f
 ile (type jpg)
@@ -2110,9 +2113,9 @@ ile (type jpg)
 Package pdftex.def Info: imagenes/imagenesDiagramas/Movimientos/compraDesdePré
 stamo.jpg  used on input line 254.
 (pdftex.def)             Requested size: 360.0pt x 232.18584pt.
- [165 <./imagenes/imagenesDiagramas/Movimientos/filtrarMovimientos.jpg> <./imag
+ [170 <./imagenes/imagenesDiagramas/Movimientos/filtrarMovimientos.jpg> <./imag
 enes/imagenesDiagramas/Movimientos/buscarMovimientos.jpg>]
-<imagenes/imagenesDiagramas/Graficos/visualizarCajaDiaria.jpg, id=1931, 509.905
+<imagenes/imagenesDiagramas/Graficos/visualizarCajaDiaria.jpg, id=1987, 509.905
 pt x 195.73125pt>
 File: imagenes/imagenesDiagramas/Graficos/visualizarCajaDiaria.jpg Graphic file
  (type jpg)
@@ -2120,7 +2123,7 @@ File: imagenes/imagenesDiagramas/Graficos/visualizarCajaDiaria.jpg Graphic file
 Package pdftex.def Info: imagenes/imagenesDiagramas/Graficos/visualizarCajaDiar
 ia.jpg  used on input line 265.
 (pdftex.def)             Requested size: 360.0pt x 138.19661pt.
-<imagenes/imagenesDiagramas/Graficos/visualizarGráficos.jpg, id=1932, 383.4325
+<imagenes/imagenesDiagramas/Graficos/visualizarGráficos.jpg, id=1988, 383.4325
 pt x 203.76125pt>
 File: imagenes/imagenesDiagramas/Graficos/visualizarGráficos.jpg Graphic file 
 (type jpg)
@@ -2128,8 +2131,8 @@ File: imagenes/imagenesDiagramas/Graficos/visualizarGráficos.jpg Graphic file
 Package pdftex.def Info: imagenes/imagenesDiagramas/Graficos/visualizarGráfico
 s.jpg  used on input line 274.
 (pdftex.def)             Requested size: 360.0pt x 191.32106pt.
- [166 <./imagenes/imagenesDiagramas/Movimientos/compraDesdePréstamo.jpg> <./im
-agenes/imagenesDiagramas/Graficos/visualizarCajaDiaria.jpg>]) [167 <./imagenes/
+ [171 <./imagenes/imagenesDiagramas/Movimientos/compraDesdePréstamo.jpg> <./im
+agenes/imagenesDiagramas/Graficos/visualizarCajaDiaria.jpg>]) [172 <./imagenes/
 imagenesDiagramas/Graficos/visualizarGráficos.jpg>] (./proyecto.bbl
 Underfull \hbox (badness 3623) in paragraph at lines 14--29
 []\OT1/cmr/m/n/10.95 Autonomosyemprendedores.  (2024, 14 de Feb).  \OT1/cmr/m/i
@@ -2172,7 +2175,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--57
 ] -con [] -la [] -tecnologia /$[]
  []
 
-[168]) [169] (./proyecto.aux
+[173]) [174] (./proyecto.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
@@ -2180,13 +2183,13 @@ LaTeX Info: Redefining \% on input line 26.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `proyecto.out' has not changed.
-(rerunfilecheck)             Checksum: 222ADD72D17866BF257A42D980F527F7;17719.
+(rerunfilecheck)             Checksum: F60E25AFEA077C2E7CAF678BD375CAB5;18941.
  ) 
 Here is how much of TeX's memory you used:
- 15422 strings out of 478287
- 263922 string characters out of 5849289
- 566881 words of memory out of 5000000
- 32621 multiletter control sequences out of 15000+600000
+ 15448 strings out of 478287
+ 264335 string characters out of 5849289
+ 566940 words of memory out of 5000000
+ 32632 multiletter control sequences out of 15000+600000
  476650 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,17n,76p,1515b,681s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2201,10 +2204,10 @@ fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy1
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on proyecto.pdf (169 pages, 3656973 bytes).
+Output written on proyecto.pdf (174 pages, 3667351 bytes).
 PDF statistics:
- 2172 PDF objects out of 2487 (max. 8388607)
- 1805 compressed objects within 19 object streams
- 638 named destinations out of 1000 (max. 500000)
- 1252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2231 PDF objects out of 2487 (max. 8388607)
+ 1859 compressed objects within 19 object streams
+ 650 named destinations out of 1000 (max. 500000)
+ 1308 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,7 +11,7 @@ Además, se deberá de crear la base de datos en Supabase, el proyecto en Flutte
 
 Creando la aplicación en Flutter, se está asegurando el RNF2 - Compatibilidad. Flutter es una herramienta que permite programar en un lenguaje, Dart, y generar una aplicación compatible para cada sistema operativo (Android e IOS). 
 
-Para la autenticación  (login / logout), se va a utilizar el sistema de autenticación de Supabase de correo electrónico y contraseña. Para evitar que cualquier persona pueda crearse una cuenta, las credeciales las proporcionará el desarrollador al usuario. Esto permite controlar el acceso al sistema y, con ello, mejorar la seguridad de la información. 
+Para la autenticación  (login / logout), se va a utilizar el sistema de autenticación de Supabase de correo electrónico y contraseña. Para evitar que cualquier persona pueda crearse una cuenta, las credenciales las proporcionará el desarrollador al usuario. Esto permite controlar el acceso al sistema y, con ello, mejorar la seguridad de la información. 
 
 Además, Supabase dispone de "Auth policies" personalizables, lo que permite poner restricciones de acceso a la información de la base. Se pueden restringir ciertas operaciones y especificar aquellos roles que podrán hacer modificaciones en la base de datos. Esto permite proteger los datos almacenados en la base de datos, cumpliendo con el RNF1 - Seguridad. 
 
@@ -139,10 +139,36 @@ En esta pantalla se ven todos los artículos de una determinada categoría. Se p
 	\label{fig:appEditarArticulo}
 \end{figure}
 
+\subsection{Pruebas de funcionalidad}
+
+Para testear la implementación que se ha llevado a cabo, se han realizado una serie de pruebas de funcionalidad: 
+
+\begin{itemize}
+	\item Comprobación de acceso a la aplicación únicamente con las credenciales válidas. 
+	\item Comprobación de visualización de todos los clientes almacenados en la base de datos. 
+	\item Comprobación del funcionamiento de búsqueda por nombre del cliente. 
+	\item Comprobación del filtrado por deudas. 
+	\item Comprobación de visualización de los detalles del cliente. 
+	\item Comprobación de la edición de los datos del cliente. 
+	\item Comprobación de la creación de un nuevo cliente. 
+	\item Comprobación de la eliminación de un cliente existente. 
+	\item Comprobación de la visualización de las categorías existentes en la tienda. 
+	\item Comprobación de la creación de una nueva categoría en la tienda. 
+	\item Comprobación de la edición de una categoría existente. 
+	\item Comprobación de la visualización de los artículos vinculados con una categoría. 
+	\item Comprobación de la búsqueda de un artículo por nombre. 
+	\item Comprobación del filtrado de artículos según la subcategoría. 
+	\item Comprobación de la visualización de las características un artículo. 
+	\item Comprobación de la edición de las características de un artículo. 
+	\item Comprobación del registro de un nuevo artículo. 
+\end{itemize}
+
+
+
 
 \subsection{Revisión de la iteración}
 
-\subsubsection{Autenticacion}
+\subsubsection{Autenticación}
 
 El cliente probó el sistema de autenticación y le pareció correcto. 
 
@@ -301,6 +327,28 @@ En la iteración anterior, el cliente pidió que la gestión de las tallas de un
 	\label{fig:appPantallaDetallesDevolucion}
 \end{figure}
 
+
+\subsection{Pruebas de funcionalidad}
+
+Para testear la implementación que se ha llevado a cabo, se han realizado una serie de pruebas de funcionalidad: 
+
+\begin{itemize}
+	\item Comprobación de la creación de una nueva venta. Esto implica que se almacenen los parámetros correctos y los artículos de dicha venta se almacenen en su tabla correspondiente. 
+	\item Comprobación de la creación de un nuevo préstamo, prestando atención a que se cumplan sus características. 
+	\item Comprobación de la visualización de todos los movimientos almacenados en al base de datos. 
+	\item Comprobación de la eliminación de un movimiento. 
+	\item Comprobación de la búsqueda de un movimiento por cliente. 
+	\item Comprobación del filtrado de movimientos según su tipo. 
+	\item Comprobación de visualización de los detalles de un movimiento. 
+	\item Comprobación de la devolución total de una venta o préstamo. 
+	\item Comprobación de la modificación de la cartera de un cliente tras la creación, eliminación o devolución de un préstamo. 
+	\item Comprobación de la devolución parcial de una venta. 
+	\item Comprobación de la realización de una compra a partir de un préstamo. 
+	\item Comprobación de la navegación entre dos movimientos relacionados. 
+	\item Comprobación de la correcta implementación de las tallas de un artículo. 
+\end{itemize}
+
+
 \subsection{Revisión de la iteración}
 
 El cliente probó el sistema ideado para los movimientos y expresó que estaba conforme con la lógica de la implementación. Además, mostró gratitud por el cambio de las tallas que solicitó en la iteración anterior. 
@@ -446,7 +494,7 @@ Cada vez que se añade un nuevo movimiento, se manda una notificación mediante 
 
 \subsubsection{Pantalla de clientes}
 
-En esta pantalla, el buscador funciona de la misma forma que explicamos con anterioridad. A la derecha, podemos ver un icono de dinero que activa y desactiva un booleano para filtrar aquellos clientes que se encuentran en dinero negativo en la tienda. Addemás, en cada \textit{Card} de clientes con dinero positivo o negativo podemos ver una flecha. Esto se ha llevado a cabo como requisito que se añadió en la primera iteración. El cliente expresó que quería poder diferenciar el estado positivo o negativo del cliente no solamente con el color, sino también con algún símbolo, para aquellas personas que no diferencien los colores de forma correcta. Por tanto, se añadió una flecha hacia arriba o hacia abajo para ser más accesibles. 
+En esta pantalla, el buscador funciona de la misma forma que explicamos con anterioridad. A la derecha, podemos ver un icono de dinero que activa y desactiva un booleano para filtrar aquellos clientes que se encuentran en dinero negativo en la tienda. Además, en cada \textit{Card} de clientes con dinero positivo o negativo podemos ver una flecha. Esto se ha llevado a cabo como requisito que se añadió en la primera iteración. El cliente expresó que quería poder diferenciar el estado positivo o negativo del cliente no solamente con el color, sino también con algún símbolo, para aquellas personas que no diferencien los colores de forma correcta. Por tanto, se añadió una flecha hacia arriba o hacia abajo para ser más accesibles. 
 
 La parte central de la pantalla es un \textit{StreamBuilder} que reconstruye su contenido cada vez que hay algún \textit{insert}, \textit{update} o \textit{delete}. De esta forma, el contenido que se muestra en la pantalla de visualización de los clientes, está siempre actualizado. Además, escucha los \textit{ChangeNotifier} con el \textit{Consumer} para actualizar los datos monetarios del cliente que se vean afectados con los movimientos de la tienda. 
 
@@ -458,7 +506,7 @@ Para eliminar un cliente, no debe de estar vinculado a ningún movimiento. Si es
 	\caption{Pantalla de visualización de clientes.}
 \end{figure}
 
-Las tres pantallas siguientes son muy similares. La primera de ellas, la que muestra los detalles, son unos campos de texto inicializados a los valores almacenados en la base de datos y con la propiedad \textit{readonly}. La segunda pantalla, la pantalla de edición, tiene los mismos campos de texto inicializados a dichos valores, pero sin la propiedad \textit{readonly} para permitir modificar la información. Además, se comprueba que el número de teléfono sea correcto mediante una expresión regular. En la tercera pantalla, la pantalla de registro, los campos no están inicializados y se compueba que el nombre esté relleno mediante un \textit{validator}.  
+Las tres pantallas siguientes son muy similares. La primera de ellas, la que muestra los detalles, son unos campos de texto inicializados a los valores almacenados en la base de datos y con la propiedad \textit{readonly}. La segunda pantalla, la pantalla de edición, tiene los mismos campos de texto inicializados a dichos valores, pero sin la propiedad \textit{readonly} para permitir modificar la información. Además, se comprueba que el número de teléfono sea correcto mediante una expresión regular. En la tercera pantalla, la pantalla de registro, los campos no están inicializados y se comprueba que el nombre esté relleno mediante un \textit{validator}.  
 
 \begin{figure}[H]
 	\centering
@@ -514,7 +562,7 @@ Para eliminar un artículo, no debe de estar vinculado a ningún movimiento. Si 
 	\caption{Pantalla de visualización de los artículos de una categoría.}
 \end{figure}
 
-Las pantallas de visualización de los detalles de un artículo, editar o añadir son similares a las pantallas comentadas en el apartado de clientes. Al añadir un artículo, es obligatorio añadir mínimo una talla, se compueba mediante un \textit{validator}. 
+Las pantallas de visualización de los detalles de un artículo, editar o añadir son similares a las pantallas comentadas en el apartado de clientes. Al añadir un artículo, es obligatorio añadir mínimo una talla, se comprueba mediante un \textit{validator}. 
 
 \begin{figure}[H]
 	\centering
@@ -581,4 +629,17 @@ Esta pantalla muestra un resumen de las ganancias de forma mensual o anual, seg�
 	\includegraphics[width=0.7\textwidth]{imagenes/TerceraIteracion/graficosMensual.png}
 	\caption{Pantalla de gráficos en modo mensual.}
 \end{figure}
+
+\subsection{Pruebas de funcionalidad}
+
+Para testear la implementación que se ha llevado a cabo, se han realizado una serie de pruebas de funcionalidad: 
+
+\begin{itemize}
+	\item Comprobación de la representación de las ganancias del negocio en modo mensual. 
+	\item Comprobación de la representación de las ganancias del negocio en modo anual. 
+\end{itemize}
+
+\subsection{Revisión de la iteración}
+
+Tras terminar la iteración, se le mostró al usuario el resultado y estuvo contento con el cambio de interfaz y la representación de las gráficas. Le resultó sencillo navegar por la aplicación gracias al etiquetado superior y le resultó intuitiva para operar. Además, también agradeció que se hubiera mejorado la accesibilidad de la aplicación. 
 

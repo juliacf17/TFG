@@ -92,97 +92,104 @@
 \contentsline {subsubsection}{\numberline {7.1.2.10}Pantalla de visualizar los artículos de una categoría}{84}{subsubsection.7.1.2.10}%
 \contentsline {subsubsection}{\numberline {7.1.2.11}Pantalla de añadir un nuevo artículo a una categoría}{85}{subsubsection.7.1.2.11}%
 \contentsline {subsubsection}{\numberline {7.1.2.12}Pantalla de editar un artículo existente de una categoría}{85}{subsubsection.7.1.2.12}%
-\contentsline {subsection}{\numberline {7.1.3}Revisión de la iteración}{85}{subsection.7.1.3}%
-\contentsline {subsubsection}{\numberline {7.1.3.1}Autenticacion}{85}{subsubsection.7.1.3.1}%
-\contentsline {subsubsection}{\numberline {7.1.3.2}Gestión de clientes}{85}{subsubsection.7.1.3.2}%
-\contentsline {subsubsection}{\numberline {7.1.3.3}Gestión de artículos}{86}{subsubsection.7.1.3.3}%
-\contentsline {subsection}{\numberline {7.1.4}Plan para la próxima iteración}{86}{subsection.7.1.4}%
-\contentsline {section}{\numberline {7.2}Segunda iteración}{87}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Alcance de la iteración}{87}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Implementación}{87}{subsection.7.2.2}%
-\contentsline {subsubsection}{\numberline {7.2.2.1}Pantalla principal}{87}{subsubsection.7.2.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2.2}Pantalla de nueva venta}{87}{subsubsection.7.2.2.2}%
-\contentsline {subsubsection}{\numberline {7.2.2.3}Pantalla de nuevo préstamo}{88}{subsubsection.7.2.2.3}%
-\contentsline {subsubsection}{\numberline {7.2.2.4}Pantalla de visualización de movimientos}{89}{subsubsection.7.2.2.4}%
-\contentsline {subsubsection}{\numberline {7.2.2.5}Pantalla de detalles del movimiento}{90}{subsubsection.7.2.2.5}%
-\contentsline {subsubsection}{\numberline {7.2.2.6}Mejora de las tallas en artículos}{93}{subsubsection.7.2.2.6}%
-\contentsline {subsection}{\numberline {7.2.3}Revisión de la iteración}{94}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Plan para la próxima iteración}{94}{subsection.7.2.4}%
-\contentsline {section}{\numberline {7.3}Tercera iteración}{94}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Alcance de la iteración}{94}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Pantalla de gráficos}{94}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Mejora de la interfaz gráfica y la accesibilidad}{95}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Colores de la aplicación}{96}{subsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.3.4.1}Inicio y cierre de sesión}{97}{subsubsection.7.3.4.1}%
-\contentsline {subsubsection}{\numberline {7.3.4.2}Pantalla principal}{98}{subsubsection.7.3.4.2}%
-\contentsline {subsubsection}{\numberline {7.3.4.3}Pantalla de clientes}{100}{subsubsection.7.3.4.3}%
-\contentsline {subsubsection}{\numberline {7.3.4.4}Pantalla de artículos}{102}{subsubsection.7.3.4.4}%
-\contentsline {subsubsection}{\numberline {7.3.4.5}Pantalla de movimientos}{106}{subsubsection.7.3.4.5}%
-\contentsline {subsubsection}{\numberline {7.3.4.6}Pantalla de gráficos}{108}{subsubsection.7.3.4.6}%
-\contentsline {chapter}{\numberline {8}Base de datos e implementación}{109}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Creación y modificaciones de la base de datos}{109}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Creación de la base de datos}{109}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Tablas de la base de datos}{110}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Modificaciones intermedias de la base de datos}{111}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}Diagrama final del diseño de la base de datos}{111}{subsection.8.1.4}%
-\contentsline {section}{\numberline {8.2}Diagrama de clases}{111}{section.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.0.1}Common}{113}{subsubsection.8.2.0.1}%
-\contentsline {subsubsection}{\numberline {8.2.0.2}ChangeNotifier}{113}{subsubsection.8.2.0.2}%
-\contentsline {subsubsection}{\numberline {8.2.0.3}Main}{113}{subsubsection.8.2.0.3}%
-\contentsline {subsubsection}{\numberline {8.2.0.4}Login}{113}{subsubsection.8.2.0.4}%
-\contentsline {subsubsection}{\numberline {8.2.0.5}BottomNav}{113}{subsubsection.8.2.0.5}%
-\contentsline {subsubsection}{\numberline {8.2.0.6}Mainpage}{114}{subsubsection.8.2.0.6}%
-\contentsline {subsubsection}{\numberline {8.2.0.7}NewMovement}{114}{subsubsection.8.2.0.7}%
-\contentsline {subsubsection}{\numberline {8.2.0.8}ClientView}{115}{subsubsection.8.2.0.8}%
-\contentsline {subsubsection}{\numberline {8.2.0.9}ClientRegister}{116}{subsubsection.8.2.0.9}%
-\contentsline {subsubsection}{\numberline {8.2.0.10}ClientEdit}{116}{subsubsection.8.2.0.10}%
-\contentsline {subsubsection}{\numberline {8.2.0.11}ClientDetail}{116}{subsubsection.8.2.0.11}%
-\contentsline {subsubsection}{\numberline {8.2.0.12}CategoryView}{116}{subsubsection.8.2.0.12}%
-\contentsline {subsubsection}{\numberline {8.2.0.13}NewCategory}{117}{subsubsection.8.2.0.13}%
-\contentsline {subsubsection}{\numberline {8.2.0.14}EditCategory}{117}{subsubsection.8.2.0.14}%
-\contentsline {subsubsection}{\numberline {8.2.0.15}ArticleView}{117}{subsubsection.8.2.0.15}%
-\contentsline {subsubsection}{\numberline {8.2.0.16}NewArticle}{118}{subsubsection.8.2.0.16}%
-\contentsline {subsubsection}{\numberline {8.2.0.17}EditArticle}{118}{subsubsection.8.2.0.17}%
-\contentsline {subsubsection}{\numberline {8.2.0.18}ArticleDetails}{119}{subsubsection.8.2.0.18}%
-\contentsline {subsubsection}{\numberline {8.2.0.19}Stock}{119}{subsubsection.8.2.0.19}%
-\contentsline {subsubsection}{\numberline {8.2.0.20}MovimientosView}{119}{subsubsection.8.2.0.20}%
-\contentsline {subsubsection}{\numberline {8.2.0.21}MovementDetail}{120}{subsubsection.8.2.0.21}%
-\contentsline {subsubsection}{\numberline {8.2.0.22}ChartScreen}{121}{subsubsection.8.2.0.22}%
-\contentsline {chapter}{\numberline {A}Descripción de casos de uso}{123}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Diagramas de secuencia}{151}{appendix.Alph2}%
-\contentsline {subsection}{\numberline {B.0.1}Apertura y cierra de sesión}{151}{subsection.Alph2.0.1}%
-\contentsline {subsubsection}{\numberline {B.0.1.1}Inicio de sesión}{151}{subsubsection.Alph2.0.1.1}%
-\contentsline {subsubsection}{\numberline {B.0.1.2}Cierre de sesión}{152}{subsubsection.Alph2.0.1.2}%
-\contentsline {subsection}{\numberline {B.0.2}Gestión de artículos}{152}{subsection.Alph2.0.2}%
-\contentsline {subsubsection}{\numberline {B.0.2.1}Introducción de un nuevo artículo}{152}{subsubsection.Alph2.0.2.1}%
-\contentsline {subsubsection}{\numberline {B.0.2.2}Edición de un artículo existente}{153}{subsubsection.Alph2.0.2.2}%
-\contentsline {subsubsection}{\numberline {B.0.2.3}Eliminación de un artículo}{153}{subsubsection.Alph2.0.2.3}%
-\contentsline {subsubsection}{\numberline {B.0.2.4}Visualización de los datos de un artículo}{154}{subsubsection.Alph2.0.2.4}%
-\contentsline {subsubsection}{\numberline {B.0.2.5}Búsqueda de un artículo por nombre}{155}{subsubsection.Alph2.0.2.5}%
-\contentsline {subsubsection}{\numberline {B.0.2.6}Categorización de un artículo}{155}{subsubsection.Alph2.0.2.6}%
-\contentsline {subsubsection}{\numberline {B.0.2.7}Visualización de la lista de artículos}{156}{subsubsection.Alph2.0.2.7}%
-\contentsline {subsection}{\numberline {B.0.3}Gestión de inventario}{156}{subsection.Alph2.0.3}%
-\contentsline {subsubsection}{\numberline {B.0.3.1}Actualización del inventario de forma automática}{156}{subsubsection.Alph2.0.3.1}%
-\contentsline {subsubsection}{\numberline {B.0.3.2}Visualización de la lista de renovación de artículos}{157}{subsubsection.Alph2.0.3.2}%
-\contentsline {subsection}{\numberline {B.0.4}Gestión de clientes}{157}{subsection.Alph2.0.4}%
-\contentsline {subsubsection}{\numberline {B.0.4.1}Registro de un nuevo cliente habitual}{157}{subsubsection.Alph2.0.4.1}%
-\contentsline {subsubsection}{\numberline {B.0.4.2}Edición de los datos de un cliente existente}{158}{subsubsection.Alph2.0.4.2}%
-\contentsline {subsubsection}{\numberline {B.0.4.3}Eliminación de un cliente existente}{158}{subsubsection.Alph2.0.4.3}%
-\contentsline {subsubsection}{\numberline {B.0.4.4}Visualización de los datos de un cliente}{159}{subsubsection.Alph2.0.4.4}%
-\contentsline {subsubsection}{\numberline {B.0.4.5}Visualización la lista de clientes existentes}{159}{subsubsection.Alph2.0.4.5}%
-\contentsline {subsubsection}{\numberline {B.0.4.6}Búsqueda de un cliente por nombre}{160}{subsubsection.Alph2.0.4.6}%
-\contentsline {subsubsection}{\numberline {B.0.4.7}Filtrado de clientes con préstamos}{160}{subsubsection.Alph2.0.4.7}%
-\contentsline {subsection}{\numberline {B.0.5}Gestión de movimientos}{161}{subsection.Alph2.0.5}%
-\contentsline {subsubsection}{\numberline {B.0.5.1}Introducción de una nueva venta}{161}{subsubsection.Alph2.0.5.1}%
-\contentsline {subsubsection}{\numberline {B.0.5.2}Introducción de un nuevo préstamo}{162}{subsubsection.Alph2.0.5.2}%
-\contentsline {subsubsection}{\numberline {B.0.5.3}Introducción de una nueva devolución}{162}{subsubsection.Alph2.0.5.3}%
-\contentsline {subsubsection}{\numberline {B.0.5.4}Eliminación de un movimiento}{163}{subsubsection.Alph2.0.5.4}%
-\contentsline {subsubsection}{\numberline {B.0.5.5}Visualización de los datos de un movimiento}{164}{subsubsection.Alph2.0.5.5}%
-\contentsline {subsubsection}{\numberline {B.0.5.6}Visualización de la lista de movimientos existentes}{164}{subsubsection.Alph2.0.5.6}%
-\contentsline {subsubsection}{\numberline {B.0.5.7}Filtrado de los movimientos según su tipo}{165}{subsubsection.Alph2.0.5.7}%
-\contentsline {subsubsection}{\numberline {B.0.5.8}Búsqueda de movimientos por fecha o cliente}{165}{subsubsection.Alph2.0.5.8}%
-\contentsline {subsubsection}{\numberline {B.0.5.9}Generación de una compra a partir de un préstamo}{166}{subsubsection.Alph2.0.5.9}%
-\contentsline {subsection}{\numberline {B.0.6}Gestión de resúmenes y gráficas}{166}{subsection.Alph2.0.6}%
-\contentsline {subsubsection}{\numberline {B.0.6.1}Visualización de la caja diaria}{166}{subsubsection.Alph2.0.6.1}%
-\contentsline {subsubsection}{\numberline {B.0.6.2}Visualización de gráficos}{167}{subsubsection.Alph2.0.6.2}%
-\contentsline {section}{Referencias}{168}{figure.Alph2.29}%
+\contentsline {subsection}{\numberline {7.1.3}Pruebas de funcionalidad}{85}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Revisión de la iteración}{86}{subsection.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.4.1}Autenticación}{86}{subsubsection.7.1.4.1}%
+\contentsline {subsubsection}{\numberline {7.1.4.2}Gestión de clientes}{86}{subsubsection.7.1.4.2}%
+\contentsline {subsubsection}{\numberline {7.1.4.3}Gestión de artículos}{87}{subsubsection.7.1.4.3}%
+\contentsline {subsection}{\numberline {7.1.5}Plan para la próxima iteración}{87}{subsection.7.1.5}%
+\contentsline {section}{\numberline {7.2}Segunda iteración}{88}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Alcance de la iteración}{88}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Implementación}{88}{subsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.1}Pantalla principal}{88}{subsubsection.7.2.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2.2}Pantalla de nueva venta}{88}{subsubsection.7.2.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.3}Pantalla de nuevo préstamo}{89}{subsubsection.7.2.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.2.4}Pantalla de visualización de movimientos}{90}{subsubsection.7.2.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.2.5}Pantalla de detalles del movimiento}{91}{subsubsection.7.2.2.5}%
+\contentsline {subsubsection}{\numberline {7.2.2.6}Mejora de las tallas en artículos}{94}{subsubsection.7.2.2.6}%
+\contentsline {subsection}{\numberline {7.2.3}Pruebas de funcionalidad}{95}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Revisión de la iteración}{95}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Plan para la próxima iteración}{96}{subsection.7.2.5}%
+\contentsline {section}{\numberline {7.3}Tercera iteración}{96}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Alcance de la iteración}{96}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Pantalla de gráficos}{96}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Mejora de la interfaz gráfica y la accesibilidad}{97}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Colores de la aplicación}{98}{subsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.4.1}Inicio y cierre de sesión}{99}{subsubsection.7.3.4.1}%
+\contentsline {subsubsection}{\numberline {7.3.4.2}Pantalla principal}{100}{subsubsection.7.3.4.2}%
+\contentsline {subsubsection}{\numberline {7.3.4.3}Pantalla de clientes}{102}{subsubsection.7.3.4.3}%
+\contentsline {subsubsection}{\numberline {7.3.4.4}Pantalla de artículos}{104}{subsubsection.7.3.4.4}%
+\contentsline {subsubsection}{\numberline {7.3.4.5}Pantalla de movimientos}{108}{subsubsection.7.3.4.5}%
+\contentsline {subsubsection}{\numberline {7.3.4.6}Pantalla de gráficos}{110}{subsubsection.7.3.4.6}%
+\contentsline {subsection}{\numberline {7.3.5}Pruebas de funcionalidad}{110}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Revisión de la iteración}{110}{subsection.7.3.6}%
+\contentsline {chapter}{\numberline {8}Base de datos e implementación}{111}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Creación y modificaciones de la base de datos}{111}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Creación de la base de datos}{111}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Tablas de la base de datos}{112}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Modificaciones intermedias de la base de datos}{113}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}Diagrama final del diseño de la base de datos}{113}{subsection.8.1.4}%
+\contentsline {section}{\numberline {8.2}Diagrama de clases}{113}{section.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.0.1}Common}{115}{subsubsection.8.2.0.1}%
+\contentsline {subsubsection}{\numberline {8.2.0.2}ChangeNotifier}{115}{subsubsection.8.2.0.2}%
+\contentsline {subsubsection}{\numberline {8.2.0.3}Main}{115}{subsubsection.8.2.0.3}%
+\contentsline {subsubsection}{\numberline {8.2.0.4}Login}{115}{subsubsection.8.2.0.4}%
+\contentsline {subsubsection}{\numberline {8.2.0.5}BottomNav}{115}{subsubsection.8.2.0.5}%
+\contentsline {subsubsection}{\numberline {8.2.0.6}Mainpage}{116}{subsubsection.8.2.0.6}%
+\contentsline {subsubsection}{\numberline {8.2.0.7}NewMovement}{116}{subsubsection.8.2.0.7}%
+\contentsline {subsubsection}{\numberline {8.2.0.8}ClientView}{117}{subsubsection.8.2.0.8}%
+\contentsline {subsubsection}{\numberline {8.2.0.9}ClientRegister}{118}{subsubsection.8.2.0.9}%
+\contentsline {subsubsection}{\numberline {8.2.0.10}ClientEdit}{118}{subsubsection.8.2.0.10}%
+\contentsline {subsubsection}{\numberline {8.2.0.11}ClientDetail}{118}{subsubsection.8.2.0.11}%
+\contentsline {subsubsection}{\numberline {8.2.0.12}CategoryView}{118}{subsubsection.8.2.0.12}%
+\contentsline {subsubsection}{\numberline {8.2.0.13}NewCategory}{119}{subsubsection.8.2.0.13}%
+\contentsline {subsubsection}{\numberline {8.2.0.14}EditCategory}{119}{subsubsection.8.2.0.14}%
+\contentsline {subsubsection}{\numberline {8.2.0.15}ArticleView}{119}{subsubsection.8.2.0.15}%
+\contentsline {subsubsection}{\numberline {8.2.0.16}NewArticle}{120}{subsubsection.8.2.0.16}%
+\contentsline {subsubsection}{\numberline {8.2.0.17}EditArticle}{120}{subsubsection.8.2.0.17}%
+\contentsline {subsubsection}{\numberline {8.2.0.18}ArticleDetails}{121}{subsubsection.8.2.0.18}%
+\contentsline {subsubsection}{\numberline {8.2.0.19}Stock}{121}{subsubsection.8.2.0.19}%
+\contentsline {subsubsection}{\numberline {8.2.0.20}MovimientosView}{121}{subsubsection.8.2.0.20}%
+\contentsline {subsubsection}{\numberline {8.2.0.21}MovementDetail}{122}{subsubsection.8.2.0.21}%
+\contentsline {subsubsection}{\numberline {8.2.0.22}ChartScreen}{123}{subsubsection.8.2.0.22}%
+\contentsline {chapter}{\numberline {9}Conclusiones y trabajos futuros}{125}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusiones}{125}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Trabajos futuros}{127}{section.9.2}%
+\contentsline {chapter}{\numberline {A}Descripción de casos de uso}{128}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Diagramas de secuencia}{156}{appendix.Alph2}%
+\contentsline {subsection}{\numberline {B.0.1}Apertura y cierra de sesión}{156}{subsection.Alph2.0.1}%
+\contentsline {subsubsection}{\numberline {B.0.1.1}Inicio de sesión}{156}{subsubsection.Alph2.0.1.1}%
+\contentsline {subsubsection}{\numberline {B.0.1.2}Cierre de sesión}{157}{subsubsection.Alph2.0.1.2}%
+\contentsline {subsection}{\numberline {B.0.2}Gestión de artículos}{157}{subsection.Alph2.0.2}%
+\contentsline {subsubsection}{\numberline {B.0.2.1}Introducción de un nuevo artículo}{157}{subsubsection.Alph2.0.2.1}%
+\contentsline {subsubsection}{\numberline {B.0.2.2}Edición de un artículo existente}{158}{subsubsection.Alph2.0.2.2}%
+\contentsline {subsubsection}{\numberline {B.0.2.3}Eliminación de un artículo}{158}{subsubsection.Alph2.0.2.3}%
+\contentsline {subsubsection}{\numberline {B.0.2.4}Visualización de los datos de un artículo}{159}{subsubsection.Alph2.0.2.4}%
+\contentsline {subsubsection}{\numberline {B.0.2.5}Búsqueda de un artículo por nombre}{160}{subsubsection.Alph2.0.2.5}%
+\contentsline {subsubsection}{\numberline {B.0.2.6}Categorización de un artículo}{160}{subsubsection.Alph2.0.2.6}%
+\contentsline {subsubsection}{\numberline {B.0.2.7}Visualización de la lista de artículos}{161}{subsubsection.Alph2.0.2.7}%
+\contentsline {subsection}{\numberline {B.0.3}Gestión de inventario}{161}{subsection.Alph2.0.3}%
+\contentsline {subsubsection}{\numberline {B.0.3.1}Actualización del inventario de forma automática}{161}{subsubsection.Alph2.0.3.1}%
+\contentsline {subsubsection}{\numberline {B.0.3.2}Visualización de la lista de renovación de artículos}{162}{subsubsection.Alph2.0.3.2}%
+\contentsline {subsection}{\numberline {B.0.4}Gestión de clientes}{162}{subsection.Alph2.0.4}%
+\contentsline {subsubsection}{\numberline {B.0.4.1}Registro de un nuevo cliente habitual}{162}{subsubsection.Alph2.0.4.1}%
+\contentsline {subsubsection}{\numberline {B.0.4.2}Edición de los datos de un cliente existente}{163}{subsubsection.Alph2.0.4.2}%
+\contentsline {subsubsection}{\numberline {B.0.4.3}Eliminación de un cliente existente}{163}{subsubsection.Alph2.0.4.3}%
+\contentsline {subsubsection}{\numberline {B.0.4.4}Visualización de los datos de un cliente}{164}{subsubsection.Alph2.0.4.4}%
+\contentsline {subsubsection}{\numberline {B.0.4.5}Visualización la lista de clientes existentes}{164}{subsubsection.Alph2.0.4.5}%
+\contentsline {subsubsection}{\numberline {B.0.4.6}Búsqueda de un cliente por nombre}{165}{subsubsection.Alph2.0.4.6}%
+\contentsline {subsubsection}{\numberline {B.0.4.7}Filtrado de clientes con préstamos}{165}{subsubsection.Alph2.0.4.7}%
+\contentsline {subsection}{\numberline {B.0.5}Gestión de movimientos}{166}{subsection.Alph2.0.5}%
+\contentsline {subsubsection}{\numberline {B.0.5.1}Introducción de una nueva venta}{166}{subsubsection.Alph2.0.5.1}%
+\contentsline {subsubsection}{\numberline {B.0.5.2}Introducción de un nuevo préstamo}{167}{subsubsection.Alph2.0.5.2}%
+\contentsline {subsubsection}{\numberline {B.0.5.3}Introducción de una nueva devolución}{167}{subsubsection.Alph2.0.5.3}%
+\contentsline {subsubsection}{\numberline {B.0.5.4}Eliminación de un movimiento}{168}{subsubsection.Alph2.0.5.4}%
+\contentsline {subsubsection}{\numberline {B.0.5.5}Visualización de los datos de un movimiento}{169}{subsubsection.Alph2.0.5.5}%
+\contentsline {subsubsection}{\numberline {B.0.5.6}Visualización de la lista de movimientos existentes}{169}{subsubsection.Alph2.0.5.6}%
+\contentsline {subsubsection}{\numberline {B.0.5.7}Filtrado de los movimientos según su tipo}{170}{subsubsection.Alph2.0.5.7}%
+\contentsline {subsubsection}{\numberline {B.0.5.8}Búsqueda de movimientos por fecha o cliente}{170}{subsubsection.Alph2.0.5.8}%
+\contentsline {subsubsection}{\numberline {B.0.5.9}Generación de una compra a partir de un préstamo}{171}{subsubsection.Alph2.0.5.9}%
+\contentsline {subsection}{\numberline {B.0.6}Gestión de resúmenes y gráficas}{171}{subsection.Alph2.0.6}%
+\contentsline {subsubsection}{\numberline {B.0.6.1}Visualización de la caja diaria}{171}{subsubsection.Alph2.0.6.1}%
+\contentsline {subsubsection}{\numberline {B.0.6.2}Visualización de gráficos}{172}{subsubsection.Alph2.0.6.2}%
+\contentsline {section}{Referencias}{173}{figure.Alph2.29}%
